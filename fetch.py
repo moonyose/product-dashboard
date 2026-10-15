@@ -99,6 +99,9 @@ for k, fn in (("meta", meta), ("asc", asc)):
     try: out[k] = fn()
     except Exception as x: out[k] = None; out["errors"].append(f"{k}: {x}")
 out.update(json.load(open(f"{B}/data/manual.json")))
+for g in out.get("roblox", {}).get("games", []):
+    a = g.get("ads") or {}
+    g["ads_playtime_per_play_min"] = round(a["ad_playtime_h"] * 60 / a["plays"], 2) if a.get("plays") and a.get("ad_playtime_h") is not None else None
 try:
     ids = ",".join(str(g["universe_id"]) for g in out["roblox"]["games"])
     j = requests.get(f"https://thumbnails.roblox.com/v1/games/icons?universeIds={ids}&size=256x256&format=Png&isCircular=false", timeout=30).json()

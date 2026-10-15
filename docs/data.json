@@ -1,12 +1,13 @@
 {
- "updated_at": "2026-10-15 13:30 EDT",
+ "updated_at": "2026-10-15 16:53 EDT",
  "errors": [],
  "meta": {
   "today": {
-   "spend": "1.71",
-   "impressions": "104",
-   "clicks": "0",
-   "ctr": "0",
+   "spend": "3.13",
+   "impressions": "184",
+   "clicks": "2",
+   "ctr": "1.086957",
+   "cpc": "1.565",
    "date_start": "2026-10-15",
    "date_stop": "2026-10-15"
   },
@@ -58,7 +59,7 @@
     "id": "6805914932",
     "name": "LaneSync - Sprint Timer",
     "version": "1.0.1",
-    "state": "PREPARE_FOR_SUBMISSION",
+    "state": "WAITING_FOR_REVIEW",
     "created": "2026-10-14T14:04:32-07:00",
     "public": true,
     "icon": "icons/app_6805914932.png"
@@ -254,6 +255,7 @@
      "ad_playtime_h": 14.9,
      "campaign": "Oct 9-13, completed"
     },
+    "ads_playtime_per_play_min": 4.28,
     "icon": "icons/rbx_10769917513.png"
    },
    {
@@ -277,6 +279,7 @@
      "ad_playtime_h": 16.5,
      "campaign": "Ended Oct 5"
     },
+    "ads_playtime_per_play_min": 2.69,
     "icon": "icons/rbx_10520154400.png"
    },
    {
@@ -300,6 +303,7 @@
      "ad_playtime_h": 13.6,
      "campaign": "Ended Oct 5"
     },
+    "ads_playtime_per_play_min": 2.58,
     "icon": "icons/rbx_10308497838.png"
    }
   ]

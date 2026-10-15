@@ -43,6 +43,7 @@ header h1{font-size:21px;width:100%}
 const $=s=>document.querySelector(s), esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const usd=x=>x==null?'—':'$'+(+x).toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2}), num=x=>x==null?'—':(+x).toLocaleString();
 const charts=[];
+const ppp=g=>{const x=g.ads||{};return x.plays&&x.ad_playtime_h!=null?x.ad_playtime_h*60/x.plays:null}, fm=v=>v==null?'—':v.toFixed(1)+' min';
 function trend(cur,prev,label='vs prev'){if(prev==null||cur==null)return '';cur=+cur;prev=+prev;if(prev===0&&cur===0)return `<div class="t flat">→ 0% ${label}</div>`;
  if(prev===0)return `<div class="t up">▲ new ${label}</div>`;const p=(cur-prev)/prev*100;return `<div class="t ${p>0?'up':p<0?'down':'flat'}">${p>0?'▲':p<0?'▼':'→'} ${Math.abs(p).toFixed(1)}% ${label}</div>`}
 function pctT(p){if(p==null)return '';return `<div class="t ${p>0?'up':p<0?'down':'flat'}">${p>0?'▲':p<0?'▼':'→'} ${Math.abs(p)}% vs prior 7d</div>`}
@@ -78,7 +79,7 @@ function render(d){
  for(const[aid,cs]of Object.entries(aBy)){const a=apps[aid];appleIn+=sec('apple-'+aid,`${icon(a?.icon,a?.name||'?')} ${esc(a?.name||'Other')}`,
   cs.map(c=>`<div class="mut small">${esc(c.name)} · <span class="pill READY_FOR_SALE">${esc(c.status)}</span></div><div class="grid" style="margin-top:10px">${card('Daily budget',usd(c.daily_budget))}${card('Spend · 7d',usd(c.last_7d_spend))}${card('Impressions · 7d',num(c.last_7d_impressions))}</div>`).join(''))}
  ads+=sec('apple',`<span> Apple Ads</span> <span class="mut small">as of ${esc(aa.as_of)} · manual</span>`,appleIn);
- ads+=sec('rbxads',`<span>🎮 Roblox Ads</span> <span class="mut small">${esc(ra.period||'')} · manual</span>`,`<table><tr><th></th><th>Game</th><th>Spend 28d</th><th>Spend 7d</th><th>Impr.</th><th>CTR</th><th>Clicks</th><th>Plays</th><th>$/play</th><th>Status</th></tr>${games.map(g=>{const x=g.ads||{};return `<tr><td>${icon(g.icon,g.name)}</td><td>${esc(g.name)}</td><td>${usd(x.spend_28d)}</td><td>${usd(x.spend_7d)}</td><td>${num(x.impressions)}</td><td>${x.ctr_pct??'—'}%</td><td>${num(x.clicks)}</td><td>${num(x.plays)}</td><td>${usd(x.cost_per_play)}</td><td class="mut">${esc(x.campaign)}</td></tr>`}).join('')}</table>`);
+ ads+=sec('rbxads',`<span>🎮 Roblox Ads</span> <span class="mut small">${esc(ra.period||'')} · manual</span>`,`<table><tr><th></th><th>Game</th><th>Spend 28d</th><th>Spend 7d</th><th>Impr.</th><th>CTR</th><th>Clicks</th><th>Plays</th><th>$/play</th><th>Playtime/ad play</th><th>Status</th></tr>${games.map(g=>{const x=g.ads||{};return `<tr><td>${icon(g.icon,g.name)}</td><td>${esc(g.name)}</td><td>${usd(x.spend_28d)}</td><td>${usd(x.spend_7d)}</td><td>${num(x.impressions)}</td><td>${x.ctr_pct??'—'}%</td><td>${num(x.clicks)}</td><td>${num(x.plays)}</td><td>${usd(x.cost_per_play)}</td><td>${fm(ppp(g))}</td><td class="mut">${esc(x.campaign)}</td></tr>`}).join('')}</table>`);
  // ---- APP STORE
  const sales=d.asc?.sales||[];const tot=k=>sales.reduce((s,x)=>s+Object.values(x.apps).reduce((a,p)=>a+(p[k]||0),0),0);
  let asc=`<div class="grid">${card(`Downloads · ${sales.length}d`,num(tot('downloads')),'','hero')}${card('New subs / trials',num(tot('new_subs')),`<div class="t mut">${tot('new_subs_paid')} paid · ${tot('new_subs_free')} free/trial</div>`)}${card('Redownloads',num(tot('redownloads')))}${card('Proceeds',usd(tot('proceeds')))}</div>
@@ -92,7 +93,7 @@ function render(d){
  // ---- ROBLOX
  let rbx=`<div class="mut small">${esc(d.roblox?.period)} · manual</div><div class="chart"><canvas id="cRbx" height="60"></canvas></div>`;
  games.forEach(g=>{const x=g.ads||{};rbx+=sec('game-'+g.universe_id,`${icon(g.icon,g.name)} <span>${esc(g.name)}</span>`,
-  `<div class="grid">${card('Avg playtime',g.avg_playtime_min+' min',pctT(g.avg_playtime_change_pct)||(g.note?`<div class="t flat">${esc(g.note)}</div>`:''),'hero')}
+  `<div class="grid">${card('Avg playtime',g.avg_playtime_min+' min',pctT(g.avg_playtime_change_pct)||(g.note?`<div class="t flat">${esc(g.note)}</div>`:''),'hero')}${card('Avg playtime per ad play',fm(ppp(g)),'<div class="t mut">ad playtime ÷ ad plays</div>','hero')}
   ${card('DAU',num(g.dau),pctT(g.dau_change_pct))}${g.sessions_per_day!=null?card('Sessions / day',num(g.sessions_per_day)):''}${card('Lifetime visits',num(g.lifetime_visits))}
   ${g.new_users!=null?card('New users',num(g.new_users)):''}${g.avg_session_min!=null?card('Avg session',g.avg_session_min+' min'):''}${card('Revenue',num(g.revenue)+' R$')}
   ${card('Ad spend · 28d',usd(g.ad_spend),x.spend_7d!=null?`<div class="t mut">${usd(x.spend_7d)} in last 7d</div>`:'')}</div>
