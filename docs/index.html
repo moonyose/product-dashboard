@@ -1,0 +1,33 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Product Dashboard</title><script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<style>body{font-family:system-ui,sans-serif;background:#0f1115;color:#e6e6e6;margin:0;padding:24px;max-width:1100px;margin:auto}
+h1{margin:0}h2{border-bottom:1px solid #333;padding-bottom:6px;margin-top:36px}.sub{color:#888}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:12px}.card{background:#181b22;border-radius:10px;padding:14px}
+.card .v{font-size:26px;font-weight:600}.card .l{color:#999;font-size:13px}.big .v{font-size:40px;color:#7cf}
+table{width:100%;border-collapse:collapse;margin-top:12px}td,th{padding:6px 8px;border-bottom:1px solid #262a33;text-align:left;font-size:14px}
+.neg{color:#f77}.pos{color:#7d7}.err{color:#fa5}.tag{padding:2px 8px;border-radius:8px;background:#333;font-size:12px}</style></head>
+<body><h1>Product Dashboard</h1><div class="sub" id="upd"></div><div id="errs" class="err"></div>
+<h2>Ads — Meta</h2><div id="meta" class="grid"></div><canvas id="metaChart" height="90"></canvas><table id="camps"></table>
+<h2>Ads — Apple Search Ads</h2><table id="apple"></table>
+<h2>App Store</h2><table id="asc"></table><div id="sales"></div>
+<h2>Roblox</h2><div class="sub" id="rbxp"></div><div id="rbx"></div>
+<script>
+const c=(l,v,big)=>`<div class="card ${big?'big':''}"><div class="v">${v}</div><div class="l">${l}</div></div>`;
+const pct=x=>x==null?'':`<span class="${x<0?'neg':'pos'}">${x>0?'+':''}${x}%</span>`;
+const $=id=>document.getElementById(id), usd=x=>'$'+(+x||0).toFixed(2);
+fetch('data.json?'+Date.now()).then(r=>r.json()).then(d=>{
+ $('upd').textContent='Updated '+d.updated_at; if(d.errors?.length)$('errs').textContent='Errors: '+d.errors.join('; ');
+ const m=d.meta; if(m){let h='';for(const[k,n]of[['today','Today'],['yesterday','Yesterday'],['last_7d','Last 7d']]){const x=m[k]||{};
+  h+=c(n+' spend',usd(x.spend))+c(n+' impressions',x.impressions||0)+c(n+' clicks',x.clicks||0)+c(n+' CTR / CPC',(+x.ctr||0).toFixed(2)+'% / '+(x.cpc?usd(x.cpc):'–'))}
+  $('meta').innerHTML=h; const dl=m.daily_14d||[];
+  new Chart($('metaChart'),{type:'bar',data:{labels:dl.map(x=>x.date_start),datasets:[{label:'Spend $',data:dl.map(x=>+x.spend),backgroundColor:'#4a8'},{label:'Impressions',data:dl.map(x=>+x.impressions),type:'line',yAxisID:'y1',borderColor:'#7cf'}]},options:{scales:{y1:{position:'right'}}}});
+  $('camps').innerHTML='<tr><th>Campaign (7d)</th><th>Spend</th><th>Impr</th><th>Clicks</th><th>CTR</th><th>CPC</th></tr>'+(m.campaigns_7d||[]).map(x=>`<tr><td>${x.campaign_name}</td><td>${usd(x.spend)}</td><td>${x.impressions}</td><td>${x.clicks}</td><td>${(+x.ctr||0).toFixed(2)}%</td><td>${x.cpc?usd(x.cpc):'–'}</td></tr>`).join('')}
+ const a=d.apple_ads; if(a)$('apple').innerHTML=`<tr><th>Campaign</th><th>Status</th><th>Daily budget</th><th>7d spend</th><th>7d impressions</th></tr>`+a.campaigns.map(x=>`<tr><td>${x.name}</td><td>${x.status}</td><td>${usd(x.daily_budget)}</td><td>${usd(x.last_7d_spend)}</td><td>${x.last_7d_impressions}</td></tr>`).join('')+`<tr><td colspan=5 class="sub">As of ${a.as_of} (manual)</td></tr>`;
+ const s=d.asc; if(s){$('asc').innerHTML='<tr><th>App</th><th>Version</th><th>State</th></tr>'+s.apps.map(x=>`<tr><td>${x.name}</td><td>${x.version||''}</td><td><span class="tag">${x.state||x.error||''}</span></td></tr>`).join('');
+  if(s.sales?.length){$('sales').innerHTML='<table><tr><th>Date</th><th>App</th><th>Downloads</th><th>New subs</th></tr>'+s.sales.flatMap(dd=>Object.values(dd.apps).map(p=>`<tr><td>${dd.date}</td><td>${p.title}</td><td>${p.downloads}</td><td>${p.subscriptions}</td></tr>`)).join('')+'</table>'}
+  else $('sales').innerHTML=`<p class="sub">Sales: ${s.sales_note||'no data'}</p>`}
+ const r=d.roblox; if(r){$('rbxp').textContent=r.period;$('rbx').innerHTML=r.games.map(g=>`<h3>${g.name} <span class="sub">#${g.universe_id}</span></h3><div class="grid">`+
+  c('Avg playtime (min) '+pct(g.avg_playtime_change_pct),g.avg_playtime_min,1)+c('DAU '+pct(g.dau_change_pct),g.dau)+(g.sessions_per_day!=null?c('Sessions/day',g.sessions_per_day):'')+
+  c('Lifetime visits',g.lifetime_visits)+(g.new_users!=null?c('New users',g.new_users):'')+(g.avg_session_min!=null?c('Avg session (min)',g.avg_session_min):'')+c('Revenue (R$)',g.revenue)+`</div>${g.note?`<p class="sub">${g.note}</p>`:''}`).join('')}
+});
+</script></body></html>

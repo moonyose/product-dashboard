@@ -1,0 +1,135 @@
+{
+ "updated_at": "2026-10-15 13:00 EDT",
+ "errors": [],
+ "meta": {
+  "today": {
+   "spend": "1.51",
+   "impressions": "90",
+   "clicks": "0",
+   "ctr": "0",
+   "date_start": "2026-10-15",
+   "date_stop": "2026-10-15"
+  },
+  "yesterday": {
+   "spend": "4.53",
+   "impressions": "306",
+   "clicks": "3",
+   "ctr": "0.980392",
+   "cpc": "1.51",
+   "date_start": "2026-10-14",
+   "date_stop": "2026-10-14"
+  },
+  "last_7d": {
+   "spend": "4.53",
+   "impressions": "306",
+   "clicks": "3",
+   "ctr": "0.980392",
+   "cpc": "1.51",
+   "date_start": "2026-10-08",
+   "date_stop": "2026-10-14"
+  },
+  "daily_14d": [
+   {
+    "spend": "4.53",
+    "impressions": "306",
+    "clicks": "3",
+    "ctr": "0.980392",
+    "cpc": "1.51",
+    "date_start": "2026-10-14",
+    "date_stop": "2026-10-14"
+   }
+  ],
+  "campaigns_7d": [
+   {
+    "spend": "4.53",
+    "impressions": "306",
+    "clicks": "3",
+    "ctr": "0.980392",
+    "cpc": "1.51",
+    "campaign_name": "LaneSync | US | $50 total video test",
+    "date_start": "2026-10-08",
+    "date_stop": "2026-10-14"
+   }
+  ]
+ },
+ "asc": {
+  "apps": [
+   {
+    "id": "6805914932",
+    "name": "LaneSync - Sprint Timer",
+    "version": "1.0.1",
+    "state": "PREPARE_FOR_SUBMISSION",
+    "created": "2026-10-14T14:04:32-07:00"
+   },
+   {
+    "id": "6819824551",
+    "name": "StrideLab - Sprint Analysis",
+    "version": "1.0",
+    "state": "REJECTED",
+    "created": "2026-10-06T11:57:26-07:00"
+   },
+   {
+    "id": "6812496973",
+    "name": "Miami Beach Transit Tracker",
+    "version": "1.0",
+    "state": "PREPARE_FOR_SUBMISSION",
+    "created": "2026-09-15T12:51:58-07:00"
+   }
+  ],
+  "sales": null,
+  "sales_note": "Vendor number not available via API; add ASC_VENDOR_NUMBER to secrets/asc.env"
+ },
+ "apple_ads": {
+  "as_of": "2026-10-15",
+  "source": "manual (browser)",
+  "campaigns": [
+   {
+    "name": "LaneSync - US - Search",
+    "status": "Running",
+    "daily_budget": 90.0,
+    "last_7d_spend": 0.0,
+    "last_7d_impressions": 148
+   }
+  ]
+ },
+ "roblox": {
+  "period": "2026-10-08 to 2026-10-14",
+  "source": "manual (browser)",
+  "games": [
+   {
+    "name": "Crash a Car",
+    "universe_id": 10769917513,
+    "avg_playtime_min": 4.1,
+    "avg_playtime_change_pct": null,
+    "dau": 30,
+    "dau_change_pct": null,
+    "sessions_per_day": 35,
+    "lifetime_visits": 247,
+    "new_users": 28,
+    "avg_session_min": 3.5,
+    "revenue": 0,
+    "note": "no trend yet"
+   },
+   {
+    "name": "Infection",
+    "universe_id": 10520154400,
+    "avg_playtime_min": 2.0,
+    "avg_playtime_change_pct": -12.8,
+    "dau": 0,
+    "dau_change_pct": -99.2,
+    "lifetime_visits": 1122,
+    "revenue": 0
+   },
+   {
+    "name": "Ghosts In The Graveyard - Insane Asylum",
+    "universe_id": 10308497838,
+    "avg_playtime_min": 1.9,
+    "avg_playtime_change_pct": -36.9,
+    "dau": 1,
+    "dau_change_pct": -98.7,
+    "lifetime_visits": 377,
+    "revenue": 0
+   }
+  ]
+ }
+}
