@@ -1,33 +1,95 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Product Dashboard</title><script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
-<style>body{font-family:system-ui,sans-serif;background:#0f1115;color:#e6e6e6;margin:0;padding:24px;max-width:1100px;margin:auto}
-h1{margin:0}h2{border-bottom:1px solid #333;padding-bottom:6px;margin-top:36px}.sub{color:#888}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:12px}.card{background:#181b22;border-radius:10px;padding:14px}
-.card .v{font-size:26px;font-weight:600}.card .l{color:#999;font-size:13px}.big .v{font-size:40px;color:#7cf}
-table{width:100%;border-collapse:collapse;margin-top:12px}td,th{padding:6px 8px;border-bottom:1px solid #262a33;text-align:left;font-size:14px}
-.neg{color:#f77}.pos{color:#7d7}.err{color:#fa5}.tag{padding:2px 8px;border-radius:8px;background:#333;font-size:12px}</style></head>
-<body><h1>Product Dashboard</h1><div class="sub" id="upd"></div><div id="errs" class="err"></div>
-<h2>Ads — Meta</h2><div id="meta" class="grid"></div><canvas id="metaChart" height="90"></canvas><table id="camps"></table>
-<h2>Ads — Apple Search Ads</h2><table id="apple"></table>
-<h2>App Store</h2><table id="asc"></table><div id="sales"></div>
-<h2>Roblox</h2><div class="sub" id="rbxp"></div><div id="rbx"></div>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Product Dashboard · Austin Muñoz</title><script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<style>
+:root{--bg:#0b0d12;--panel:#141821;--panel2:#1b202b;--line:#262c39;--txt:#e8ebf2;--mut:#8b93a7;--acc:#6aa8ff;--up:#3ddc97;--down:#ff6b6b}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(1200px 600px at 10% -10%,#1a2240 0,transparent 60%),var(--bg);color:var(--txt);font:15px/1.45 Inter,system-ui,-apple-system,sans-serif}
+.wrap{max-width:1180px;margin:auto;padding:28px 20px 60px}
+header{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:20px}header h1{margin:0;font-size:26px;letter-spacing:-.02em}
+.sp{flex:1}.mut{color:var(--mut)}.small{font-size:12px}
+button{background:var(--acc);color:#071022;border:0;border-radius:10px;padding:9px 16px;font-weight:600;cursor:pointer}button:active{transform:scale(.97)}button.ghost{background:var(--panel2);color:var(--txt)}
+details{background:var(--panel);border:1px solid var(--line);border-radius:16px;margin:14px 0;overflow:hidden}
+details>summary{list-style:none;cursor:pointer;padding:16px 18px;display:flex;align-items:center;gap:12px;font-weight:600;font-size:18px}
+details>summary::-webkit-details-marker{display:none}details>summary::after{content:'▸';margin-left:auto;color:var(--mut);transition:.2s}details[open]>summary::after{transform:rotate(90deg)}
+details .body{padding:0 18px 18px}details details{background:var(--panel2);border-radius:14px}details details>summary{font-size:16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}
+.card{background:linear-gradient(180deg,#1d2330,#171b25);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.card .l{color:var(--mut);font-size:12px;text-transform:uppercase;letter-spacing:.05em}.card .v{font-size:30px;font-weight:700;letter-spacing:-.02em;margin-top:4px}
+.card .t{font-size:13px;margin-top:2px}.card.hero{grid-column:span 2;background:linear-gradient(135deg,#1e3a6e,#172036)}.card.hero .v{font-size:46px;color:#bcd6ff}
+.up{color:var(--up)}.down{color:var(--down)}.flat{color:var(--mut)}
+.ico{width:40px;height:40px;border-radius:10px;object-fit:cover;flex:none}.ava{display:inline-grid;place-items:center;background:#334;font-weight:700}
+.pill{font-size:12px;padding:3px 10px;border-radius:99px;background:#2a3142;color:#cfd6e6;font-weight:600}
+.pill.REJECTED{background:#4a1f25;color:#ff9aa5}.pill.READY_FOR_SALE{background:#173d2e;color:#7ef0b8}.pill.PREPARE_FOR_SUBMISSION{background:#3d3517;color:#ffd77a}.pill.WAITING_FOR_REVIEW,.pill.IN_REVIEW{background:#1f2e4a;color:#9cc2ff}
+table{width:100%;border-collapse:collapse;margin-top:10px;font-size:14px}th,td{text-align:left;padding:8px;border-bottom:1px solid var(--line)}th{color:var(--mut);font-weight:500;font-size:12px;text-transform:uppercase}
+.chart{background:var(--panel2);border:1px solid var(--line);border-radius:14px;padding:12px;margin-top:14px}h4{margin:18px 0 6px;color:var(--mut);font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:.06em}
+.err{background:#3a1d1d;color:#ffb3b3;padding:10px 14px;border-radius:10px;margin:10px 0}
+</style></head><body><div class="wrap">
+<header><h1>📊 Product Dashboard</h1><span class="sp"></span><span class="mut small" id="upd">Loading…</span>
+<button class="ghost" onclick="toggleAll(true)">Expand all</button><button class="ghost" onclick="toggleAll(false)">Collapse all</button><button id="refresh" onclick="load()">⟳ Refresh</button></header>
+<div class="mut small">Refresh reloads the latest published data.json (cache-busted). New data is published by running <code>update.sh</code>.</div>
+<div id="errs"></div><div id="root"></div></div>
 <script>
-const c=(l,v,big)=>`<div class="card ${big?'big':''}"><div class="v">${v}</div><div class="l">${l}</div></div>`;
-const pct=x=>x==null?'':`<span class="${x<0?'neg':'pos'}">${x>0?'+':''}${x}%</span>`;
-const $=id=>document.getElementById(id), usd=x=>'$'+(+x||0).toFixed(2);
-fetch('data.json?'+Date.now()).then(r=>r.json()).then(d=>{
- $('upd').textContent='Updated '+d.updated_at; if(d.errors?.length)$('errs').textContent='Errors: '+d.errors.join('; ');
- const m=d.meta; if(m){let h='';for(const[k,n]of[['today','Today'],['yesterday','Yesterday'],['last_7d','Last 7d']]){const x=m[k]||{};
-  h+=c(n+' spend',usd(x.spend))+c(n+' impressions',x.impressions||0)+c(n+' clicks',x.clicks||0)+c(n+' CTR / CPC',(+x.ctr||0).toFixed(2)+'% / '+(x.cpc?usd(x.cpc):'–'))}
-  $('meta').innerHTML=h; const dl=m.daily_14d||[];
-  new Chart($('metaChart'),{type:'bar',data:{labels:dl.map(x=>x.date_start),datasets:[{label:'Spend $',data:dl.map(x=>+x.spend),backgroundColor:'#4a8'},{label:'Impressions',data:dl.map(x=>+x.impressions),type:'line',yAxisID:'y1',borderColor:'#7cf'}]},options:{scales:{y1:{position:'right'}}}});
-  $('camps').innerHTML='<tr><th>Campaign (7d)</th><th>Spend</th><th>Impr</th><th>Clicks</th><th>CTR</th><th>CPC</th></tr>'+(m.campaigns_7d||[]).map(x=>`<tr><td>${x.campaign_name}</td><td>${usd(x.spend)}</td><td>${x.impressions}</td><td>${x.clicks}</td><td>${(+x.ctr||0).toFixed(2)}%</td><td>${x.cpc?usd(x.cpc):'–'}</td></tr>`).join('')}
- const a=d.apple_ads; if(a)$('apple').innerHTML=`<tr><th>Campaign</th><th>Status</th><th>Daily budget</th><th>7d spend</th><th>7d impressions</th></tr>`+a.campaigns.map(x=>`<tr><td>${x.name}</td><td>${x.status}</td><td>${usd(x.daily_budget)}</td><td>${usd(x.last_7d_spend)}</td><td>${x.last_7d_impressions}</td></tr>`).join('')+`<tr><td colspan=5 class="sub">As of ${a.as_of} (manual)</td></tr>`;
- const s=d.asc; if(s){$('asc').innerHTML='<tr><th>App</th><th>Version</th><th>State</th></tr>'+s.apps.map(x=>`<tr><td>${x.name}</td><td>${x.version||''}</td><td><span class="tag">${x.state||x.error||''}</span></td></tr>`).join('');
-  if(s.sales?.length){$('sales').innerHTML='<table><tr><th>Date</th><th>App</th><th>Downloads</th><th>New subs</th></tr>'+s.sales.flatMap(dd=>Object.values(dd.apps).map(p=>`<tr><td>${dd.date}</td><td>${p.title}</td><td>${p.downloads}</td><td>${p.subscriptions}</td></tr>`)).join('')+'</table>'}
-  else $('sales').innerHTML=`<p class="sub">Sales: ${s.sales_note||'no data'}</p>`}
- const r=d.roblox; if(r){$('rbxp').textContent=r.period;$('rbx').innerHTML=r.games.map(g=>`<h3>${g.name} <span class="sub">#${g.universe_id}</span></h3><div class="grid">`+
-  c('Avg playtime (min) '+pct(g.avg_playtime_change_pct),g.avg_playtime_min,1)+c('DAU '+pct(g.dau_change_pct),g.dau)+(g.sessions_per_day!=null?c('Sessions/day',g.sessions_per_day):'')+
-  c('Lifetime visits',g.lifetime_visits)+(g.new_users!=null?c('New users',g.new_users):'')+(g.avg_session_min!=null?c('Avg session (min)',g.avg_session_min):'')+c('Revenue (R$)',g.revenue)+`</div>${g.note?`<p class="sub">${g.note}</p>`:''}`).join('')}
-});
+const $=s=>document.querySelector(s), esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const usd=x=>x==null?'—':'$'+(+x).toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2}), num=x=>x==null?'—':(+x).toLocaleString();
+const charts=[];
+function trend(cur,prev,label='vs prev'){if(prev==null||cur==null)return '';cur=+cur;prev=+prev;if(prev===0&&cur===0)return `<div class="t flat">→ 0% ${label}</div>`;
+ if(prev===0)return `<div class="t up">▲ new ${label}</div>`;const p=(cur-prev)/prev*100;return `<div class="t ${p>0?'up':p<0?'down':'flat'}">${p>0?'▲':p<0?'▼':'→'} ${Math.abs(p).toFixed(1)}% ${label}</div>`}
+function pctT(p){if(p==null)return '';return `<div class="t ${p>0?'up':p<0?'down':'flat'}">${p>0?'▲':p<0?'▼':'→'} ${Math.abs(p)}% vs prior 7d</div>`}
+const card=(l,v,t='',cls='')=>`<div class="card ${cls}"><div class="l">${l}</div><div class="v">${v}</div>${t}</div>`;
+const icon=(src,name)=>src?`<img class="ico" src="${src}" alt="">`:`<span class="ico ava">${esc(name)[0]}</span>`;
+function sec(id,title,inner,open=true){return `<details data-id="${id}" ${open?'open':''}><summary>${title}</summary><div class="body">${inner}</div></details>`}
+function restore(){document.querySelectorAll('details[data-id]').forEach(d=>{const s=localStorage.getItem('dash:'+d.dataset.id);if(s!==null)d.open=s==='1';
+ d.addEventListener('toggle',()=>{localStorage.setItem('dash:'+d.dataset.id,d.open?'1':'0');charts.forEach(c=>c.resize())})})}
+function toggleAll(o){document.querySelectorAll('details[data-id]').forEach(d=>d.open=o)}
+Chart.defaults.color='#8b93a7';Chart.defaults.borderColor='#262c39';Chart.defaults.font.family='Inter,system-ui,sans-serif';
+function mk(id,cfg){setTimeout(()=>{const el=document.getElementById(id);if(el)charts.push(new Chart(el,cfg))},0)}
+function render(d){
+ charts.splice(0).forEach(c=>c.destroy());
+ $('#upd').textContent='Last updated: '+d.updated_at;$('#errs').innerHTML=(d.errors||[]).map(e=>`<div class="err">⚠ ${esc(e)}</div>`).join('');
+ const apps=Object.fromEntries((d.asc?.apps||[]).map(a=>[a.id,a]));const m=d.meta||{},T=m.today||{},Y=m.yesterday||{},W=m.last_7d||{};
+ const aa=d.apple_ads||{campaigns:[]},ra=d.roblox_ads||{},games=d.roblox?.games||[];
+ const apple7=aa.campaigns.reduce((s,c)=>s+(+c.last_7d_spend||0),0), meta7=+W.spend||0, rbx7=+ra.total_spend_7d||0;
+ // ---- ADS
+ let ads=`<div class="grid">${card('Total ad spend · 7d',usd(meta7+apple7+rbx7),`<div class="t mut">Meta ${usd(meta7)} · Apple ${usd(apple7)} · Roblox ${usd(rbx7)}</div>`,'hero')}
+  ${card('Roblox spend · 28d',usd(ra.total_spend_28d))}${card('Meta spend today',usd(T.spend),trend(T.spend,Y.spend,'vs yesterday'))}</div>
+  <div class="chart"><canvas id="cSplit" height="70"></canvas></div>`;
+ let metaIn=`<div class="grid">${card('Spend · today',usd(T.spend),trend(T.spend,Y.spend,'vs yday'))}${card('Spend · 7d',usd(W.spend))}
+  ${card('Impressions · today',num(T.impressions),trend(T.impressions,Y.impressions,'vs yday'))}${card('Impressions · 7d',num(W.impressions))}
+  ${card('Clicks · 7d',num(W.clicks),trend(T.clicks,Y.clicks,'today vs yday'))}${card('CTR · 7d',(+W.ctr||0).toFixed(2)+'%')}${card('CPC · 7d',W.cpc?usd(W.cpc):'—')}</div>
+  <div class="chart"><canvas id="cMeta" height="80"></canvas></div>`;
+ const byApp={};(m.campaigns_7d||[]).forEach(c=>{const a=Object.values(apps).find(a=>c.campaign_name.toLowerCase().includes(a.name.split(' ')[0].toLowerCase()));(byApp[a?.id||'other']??=[]).push(c)});
+ for(const[aid,cs]of Object.entries(byApp)){const a=apps[aid];metaIn+=sec('meta-'+aid,`${icon(a?.icon,a?.name||'?')} ${esc(a?.name||'Other')} <span class="pill">${cs.length} campaign${cs.length>1?'s':''}</span>`,
+  `<table><tr><th>Campaign (7d)</th><th>Spend</th><th>Impr.</th><th>Clicks</th><th>CTR</th><th>CPC</th></tr>${cs.map(c=>`<tr><td>${esc(c.campaign_name)}</td><td>${usd(c.spend)}</td><td>${num(c.impressions)}</td><td>${num(c.clicks)}</td><td>${(+c.ctr||0).toFixed(2)}%</td><td>${c.cpc?usd(c.cpc):'—'}</td></tr>`).join('')}</table>`)}
+ ads+=sec('meta','<span>Ⓜ️ Meta Ads</span>',metaIn);
+ const aBy={};aa.campaigns.forEach(c=>(aBy[c.app_id||'other']??=[]).push(c));let appleIn='';
+ for(const[aid,cs]of Object.entries(aBy)){const a=apps[aid];appleIn+=sec('apple-'+aid,`${icon(a?.icon,a?.name||'?')} ${esc(a?.name||'Other')}`,
+  cs.map(c=>`<div class="mut small">${esc(c.name)} · <span class="pill READY_FOR_SALE">${esc(c.status)}</span></div><div class="grid" style="margin-top:10px">${card('Daily budget',usd(c.daily_budget))}${card('Spend · 7d',usd(c.last_7d_spend))}${card('Impressions · 7d',num(c.last_7d_impressions))}</div>`).join(''))}
+ ads+=sec('apple',`<span> Apple Ads</span> <span class="mut small">as of ${esc(aa.as_of)} · manual</span>`,appleIn);
+ ads+=sec('rbxads',`<span>🎮 Roblox Ads</span> <span class="mut small">${esc(ra.period||'')} · manual</span>`,`<table><tr><th></th><th>Game</th><th>Spend 28d</th><th>Spend 7d</th><th>Impr.</th><th>CTR</th><th>Clicks</th><th>Plays</th><th>$/play</th><th>Status</th></tr>${games.map(g=>{const x=g.ads||{};return `<tr><td>${icon(g.icon,g.name)}</td><td>${esc(g.name)}</td><td>${usd(x.spend_28d)}</td><td>${usd(x.spend_7d)}</td><td>${num(x.impressions)}</td><td>${x.ctr_pct??'—'}%</td><td>${num(x.clicks)}</td><td>${num(x.plays)}</td><td>${usd(x.cost_per_play)}</td><td class="mut">${esc(x.campaign)}</td></tr>`}).join('')}</table>`);
+ // ---- APP STORE
+ const sales=d.asc?.sales||[];const tot=k=>sales.reduce((s,x)=>s+Object.values(x.apps).reduce((a,p)=>a+(p[k]||0),0),0);
+ let asc=`<div class="grid">${card(`Downloads · ${sales.length}d`,num(tot('downloads')),'','hero')}${card('New subs / trials',num(tot('new_subs')),`<div class="t mut">${tot('new_subs_paid')} paid · ${tot('new_subs_free')} free/trial</div>`)}${card('Redownloads',num(tot('redownloads')))}${card('Proceeds',usd(tot('proceeds')))}</div>
+  ${sales.length?'':`<div class="err">${esc(d.asc?.sales_note||'No sales data')}</div>`}`;
+ (d.asc?.apps||[]).forEach(a=>{const s=sales.map(x=>x.apps[a.id]||{});const dl=s.map(p=>p.downloads||0),sb=s.map(p=>p.new_subs||0);const n=dl.length;
+  asc+=sec('app-'+a.id,`${icon(a.icon,a.name)} <span>${esc(a.name)}</span> <span class="pill ${esc(a.state)}">${esc((a.state||a.error||'?').replace(/_/g,' '))}</span>`,
+  `<div class="mut small">Version ${esc(a.version)} · App ID ${a.id}${a.public?' · live on App Store':''}</div><div class="grid" style="margin-top:10px">
+  ${card('Downloads · '+n+'d',num(dl.reduce((x,y)=>x+y,0)))}${card('Latest day',num(dl[n-1]),trend(dl[n-1],dl[n-2],'vs prev day'))}${card('New subs · '+n+'d',num(sb.reduce((x,y)=>x+y,0)))}${card('Redownloads',num(s.reduce((x,p)=>x+(p.redownloads||0),0)))}</div>
+  ${dl.some(x=>x)||sb.some(x=>x)?`<div class="chart"><canvas id="cApp${a.id}" height="70"></canvas></div>`:''}`);
+  mk('cApp'+a.id,{type:'bar',data:{labels:sales.map(x=>x.date.slice(5)),datasets:[{label:'Downloads',data:dl,backgroundColor:'#6aa8ff',borderRadius:6},{label:'New subs',data:sb,backgroundColor:'#3ddc97',borderRadius:6}]}})});
+ // ---- ROBLOX
+ let rbx=`<div class="mut small">${esc(d.roblox?.period)} · manual</div><div class="chart"><canvas id="cRbx" height="60"></canvas></div>`;
+ games.forEach(g=>{const x=g.ads||{};rbx+=sec('game-'+g.universe_id,`${icon(g.icon,g.name)} <span>${esc(g.name)}</span>`,
+  `<div class="grid">${card('Avg playtime',g.avg_playtime_min+' min',pctT(g.avg_playtime_change_pct)||(g.note?`<div class="t flat">${esc(g.note)}</div>`:''),'hero')}
+  ${card('DAU',num(g.dau),pctT(g.dau_change_pct))}${g.sessions_per_day!=null?card('Sessions / day',num(g.sessions_per_day)):''}${card('Lifetime visits',num(g.lifetime_visits))}
+  ${g.new_users!=null?card('New users',num(g.new_users)):''}${g.avg_session_min!=null?card('Avg session',g.avg_session_min+' min'):''}${card('Revenue',num(g.revenue)+' R$')}
+  ${card('Ad spend · 28d',usd(g.ad_spend),x.spend_7d!=null?`<div class="t mut">${usd(x.spend_7d)} in last 7d</div>`:'')}</div>
+  ${g.ads?`<h4>Ads · ${esc(x.campaign)}</h4><div class="grid">${card('Impressions',num(x.impressions))}${card('CTR',x.ctr_pct+'%')}${card('Clicks',num(x.clicks))}${card('Plays',num(x.plays))}${card('Cost / play',usd(x.cost_per_play))}${card('Ad playtime',x.ad_playtime_h+' h')}</div>`:''}
+  <div class="mut small" style="margin-top:8px">Universe ${g.universe_id}</div>`)});
+ $('#root').innerHTML=sec('ads','📣 Ads',ads)+sec('appstore','📱 App Store',asc)+sec('roblox','🎮 Roblox',rbx);restore();
+ const dl=m.daily_14d||[];
+ mk('cMeta',{data:{labels:dl.map(x=>x.date_start.slice(5)),datasets:[{type:'bar',label:'Spend $',data:dl.map(x=>+x.spend),backgroundColor:'#6aa8ff',borderRadius:6},{type:'line',label:'Impressions',data:dl.map(x=>+x.impressions),yAxisID:'y1',borderColor:'#3ddc97',tension:.3}]},options:{scales:{y1:{position:'right',grid:{display:false}}}}});
+ mk('cSplit',{type:'bar',data:{labels:['Meta','Apple','Roblox'],datasets:[{label:'Spend 7d $',data:[meta7,apple7,rbx7],backgroundColor:['#6aa8ff','#c9ced8','#3ddc97'],borderRadius:8}]},options:{indexAxis:'y',plugins:{legend:{display:false}}}});
+ mk('cRbx',{type:'bar',data:{labels:games.map(g=>g.name.length>22?g.name.slice(0,22)+'…':g.name),datasets:[{label:'Avg playtime (min)',data:games.map(g=>g.avg_playtime_min),backgroundColor:'#6aa8ff',borderRadius:8},{label:'DAU',data:games.map(g=>g.dau),backgroundColor:'#3ddc97',borderRadius:8}]}});
+}
+async function load(){const b=$('#refresh');b.textContent='⟳ Loading…';try{const r=await fetch('data.json?t='+Date.now(),{cache:'no-store'});render(await r.json())}catch(e){$('#errs').innerHTML=`<div class="err">Failed to load data.json: ${esc(e)}</div>`}b.textContent='⟳ Refresh'}
+load();
 </script></body></html>

@@ -1,8 +1,99 @@
 {
-  "apple_ads": {"as_of": "2026-10-15", "source": "manual (browser)", "campaigns": [
-    {"name": "LaneSync - US - Search", "status": "Running", "daily_budget": 90.0, "last_7d_spend": 0.0, "last_7d_impressions": 148}]},
-  "roblox": {"period": "2026-10-08 to 2026-10-14", "source": "manual (browser)", "games": [
-    {"name": "Crash a Car", "universe_id": 10769917513, "avg_playtime_min": 4.1, "avg_playtime_change_pct": null, "dau": 30, "dau_change_pct": null, "sessions_per_day": 35, "lifetime_visits": 247, "new_users": 28, "avg_session_min": 3.5, "revenue": 0, "note": "no trend yet"},
-    {"name": "Infection", "universe_id": 10520154400, "avg_playtime_min": 2.0, "avg_playtime_change_pct": -12.8, "dau": 0, "dau_change_pct": -99.2, "lifetime_visits": 1122, "revenue": 0},
-    {"name": "Ghosts In The Graveyard - Insane Asylum", "universe_id": 10308497838, "avg_playtime_min": 1.9, "avg_playtime_change_pct": -36.9, "dau": 1, "dau_change_pct": -98.7, "lifetime_visits": 377, "revenue": 0}]}
+ "apple_ads": {
+  "as_of": "2026-10-15",
+  "source": "manual (browser)",
+  "campaigns": [
+   {
+    "name": "LaneSync - US - Search",
+    "status": "Running",
+    "daily_budget": 90.0,
+    "last_7d_spend": 0.0,
+    "last_7d_impressions": 148,
+    "app_id": "6805914932"
+   }
+  ]
+ },
+ "roblox": {
+  "period": "2026-10-08 to 2026-10-14",
+  "source": "manual (browser)",
+  "games": [
+   {
+    "name": "Crash a Car",
+    "universe_id": 10769917513,
+    "avg_playtime_min": 4.1,
+    "avg_playtime_change_pct": null,
+    "dau": 30,
+    "dau_change_pct": null,
+    "sessions_per_day": 35,
+    "lifetime_visits": 247,
+    "new_users": 28,
+    "avg_session_min": 3.5,
+    "revenue": 0,
+    "note": "no trend yet",
+    "ad_spend": 57.57,
+    "ads": {
+     "spend_28d": 57.57,
+     "spend_7d": 57.57,
+     "impressions": 35800,
+     "ctr_pct": 1.2,
+     "clicks": 426,
+     "plays": 209,
+     "cost_per_play": 0.275,
+     "ad_playtime_h": 14.9,
+     "campaign": "Oct 9-13, completed"
+    }
+   },
+   {
+    "name": "Infection",
+    "universe_id": 10520154400,
+    "avg_playtime_min": 2.0,
+    "avg_playtime_change_pct": -12.8,
+    "dau": 0,
+    "dau_change_pct": -99.2,
+    "lifetime_visits": 1122,
+    "revenue": 0,
+    "ad_spend": 83.21,
+    "ads": {
+     "spend_28d": 83.21,
+     "spend_7d": 0,
+     "impressions": 70635,
+     "ctr_pct": 1.4,
+     "clicks": 1021,
+     "plays": 368,
+     "cost_per_play": 0.226,
+     "ad_playtime_h": 16.5,
+     "campaign": "Ended Oct 5"
+    }
+   },
+   {
+    "name": "Ghosts In The Graveyard - Insane Asylum",
+    "universe_id": 10308497838,
+    "avg_playtime_min": 1.9,
+    "avg_playtime_change_pct": -36.9,
+    "dau": 1,
+    "dau_change_pct": -98.7,
+    "lifetime_visits": 377,
+    "revenue": 0,
+    "ad_spend": 68.48,
+    "ads": {
+     "spend_28d": 68.48,
+     "spend_7d": 0,
+     "impressions": 65491,
+     "ctr_pct": 1.5,
+     "clicks": 998,
+     "plays": 316,
+     "cost_per_play": 0.217,
+     "ad_playtime_h": 13.6,
+     "campaign": "Ended Oct 5"
+    }
+   }
+  ]
+ },
+ "roblox_ads": {
+  "source": "Roblox Ads Manager (manual)",
+  "period": "last 28 days",
+  "currency": "USD",
+  "total_spend_28d": 209.24,
+  "total_spend_7d": 57.57
+ }
 }

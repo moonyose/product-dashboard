@@ -44,25 +44,53 @@ def asc():
                          created=v.get("createdDate"))
         except Exception as x: e["error"] = str(x)
         res["apps"].append(e)
+    os.makedirs(f"{B}/docs/icons", exist_ok=True)
+    for e in res["apps"]:
+        url = None
+        try:
+            j = requests.get(f"https://itunes.apple.com/lookup?id={e['id']}", timeout=20).json()
+            if j.get("resultCount"): url = j["results"][0].get("artworkUrl512"); e["public"] = True
+            if not url:
+                bj = requests.get(f"https://api.appstoreconnect.apple.com/v1/apps/{e['id']}/builds", headers=H,
+                                  params={"limit": 1, "fields[builds]": "iconAssetToken"}, timeout=30).json()
+                tok = (bj.get("data") or [{}])[0].get("attributes", {}).get("iconAssetToken")
+                if tok: url = tok["templateUrl"].replace("{w}", "256").replace("{h}", "256").replace("{f}", "png")
+            if url:
+                open(f"{B}/docs/icons/app_{e['id']}.png", "wb").write(requests.get(url, timeout=30).content)
+                e["icon"] = f"icons/app_{e['id']}.png"
+        except Exception as x: e["icon_error"] = str(x)
     vendor = env.get("ASC_VENDOR_NUMBER")
     if not vendor:
         res["sales_note"] = "Vendor number not available via API; add ASC_VENDOR_NUMBER to secrets/asc.env"
         return res
     days = []
-    for back in range(1, 8):
+    for back in range(1, 12):
+        if len(days) >= 7: break
         d = (dt.date.today() - dt.timedelta(days=back)).isoformat()
         r = requests.get("https://api.appstoreconnect.apple.com/v1/salesReports", headers=H, timeout=60, params={
             "filter[frequency]": "DAILY", "filter[reportType]": "SALES", "filter[reportSubType]": "SUMMARY",
             "filter[vendorNumber]": vendor, "filter[reportDate]": d, "filter[version]": "1_1"})
         if r.status_code != 200: continue
         rows = list(csv.DictReader(io.StringIO(gzip.decompress(r.content).decode()), delimiter="\t"))
-        per = {}
+        sku2app = {row["SKU"]: row["Apple Identifier"] for row in rows if not row.get("Parent Identifier", "").strip()}
+        per = {aid: {"downloads": 0, "redownloads": 0, "new_subs": 0, "new_subs_paid": 0, "new_subs_free": 0, "renewals": 0, "proceeds": 0.0} for aid in apps}
         for row in rows:
-            a = row.get("Apple Identifier"); ty = row.get("Product Type Identifier", ""); u = int(float(row.get("Units") or 0))
-            p = per.setdefault(a, {"downloads": 0, "subscriptions": 0, "title": row.get("Title")})
-            if ty.startswith("IA") or ty.startswith("IAY"): p["subscriptions"] += u
-            elif ty in ("1", "1F", "1T", "F1"): p["downloads"] += u
+            ty = row.get("Product Type Identifier", "").strip(); u = int(float(row.get("Units") or 0))
+            parent = row.get("Parent Identifier", "").strip()
+            aid = sku2app.get(parent, parent) if parent else row["Apple Identifier"]
+            p = per.setdefault(aid, {"downloads": 0, "redownloads": 0, "new_subs": 0, "new_subs_paid": 0, "new_subs_free": 0, "renewals": 0, "proceeds": 0.0})
+            p["proceeds"] += u * float(row.get("Developer Proceeds") or 0)
+            if ty in ("1", "1F", "1T", "F1", "1E", "1EP", "1EU"): p["downloads"] += u
+            elif ty in ("3", "3F", "3T", "F3"): p["redownloads"] += u
+            elif ty.startswith("IA") or ty.startswith("FI"):
+                sub = row.get("Subscription", "").strip()
+                if sub == "Renewal": p["renewals"] += u
+                else:
+                    p["new_subs"] += u
+                    if float(row.get("Customer Price") or 0) > 0: p["new_subs_paid"] += u
+                    else: p["new_subs_free"] += u
         days.append({"date": d, "apps": per})
+    days.reverse()
     res["sales"] = days
     if not days: res["sales_note"] = "No daily SALES reports returned for last 7 days"
     return res
@@ -71,5 +99,16 @@ for k, fn in (("meta", meta), ("asc", asc)):
     try: out[k] = fn()
     except Exception as x: out[k] = None; out["errors"].append(f"{k}: {x}")
 out.update(json.load(open(f"{B}/data/manual.json")))
+try:
+    ids = ",".join(str(g["universe_id"]) for g in out["roblox"]["games"])
+    j = requests.get(f"https://thumbnails.roblox.com/v1/games/icons?universeIds={ids}&size=256x256&format=Png&isCircular=false", timeout=30).json()
+    os.makedirs(f"{B}/docs/icons", exist_ok=True)
+    m = {str(x["targetId"]): x.get("imageUrl") for x in j.get("data", [])}
+    for g in out["roblox"]["games"]:
+        u = m.get(str(g["universe_id"]))
+        if u:
+            open(f"{B}/docs/icons/rbx_{g['universe_id']}.png", "wb").write(requests.get(u, timeout=30).content)
+            g["icon"] = f"icons/rbx_{g['universe_id']}.png"
+except Exception as x: out["errors"].append(f"roblox icons: {x}")
 json.dump(out, open(f"{B}/docs/data.json", "w"), indent=1)
 print("errors:", out["errors"])

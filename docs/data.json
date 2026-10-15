@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-10-15 13:00 EDT",
+ "updated_at": "2026-10-15 13:30 EDT",
  "errors": [],
  "meta": {
   "today": {
-   "spend": "1.51",
-   "impressions": "90",
+   "spend": "1.71",
+   "impressions": "104",
    "clicks": "0",
    "ctr": "0",
    "date_start": "2026-10-15",
@@ -59,25 +59,157 @@
     "name": "LaneSync - Sprint Timer",
     "version": "1.0.1",
     "state": "PREPARE_FOR_SUBMISSION",
-    "created": "2026-10-14T14:04:32-07:00"
+    "created": "2026-10-14T14:04:32-07:00",
+    "public": true,
+    "icon": "icons/app_6805914932.png"
    },
    {
     "id": "6819824551",
     "name": "StrideLab - Sprint Analysis",
     "version": "1.0",
     "state": "REJECTED",
-    "created": "2026-10-06T11:57:26-07:00"
+    "created": "2026-10-06T11:57:26-07:00",
+    "icon": "icons/app_6819824551.png"
    },
    {
     "id": "6812496973",
     "name": "Miami Beach Transit Tracker",
     "version": "1.0",
     "state": "PREPARE_FOR_SUBMISSION",
-    "created": "2026-09-15T12:51:58-07:00"
+    "created": "2026-09-15T12:51:58-07:00",
+    "icon": "icons/app_6812496973.png"
    }
   ],
-  "sales": null,
-  "sales_note": "Vendor number not available via API; add ASC_VENDOR_NUMBER to secrets/asc.env"
+  "sales": [
+   {
+    "date": "2026-10-11",
+    "apps": {
+     "6805914932": {
+      "downloads": 2,
+      "redownloads": 0,
+      "new_subs": 0,
+      "new_subs_paid": 0,
+      "new_subs_free": 0,
+      "renewals": 0,
+      "proceeds": 0.0
+     },
+     "6819824551": {
+      "downloads": 0,
+      "redownloads": 0,
+      "new_subs": 0,
+      "new_subs_paid": 0,
+      "new_subs_free": 0,
+      "renewals": 0,
+      "proceeds": 0.0
+     },
+     "6812496973": {
+      "downloads": 0,
+      "redownloads": 0,
+      "new_subs": 0,
+      "new_subs_paid": 0,
+      "new_subs_free": 0,
+      "renewals": 0,
+      "proceeds": 0.0
+     }
+    }
+   },
+   {
+    "date": "2026-10-12",
+    "apps": {
+     "6805914932": {
+      "downloads": 17,
+      "redownloads": 4,
+      "new_subs": 9,
+      "new_subs_paid": 0,
+      "new_subs_free": 9,
+      "renewals": 0,
+      "proceeds": 0.0
+     },
+     "6819824551": {
+      "downloads": 0,
+      "redownloads": 0,
+      "new_subs": 0,
+      "new_subs_paid": 0,
+      "new_subs_free": 0,
+      "renewals": 0,
+      "proceeds": 0.0
+     },
+     "6812496973": {
+      "downloads": 0,
+      "redownloads": 0,
+      "new_subs": 0,
+      "new_subs_paid": 0,
+      "new_subs_free": 0,
+      "renewals": 0,
+      "proceeds": 0.0
+     }
+    }
+   },
+   {
+    "date": "2026-10-13",
+    "apps": {
+     "6805914932": {
+      "downloads": 5,
+      "redownloads": 1,
+      "new_subs": 0,
+      "new_subs_paid": 0,
+      "new_subs_free": 0,
+      "renewals": 0,
+      "proceeds": 0.0
+     },
+     "6819824551": {
+      "downloads": 0,
+      "redownloads": 0,
+      "new_subs": 0,
+      "new_subs_paid": 0,
+      "new_subs_free": 0,
+      "renewals": 0,
+      "proceeds": 0.0
+     },
+     "6812496973": {
+      "downloads": 0,
+      "redownloads": 0,
+      "new_subs": 0,
+      "new_subs_paid": 0,
+      "new_subs_free": 0,
+      "renewals": 0,
+      "proceeds": 0.0
+     }
+    }
+   },
+   {
+    "date": "2026-10-14",
+    "apps": {
+     "6805914932": {
+      "downloads": 6,
+      "redownloads": 2,
+      "new_subs": 0,
+      "new_subs_paid": 0,
+      "new_subs_free": 0,
+      "renewals": 0,
+      "proceeds": 0.0
+     },
+     "6819824551": {
+      "downloads": 0,
+      "redownloads": 0,
+      "new_subs": 0,
+      "new_subs_paid": 0,
+      "new_subs_free": 0,
+      "renewals": 0,
+      "proceeds": 0.0
+     },
+     "6812496973": {
+      "downloads": 0,
+      "redownloads": 0,
+      "new_subs": 0,
+      "new_subs_paid": 0,
+      "new_subs_free": 0,
+      "renewals": 0,
+      "proceeds": 0.0
+     }
+    }
+   }
+  ]
  },
  "apple_ads": {
   "as_of": "2026-10-15",
@@ -88,7 +220,8 @@
     "status": "Running",
     "daily_budget": 90.0,
     "last_7d_spend": 0.0,
-    "last_7d_impressions": 148
+    "last_7d_impressions": 148,
+    "app_id": "6805914932"
    }
   ]
  },
@@ -108,7 +241,20 @@
     "new_users": 28,
     "avg_session_min": 3.5,
     "revenue": 0,
-    "note": "no trend yet"
+    "note": "no trend yet",
+    "ad_spend": 57.57,
+    "ads": {
+     "spend_28d": 57.57,
+     "spend_7d": 57.57,
+     "impressions": 35800,
+     "ctr_pct": 1.2,
+     "clicks": 426,
+     "plays": 209,
+     "cost_per_play": 0.275,
+     "ad_playtime_h": 14.9,
+     "campaign": "Oct 9-13, completed"
+    },
+    "icon": "icons/rbx_10769917513.png"
    },
    {
     "name": "Infection",
@@ -118,7 +264,20 @@
     "dau": 0,
     "dau_change_pct": -99.2,
     "lifetime_visits": 1122,
-    "revenue": 0
+    "revenue": 0,
+    "ad_spend": 83.21,
+    "ads": {
+     "spend_28d": 83.21,
+     "spend_7d": 0,
+     "impressions": 70635,
+     "ctr_pct": 1.4,
+     "clicks": 1021,
+     "plays": 368,
+     "cost_per_play": 0.226,
+     "ad_playtime_h": 16.5,
+     "campaign": "Ended Oct 5"
+    },
+    "icon": "icons/rbx_10520154400.png"
    },
    {
     "name": "Ghosts In The Graveyard - Insane Asylum",
@@ -128,8 +287,28 @@
     "dau": 1,
     "dau_change_pct": -98.7,
     "lifetime_visits": 377,
-    "revenue": 0
+    "revenue": 0,
+    "ad_spend": 68.48,
+    "ads": {
+     "spend_28d": 68.48,
+     "spend_7d": 0,
+     "impressions": 65491,
+     "ctr_pct": 1.5,
+     "clicks": 998,
+     "plays": 316,
+     "cost_per_play": 0.217,
+     "ad_playtime_h": 13.6,
+     "campaign": "Ended Oct 5"
+    },
+    "icon": "icons/rbx_10308497838.png"
    }
   ]
+ },
+ "roblox_ads": {
+  "source": "Roblox Ads Manager (manual)",
+  "period": "last 28 days",
+  "currency": "USD",
+  "total_spend_28d": 209.24,
+  "total_spend_7d": 57.57
  }
 }
