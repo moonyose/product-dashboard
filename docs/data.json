@@ -1,13 +1,13 @@
 {
- "updated_at": "2026-10-15 16:53 EDT",
+ "updated_at": "2026-10-15 19:09 EDT",
  "errors": [],
  "meta": {
   "today": {
-   "spend": "3.13",
-   "impressions": "184",
+   "spend": "4.34",
+   "impressions": "262",
    "clicks": "2",
-   "ctr": "1.086957",
-   "cpc": "1.565",
+   "ctr": "0.763359",
+   "cpc": "2.17",
    "date_start": "2026-10-15",
    "date_stop": "2026-10-15"
   },
