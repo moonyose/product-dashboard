@@ -7,7 +7,7 @@
 header{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:20px}header h1{margin:0;font-size:26px;letter-spacing:-.02em}
 .sp{flex:1}.mut{color:var(--mut)}.small{font-size:12px}
 button{background:var(--acc);color:#071022;border:0;border-radius:10px;padding:9px 16px;font-weight:600;cursor:pointer}button:active{transform:scale(.97)}button.ghost{background:var(--panel2);color:var(--txt)}
-details{background:var(--panel);border:1px solid var(--line);border-radius:16px;margin:14px 0;overflow:hidden}
+details{background:var(--panel);border:1px solid var(--line);border-radius:16px;margin:14px 0;min-width:0;max-width:100%}
 details>summary{list-style:none;cursor:pointer;padding:16px 18px;display:flex;align-items:center;gap:12px;font-weight:600;font-size:18px}
 details>summary::-webkit-details-marker{display:none}details>summary::after{content:'▸';margin-left:auto;color:var(--mut);transition:.2s}details[open]>summary::after{transform:rotate(90deg)}
 details .body{padding:0 18px 18px}details details{background:var(--panel2);border-radius:14px}details details>summary{font-size:16px}
@@ -22,6 +22,18 @@ details .body{padding:0 18px 18px}details details{background:var(--panel2);borde
 table{width:100%;border-collapse:collapse;margin-top:10px;font-size:14px}th,td{text-align:left;padding:8px;border-bottom:1px solid var(--line)}th{color:var(--mut);font-weight:500;font-size:12px;text-transform:uppercase}
 .chart{background:var(--panel2);border:1px solid var(--line);border-radius:14px;padding:12px;margin-top:14px}h4{margin:18px 0 6px;color:var(--mut);font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:.06em}
 .err{background:#3a1d1d;color:#ffb3b3;padding:10px 14px;border-radius:10px;margin:10px 0}
+html,body{overflow-x:hidden;max-width:100%}.wrap,.body,.card,.chart,.grid>*{min-width:0;max-width:100%}
+details>summary{flex-wrap:wrap;min-width:0}.card .v{overflow-wrap:anywhere}code{overflow-wrap:anywhere}
+.tw{width:100%;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}.tw table{min-width:520px}
+.chart canvas{max-width:100%}
+@media(max-width:640px){.wrap{padding:16px 10px 40px}details .body{padding:0 10px 12px}details>summary{padding:14px 12px;font-size:16px}
+.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.card.hero{grid-column:1/-1}.card .v{font-size:22px}.card.hero .v{font-size:34px}
+header h1{font-size:21px;width:100%}
+.tw table{min-width:0}.tw table,.tw tbody,.tw tr,.tw td{display:block;width:100%}.tw tr:has(th){display:none}
+.tw tr{background:var(--panel2);border:1px solid var(--line);border-radius:12px;margin:8px 0;padding:6px 10px}
+.tw td{display:flex;justify-content:space-between;gap:12px;border:0;padding:5px 0;text-align:right;overflow-wrap:anywhere}
+.tw td::before{content:attr(data-label);color:var(--mut);font-size:12px;text-transform:uppercase;text-align:left;flex:none}
+.tw td[data-label=""]::before{content:none}.tw td:first-child{font-weight:600}}
 </style></head><body><div class="wrap">
 <header><h1>📊 Product Dashboard</h1><span class="sp"></span><span class="mut small" id="upd">Loading…</span>
 <button class="ghost" onclick="toggleAll(true)">Expand all</button><button class="ghost" onclick="toggleAll(false)">Collapse all</button><button id="refresh" onclick="load()">⟳ Refresh</button></header>
@@ -39,6 +51,8 @@ const icon=(src,name)=>src?`<img class="ico" src="${src}" alt="">`:`<span class=
 function sec(id,title,inner,open=true){return `<details data-id="${id}" ${open?'open':''}><summary>${title}</summary><div class="body">${inner}</div></details>`}
 function restore(){document.querySelectorAll('details[data-id]').forEach(d=>{const s=localStorage.getItem('dash:'+d.dataset.id);if(s!==null)d.open=s==='1';
  d.addEventListener('toggle',()=>{localStorage.setItem('dash:'+d.dataset.id,d.open?'1':'0');charts.forEach(c=>c.resize())})})}
+function tables(){document.querySelectorAll('#root table').forEach(t=>{if(!t.parentElement.classList.contains('tw')){const w=document.createElement('div');w.className='tw';t.before(w);w.append(t)}
+ const h=[...t.querySelectorAll('tr:first-child th')].map(x=>x.textContent);t.querySelectorAll('tr').forEach(r=>[...r.children].forEach((c,i)=>{if(c.tagName==='TD')c.dataset.label=h[i]??''}))})}
 function toggleAll(o){document.querySelectorAll('details[data-id]').forEach(d=>d.open=o)}
 Chart.defaults.color='#8b93a7';Chart.defaults.borderColor='#262c39';Chart.defaults.font.family='Inter,system-ui,sans-serif';
 function mk(id,cfg){setTimeout(()=>{const el=document.getElementById(id);if(el)charts.push(new Chart(el,cfg))},0)}
@@ -84,7 +98,7 @@ function render(d){
   ${card('Ad spend · 28d',usd(g.ad_spend),x.spend_7d!=null?`<div class="t mut">${usd(x.spend_7d)} in last 7d</div>`:'')}</div>
   ${g.ads?`<h4>Ads · ${esc(x.campaign)}</h4><div class="grid">${card('Impressions',num(x.impressions))}${card('CTR',x.ctr_pct+'%')}${card('Clicks',num(x.clicks))}${card('Plays',num(x.plays))}${card('Cost / play',usd(x.cost_per_play))}${card('Ad playtime',x.ad_playtime_h+' h')}</div>`:''}
   <div class="mut small" style="margin-top:8px">Universe ${g.universe_id}</div>`)});
- $('#root').innerHTML=sec('ads','📣 Ads',ads)+sec('appstore','📱 App Store',asc)+sec('roblox','🎮 Roblox',rbx);restore();
+ $('#root').innerHTML=sec('ads','📣 Ads',ads)+sec('appstore','📱 App Store',asc)+sec('roblox','🎮 Roblox',rbx);restore();tables();
  const dl=m.daily_14d||[];
  mk('cMeta',{data:{labels:dl.map(x=>x.date_start.slice(5)),datasets:[{type:'bar',label:'Spend $',data:dl.map(x=>+x.spend),backgroundColor:'#6aa8ff',borderRadius:6},{type:'line',label:'Impressions',data:dl.map(x=>+x.impressions),yAxisID:'y1',borderColor:'#3ddc97',tension:.3}]},options:{scales:{y1:{position:'right',grid:{display:false}}}}});
  mk('cSplit',{type:'bar',data:{labels:['Meta','Apple','Roblox'],datasets:[{label:'Spend 7d $',data:[meta7,apple7,rbx7],backgroundColor:['#6aa8ff','#c9ced8','#3ddc97'],borderRadius:8}]},options:{indexAxis:'y',plugins:{legend:{display:false}}}});
