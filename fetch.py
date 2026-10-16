@@ -8,18 +8,46 @@ out = {"updated_at": dt.datetime.now(ET).strftime("%Y-%m-%d %H:%M %Z"), "errors"
 
 def meta():
     tok = json.load(open(f"{B}/secrets/meta.json"))["access_token"]
-    url = "https://graph.facebook.com/v20.0/act_268221640/insights"
-    f = "spend,impressions,clicks,ctr,cpc"
-    def q(**p):
-        r = requests.get(url, params={"access_token": tok, "fields": f, **p}, timeout=30)
-        j = r.json()
+    G = "https://graph.facebook.com/v20.0/"; ACT = "act_268221640"
+    def get(path, **p):
+        j = requests.get(G + path, params={"access_token": tok, **p}, timeout=30).json()
         if "error" in j: raise RuntimeError(j["error"].get("message"))
-        return j.get("data", [])
-    m = {}
-    for k, p in {"today": "today", "yesterday": "yesterday", "last_7d": "last_7d"}.items():
-        d = q(date_preset=p); m[k] = d[0] if d else {"spend": "0", "impressions": "0", "clicks": "0"}
-    m["daily_14d"] = q(date_preset="last_14d", time_increment=1)
-    m["campaigns_7d"] = q(date_preset="last_7d", level="campaign", fields=f + ",campaign_name")
+        return j
+    acct = get(ACT, fields="timezone_name,currency")
+    tz = ZoneInfo(acct["timezone_name"]); today = dt.datetime.now(tz).date()
+    F = "spend,impressions,reach,clicks,inline_link_clicks,inline_link_click_ctr,ctr,cpm,frequency,actions"
+    def norm(d):
+        d = dict(d or {}); acts = {x["action_type"]: float(x["value"]) for x in d.pop("actions", [])}
+        sp = float(d.get("spend") or 0); lc = int(d.get("inline_link_clicks") or 0); im = int(d.get("impressions") or 0)
+        d.update(spend=sp, impressions=im, reach=int(d.get("reach") or 0), link_clicks=lc, all_clicks=int(d.get("clicks") or 0),
+                 link_ctr=round(lc / im * 100, 3) if im else 0, cost_per_link_click=round(sp / lc, 2) if lc else None,
+                 installs=int(acts.get("mobile_app_install", 0)),
+                 video_views=int(acts.get("video_view", 0)))
+        for k in ("clicks", "inline_link_clicks", "inline_link_click_ctr", "ctr"): d.pop(k, None)
+        return d
+    def ins(level="account", **p):
+        return [norm(x) for x in get(f"{ACT}/insights", fields=F + (",campaign_id,campaign_name" if level == "campaign" else ""),
+                                     level=level, use_unified_attribution_setting="true", limit=100, **p).get("data", [])]
+    def rng(days): return json.dumps({"since": (today - dt.timedelta(days=days - 1)).isoformat(), "until": today.isoformat()})
+    m = {"account_timezone": acct["timezone_name"], "currency": acct.get("currency"),
+         "notes": "Days follow the ad account timezone. 7d/14d include today. Clicks/CTR = link clicks (Ads Manager 'Link clicks', 'CTR (link click-through rate)')."}
+    for k, p in {"today": {"date_preset": "today"}, "yesterday": {"date_preset": "yesterday"},
+                 "last_7d": {"time_range": rng(7)}, "lifetime": {"date_preset": "maximum"}}.items():
+        d = ins(**p); m[k] = d[0] if d else norm({})
+    m["daily_14d"] = ins(time_range=rng(14), time_increment=1)
+    camps = {c["id"]: c for c in get(f"{ACT}/campaigns", fields="name,effective_status,lifetime_budget,daily_budget,budget_remaining,start_time,stop_time", limit=100).get("data", [])}
+    def withc(rows):
+        for r in rows:
+            c = camps.get(r.get("campaign_id"), {})
+            r["status"] = c.get("effective_status")
+            if c.get("lifetime_budget"): r["lifetime_budget"] = int(c["lifetime_budget"]) / 100
+            if c.get("daily_budget"): r["daily_budget"] = int(c["daily_budget"]) / 100
+            if r.get("lifetime_budget"): r["budget_remaining"] = round(r["lifetime_budget"] - r["spend"], 2)
+        return rows
+    m["campaigns_7d"] = withc(ins("campaign", time_range=rng(7)))
+    m["campaigns_lifetime"] = withc(ins("campaign", date_preset="maximum"))
+    lb = [c for c in m["campaigns_lifetime"] if c.get("lifetime_budget")]
+    if lb: m["lifetime"]["lifetime_budget"] = sum(c["lifetime_budget"] for c in lb); m["lifetime"]["budget_remaining"] = sum(c["budget_remaining"] for c in lb)
     return m
 
 def asc():

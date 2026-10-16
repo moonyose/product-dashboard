@@ -34,6 +34,7 @@ header h1{font-size:21px;width:100%}
 .tw td{display:flex;justify-content:space-between;gap:12px;border:0;padding:5px 0;text-align:right;overflow-wrap:anywhere}
 .tw td::before{content:attr(data-label);color:var(--mut);font-size:12px;text-transform:uppercase;text-align:left;flex:none}
 .tw td[data-label=""]::before{content:none}.tw td:first-child{font-weight:600}}
+.pill{max-width:100%;overflow-wrap:anywhere;white-space:normal}details>summary>*{min-width:0}
 </style></head><body><div class="wrap">
 <header><h1>📊 Product Dashboard</h1><span class="sp"></span><span class="mut small" id="upd">Loading…</span>
 <button class="ghost" onclick="toggleAll(true)">Expand all</button><button class="ghost" onclick="toggleAll(false)">Collapse all</button><button id="refresh" onclick="load()">⟳ Refresh</button></header>
@@ -67,13 +68,18 @@ function render(d){
  let ads=`<div class="grid">${card('Total ad spend · 7d',usd(meta7+apple7+rbx7),`<div class="t mut">Meta ${usd(meta7)} · Apple ${usd(apple7)} · Roblox ${usd(rbx7)}</div>`,'hero')}
   ${card('Roblox spend · 28d',usd(ra.total_spend_28d))}${card('Meta spend today',usd(T.spend),trend(T.spend,Y.spend,'vs yesterday'))}</div>
   <div class="chart"><canvas id="cSplit" height="70"></canvas></div>`;
- let metaIn=`<div class="grid">${card('Spend · today',usd(T.spend),trend(T.spend,Y.spend,'vs yday'))}${card('Spend · 7d',usd(W.spend))}
-  ${card('Impressions · today',num(T.impressions),trend(T.impressions,Y.impressions,'vs yday'))}${card('Impressions · 7d',num(W.impressions))}
-  ${card('Clicks · 7d',num(W.clicks),trend(T.clicks,Y.clicks,'today vs yday'))}${card('CTR · 7d',(+W.ctr||0).toFixed(2)+'%')}${card('CPC · 7d',W.cpc?usd(W.cpc):'—')}</div>
+ const L=m.lifetime||{};
+ let metaIn=`<div class="mut small">Days in ad-account time (${esc(m.account_timezone||'')}); 7d = last 7 days incl. today. Clicks &amp; CTR = link clicks.</div>
+  <h4>Lifetime (Maximum)</h4><div class="grid">${card('Amount spent',usd(L.spend),L.lifetime_budget?`<div class="t mut">of ${usd(L.lifetime_budget)} budget</div>`:'','hero')}
+  ${card('Budget remaining',L.budget_remaining!=null?usd(L.budget_remaining):'—')}${card('Reach',num(L.reach))}${card('Impressions',num(L.impressions))}${card('App installs',num(L.installs))}
+  ${card('Link clicks',num(L.link_clicks))}${card('Link CTR',(+L.link_ctr||0).toFixed(2)+'%')}</div>
+  <h4>Today vs yesterday · last 7 days</h4><div class="grid">${card('Spend · today',usd(T.spend),trend(T.spend,Y.spend,'vs yday'))}${card('Spend · 7d (incl. today)',usd(W.spend))}
+  ${card('Impressions · today',num(T.impressions),trend(T.impressions,Y.impressions,'vs yday'))}${card('Impressions · 7d',num(W.impressions))}${card('Reach · 7d',num(W.reach))}
+  ${card('Link clicks · 7d',num(W.link_clicks),`<div class="t mut">${num(W.all_clicks)} clicks (all)</div>`)}${card('Link CTR · 7d',(+W.link_ctr||0).toFixed(2)+'%')}${card('Cost / link click · 7d',W.cost_per_link_click?usd(W.cost_per_link_click):'—')}</div>
   <div class="chart"><canvas id="cMeta" height="80"></canvas></div>`;
- const byApp={};(m.campaigns_7d||[]).forEach(c=>{const a=Object.values(apps).find(a=>c.campaign_name.toLowerCase().includes(a.name.split(' ')[0].toLowerCase()));(byApp[a?.id||'other']??=[]).push(c)});
+ const byApp={};(m.campaigns_lifetime||m.campaigns_7d||[]).forEach(c=>{const a=Object.values(apps).find(a=>c.campaign_name.toLowerCase().includes(a.name.split(' ')[0].toLowerCase()));(byApp[a?.id||'other']??=[]).push(c)});
  for(const[aid,cs]of Object.entries(byApp)){const a=apps[aid];metaIn+=sec('meta-'+aid,`${icon(a?.icon,a?.name||'?')} ${esc(a?.name||'Other')} <span class="pill">${cs.length} campaign${cs.length>1?'s':''}</span>`,
-  `<table><tr><th>Campaign (7d)</th><th>Spend</th><th>Impr.</th><th>Clicks</th><th>CTR</th><th>CPC</th></tr>${cs.map(c=>`<tr><td>${esc(c.campaign_name)}</td><td>${usd(c.spend)}</td><td>${num(c.impressions)}</td><td>${num(c.clicks)}</td><td>${(+c.ctr||0).toFixed(2)}%</td><td>${c.cpc?usd(c.cpc):'—'}</td></tr>`).join('')}</table>`)}
+  `<table><tr><th>Campaign (lifetime)</th><th>Status</th><th>Spent</th><th>Budget left</th><th>Reach</th><th>Impr.</th><th>Link clicks</th><th>Link CTR</th><th>$/link click</th><th>Installs</th></tr>${cs.map(c=>`<tr><td>${esc(c.campaign_name)}</td><td>${esc(c.status||'')}</td><td>${usd(c.spend)}${c.lifetime_budget?' / '+usd(c.lifetime_budget):''}</td><td>${c.budget_remaining!=null?usd(c.budget_remaining):'—'}</td><td>${num(c.reach)}</td><td>${num(c.impressions)}</td><td>${num(c.link_clicks)}</td><td>${(+c.link_ctr||0).toFixed(2)}%</td><td>${c.cost_per_link_click?usd(c.cost_per_link_click):'—'}</td><td>${num(c.installs)}</td></tr>`).join('')}</table>`)}
  ads+=sec('meta','<span>Ⓜ️ Meta Ads</span>',metaIn);
  const aBy={};aa.campaigns.forEach(c=>(aBy[c.app_id||'other']??=[]).push(c));let appleIn='';
  for(const[aid,cs]of Object.entries(aBy)){const a=apps[aid];appleIn+=sec('apple-'+aid,`${icon(a?.icon,a?.name||'?')} ${esc(a?.name||'Other')}`,

@@ -1,7 +1,7 @@
 {
  "apple_ads": {
   "as_of": "2026-10-15",
-  "source": "manual (browser)",
+  "source": "manual (browser) \u2014 refresh blocked 2026-10-16 (Apple ID sign-in needed)",
   "campaigns": [
    {
     "name": "LaneSync - US - Search",
@@ -15,7 +15,7 @@
  },
  "roblox": {
   "period": "2026-10-08 to 2026-10-14",
-  "source": "manual (browser)",
+  "source": "manual (browser) Creator Engagement last 7 days",
   "games": [
    {
     "name": "Crash a Car",
@@ -29,18 +29,18 @@
     "new_users": 28,
     "avg_session_min": 3.5,
     "revenue": 0,
-    "note": "no trend yet",
-    "ad_spend": 57.57,
+    "note": "no prior-period % yet; only active ad campaign last 7d",
+    "ad_spend": 57.52,
     "ads": {
-     "spend_28d": 57.57,
-     "spend_7d": 57.57,
-     "impressions": 35800,
+     "spend_28d": 57.52,
+     "spend_7d": 47.66,
+     "impressions": 35747,
      "ctr_pct": 1.2,
      "clicks": 426,
-     "plays": 209,
-     "cost_per_play": 0.275,
-     "ad_playtime_h": 14.9,
-     "campaign": "Oct 9-13, completed"
+     "plays": 217,
+     "cost_per_play": 0.265,
+     "ad_playtime_h": 15.2,
+     "campaign": "Crash a Car_10082026, completed; 7d spend $47.66"
     }
    },
    {
@@ -59,10 +59,10 @@
      "impressions": 70635,
      "ctr_pct": 1.4,
      "clicks": 1021,
-     "plays": 368,
-     "cost_per_play": 0.226,
+     "plays": 370,
+     "cost_per_play": 0.225,
      "ad_playtime_h": 16.5,
-     "campaign": "Ended Oct 5"
+     "campaign": "Campaign 2 (Gameplay Update), completed; no 7d spend"
     }
    },
    {
@@ -84,7 +84,7 @@
      "plays": 316,
      "cost_per_play": 0.217,
      "ad_playtime_h": 13.6,
-     "campaign": "Ended Oct 5"
+     "campaign": "Campaign_1, completed; no 7d spend"
     }
    }
   ]
@@ -93,7 +93,7 @@
   "source": "Roblox Ads Manager (manual)",
   "period": "last 28 days",
   "currency": "USD",
-  "total_spend_28d": 209.24,
-  "total_spend_7d": 57.57
+  "total_spend_28d": 209.2,
+  "total_spend_7d": 47.66
  }
 }
