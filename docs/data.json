@@ -1,16 +1,16 @@
 {
- "updated_at": "2026-10-16 13:35 EDT",
+ "updated_at": "2026-10-16 14:37 EDT",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
   "currency": "USD",
   "notes": "Days follow the ad account timezone. 7d/14d include today. Clicks/CTR = link clicks (Ads Manager 'Link clicks', 'CTR (link click-through rate)').",
   "today": {
-   "spend": 2.52,
-   "impressions": 127,
-   "reach": 111,
-   "cpm": "19.84252",
-   "frequency": "1.144144",
+   "spend": 2.83,
+   "impressions": 151,
+   "reach": 123,
+   "cpm": "18.741722",
+   "frequency": "1.227642",
    "date_start": "2026-10-16",
    "date_stop": "2026-10-16",
    "link_clicks": 0,
@@ -18,7 +18,7 @@
    "link_ctr": 0.0,
    "cost_per_link_click": null,
    "installs": 0,
-   "video_views": 24
+   "video_views": 28
   },
   "yesterday": {
    "spend": 8.26,
@@ -36,36 +36,36 @@
    "video_views": 113
   },
   "last_7d": {
-   "spend": 15.31,
-   "impressions": 950,
-   "reach": 634,
-   "cpm": "16.115789",
-   "frequency": "1.498423",
+   "spend": 15.62,
+   "impressions": 974,
+   "reach": 640,
+   "cpm": "16.036961",
+   "frequency": "1.521875",
    "date_start": "2026-10-10",
    "date_stop": "2026-10-16",
    "link_clicks": 4,
    "all_clicks": 6,
-   "link_ctr": 0.421,
-   "cost_per_link_click": 3.83,
+   "link_ctr": 0.411,
+   "cost_per_link_click": 3.9,
    "installs": 0,
-   "video_views": 197
+   "video_views": 201
   },
   "lifetime": {
-   "spend": 15.31,
-   "impressions": 950,
-   "reach": 643,
-   "cpm": "16.115789",
-   "frequency": "1.477449",
+   "spend": 15.62,
+   "impressions": 974,
+   "reach": 650,
+   "cpm": "16.036961",
+   "frequency": "1.498462",
    "date_start": "2023-09-16",
    "date_stop": "2026-10-16",
    "link_clicks": 4,
    "all_clicks": 6,
-   "link_ctr": 0.421,
-   "cost_per_link_click": 3.83,
+   "link_ctr": 0.411,
+   "cost_per_link_click": 3.9,
    "installs": 0,
-   "video_views": 197,
+   "video_views": 201,
    "lifetime_budget": 50.0,
-   "budget_remaining": 34.69
+   "budget_remaining": 34.38
   },
   "daily_14d": [
    {
@@ -99,11 +99,11 @@
     "video_views": 113
    },
    {
-    "spend": 2.52,
-    "impressions": 127,
-    "reach": 111,
-    "cpm": "19.84252",
-    "frequency": "1.144144",
+    "spend": 2.83,
+    "impressions": 151,
+    "reach": 123,
+    "cpm": "18.741722",
+    "frequency": "1.227642",
     "date_start": "2026-10-16",
     "date_stop": "2026-10-16",
     "link_clicks": 0,
@@ -111,51 +111,51 @@
     "link_ctr": 0.0,
     "cost_per_link_click": null,
     "installs": 0,
-    "video_views": 24
+    "video_views": 28
    }
   ],
   "campaigns_7d": [
    {
-    "spend": 15.31,
-    "impressions": 950,
-    "reach": 634,
-    "cpm": "16.115789",
-    "frequency": "1.498423",
+    "spend": 15.62,
+    "impressions": 974,
+    "reach": 640,
+    "cpm": "16.036961",
+    "frequency": "1.521875",
     "campaign_id": "52589865683494",
     "campaign_name": "LaneSync | US | $50 total video test",
     "date_start": "2026-10-10",
     "date_stop": "2026-10-16",
     "link_clicks": 4,
     "all_clicks": 6,
-    "link_ctr": 0.421,
-    "cost_per_link_click": 3.83,
+    "link_ctr": 0.411,
+    "cost_per_link_click": 3.9,
     "installs": 0,
-    "video_views": 197,
+    "video_views": 201,
     "status": "ACTIVE",
     "lifetime_budget": 50.0,
-    "budget_remaining": 34.69
+    "budget_remaining": 34.38
    }
   ],
   "campaigns_lifetime": [
    {
-    "spend": 15.31,
-    "impressions": 950,
-    "reach": 643,
-    "cpm": "16.115789",
-    "frequency": "1.477449",
+    "spend": 15.62,
+    "impressions": 974,
+    "reach": 650,
+    "cpm": "16.036961",
+    "frequency": "1.498462",
     "campaign_id": "52589865683494",
     "campaign_name": "LaneSync | US | $50 total video test",
     "date_start": "2023-09-16",
     "date_stop": "2026-10-16",
     "link_clicks": 4,
     "all_clicks": 6,
-    "link_ctr": 0.421,
-    "cost_per_link_click": 3.83,
+    "link_ctr": 0.411,
+    "cost_per_link_click": 3.9,
     "installs": 0,
-    "video_views": 197,
+    "video_views": 201,
     "status": "ACTIVE",
     "lifetime_budget": 50.0,
-    "budget_remaining": 34.69
+    "budget_remaining": 34.38
    }
   ]
  },
@@ -165,7 +165,7 @@
     "id": "6805914932",
     "name": "LaneSync - Sprint Timer",
     "version": "1.0.1",
-    "state": "IN_REVIEW",
+    "state": "READY_FOR_SALE",
     "created": "2026-10-14T14:04:32-07:00",
     "public": true,
     "icon": "icons/app_6805914932.png"
