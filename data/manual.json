@@ -1,15 +1,47 @@
 {
  "apple_ads": {
-  "as_of": "2026-10-15",
-  "source": "manual (browser) \u2014 refresh blocked 2026-10-16 (Apple ID sign-in needed)",
+  "as_of": "2026-10-16 ~1 PM ET",
+  "source": "manual (browser)",
+  "note": "Apple reports in UTC, ~3h delay",
   "campaigns": [
    {
     "name": "LaneSync - US - Search",
+    "app_id": "6805914932",
     "status": "Running",
+    "bid_strategy": "Maximize Conversions",
+    "target_cpa": 3.0,
     "daily_budget": 90.0,
-    "last_7d_spend": 0.0,
-    "last_7d_impressions": 148,
-    "app_id": "6805914932"
+    "placement": "US Search Results",
+    "last_7d": {
+     "spend": 2.35,
+     "impressions": 363,
+     "taps": 3,
+     "ttr_pct": 0.83,
+     "installs": 0,
+     "cpt": 0.78,
+     "cpm": 6.47
+    },
+    "yesterday": {
+     "date": "2026-10-15",
+     "spend": 2.35,
+     "impressions": 215,
+     "taps": 3,
+     "ttr_pct": 1.4,
+     "installs": 0,
+     "cpt": 0.78
+    },
+    "lifetime": {
+     "spend": 2.89,
+     "impressions": 455,
+     "taps": 4,
+     "ttr_pct": 0.88,
+     "installs": 1,
+     "cpa": 2.89,
+     "cpt": 0.72,
+     "cr_pct": 25
+    },
+    "last_7d_spend": 2.35,
+    "last_7d_impressions": 363
    }
   ]
  },

@@ -63,7 +63,7 @@ function render(d){
  $('#upd').textContent='Last updated: '+d.updated_at;$('#errs').innerHTML=(d.errors||[]).map(e=>`<div class="err">⚠ ${esc(e)}</div>`).join('');
  const apps=Object.fromEntries((d.asc?.apps||[]).map(a=>[a.id,a]));const m=d.meta||{},T=m.today||{},Y=m.yesterday||{},W=m.last_7d||{};
  const aa=d.apple_ads||{campaigns:[]},ra=d.roblox_ads||{},games=d.roblox?.games||[];
- const apple7=aa.campaigns.reduce((s,c)=>s+(+c.last_7d_spend||0),0), meta7=+W.spend||0, rbx7=+ra.total_spend_7d||0;
+ const apple7=aa.campaigns.reduce((s,c)=>s+(+(c.last_7d?.spend??c.last_7d_spend)||0),0), meta7=+W.spend||0, rbx7=+ra.total_spend_7d||0;
  // ---- ADS
  let ads=`<div class="grid">${card('Total ad spend · 7d',usd(meta7+apple7+rbx7),`<div class="t mut">Meta ${usd(meta7)} · Apple ${usd(apple7)} · Roblox ${usd(rbx7)}</div>`,'hero')}
   ${card('Roblox spend · 28d',usd(ra.total_spend_28d))}${card('Meta spend today',usd(T.spend),trend(T.spend,Y.spend,'vs yesterday'))}</div>
@@ -83,7 +83,8 @@ function render(d){
  ads+=sec('meta','<span>Ⓜ️ Meta Ads</span>',metaIn);
  const aBy={};aa.campaigns.forEach(c=>(aBy[c.app_id||'other']??=[]).push(c));let appleIn='';
  for(const[aid,cs]of Object.entries(aBy)){const a=apps[aid];appleIn+=sec('apple-'+aid,`${icon(a?.icon,a?.name||'?')} ${esc(a?.name||'Other')}`,
-  cs.map(c=>`<div class="mut small">${esc(c.name)} · <span class="pill READY_FOR_SALE">${esc(c.status)}</span></div><div class="grid" style="margin-top:10px">${card('Daily budget',usd(c.daily_budget))}${card('Spend · 7d',usd(c.last_7d_spend))}${card('Impressions · 7d',num(c.last_7d_impressions))}</div>`).join(''))}
+  cs.map(c=>{const s=(t,x)=>x?`<h4>${t}</h4><div class="grid">${card('Spend',usd(x.spend),'',t==='Lifetime'?'hero':'')}${card('Impressions',num(x.impressions))}${card('Taps',num(x.taps))}${card('TTR',x.ttr_pct!=null?x.ttr_pct+'%':'—')}${card('Installs',num(x.installs))}${card('Avg CPT',x.cpt!=null?usd(x.cpt):'—')}${x.cpm!=null?card('CPM',usd(x.cpm)):''}${x.cpa!=null?card('CPA',usd(x.cpa)):''}${x.cr_pct!=null?card('Conv. rate',x.cr_pct+'%'):''}</div>`:'';
+  return `<div class="mut small">${esc(c.name)} · <span class="pill READY_FOR_SALE">${esc(c.status)}</span> · ${esc(c.bid_strategy||'')}${c.target_cpa?' · target CPA '+usd(c.target_cpa):''} · ${usd(c.daily_budget)}/day · ${esc(c.placement||'')}</div>`+(c.last_7d||c.yesterday||c.lifetime?s('Last 7 days',c.last_7d)+s('Yesterday'+(c.yesterday?.date?' ('+c.yesterday.date+')':''),c.yesterday)+s('Lifetime',c.lifetime):`<div class="grid" style="margin-top:10px">${card('Daily budget',usd(c.daily_budget))}${card('Spend · 7d',usd(c.last_7d_spend))}${card('Impressions · 7d',num(c.last_7d_impressions))}</div>`)}).join(''))}
  ads+=sec('apple',`<span> Apple Ads</span> <span class="mut small">as of ${esc(aa.as_of)} · manual</span>`,appleIn);
  ads+=sec('rbxads',`<span>🎮 Roblox Ads</span> <span class="mut small">${esc(ra.period||'')} · manual</span>`,`<table><tr><th></th><th>Game</th><th>Spend 28d</th><th>Spend 7d</th><th>Impr.</th><th>CTR</th><th>Clicks</th><th>Plays</th><th>$/play</th><th>Playtime/ad play</th><th>Status</th></tr>${games.map(g=>{const x=g.ads||{};return `<tr><td>${icon(g.icon,g.name)}</td><td>${esc(g.name)}</td><td>${usd(x.spend_28d)}</td><td>${usd(x.spend_7d)}</td><td>${num(x.impressions)}</td><td>${x.ctr_pct??'—'}%</td><td>${num(x.clicks)}</td><td>${num(x.plays)}</td><td>${usd(x.cost_per_play)}</td><td>${fm(ppp(g))}</td><td class="mut">${esc(x.campaign)}</td></tr>`}).join('')}</table>`);
  // ---- APP STORE
