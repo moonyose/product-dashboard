@@ -1,16 +1,16 @@
 {
- "updated_at": "2026-10-17 13:09 EDT",
+ "updated_at": "2026-10-17 13:12 EDT",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
   "currency": "USD",
   "notes": "Days follow the ad account timezone. 7d/14d include today. Clicks/CTR = link clicks (Ads Manager 'Link clicks', 'CTR (link click-through rate)').",
   "today": {
-   "spend": 2.99,
-   "impressions": 164,
-   "reach": 147,
-   "cpm": "18.231707",
-   "frequency": "1.115646",
+   "spend": 3.0,
+   "impressions": 165,
+   "reach": 149,
+   "cpm": "18.181818",
+   "frequency": "1.107383",
    "date_start": "2026-10-17",
    "date_stop": "2026-10-17",
    "link_clicks": 0,
@@ -51,21 +51,21 @@
    "video_views": 321
   },
   "lifetime": {
-   "spend": 26.07,
-   "impressions": 1573,
-   "reach": 996,
-   "cpm": "16.573427",
-   "frequency": "1.579317",
+   "spend": 26.08,
+   "impressions": 1574,
+   "reach": 998,
+   "cpm": "16.56925",
+   "frequency": "1.577154",
    "date_start": "2023-09-17",
    "date_stop": "2026-10-17",
    "link_clicks": 6,
    "all_clicks": 10,
    "link_ctr": 0.381,
-   "cost_per_link_click": 4.34,
+   "cost_per_link_click": 4.35,
    "installs": 0,
    "video_views": 321,
    "lifetime_budget": 50.0,
-   "budget_remaining": 23.93
+   "budget_remaining": 23.92
   },
   "daily_14d": [
    {
@@ -114,11 +114,11 @@
     "video_views": 120
    },
    {
-    "spend": 2.99,
-    "impressions": 164,
-    "reach": 147,
-    "cpm": "18.231707",
-    "frequency": "1.115646",
+    "spend": 3.0,
+    "impressions": 165,
+    "reach": 149,
+    "cpm": "18.181818",
+    "frequency": "1.107383",
     "date_start": "2026-10-17",
     "date_stop": "2026-10-17",
     "link_clicks": 0,
@@ -131,11 +131,11 @@
   ],
   "campaigns_7d": [
    {
-    "spend": 26.07,
-    "impressions": 1573,
-    "reach": 985,
-    "cpm": "16.573427",
-    "frequency": "1.596954",
+    "spend": 26.08,
+    "impressions": 1574,
+    "reach": 987,
+    "cpm": "16.56925",
+    "frequency": "1.594732",
     "campaign_id": "52589865683494",
     "campaign_name": "LaneSync | US | $50 total video test",
     "date_start": "2026-10-11",
@@ -143,21 +143,21 @@
     "link_clicks": 6,
     "all_clicks": 10,
     "link_ctr": 0.381,
-    "cost_per_link_click": 4.34,
+    "cost_per_link_click": 4.35,
     "installs": 0,
     "video_views": 321,
     "status": "ACTIVE",
     "lifetime_budget": 50.0,
-    "budget_remaining": 23.93
+    "budget_remaining": 23.92
    }
   ],
   "campaigns_lifetime": [
    {
-    "spend": 26.07,
-    "impressions": 1573,
-    "reach": 996,
-    "cpm": "16.573427",
-    "frequency": "1.579317",
+    "spend": 26.08,
+    "impressions": 1574,
+    "reach": 998,
+    "cpm": "16.56925",
+    "frequency": "1.577154",
     "campaign_id": "52589865683494",
     "campaign_name": "LaneSync | US | $50 total video test",
     "date_start": "2023-09-17",
@@ -165,12 +165,12 @@
     "link_clicks": 6,
     "all_clicks": 10,
     "link_ctr": 0.381,
-    "cost_per_link_click": 4.34,
+    "cost_per_link_click": 4.35,
     "installs": 0,
     "video_views": 321,
     "status": "ACTIVE",
     "lifetime_budget": 50.0,
-    "budget_remaining": 23.93
+    "budget_remaining": 23.92
    }
   ]
  },
@@ -445,44 +445,55 @@
   ]
  },
  "roblox": {
-  "period": "2026-10-08 to 2026-10-14",
+  "period": "2026-10-10 to 2026-10-16 (last 7 days)",
   "source": "manual (browser) Creator Engagement last 7 days",
   "games": [
    {
     "name": "Crash a Car",
     "universe_id": 10769917513,
-    "avg_playtime_min": 4.1,
+    "avg_playtime_min": 5.3,
     "avg_playtime_change_pct": null,
-    "dau": 30,
+    "dau": 27,
     "dau_change_pct": null,
-    "sessions_per_day": 35,
+    "sessions_per_day": 31,
     "lifetime_visits": 247,
-    "new_users": 28,
-    "avg_session_min": 3.5,
+    "new_users": 24,
+    "avg_session_min": 3.8,
     "revenue": 0,
-    "note": "no prior-period % yet; only active ad campaign last 7d",
+    "note": "Trending up vs prior period (new game; % not meaningful)",
     "ad_spend": 57.52,
     "ads": {
      "spend_28d": 57.52,
-     "spend_7d": 47.66,
+     "spend_7d": 36.07,
      "impressions": 35747,
      "ctr_pct": 1.2,
      "clicks": 426,
-     "plays": 217,
-     "cost_per_play": 0.265,
+     "plays": 218,
+     "cost_per_play": 0.264,
      "ad_playtime_h": 15.2,
-     "campaign": "Crash a Car_10082026, completed; 7d spend $47.66"
+     "campaign": "Completed"
     },
-    "ads_playtime_per_play_min": 4.2,
+    "returning_users": 3,
+    "mau": 162,
+    "ads_7d": {
+     "spend": 36.07,
+     "impressions": 20292,
+     "ctr_pct": 1.2,
+     "clicks": 242,
+     "plays": 140,
+     "cost_per_play": 0.258,
+     "ad_playtime_h": 9.7
+    },
+    "ads_playtime_per_play_min": 4.18,
     "icon": "icons/rbx_10769917513.png"
    },
    {
     "name": "Infection",
     "universe_id": 10520154400,
     "avg_playtime_min": 2.0,
-    "avg_playtime_change_pct": -12.8,
+    "avg_playtime_change_pct": null,
     "dau": 0,
-    "dau_change_pct": -99.2,
+    "dau_change_pct": -98.6,
     "lifetime_visits": 1122,
     "revenue": 0,
     "ad_spend": 83.21,
@@ -495,18 +506,25 @@
      "plays": 370,
      "cost_per_play": 0.225,
      "ad_playtime_h": 16.5,
-     "campaign": "Campaign 2 (Gameplay Update), completed; no 7d spend"
+     "campaign": "Completed"
     },
+    "sessions_per_day": 0,
+    "new_users": null,
+    "returning_users": null,
+    "avg_session_min": 1.9,
+    "mau": 98,
+    "note": null,
+    "ads_7d": null,
     "ads_playtime_per_play_min": 2.68,
     "icon": "icons/rbx_10520154400.png"
    },
    {
     "name": "Ghosts In The Graveyard - Insane Asylum",
     "universe_id": 10308497838,
-    "avg_playtime_min": 1.9,
-    "avg_playtime_change_pct": -36.9,
+    "avg_playtime_min": 2.7,
+    "avg_playtime_change_pct": null,
     "dau": 1,
-    "dau_change_pct": -98.7,
+    "dau_change_pct": -96.8,
     "lifetime_visits": 377,
     "revenue": 0,
     "ad_spend": 68.48,
@@ -516,12 +534,19 @@
      "impressions": 65491,
      "ctr_pct": 1.5,
      "clicks": 998,
-     "plays": 316,
-     "cost_per_play": 0.217,
+     "plays": 317,
+     "cost_per_play": 0.216,
      "ad_playtime_h": 13.6,
-     "campaign": "Campaign_1, completed; no 7d spend"
+     "campaign": "Completed"
     },
-    "ads_playtime_per_play_min": 2.58,
+    "sessions_per_day": 1,
+    "new_users": 1,
+    "returning_users": null,
+    "avg_session_min": 2.5,
+    "mau": 187,
+    "note": null,
+    "ads_7d": null,
+    "ads_playtime_per_play_min": 2.57,
     "icon": "icons/rbx_10308497838.png"
    }
   ]
@@ -531,6 +556,8 @@
   "period": "last 28 days",
   "currency": "USD",
   "total_spend_28d": 209.2,
-  "total_spend_7d": 47.66
+  "total_spend_7d": 36.07,
+  "as_of": "2026-10-17",
+  "note": "All campaigns completed. Roblox ad metrics may lag up to 48h."
  }
 }
