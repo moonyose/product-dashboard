@@ -1,16 +1,16 @@
 {
- "updated_at": "2026-10-16 19:34 EDT",
+ "updated_at": "2026-10-16 20:35 EDT",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
   "currency": "USD",
   "notes": "Days follow the ad account timezone. 7d/14d include today. Clicks/CTR = link clicks (Ads Manager 'Link clicks', 'CTR (link click-through rate)').",
   "today": {
-   "spend": 5.92,
-   "impressions": 319,
-   "reach": 271,
-   "cpm": "18.557994",
-   "frequency": "1.177122",
+   "spend": 6.75,
+   "impressions": 378,
+   "reach": 321,
+   "cpm": "17.857143",
+   "frequency": "1.17757",
    "date_start": "2026-10-16",
    "date_stop": "2026-10-16",
    "link_clicks": 0,
@@ -18,7 +18,7 @@
    "link_ctr": 0.0,
    "cost_per_link_click": null,
    "installs": 0,
-   "video_views": 69
+   "video_views": 82
   },
   "yesterday": {
    "spend": 8.26,
@@ -36,36 +36,36 @@
    "video_views": 113
   },
   "last_7d": {
-   "spend": 18.71,
-   "impressions": 1142,
-   "reach": 744,
-   "cpm": "16.383538",
-   "frequency": "1.534946",
+   "spend": 19.54,
+   "impressions": 1201,
+   "reach": 776,
+   "cpm": "16.269775",
+   "frequency": "1.54768",
    "date_start": "2026-10-10",
    "date_stop": "2026-10-16",
    "link_clicks": 4,
    "all_clicks": 7,
-   "link_ctr": 0.35,
-   "cost_per_link_click": 4.68,
+   "link_ctr": 0.333,
+   "cost_per_link_click": 4.88,
    "installs": 0,
-   "video_views": 242
+   "video_views": 255
   },
   "lifetime": {
-   "spend": 18.71,
-   "impressions": 1142,
-   "reach": 740,
-   "cpm": "16.383538",
-   "frequency": "1.543243",
+   "spend": 19.54,
+   "impressions": 1201,
+   "reach": 772,
+   "cpm": "16.269775",
+   "frequency": "1.555699",
    "date_start": "2023-09-16",
    "date_stop": "2026-10-16",
    "link_clicks": 4,
    "all_clicks": 7,
-   "link_ctr": 0.35,
-   "cost_per_link_click": 4.68,
+   "link_ctr": 0.333,
+   "cost_per_link_click": 4.88,
    "installs": 0,
-   "video_views": 242,
+   "video_views": 255,
    "lifetime_budget": 50.0,
-   "budget_remaining": 31.29
+   "budget_remaining": 30.46
   },
   "daily_14d": [
    {
@@ -99,11 +99,11 @@
     "video_views": 113
    },
    {
-    "spend": 5.92,
-    "impressions": 319,
-    "reach": 271,
-    "cpm": "18.557994",
-    "frequency": "1.177122",
+    "spend": 6.75,
+    "impressions": 378,
+    "reach": 321,
+    "cpm": "17.857143",
+    "frequency": "1.17757",
     "date_start": "2026-10-16",
     "date_stop": "2026-10-16",
     "link_clicks": 0,
@@ -111,51 +111,51 @@
     "link_ctr": 0.0,
     "cost_per_link_click": null,
     "installs": 0,
-    "video_views": 69
+    "video_views": 82
    }
   ],
   "campaigns_7d": [
    {
-    "spend": 18.71,
-    "impressions": 1142,
-    "reach": 744,
-    "cpm": "16.383538",
-    "frequency": "1.534946",
+    "spend": 19.54,
+    "impressions": 1201,
+    "reach": 776,
+    "cpm": "16.269775",
+    "frequency": "1.54768",
     "campaign_id": "52589865683494",
     "campaign_name": "LaneSync | US | $50 total video test",
     "date_start": "2026-10-10",
     "date_stop": "2026-10-16",
     "link_clicks": 4,
     "all_clicks": 7,
-    "link_ctr": 0.35,
-    "cost_per_link_click": 4.68,
+    "link_ctr": 0.333,
+    "cost_per_link_click": 4.88,
     "installs": 0,
-    "video_views": 246,
+    "video_views": 255,
     "status": "ACTIVE",
     "lifetime_budget": 50.0,
-    "budget_remaining": 31.29
+    "budget_remaining": 30.46
    }
   ],
   "campaigns_lifetime": [
    {
-    "spend": 18.71,
-    "impressions": 1142,
-    "reach": 740,
-    "cpm": "16.383538",
-    "frequency": "1.543243",
+    "spend": 19.54,
+    "impressions": 1201,
+    "reach": 776,
+    "cpm": "16.269775",
+    "frequency": "1.54768",
     "campaign_id": "52589865683494",
     "campaign_name": "LaneSync | US | $50 total video test",
     "date_start": "2023-09-16",
     "date_stop": "2026-10-16",
     "link_clicks": 4,
     "all_clicks": 7,
-    "link_ctr": 0.35,
-    "cost_per_link_click": 4.68,
+    "link_ctr": 0.333,
+    "cost_per_link_click": 4.88,
     "installs": 0,
-    "video_views": 246,
+    "video_views": 255,
     "status": "ACTIVE",
     "lifetime_budget": 50.0,
-    "budget_remaining": 31.29
+    "budget_remaining": 30.46
    }
   ]
  },
@@ -173,9 +173,9 @@
    {
     "id": "6819824551",
     "name": "StrideLab - Sprint Analysis",
-    "version": "1.0",
-    "state": "READY_FOR_SALE",
-    "created": "2026-10-06T11:57:26-07:00",
+    "version": "1.0.1",
+    "state": "WAITING_FOR_REVIEW",
+    "created": "2026-10-16T16:40:49-07:00",
     "icon": "icons/app_6819824551.png"
    },
    {
