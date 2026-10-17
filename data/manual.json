@@ -46,42 +46,53 @@
   ]
  },
  "roblox": {
-  "period": "2026-10-08 to 2026-10-14",
+  "period": "2026-10-10 to 2026-10-16 (last 7 days)",
   "source": "manual (browser) Creator Engagement last 7 days",
   "games": [
    {
     "name": "Crash a Car",
     "universe_id": 10769917513,
-    "avg_playtime_min": 4.1,
+    "avg_playtime_min": 5.3,
     "avg_playtime_change_pct": null,
-    "dau": 30,
+    "dau": 27,
     "dau_change_pct": null,
-    "sessions_per_day": 35,
+    "sessions_per_day": 31,
     "lifetime_visits": 247,
-    "new_users": 28,
-    "avg_session_min": 3.5,
+    "new_users": 24,
+    "avg_session_min": 3.8,
     "revenue": 0,
-    "note": "no prior-period % yet; only active ad campaign last 7d",
+    "note": "Trending up vs prior period (new game; % not meaningful)",
     "ad_spend": 57.52,
     "ads": {
      "spend_28d": 57.52,
-     "spend_7d": 47.66,
+     "spend_7d": 36.07,
      "impressions": 35747,
      "ctr_pct": 1.2,
      "clicks": 426,
-     "plays": 217,
-     "cost_per_play": 0.265,
+     "plays": 218,
+     "cost_per_play": 0.264,
      "ad_playtime_h": 15.2,
-     "campaign": "Crash a Car_10082026, completed; 7d spend $47.66"
+     "campaign": "Completed"
+    },
+    "returning_users": 3,
+    "mau": 162,
+    "ads_7d": {
+     "spend": 36.07,
+     "impressions": 20292,
+     "ctr_pct": 1.2,
+     "clicks": 242,
+     "plays": 140,
+     "cost_per_play": 0.258,
+     "ad_playtime_h": 9.7
     }
    },
    {
     "name": "Infection",
     "universe_id": 10520154400,
     "avg_playtime_min": 2.0,
-    "avg_playtime_change_pct": -12.8,
+    "avg_playtime_change_pct": null,
     "dau": 0,
-    "dau_change_pct": -99.2,
+    "dau_change_pct": -98.6,
     "lifetime_visits": 1122,
     "revenue": 0,
     "ad_spend": 83.21,
@@ -94,16 +105,23 @@
      "plays": 370,
      "cost_per_play": 0.225,
      "ad_playtime_h": 16.5,
-     "campaign": "Campaign 2 (Gameplay Update), completed; no 7d spend"
-    }
+     "campaign": "Completed"
+    },
+    "sessions_per_day": 0,
+    "new_users": null,
+    "returning_users": null,
+    "avg_session_min": 1.9,
+    "mau": 98,
+    "note": null,
+    "ads_7d": null
    },
    {
     "name": "Ghosts In The Graveyard - Insane Asylum",
     "universe_id": 10308497838,
-    "avg_playtime_min": 1.9,
-    "avg_playtime_change_pct": -36.9,
+    "avg_playtime_min": 2.7,
+    "avg_playtime_change_pct": null,
     "dau": 1,
-    "dau_change_pct": -98.7,
+    "dau_change_pct": -96.8,
     "lifetime_visits": 377,
     "revenue": 0,
     "ad_spend": 68.48,
@@ -113,11 +131,18 @@
      "impressions": 65491,
      "ctr_pct": 1.5,
      "clicks": 998,
-     "plays": 316,
-     "cost_per_play": 0.217,
+     "plays": 317,
+     "cost_per_play": 0.216,
      "ad_playtime_h": 13.6,
-     "campaign": "Campaign_1, completed; no 7d spend"
-    }
+     "campaign": "Completed"
+    },
+    "sessions_per_day": 1,
+    "new_users": 1,
+    "returning_users": null,
+    "avg_session_min": 2.5,
+    "mau": 187,
+    "note": null,
+    "ads_7d": null
    }
   ]
  },
@@ -126,6 +151,8 @@
   "period": "last 28 days",
   "currency": "USD",
   "total_spend_28d": 209.2,
-  "total_spend_7d": 47.66
+  "total_spend_7d": 36.07,
+  "as_of": "2026-10-17",
+  "note": "All campaigns completed. Roblox ad metrics may lag up to 48h."
  }
 }
