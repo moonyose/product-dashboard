@@ -1,24 +1,24 @@
 {
- "updated_at": "2026-10-18 19:02 EDT",
+ "updated_at": "2026-10-18 19:16 EDT",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
   "currency": "USD",
   "notes": "Days follow the ad account timezone. 7d/14d include today. Clicks/CTR = link clicks (Ads Manager 'Link clicks', 'CTR (link click-through rate)').",
   "today": {
-   "spend": 8.26,
-   "impressions": 446,
-   "reach": 363,
-   "cpm": "18.520179",
-   "frequency": "1.22865",
+   "spend": 8.35,
+   "impressions": 454,
+   "reach": 366,
+   "cpm": "18.39207",
+   "frequency": "1.240437",
    "date_start": "2026-10-18",
    "date_stop": "2026-10-18",
    "link_clicks": 1,
    "all_clicks": 3,
-   "link_ctr": 0.224,
-   "cost_per_link_click": 8.26,
+   "link_ctr": 0.22,
+   "cost_per_link_click": 8.35,
    "installs": 0,
-   "video_views": 92
+   "video_views": 95
   },
   "yesterday": {
    "spend": 10.74,
@@ -36,36 +36,36 @@
    "video_views": 123
   },
   "last_7d": {
-   "spend": 42.08,
-   "impressions": 2495,
+   "spend": 42.17,
+   "impressions": 2503,
    "reach": 1418,
-   "cpm": "16.865731",
-   "frequency": "1.75952",
+   "cpm": "16.847783",
+   "frequency": "1.765162",
    "date_start": "2026-10-12",
    "date_stop": "2026-10-18",
    "link_clicks": 11,
    "all_clicks": 17,
-   "link_ctr": 0.441,
+   "link_ctr": 0.439,
    "cost_per_link_click": 3.83,
    "installs": 0,
-   "video_views": 508
+   "video_views": 511
   },
   "lifetime": {
-   "spend": 42.08,
-   "impressions": 2495,
-   "reach": 1424,
-   "cpm": "16.865731",
-   "frequency": "1.752107",
+   "spend": 42.17,
+   "impressions": 2503,
+   "reach": 1428,
+   "cpm": "16.847783",
+   "frequency": "1.752801",
    "date_start": "2023-09-18",
    "date_stop": "2026-10-18",
    "link_clicks": 11,
    "all_clicks": 17,
-   "link_ctr": 0.441,
+   "link_ctr": 0.439,
    "cost_per_link_click": 3.83,
    "installs": 0,
-   "video_views": 508,
+   "video_views": 511,
    "lifetime_budget": 50.0,
-   "budget_remaining": 7.92
+   "budget_remaining": 7.83
   },
   "daily_14d": [
    {
@@ -129,63 +129,63 @@
     "video_views": 123
    },
    {
-    "spend": 8.26,
-    "impressions": 446,
-    "reach": 363,
-    "cpm": "18.520179",
-    "frequency": "1.22865",
+    "spend": 8.35,
+    "impressions": 454,
+    "reach": 366,
+    "cpm": "18.39207",
+    "frequency": "1.240437",
     "date_start": "2026-10-18",
     "date_stop": "2026-10-18",
     "link_clicks": 1,
     "all_clicks": 3,
-    "link_ctr": 0.224,
-    "cost_per_link_click": 8.26,
+    "link_ctr": 0.22,
+    "cost_per_link_click": 8.35,
     "installs": 0,
-    "video_views": 92
+    "video_views": 95
    }
   ],
   "campaigns_7d": [
    {
-    "spend": 42.08,
-    "impressions": 2495,
-    "reach": 1414,
-    "cpm": "16.865731",
-    "frequency": "1.764498",
+    "spend": 42.17,
+    "impressions": 2503,
+    "reach": 1418,
+    "cpm": "16.847783",
+    "frequency": "1.765162",
     "campaign_id": "52589865683494",
     "campaign_name": "LaneSync | US | $50 total video test",
     "date_start": "2026-10-12",
     "date_stop": "2026-10-18",
     "link_clicks": 11,
     "all_clicks": 17,
-    "link_ctr": 0.441,
+    "link_ctr": 0.439,
     "cost_per_link_click": 3.83,
     "installs": 0,
-    "video_views": 508,
+    "video_views": 511,
     "status": "ACTIVE",
     "lifetime_budget": 50.0,
-    "budget_remaining": 7.92
+    "budget_remaining": 7.83
    }
   ],
   "campaigns_lifetime": [
    {
-    "spend": 42.08,
-    "impressions": 2495,
-    "reach": 1424,
-    "cpm": "16.865731",
-    "frequency": "1.752107",
+    "spend": 42.17,
+    "impressions": 2503,
+    "reach": 1428,
+    "cpm": "16.847783",
+    "frequency": "1.752801",
     "campaign_id": "52589865683494",
     "campaign_name": "LaneSync | US | $50 total video test",
     "date_start": "2023-09-18",
     "date_stop": "2026-10-18",
     "link_clicks": 11,
     "all_clicks": 17,
-    "link_ctr": 0.441,
+    "link_ctr": 0.439,
     "cost_per_link_click": 3.83,
     "installs": 0,
-    "video_views": 508,
+    "video_views": 511,
     "status": "ACTIVE",
     "lifetime_budget": 50.0,
-    "budget_remaining": 7.92
+    "budget_remaining": 7.83
    }
   ]
  },
@@ -446,7 +446,7 @@
   ]
  },
  "apple_ads": {
-  "as_of": "2026-10-16 ~1 PM ET",
+  "as_of": "2026-10-18 ~7:15 PM ET",
   "source": "manual (browser)",
   "note": "Apple reports in UTC, ~3h delay. Stale: browser sign-in expired on 2026-10-18 morning.",
   "campaigns": [
@@ -459,35 +459,40 @@
     "daily_budget": 90.0,
     "placement": "US Search Results",
     "last_7d": {
-     "spend": 2.35,
-     "impressions": 363,
-     "taps": 3,
-     "ttr_pct": 0.83,
-     "installs": 0,
-     "cpt": 0.78,
-     "cpm": 6.47
+     "spend": 6.02,
+     "impressions": 679,
+     "taps": 9,
+     "ttr_pct": 1.33,
+     "installs": 6,
+     "tap_through_installs": 5,
+     "cpa": 1.0,
+     "cpt": 0.67,
+     "cpm": 8.87,
+     "cr_pct": 66.67
     },
     "yesterday": {
-     "date": "2026-10-15",
-     "spend": 2.35,
-     "impressions": 215,
+     "date": "2026-10-17",
+     "spend": 1.93,
+     "impressions": 144,
      "taps": 3,
-     "ttr_pct": 1.4,
-     "installs": 0,
-     "cpt": 0.78
+     "ttr_pct": 2.08,
+     "installs": 2,
+     "cpa": 0.96,
+     "cpt": 0.64
     },
     "lifetime": {
-     "spend": 2.89,
-     "impressions": 455,
-     "taps": 4,
-     "ttr_pct": 0.88,
-     "installs": 1,
-     "cpa": 2.89,
-     "cpt": 0.72,
-     "cr_pct": 25
+     "spend": 12.88,
+     "impressions": 1077,
+     "taps": 21,
+     "ttr_pct": 1.95,
+     "installs": 11,
+     "tap_through_installs": 9,
+     "cpa": 1.17,
+     "cpt": 0.61,
+     "cr_pct": 52.38
     },
-    "last_7d_spend": 2.35,
-    "last_7d_impressions": 363
+    "last_7d_spend": 6.02,
+    "last_7d_impressions": 679
    }
   ]
  },
