@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-18 08:05 EDT",
+ "updated_at": "2026-10-18 08:07 EDT",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -37,10 +37,10 @@
   },
   "last_7d": {
    "spend": 34.61,
-   "impressions": 2093,
+   "impressions": 2094,
    "reach": 1247,
-   "cpm": "16.536073",
-   "frequency": "1.678428",
+   "cpm": "16.528176",
+   "frequency": "1.67923",
    "date_start": "2026-10-12",
    "date_stop": "2026-10-18",
    "link_clicks": 10,
@@ -52,10 +52,10 @@
   },
   "lifetime": {
    "spend": 34.61,
-   "impressions": 2093,
+   "impressions": 2094,
    "reach": 1247,
-   "cpm": "16.536073",
-   "frequency": "1.678428",
+   "cpm": "16.528176",
+   "frequency": "1.67923",
    "date_start": "2023-09-18",
    "date_stop": "2026-10-18",
    "link_clicks": 10,
@@ -130,10 +130,10 @@
    },
    {
     "spend": 0.79,
-    "impressions": 44,
-    "reach": 39,
-    "cpm": "17.954545",
-    "frequency": "1.128205",
+    "impressions": 45,
+    "reach": 40,
+    "cpm": "17.555556",
+    "frequency": "1.125",
     "date_start": "2026-10-18",
     "date_stop": "2026-10-18",
     "link_clicks": 0,
@@ -147,10 +147,10 @@
   "campaigns_7d": [
    {
     "spend": 34.61,
-    "impressions": 2093,
+    "impressions": 2094,
     "reach": 1247,
-    "cpm": "16.536073",
-    "frequency": "1.678428",
+    "cpm": "16.528176",
+    "frequency": "1.67923",
     "campaign_id": "52589865683494",
     "campaign_name": "LaneSync | US | $50 total video test",
     "date_start": "2026-10-12",
@@ -169,10 +169,10 @@
   "campaigns_lifetime": [
    {
     "spend": 34.61,
-    "impressions": 2093,
+    "impressions": 2094,
     "reach": 1247,
-    "cpm": "16.536073",
-    "frequency": "1.678428",
+    "cpm": "16.528176",
+    "frequency": "1.67923",
     "campaign_id": "52589865683494",
     "campaign_name": "LaneSync | US | $50 total video test",
     "date_start": "2023-09-18",
@@ -416,7 +416,7 @@
  "apple_ads": {
   "as_of": "2026-10-16 ~1 PM ET",
   "source": "manual (browser)",
-  "note": "Apple reports in UTC, ~3h delay",
+  "note": "Apple reports in UTC, ~3h delay. Stale: browser sign-in expired on 2026-10-18 morning.",
   "campaigns": [
    {
     "name": "LaneSync - US - Search",
@@ -460,26 +460,26 @@
   ]
  },
  "roblox": {
-  "period": "2026-10-10 to 2026-10-16 (last 7 days)",
+  "period": "2026-10-11 to 2026-10-17 (last 7 days)",
   "source": "manual (browser) Creator Engagement last 7 days",
   "games": [
    {
     "name": "Crash a Car",
     "universe_id": 10769917513,
-    "avg_playtime_min": 5.3,
-    "avg_playtime_change_pct": null,
-    "dau": 27,
-    "dau_change_pct": null,
-    "sessions_per_day": 31,
+    "avg_playtime_min": 4.7,
+    "avg_playtime_change_pct": 253.7,
+    "dau": 20,
+    "dau_change_pct": 81.8,
+    "sessions_per_day": 24,
     "lifetime_visits": 247,
-    "new_users": 24,
-    "avg_session_min": 3.8,
+    "new_users": 18,
+    "avg_session_min": 3.2,
     "revenue": 0,
-    "note": "Trending up vs prior period (new game; % not meaningful)",
+    "note": "New game (activity began ~Oct 8); trending up",
     "ad_spend": 57.52,
     "ads": {
      "spend_28d": 57.52,
-     "spend_7d": 36.07,
+     "spend_7d": 24.34,
      "impressions": 35747,
      "ctr_pct": 1.2,
      "clicks": 426,
@@ -488,16 +488,16 @@
      "ad_playtime_h": 15.2,
      "campaign": "Completed"
     },
-    "returning_users": 3,
-    "mau": 162,
+    "returning_users": 2,
+    "mau": 151,
     "ads_7d": {
-     "spend": 36.07,
-     "impressions": 20292,
+     "spend": 24.34,
+     "impressions": 13693,
      "ctr_pct": 1.2,
-     "clicks": 242,
-     "plays": 140,
-     "cost_per_play": 0.258,
-     "ad_playtime_h": 9.7
+     "clicks": 164,
+     "plays": 93,
+     "cost_per_play": 0.262,
+     "ad_playtime_h": 7.3
     },
     "ads_playtime_per_play_min": 4.18,
     "icon": "icons/rbx_10769917513.png"
@@ -506,9 +506,9 @@
     "name": "Infection",
     "universe_id": 10520154400,
     "avg_playtime_min": 2.0,
-    "avg_playtime_change_pct": null,
+    "avg_playtime_change_pct": 128.1,
     "dau": 0,
-    "dau_change_pct": -98.6,
+    "dau_change_pct": -97.0,
     "lifetime_visits": 1122,
     "revenue": 0,
     "ad_spend": 83.21,
@@ -524,8 +524,8 @@
      "campaign": "Completed"
     },
     "sessions_per_day": 0,
-    "new_users": null,
-    "returning_users": null,
+    "new_users": 0,
+    "returning_users": 0,
     "avg_session_min": 1.9,
     "mau": 98,
     "note": null,
@@ -537,9 +537,9 @@
     "name": "Ghosts In The Graveyard - Insane Asylum",
     "universe_id": 10308497838,
     "avg_playtime_min": 2.7,
-    "avg_playtime_change_pct": null,
+    "avg_playtime_change_pct": 40.4,
     "dau": 1,
-    "dau_change_pct": -96.8,
+    "dau_change_pct": -93.1,
     "lifetime_visits": 377,
     "revenue": 0,
     "ad_spend": 68.48,
@@ -556,7 +556,7 @@
     },
     "sessions_per_day": 1,
     "new_users": 1,
-    "returning_users": null,
+    "returning_users": 0,
     "avg_session_min": 2.5,
     "mau": 187,
     "note": null,
@@ -564,15 +564,16 @@
     "ads_playtime_per_play_min": 2.57,
     "icon": "icons/rbx_10308497838.png"
    }
-  ]
+  ],
+  "as_of": "2026-10-18"
  },
  "roblox_ads": {
   "source": "Roblox Ads Manager (manual)",
   "period": "last 28 days",
   "currency": "USD",
   "total_spend_28d": 209.2,
-  "total_spend_7d": 36.07,
-  "as_of": "2026-10-17",
-  "note": "All campaigns completed. Roblox ad metrics may lag up to 48h."
+  "total_spend_7d": 24.34,
+  "as_of": "2026-10-18",
+  "note": "All campaigns completed (none running). Roblox ad metrics may lag up to 48h."
  }
 }
