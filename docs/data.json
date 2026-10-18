@@ -1,16 +1,16 @@
 {
- "updated_at": "2026-10-18 13:07 EDT",
+ "updated_at": "2026-10-18 13:30 EDT",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
   "currency": "USD",
   "notes": "Days follow the ad account timezone. 7d/14d include today. Clicks/CTR = link clicks (Ads Manager 'Link clicks', 'CTR (link click-through rate)').",
   "today": {
-   "spend": 3.16,
-   "impressions": 191,
-   "reach": 165,
-   "cpm": "16.544503",
-   "frequency": "1.157576",
+   "spend": 3.39,
+   "impressions": 207,
+   "reach": 181,
+   "cpm": "16.376812",
+   "frequency": "1.143646",
    "date_start": "2026-10-18",
    "date_stop": "2026-10-18",
    "link_clicks": 0,
@@ -18,7 +18,7 @@
    "link_ctr": 0.0,
    "cost_per_link_click": null,
    "installs": 0,
-   "video_views": 41
+   "video_views": 43
   },
   "yesterday": {
    "spend": 10.74,
@@ -36,36 +36,36 @@
    "video_views": 123
   },
   "last_7d": {
-   "spend": 36.98,
-   "impressions": 2240,
-   "reach": 1286,
-   "cpm": "16.508929",
-   "frequency": "1.741835",
+   "spend": 37.21,
+   "impressions": 2256,
+   "reach": 1288,
+   "cpm": "16.493794",
+   "frequency": "1.751553",
    "date_start": "2026-10-12",
    "date_stop": "2026-10-18",
    "link_clicks": 10,
    "all_clicks": 15,
-   "link_ctr": 0.446,
-   "cost_per_link_click": 3.7,
+   "link_ctr": 0.443,
+   "cost_per_link_click": 3.72,
    "installs": 0,
-   "video_views": 457
+   "video_views": 459
   },
   "lifetime": {
-   "spend": 36.98,
-   "impressions": 2240,
-   "reach": 1295,
-   "cpm": "16.508929",
-   "frequency": "1.72973",
+   "spend": 37.21,
+   "impressions": 2256,
+   "reach": 1299,
+   "cpm": "16.493794",
+   "frequency": "1.736721",
    "date_start": "2023-09-18",
    "date_stop": "2026-10-18",
    "link_clicks": 10,
    "all_clicks": 15,
-   "link_ctr": 0.446,
-   "cost_per_link_click": 3.7,
+   "link_ctr": 0.443,
+   "cost_per_link_click": 3.72,
    "installs": 0,
-   "video_views": 457,
+   "video_views": 459,
    "lifetime_budget": 50.0,
-   "budget_remaining": 13.02
+   "budget_remaining": 12.79
   },
   "daily_14d": [
    {
@@ -129,11 +129,11 @@
     "video_views": 123
    },
    {
-    "spend": 3.16,
-    "impressions": 191,
-    "reach": 165,
-    "cpm": "16.544503",
-    "frequency": "1.157576",
+    "spend": 3.39,
+    "impressions": 207,
+    "reach": 181,
+    "cpm": "16.376812",
+    "frequency": "1.143646",
     "date_start": "2026-10-18",
     "date_stop": "2026-10-18",
     "link_clicks": 0,
@@ -141,51 +141,51 @@
     "link_ctr": 0.0,
     "cost_per_link_click": null,
     "installs": 0,
-    "video_views": 41
+    "video_views": 43
    }
   ],
   "campaigns_7d": [
    {
-    "spend": 36.98,
-    "impressions": 2240,
+    "spend": 37.21,
+    "impressions": 2256,
     "reach": 1286,
-    "cpm": "16.508929",
-    "frequency": "1.741835",
+    "cpm": "16.493794",
+    "frequency": "1.754277",
     "campaign_id": "52589865683494",
     "campaign_name": "LaneSync | US | $50 total video test",
     "date_start": "2026-10-12",
     "date_stop": "2026-10-18",
     "link_clicks": 10,
     "all_clicks": 15,
-    "link_ctr": 0.446,
-    "cost_per_link_click": 3.7,
+    "link_ctr": 0.443,
+    "cost_per_link_click": 3.72,
     "installs": 0,
-    "video_views": 457,
+    "video_views": 459,
     "status": "ACTIVE",
     "lifetime_budget": 50.0,
-    "budget_remaining": 13.02
+    "budget_remaining": 12.79
    }
   ],
   "campaigns_lifetime": [
    {
-    "spend": 36.98,
-    "impressions": 2240,
-    "reach": 1295,
-    "cpm": "16.508929",
-    "frequency": "1.72973",
+    "spend": 37.21,
+    "impressions": 2256,
+    "reach": 1299,
+    "cpm": "16.493794",
+    "frequency": "1.736721",
     "campaign_id": "52589865683494",
     "campaign_name": "LaneSync | US | $50 total video test",
     "date_start": "2023-09-18",
     "date_stop": "2026-10-18",
     "link_clicks": 10,
     "all_clicks": 15,
-    "link_ctr": 0.446,
-    "cost_per_link_click": 3.7,
+    "link_ctr": 0.443,
+    "cost_per_link_click": 3.72,
     "installs": 0,
-    "video_views": 457,
+    "video_views": 459,
     "status": "ACTIVE",
     "lifetime_budget": 50.0,
-    "budget_remaining": 13.02
+    "budget_remaining": 12.79
    }
   ]
  },
