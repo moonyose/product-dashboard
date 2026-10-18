@@ -1,16 +1,16 @@
 {
- "updated_at": "2026-10-18 08:07 EDT",
+ "updated_at": "2026-10-18 08:34 EDT",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
   "currency": "USD",
   "notes": "Days follow the ad account timezone. 7d/14d include today. Clicks/CTR = link clicks (Ads Manager 'Link clicks', 'CTR (link click-through rate)').",
   "today": {
-   "spend": 0.79,
-   "impressions": 44,
-   "reach": 39,
-   "cpm": "17.954545",
-   "frequency": "1.128205",
+   "spend": 0.9,
+   "impressions": 55,
+   "reach": 48,
+   "cpm": "16.363636",
+   "frequency": "1.145833",
    "date_start": "2026-10-18",
    "date_stop": "2026-10-18",
    "link_clicks": 0,
@@ -36,36 +36,36 @@
    "video_views": 123
   },
   "last_7d": {
-   "spend": 34.61,
-   "impressions": 2094,
-   "reach": 1247,
-   "cpm": "16.528176",
-   "frequency": "1.67923",
+   "spend": 34.72,
+   "impressions": 2104,
+   "reach": 1249,
+   "cpm": "16.501901",
+   "frequency": "1.684548",
    "date_start": "2026-10-12",
    "date_stop": "2026-10-18",
    "link_clicks": 10,
    "all_clicks": 14,
-   "link_ctr": 0.478,
-   "cost_per_link_click": 3.46,
+   "link_ctr": 0.475,
+   "cost_per_link_click": 3.47,
    "installs": 0,
    "video_views": 427
   },
   "lifetime": {
-   "spend": 34.61,
-   "impressions": 2094,
-   "reach": 1247,
-   "cpm": "16.528176",
-   "frequency": "1.67923",
+   "spend": 34.72,
+   "impressions": 2104,
+   "reach": 1249,
+   "cpm": "16.501901",
+   "frequency": "1.684548",
    "date_start": "2023-09-18",
    "date_stop": "2026-10-18",
    "link_clicks": 10,
    "all_clicks": 14,
-   "link_ctr": 0.478,
-   "cost_per_link_click": 3.46,
+   "link_ctr": 0.475,
+   "cost_per_link_click": 3.47,
    "installs": 0,
    "video_views": 427,
    "lifetime_budget": 50.0,
-   "budget_remaining": 15.39
+   "budget_remaining": 15.28
   },
   "daily_14d": [
    {
@@ -129,11 +129,11 @@
     "video_views": 123
    },
    {
-    "spend": 0.79,
-    "impressions": 45,
-    "reach": 40,
-    "cpm": "17.555556",
-    "frequency": "1.125",
+    "spend": 0.9,
+    "impressions": 55,
+    "reach": 48,
+    "cpm": "16.363636",
+    "frequency": "1.145833",
     "date_start": "2026-10-18",
     "date_stop": "2026-10-18",
     "link_clicks": 0,
@@ -146,46 +146,46 @@
   ],
   "campaigns_7d": [
    {
-    "spend": 34.61,
-    "impressions": 2094,
-    "reach": 1247,
-    "cpm": "16.528176",
-    "frequency": "1.67923",
+    "spend": 34.72,
+    "impressions": 2104,
+    "reach": 1249,
+    "cpm": "16.501901",
+    "frequency": "1.684548",
     "campaign_id": "52589865683494",
     "campaign_name": "LaneSync | US | $50 total video test",
     "date_start": "2026-10-12",
     "date_stop": "2026-10-18",
     "link_clicks": 10,
     "all_clicks": 14,
-    "link_ctr": 0.478,
-    "cost_per_link_click": 3.46,
+    "link_ctr": 0.475,
+    "cost_per_link_click": 3.47,
     "installs": 0,
     "video_views": 427,
     "status": "ACTIVE",
     "lifetime_budget": 50.0,
-    "budget_remaining": 15.39
+    "budget_remaining": 15.28
    }
   ],
   "campaigns_lifetime": [
    {
-    "spend": 34.61,
-    "impressions": 2094,
-    "reach": 1247,
-    "cpm": "16.528176",
-    "frequency": "1.67923",
+    "spend": 34.72,
+    "impressions": 2104,
+    "reach": 1249,
+    "cpm": "16.501901",
+    "frequency": "1.684548",
     "campaign_id": "52589865683494",
     "campaign_name": "LaneSync | US | $50 total video test",
     "date_start": "2023-09-18",
     "date_stop": "2026-10-18",
     "link_clicks": 10,
     "all_clicks": 14,
-    "link_ctr": 0.478,
-    "cost_per_link_click": 3.46,
+    "link_ctr": 0.475,
+    "cost_per_link_click": 3.47,
     "installs": 0,
     "video_views": 427,
     "status": "ACTIVE",
     "lifetime_budget": 50.0,
-    "budget_remaining": 15.39
+    "budget_remaining": 15.28
    }
   ]
  },
@@ -397,6 +397,38 @@
       "new_subs": 1,
       "new_subs_paid": 0,
       "new_subs_free": 1,
+      "renewals": 0,
+      "proceeds": 0.0
+     },
+     "6812496973": {
+      "downloads": 0,
+      "redownloads": 0,
+      "new_subs": 0,
+      "new_subs_paid": 0,
+      "new_subs_free": 0,
+      "renewals": 0,
+      "proceeds": 0.0
+     }
+    }
+   },
+   {
+    "date": "2026-10-17",
+    "apps": {
+     "6805914932": {
+      "downloads": 5,
+      "redownloads": 0,
+      "new_subs": 0,
+      "new_subs_paid": 0,
+      "new_subs_free": 0,
+      "renewals": 0,
+      "proceeds": 0.0
+     },
+     "6819824551": {
+      "downloads": 9,
+      "redownloads": 0,
+      "new_subs": 3,
+      "new_subs_paid": 0,
+      "new_subs_free": 3,
       "renewals": 0,
       "proceeds": 0.0
      },
