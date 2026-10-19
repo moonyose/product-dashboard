@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-19 08:09 EDT",
+ "updated_at": "2026-10-19 08:32 EDT",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -216,38 +216,6 @@
   ],
   "sales": [
    {
-    "date": "2026-10-11",
-    "apps": {
-     "6805914932": {
-      "downloads": 2,
-      "redownloads": 0,
-      "new_subs": 0,
-      "new_subs_paid": 0,
-      "new_subs_free": 0,
-      "renewals": 0,
-      "proceeds": 0.0
-     },
-     "6819824551": {
-      "downloads": 0,
-      "redownloads": 0,
-      "new_subs": 0,
-      "new_subs_paid": 0,
-      "new_subs_free": 0,
-      "renewals": 0,
-      "proceeds": 0.0
-     },
-     "6812496973": {
-      "downloads": 0,
-      "redownloads": 0,
-      "new_subs": 0,
-      "new_subs_paid": 0,
-      "new_subs_free": 0,
-      "renewals": 0,
-      "proceeds": 0.0
-     }
-    }
-   },
-   {
     "date": "2026-10-12",
     "apps": {
      "6805914932": {
@@ -425,6 +393,38 @@
       "new_subs": 3,
       "new_subs_paid": 0,
       "new_subs_free": 3,
+      "renewals": 0,
+      "proceeds": 0.0
+     },
+     "6812496973": {
+      "downloads": 0,
+      "redownloads": 0,
+      "new_subs": 0,
+      "new_subs_paid": 0,
+      "new_subs_free": 0,
+      "renewals": 0,
+      "proceeds": 0.0
+     }
+    }
+   },
+   {
+    "date": "2026-10-18",
+    "apps": {
+     "6805914932": {
+      "downloads": 8,
+      "redownloads": 1,
+      "new_subs": 0,
+      "new_subs_paid": 0,
+      "new_subs_free": 0,
+      "renewals": 0,
+      "proceeds": 0.0
+     },
+     "6819824551": {
+      "downloads": 2,
+      "redownloads": 1,
+      "new_subs": 1,
+      "new_subs_paid": 0,
+      "new_subs_free": 1,
       "renewals": 0,
       "proceeds": 0.0
      },
