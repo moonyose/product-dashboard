@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-20 08:36 EDT",
+ "updated_at": "2026-10-20 08:46 EDT",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -438,9 +438,9 @@
   ]
  },
  "apple_ads": {
-  "as_of": "2026-10-18 ~7:15 PM ET",
+  "as_of": "2026-10-20 ~8:45 AM ET (data through Oct 19, UTC)",
   "source": "manual (browser)",
-  "note": "Apple reports in UTC, ~3h delay. Stale: browser sign-in required (checked 2026-10-19 and 2026-10-20 mornings).",
+  "note": "Apple reports in UTC, ~3h delay. Campaign started within the last 7 days, so 7-day and lifetime match.",
   "campaigns": [
    {
     "name": "LaneSync - US - Search",
@@ -451,40 +451,31 @@
     "daily_budget": 90.0,
     "placement": "US Search Results",
     "last_7d": {
-     "spend": 6.02,
-     "impressions": 679,
-     "taps": 9,
-     "ttr_pct": 1.33,
-     "installs": 6,
-     "tap_through_installs": 5,
-     "cpa": 1.0,
-     "cpt": 0.67,
-     "cpm": 8.87,
-     "cr_pct": 66.67
-    },
-    "yesterday": {
-     "date": "2026-10-17",
-     "spend": 1.93,
-     "impressions": 144,
-     "taps": 3,
-     "ttr_pct": 2.08,
-     "installs": 2,
-     "cpa": 0.96,
-     "cpt": 0.64
-    },
-    "lifetime": {
-     "spend": 12.88,
-     "impressions": 1077,
-     "taps": 21,
-     "ttr_pct": 1.95,
+     "spend": 14.2,
+     "impressions": 1145,
+     "taps": 23,
+     "ttr_pct": 2.01,
      "installs": 11,
      "tap_through_installs": 9,
-     "cpa": 1.17,
-     "cpt": 0.61,
-     "cr_pct": 52.38
+     "cpa": 1.29,
+     "cpt": 0.62,
+     "cpm": 12.4,
+     "cr_pct": 47.83
     },
-    "last_7d_spend": 6.02,
-    "last_7d_impressions": 679
+    "lifetime": {
+     "spend": 14.2,
+     "impressions": 1145,
+     "taps": 23,
+     "ttr_pct": 2.01,
+     "installs": 11,
+     "tap_through_installs": 9,
+     "cpa": 1.29,
+     "cpt": 0.62,
+     "cpm": 12.4,
+     "cr_pct": 47.83
+    },
+    "last_7d_spend": 14.2,
+    "last_7d_impressions": 1145
    }
   ]
  },

@@ -1,164 +1,155 @@
 {
- "apple_ads": {
-  "as_of": "2026-10-18 ~7:15 PM ET",
-  "source": "manual (browser)",
-  "note": "Apple reports in UTC, ~3h delay. Stale: browser sign-in required (checked 2026-10-19 and 2026-10-20 mornings).",
-  "campaigns": [
-   {
-    "name": "LaneSync - US - Search",
-    "app_id": "6805914932",
-    "status": "Running",
-    "bid_strategy": "Maximize Conversions",
-    "target_cpa": 3.0,
-    "daily_budget": 90.0,
-    "placement": "US Search Results",
-    "last_7d": {
-     "spend": 6.02,
-     "impressions": 679,
-     "taps": 9,
-     "ttr_pct": 1.33,
-     "installs": 6,
-     "tap_through_installs": 5,
-     "cpa": 1.0,
-     "cpt": 0.67,
-     "cpm": 8.87,
-     "cr_pct": 66.67
-    },
-    "yesterday": {
-     "date": "2026-10-17",
-     "spend": 1.93,
-     "impressions": 144,
-     "taps": 3,
-     "ttr_pct": 2.08,
-     "installs": 2,
-     "cpa": 0.96,
-     "cpt": 0.64
-    },
-    "lifetime": {
-     "spend": 12.88,
-     "impressions": 1077,
-     "taps": 21,
-     "ttr_pct": 1.95,
-     "installs": 11,
-     "tap_through_installs": 9,
-     "cpa": 1.17,
-     "cpt": 0.61,
-     "cr_pct": 52.38
-    },
-    "last_7d_spend": 6.02,
-    "last_7d_impressions": 679
-   }
-  ]
- },
- "roblox": {
-  "period": "last 7 days (as shown 2026-10-20 morning)",
-  "source": "manual (browser) Creator Engagement last 7 days",
-  "games": [
-   {
-    "name": "Crash a Car",
-    "universe_id": 10769917513,
-    "avg_playtime_min": 4.4,
-    "avg_playtime_change_pct": 122.8,
-    "dau": 14,
-    "dau_change_pct": -14.4,
-    "sessions_per_day": 18,
-    "lifetime_visits": 247,
-    "new_users": 12,
-    "avg_session_min": 2.9,
-    "revenue": 0,
-    "note": "Campaign \"Crash a Car_10182026_06:43PM\" now Paused: $4.40, 1,914 impr, 2% CTR, 39 clicks; plays not yet reported (Roblox lag up to 48h)",
-    "ad_spend": 61.03,
-    "ads": {
-     "spend_28d": 61.03,
-     "spend_7d": 24.34,
-     "impressions": 37347,
-     "ctr_pct": 1.2,
-     "clicks": 461,
-     "plays": 218,
-     "cost_per_play": 0.264,
-     "ad_playtime_h": 15.2,
-     "campaign": "Paused (Oct 18 campaign); Oct 8 campaign completed"
-    },
-    "returning_users": 2,
-    "mau": 164,
-    "ads_7d": {
-     "spend": 5.93,
-     "impressions": 3500,
-     "ctr_pct": 2.0,
-     "clicks": 39,
-     "plays": 4,
-     "cost_per_play": 1.482,
-     "ad_playtime_h": 0.1
-    }
-   },
-   {
-    "name": "Infection",
-    "universe_id": 10520154400,
-    "avg_playtime_min": 0.238,
-    "avg_playtime_change_pct": -89.2,
-    "dau": 0,
-    "dau_change_pct": -50.0,
-    "lifetime_visits": 1122,
-    "revenue": 0,
-    "ad_spend": 83.21,
-    "ads": {
-     "spend_28d": 83.21,
-     "spend_7d": 0,
-     "impressions": 70635,
-     "ctr_pct": 1.4,
-     "clicks": 1021,
-     "plays": 371,
-     "cost_per_play": 0.224,
-     "ad_playtime_h": 16.5,
-     "campaign": "Completed"
-    },
-    "sessions_per_day": 0,
-    "new_users": 0,
-    "returning_users": 0,
-    "avg_session_min": 0.151,
-    "mau": 98,
-    "note": null,
-    "ads_7d": null
-   },
-   {
-    "name": "Ghosts In The Graveyard - Insane Asylum",
-    "universe_id": 10308497838,
-    "avg_playtime_min": 2.7,
-    "avg_playtime_change_pct": 101.1,
-    "dau": 1,
-    "dau_change_pct": 20.0,
-    "lifetime_visits": 377,
-    "revenue": 0,
-    "ad_spend": 68.48,
-    "ads": {
-     "spend_28d": 68.48,
-     "spend_7d": 0,
-     "impressions": 65491,
-     "ctr_pct": 1.5,
-     "clicks": 998,
-     "plays": 317,
-     "cost_per_play": 0.216,
-     "ad_playtime_h": 13.6,
-     "campaign": "Completed"
-    },
-    "sessions_per_day": 1,
-    "new_users": 1,
-    "returning_users": 0,
-    "avg_session_min": 2.5,
-    "mau": 234,
-    "note": null,
-    "ads_7d": null
-   }
-  ],
-  "as_of": "2026-10-20"
- },
- "roblox_ads": {
-  "source": "Roblox Ads Manager (manual)",
-  "period": "last 28 days",
-  "currency": "USD",
-  "total_spend_28d": 213.59,
-  "total_spend_7d": 5.93,
-  "as_of": "2026-10-20",
-  "note": "All campaigns completed or paused (Crash a Car Oct 18 campaign paused). 28d: $213.59, 173.8k impr, 906 plays, 45.4h playtime. Roblox ad metrics may lag up to 48h."
- }
+  "apple_ads": {
+    "as_of": "2026-10-20 ~8:45 AM ET (data through Oct 19, UTC)",
+    "source": "manual (browser)",
+    "note": "Apple reports in UTC, ~3h delay. Campaign started within the last 7 days, so 7-day and lifetime match.",
+    "campaigns": [
+      {
+        "name": "LaneSync - US - Search",
+        "app_id": "6805914932",
+        "status": "Running",
+        "bid_strategy": "Maximize Conversions",
+        "target_cpa": 3.0,
+        "daily_budget": 90.0,
+        "placement": "US Search Results",
+        "last_7d": {
+          "spend": 14.2,
+          "impressions": 1145,
+          "taps": 23,
+          "ttr_pct": 2.01,
+          "installs": 11,
+          "tap_through_installs": 9,
+          "cpa": 1.29,
+          "cpt": 0.62,
+          "cpm": 12.4,
+          "cr_pct": 47.83
+        },
+        "lifetime": {
+          "spend": 14.2,
+          "impressions": 1145,
+          "taps": 23,
+          "ttr_pct": 2.01,
+          "installs": 11,
+          "tap_through_installs": 9,
+          "cpa": 1.29,
+          "cpt": 0.62,
+          "cpm": 12.4,
+          "cr_pct": 47.83
+        },
+        "last_7d_spend": 14.2,
+        "last_7d_impressions": 1145
+      }
+    ]
+  },
+  "roblox": {
+    "period": "last 7 days (as shown 2026-10-20 morning)",
+    "source": "manual (browser) Creator Engagement last 7 days",
+    "games": [
+      {
+        "name": "Crash a Car",
+        "universe_id": 10769917513,
+        "avg_playtime_min": 4.4,
+        "avg_playtime_change_pct": 122.8,
+        "dau": 14,
+        "dau_change_pct": -14.4,
+        "sessions_per_day": 18,
+        "lifetime_visits": 247,
+        "new_users": 12,
+        "avg_session_min": 2.9,
+        "revenue": 0,
+        "note": "Campaign \"Crash a Car_10182026_06:43PM\" now Paused: $4.40, 1,914 impr, 2% CTR, 39 clicks; plays not yet reported (Roblox lag up to 48h)",
+        "ad_spend": 61.03,
+        "ads": {
+          "spend_28d": 61.03,
+          "spend_7d": 24.34,
+          "impressions": 37347,
+          "ctr_pct": 1.2,
+          "clicks": 461,
+          "plays": 218,
+          "cost_per_play": 0.264,
+          "ad_playtime_h": 15.2,
+          "campaign": "Paused (Oct 18 campaign); Oct 8 campaign completed"
+        },
+        "returning_users": 2,
+        "mau": 164,
+        "ads_7d": {
+          "spend": 5.93,
+          "impressions": 3500,
+          "ctr_pct": 2.0,
+          "clicks": 39,
+          "plays": 4,
+          "cost_per_play": 1.482,
+          "ad_playtime_h": 0.1
+        }
+      },
+      {
+        "name": "Infection",
+        "universe_id": 10520154400,
+        "avg_playtime_min": 0.238,
+        "avg_playtime_change_pct": -89.2,
+        "dau": 0,
+        "dau_change_pct": -50.0,
+        "lifetime_visits": 1122,
+        "revenue": 0,
+        "ad_spend": 83.21,
+        "ads": {
+          "spend_28d": 83.21,
+          "spend_7d": 0,
+          "impressions": 70635,
+          "ctr_pct": 1.4,
+          "clicks": 1021,
+          "plays": 371,
+          "cost_per_play": 0.224,
+          "ad_playtime_h": 16.5,
+          "campaign": "Completed"
+        },
+        "sessions_per_day": 0,
+        "new_users": 0,
+        "returning_users": 0,
+        "avg_session_min": 0.151,
+        "mau": 98,
+        "note": null,
+        "ads_7d": null
+      },
+      {
+        "name": "Ghosts In The Graveyard - Insane Asylum",
+        "universe_id": 10308497838,
+        "avg_playtime_min": 2.7,
+        "avg_playtime_change_pct": 101.1,
+        "dau": 1,
+        "dau_change_pct": 20.0,
+        "lifetime_visits": 377,
+        "revenue": 0,
+        "ad_spend": 68.48,
+        "ads": {
+          "spend_28d": 68.48,
+          "spend_7d": 0,
+          "impressions": 65491,
+          "ctr_pct": 1.5,
+          "clicks": 998,
+          "plays": 317,
+          "cost_per_play": 0.216,
+          "ad_playtime_h": 13.6,
+          "campaign": "Completed"
+        },
+        "sessions_per_day": 1,
+        "new_users": 1,
+        "returning_users": 0,
+        "avg_session_min": 2.5,
+        "mau": 234,
+        "note": null,
+        "ads_7d": null
+      }
+    ],
+    "as_of": "2026-10-20"
+  },
+  "roblox_ads": {
+    "source": "Roblox Ads Manager (manual)",
+    "period": "last 28 days",
+    "currency": "USD",
+    "total_spend_28d": 213.59,
+    "total_spend_7d": 5.93,
+    "as_of": "2026-10-20",
+    "note": "All campaigns completed or paused (Crash a Car Oct 18 campaign paused). 28d: $213.59, 173.8k impr, 906 plays, 45.4h playtime. Roblox ad metrics may lag up to 48h."
+  }
 }
