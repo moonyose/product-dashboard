@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-20 11:30 EDT",
+ "updated_at": "2026-10-20 12:30 EDT",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -212,38 +212,6 @@
   ],
   "sales": [
    {
-    "date": "2026-10-12",
-    "apps": {
-     "6805914932": {
-      "downloads": 17,
-      "redownloads": 4,
-      "new_subs": 9,
-      "new_subs_paid": 0,
-      "new_subs_free": 9,
-      "renewals": 0,
-      "proceeds": 0.0
-     },
-     "6819824551": {
-      "downloads": 0,
-      "redownloads": 0,
-      "new_subs": 0,
-      "new_subs_paid": 0,
-      "new_subs_free": 0,
-      "renewals": 0,
-      "proceeds": 0.0
-     },
-     "6812496973": {
-      "downloads": 0,
-      "redownloads": 0,
-      "new_subs": 0,
-      "new_subs_paid": 0,
-      "new_subs_free": 0,
-      "renewals": 0,
-      "proceeds": 0.0
-     }
-    }
-   },
-   {
     "date": "2026-10-13",
     "apps": {
      "6805914932": {
@@ -434,6 +402,38 @@
       "proceeds": 0.0
      }
     }
+   },
+   {
+    "date": "2026-10-19",
+    "apps": {
+     "6805914932": {
+      "downloads": 3,
+      "redownloads": 1,
+      "new_subs": 0,
+      "new_subs_paid": 0,
+      "new_subs_free": 0,
+      "renewals": 0,
+      "proceeds": 0.0
+     },
+     "6819824551": {
+      "downloads": 1,
+      "redownloads": 0,
+      "new_subs": 0,
+      "new_subs_paid": 0,
+      "new_subs_free": 0,
+      "renewals": 0,
+      "proceeds": 0.0
+     },
+     "6812496973": {
+      "downloads": 0,
+      "redownloads": 0,
+      "new_subs": 0,
+      "new_subs_paid": 0,
+      "new_subs_free": 0,
+      "renewals": 0,
+      "proceeds": 0.0
+     }
+    }
    }
   ],
   "reports": {
@@ -461,7 +461,7 @@
     "2026-10-16": "ok",
     "2026-10-17": "ok",
     "2026-10-18": "ok",
-    "2026-10-19": "pending"
+    "2026-10-19": "ok"
    },
    "event_report_days": [
     "2026-10-12",
@@ -484,7 +484,7 @@
       5,
       5,
       8,
-      null
+      3
      ],
      "redownloads": [
       0,
@@ -495,7 +495,7 @@
       2,
       0,
       1,
-      null
+      1
      ],
      "updates": [
       0,
@@ -506,11 +506,11 @@
       14,
       17,
       1,
-      null
+      1
      ],
      "launch": "2026-10-11",
-     "total_first_time": 51,
-     "total_redownloads": 11
+     "total_first_time": 54,
+     "total_redownloads": 12
     },
     "6819824551": {
      "name": "StrideLab",
@@ -523,7 +523,7 @@
       2,
       9,
       2,
-      null
+      1
      ],
      "redownloads": [
       0,
@@ -534,7 +534,7 @@
       0,
       0,
       1,
-      null
+      0
      ],
      "updates": [
       0,
@@ -545,10 +545,10 @@
       0,
       4,
       3,
-      null
+      0
      ],
      "launch": "2026-10-16",
-     "total_first_time": 13,
+     "total_first_time": 14,
      "total_redownloads": 1
     }
    },
@@ -562,9 +562,9 @@
     "F1"
    ],
    "product_types_seen": {
-    "1F": 64,
-    "3F": 12,
-    "7F": 39
+    "1F": 68,
+    "3F": 13,
+    "7F": 40
    },
    "cohorts": [
     {
@@ -720,7 +720,7 @@
     "days": 9,
     "requests": 3,
     "cache_hits": 15,
-    "seconds": 0.79,
+    "seconds": 0.97,
     "latest_requested": "2026-10-19"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
