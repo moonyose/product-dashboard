@@ -91,15 +91,20 @@ def asc():
     if not vendor:
         res["sales_note"] = "Vendor number not available via API; add ASC_VENDOR_NUMBER to secrets/asc.env"
         return res
+    import asc_reports
+    try:
+        rb, rerr = asc_reports.build(H, vendor, {"6805914932": "LaneSync", "6819824551": "StrideLab"})
+        res["reports"] = rb; res["report_errors"] = rerr
+    except Exception as x:
+        res["reports"] = None; res["report_errors"] = [f"asc_reports: {type(x).__name__}: {x}"]
+    try: rep, _ = asc_reports.get_reports(H, vendor, kinds=("SALES",))
+    except Exception as x: rep = {"SALES": {}}; res["report_errors"].append(f"asc sales cache: {x}")
     days = []
-    for back in range(1, 12):
+    for d in sorted(rep["SALES"], reverse=True):
         if len(days) >= 7: break
-        d = (dt.date.today() - dt.timedelta(days=back)).isoformat()
-        r = requests.get("https://api.appstoreconnect.apple.com/v1/salesReports", headers=H, timeout=60, params={
-            "filter[frequency]": "DAILY", "filter[reportType]": "SALES", "filter[reportSubType]": "SUMMARY",
-            "filter[vendorNumber]": vendor, "filter[reportDate]": d, "filter[version]": "1_1"})
-        if r.status_code != 200: continue
-        rows = list(csv.DictReader(io.StringIO(gzip.decompress(r.content).decode()), delimiter="\t"))
+        st, txt = rep["SALES"][d]
+        if st != "ok": continue
+        rows = list(csv.DictReader(io.StringIO(txt), delimiter="\t"))
         sku2app = {row["SKU"]: row["Apple Identifier"] for row in rows if not row.get("Parent Identifier", "").strip()}
         per = {aid: {"downloads": 0, "redownloads": 0, "new_subs": 0, "new_subs_paid": 0, "new_subs_free": 0, "renewals": 0, "proceeds": 0.0} for aid in apps}
         for row in rows:
@@ -126,6 +131,7 @@ def asc():
 for k, fn in (("meta", meta), ("asc", asc)):
     try: out[k] = fn()
     except Exception as x: out[k] = None; out["errors"].append(f"{k}: {x}")
+out["errors"] += (out.get("asc") or {}).pop("report_errors", None) or []
 out.update(json.load(open(f"{B}/data/manual.json")))
 for g in out.get("roblox", {}).get("games", []):
     a = g.get("ads") or {}

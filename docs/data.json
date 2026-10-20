@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-20 08:46 EDT",
+ "updated_at": "2026-10-20 09:12 EDT",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -435,7 +435,296 @@
      }
     }
    }
-  ]
+  ],
+  "reports": {
+   "range": [
+    "2026-10-11",
+    "2026-10-19"
+   ],
+   "dates": [
+    "2026-10-11",
+    "2026-10-12",
+    "2026-10-13",
+    "2026-10-14",
+    "2026-10-15",
+    "2026-10-16",
+    "2026-10-17",
+    "2026-10-18",
+    "2026-10-19"
+   ],
+   "sales_status": {
+    "2026-10-11": "ok",
+    "2026-10-12": "ok",
+    "2026-10-13": "ok",
+    "2026-10-14": "ok",
+    "2026-10-15": "ok",
+    "2026-10-16": "ok",
+    "2026-10-17": "ok",
+    "2026-10-18": "ok",
+    "2026-10-19": "pending"
+   },
+   "event_report_days": [
+    "2026-10-12",
+    "2026-10-16",
+    "2026-10-17"
+   ],
+   "pending_days": [
+    "2026-10-18",
+    "2026-10-19"
+   ],
+   "installs": {
+    "6805914932": {
+     "name": "LaneSync",
+     "first_time": [
+      2,
+      17,
+      5,
+      6,
+      3,
+      5,
+      5,
+      8,
+      null
+     ],
+     "redownloads": [
+      0,
+      4,
+      1,
+      2,
+      1,
+      2,
+      0,
+      1,
+      null
+     ],
+     "updates": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      14,
+      17,
+      1,
+      null
+     ],
+     "launch": "2026-10-11",
+     "total_first_time": 51,
+     "total_redownloads": 11
+    },
+    "6819824551": {
+     "name": "StrideLab",
+     "first_time": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      9,
+      2,
+      null
+     ],
+     "redownloads": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      null
+     ],
+     "updates": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4,
+      3,
+      null
+     ],
+     "launch": "2026-10-16",
+     "total_first_time": 13,
+     "total_redownloads": 1
+    }
+   },
+   "product_types_counted": [
+    "1",
+    "1E",
+    "1EP",
+    "1EU",
+    "1F",
+    "1T",
+    "F1"
+   ],
+   "product_types_seen": {
+    "1F": 64,
+    "3F": 12,
+    "7F": 39
+   },
+   "cohorts": [
+    {
+     "start": "2026-10-12",
+     "app_id": "6805914932",
+     "app": "LaneSync",
+     "subscription_id": "6819811523",
+     "product": "Yearly",
+     "period": "1 Year",
+     "type": "offer code",
+     "free": true,
+     "offer_name": "Friends and family - 1 year free",
+     "offer_code": "LANESYNCFRIENDS",
+     "trial_length": "1 Year",
+     "count": 9,
+     "countries": {
+      "US": 9
+     },
+     "conversions": 0,
+     "cancellations": 0,
+     "events": [],
+     "expected_first_charge": "2027-10-12",
+     "expected_in_reports": "2027-10-13",
+     "price_usd": 39.99,
+     "price_local": null,
+     "status": "in trial"
+    },
+    {
+     "start": "2026-10-16",
+     "app_id": "6819824551",
+     "app": "StrideLab",
+     "subscription_id": "6819859533",
+     "product": "StrideLab Pro Yearly",
+     "period": "1 Year",
+     "type": "offer code",
+     "free": true,
+     "offer_name": "Free 1 Year No Renew",
+     "offer_code": "STRIDELABFRIENDS",
+     "trial_length": "1 Year",
+     "count": 1,
+     "countries": {
+      "US": 1
+     },
+     "conversions": 0,
+     "cancellations": 0,
+     "events": [],
+     "expected_first_charge": "2027-10-16",
+     "expected_in_reports": "2027-10-17",
+     "price_usd": 39.99,
+     "price_local": null,
+     "status": "in trial"
+    },
+    {
+     "start": "2026-10-17",
+     "app_id": "6819824551",
+     "app": "StrideLab",
+     "subscription_id": "6819859533",
+     "product": "StrideLab Pro Yearly",
+     "period": "1 Year",
+     "type": "offer code",
+     "free": true,
+     "offer_name": "Free 1 Year No Renew",
+     "offer_code": "STRIDELABFRIENDS",
+     "trial_length": "1 Year",
+     "count": 3,
+     "countries": {
+      "US": 3
+     },
+     "conversions": 0,
+     "cancellations": 0,
+     "events": [],
+     "expected_first_charge": "2027-10-17",
+     "expected_in_reports": "2027-10-18",
+     "price_usd": 39.99,
+     "price_local": null,
+     "status": "in trial"
+    },
+    {
+     "start": "2026-10-18",
+     "app_id": "6819824551",
+     "app": "StrideLab",
+     "subscription_id": "6819859533",
+     "product": "StrideLab Pro Yearly",
+     "period": "1 Year",
+     "type": "intro trial",
+     "free": true,
+     "offer_name": null,
+     "offer_code": null,
+     "trial_length": "7 Days",
+     "count": 1,
+     "countries": {
+      "HK": 1
+     },
+     "conversions": 0,
+     "cancellations": 0,
+     "events": [],
+     "expected_first_charge": "2026-10-25",
+     "expected_in_reports": "2026-10-26",
+     "price_usd": 39.99,
+     "price_local": "HK$288",
+     "status": "in trial"
+    }
+   ],
+   "next_conversion": {
+    "start": "2026-10-18",
+    "app": "StrideLab",
+    "product": "StrideLab Pro Yearly",
+    "type": "intro trial",
+    "count": 1,
+    "expected_first_charge": "2026-10-25",
+    "expected_in_reports": "2026-10-26",
+    "trial_length": "7 Days"
+   },
+   "subscriptions": {
+    "6819810991": {
+     "app": "6805914932",
+     "name": "Monthly",
+     "period": "ONE_MONTH",
+     "price_usd": "4.99",
+     "intro_offers": [
+      "FREE_TRIAL ONE_WEEK"
+     ]
+    },
+    "6819811523": {
+     "app": "6805914932",
+     "name": "Yearly",
+     "period": "ONE_YEAR",
+     "price_usd": "39.99",
+     "intro_offers": [
+      "FREE_TRIAL ONE_WEEK"
+     ]
+    },
+    "6819858281": {
+     "app": "6819824551",
+     "name": "StrideLab Pro Monthly",
+     "period": "ONE_MONTH",
+     "price_usd": "4.99",
+     "intro_offers": [
+      "FREE_TRIAL ONE_WEEK"
+     ]
+    },
+    "6819859533": {
+     "app": "6819824551",
+     "name": "StrideLab Pro Yearly",
+     "period": "ONE_YEAR",
+     "price_usd": "39.99",
+     "intro_offers": [
+      "FREE_TRIAL ONE_WEEK"
+     ]
+    }
+   },
+   "stats": {
+    "days": 9,
+    "requests": 3,
+    "cache_hits": 15,
+    "seconds": 0.92,
+    "latest_requested": "2026-10-19"
+   },
+   "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
+  }
  },
  "apple_ads": {
   "as_of": "2026-10-20 ~8:45 AM ET (data through Oct 19, UTC)",
