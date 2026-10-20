@@ -2,7 +2,7 @@
  "apple_ads": {
   "as_of": "2026-10-18 ~7:15 PM ET",
   "source": "manual (browser)",
-  "note": "Apple reports in UTC, ~3h delay. Stale: browser sign-in required (checked 2026-10-19 morning).",
+  "note": "Apple reports in UTC, ~3h delay. Stale: browser sign-in required (checked 2026-10-19 and 2026-10-20 mornings).",
   "campaigns": [
    {
     "name": "LaneSync - US - Search",
@@ -51,7 +51,7 @@
   ]
  },
  "roblox": {
-  "period": "2026-10-12 to 2026-10-18 (last 7 days)",
+  "period": "last 7 days (as shown 2026-10-20 morning)",
   "source": "manual (browser) Creator Engagement last 7 days",
   "games": [
    {
@@ -61,12 +61,12 @@
     "avg_playtime_change_pct": 122.8,
     "dau": 14,
     "dau_change_pct": -14.4,
-    "sessions_per_day": 24,
+    "sessions_per_day": 18,
     "lifetime_visits": 247,
-    "new_users": 18,
-    "avg_session_min": 3.2,
+    "new_users": 12,
+    "avg_session_min": 2.9,
     "revenue": 0,
-    "note": "New ad campaign \"Crash a Car_10182026_06:43PM\" started Oct 18 (Learning): $3.51, 1,600 impr, 2.2% CTR, 35 clicks; plays not yet reported",
+    "note": "Campaign \"Crash a Car_10182026_06:43PM\" now Paused: $4.40, 1,914 impr, 2% CTR, 39 clicks; plays not yet reported (Roblox lag up to 48h)",
     "ad_spend": 61.03,
     "ads": {
      "spend_28d": 61.03,
@@ -77,18 +77,18 @@
      "plays": 218,
      "cost_per_play": 0.264,
      "ad_playtime_h": 15.2,
-     "campaign": "Learning (new campaign started 2026-10-18)"
+     "campaign": "Paused (Oct 18 campaign); Oct 8 campaign completed"
     },
     "returning_users": 2,
-    "mau": 151,
+    "mau": 164,
     "ads_7d": {
-     "spend": 16.57,
-     "impressions": 8476,
-     "ctr_pct": 1.32,
-     "clicks": 112,
-     "plays": 45,
-     "cost_per_play": 0.368,
-     "ad_playtime_h": 2.7
+     "spend": 5.93,
+     "impressions": 3500,
+     "ctr_pct": 2.0,
+     "clicks": 39,
+     "plays": 4,
+     "cost_per_play": 1.482,
+     "ad_playtime_h": 0.1
     }
    },
    {
@@ -107,15 +107,15 @@
      "impressions": 70635,
      "ctr_pct": 1.4,
      "clicks": 1021,
-     "plays": 370,
-     "cost_per_play": 0.225,
+     "plays": 371,
+     "cost_per_play": 0.224,
      "ad_playtime_h": 16.5,
      "campaign": "Completed"
     },
     "sessions_per_day": 0,
     "new_users": 0,
     "returning_users": 0,
-    "avg_session_min": 1.9,
+    "avg_session_min": 0.151,
     "mau": 98,
     "note": null,
     "ads_7d": null
@@ -145,20 +145,20 @@
     "new_users": 1,
     "returning_users": 0,
     "avg_session_min": 2.5,
-    "mau": 187,
+    "mau": 234,
     "note": null,
     "ads_7d": null
    }
   ],
-  "as_of": "2026-10-19"
+  "as_of": "2026-10-20"
  },
  "roblox_ads": {
   "source": "Roblox Ads Manager (manual)",
   "period": "last 28 days",
   "currency": "USD",
-  "total_spend_28d": 212.71,
-  "total_spend_7d": 16.57,
-  "as_of": "2026-10-19",
-  "note": "Crash a Car has a new campaign in Learning since Oct 18; other campaigns completed. Roblox ad metrics may lag up to 48h."
+  "total_spend_28d": 213.59,
+  "total_spend_7d": 5.93,
+  "as_of": "2026-10-20",
+  "note": "All campaigns completed or paused (Crash a Car Oct 18 campaign paused). 28d: $213.59, 173.8k impr, 906 plays, 45.4h playtime. Roblox ad metrics may lag up to 48h."
  }
 }
