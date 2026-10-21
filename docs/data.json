@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-20 22:38 EDT",
+ "updated_at": "2026-10-21 08:02 EDT",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -28,19 +28,19 @@
    "video_views": 0
   },
   "last_7d": {
-   "spend": 44.13,
-   "impressions": 2595,
-   "reach": 1468,
-   "cpm": "17.00578",
-   "frequency": "1.767711",
-   "date_start": "2026-10-14",
-   "date_stop": "2026-10-20",
-   "link_clicks": 13,
-   "all_clicks": 19,
-   "link_ctr": 0.501,
-   "cost_per_link_click": 3.39,
+   "spend": 39.6,
+   "impressions": 2289,
+   "reach": 1349,
+   "cpm": "17.300131",
+   "frequency": "1.696812",
+   "date_start": "2026-10-15",
+   "date_stop": "2026-10-21",
+   "link_clicks": 11,
+   "all_clicks": 16,
+   "link_ctr": 0.481,
+   "cost_per_link_click": 3.6,
    "installs": 0,
-   "video_views": 523
+   "video_views": 463
   },
   "lifetime": {
    "spend": 44.13,
@@ -48,8 +48,8 @@
    "reach": 1464,
    "cpm": "17.00578",
    "frequency": "1.772541",
-   "date_start": "2023-09-20",
-   "date_stop": "2026-10-20",
+   "date_start": "2023-09-21",
+   "date_stop": "2026-10-21",
    "link_clicks": 13,
    "all_clicks": 19,
    "link_ctr": 0.501,
@@ -61,101 +61,96 @@
   },
   "daily_14d": [
    {
-    "spend": 4.53,
-    "impressions": 306,
-    "reach": 265,
+    "spend": 0.0,
+    "impressions": 0,
+    "reach": 0,
     "cpm": "14.803922",
-    "frequency": "1.154717",
     "date_start": "2026-10-14",
     "date_stop": "2026-10-14",
     "link_clicks": 2,
-    "all_clicks": 3,
-    "link_ctr": 0.654,
-    "cost_per_link_click": 2.27,
+    "all_clicks": 0,
+    "link_ctr": 0,
+    "cost_per_link_click": 0.0,
     "installs": 0,
     "video_views": 60
    },
    {
-    "spend": 8.26,
-    "impressions": 517,
-    "reach": 393,
+    "spend": 0.0,
+    "impressions": 0,
+    "reach": 0,
     "cpm": "15.976789",
-    "frequency": "1.315522",
     "date_start": "2026-10-15",
     "date_stop": "2026-10-15",
     "link_clicks": 2,
-    "all_clicks": 3,
-    "link_ctr": 0.387,
-    "cost_per_link_click": 4.13,
+    "all_clicks": 0,
+    "link_ctr": 0,
+    "cost_per_link_click": 0.0,
     "installs": 0,
     "video_views": 113
    },
    {
-    "spend": 10.29,
-    "impressions": 586,
-    "reach": 488,
+    "spend": 0.0,
+    "impressions": 0,
+    "reach": 0,
     "cpm": "17.559727",
-    "frequency": "1.20082",
     "date_start": "2026-10-16",
     "date_stop": "2026-10-16",
     "link_clicks": 2,
-    "all_clicks": 3,
-    "link_ctr": 0.341,
-    "cost_per_link_click": 5.14,
+    "all_clicks": 0,
+    "link_ctr": 0,
+    "cost_per_link_click": 0.0,
     "installs": 0,
     "video_views": 120
    },
    {
-    "spend": 10.74,
-    "impressions": 640,
-    "reach": 513,
+    "spend": 0.0,
+    "impressions": 0,
+    "reach": 0,
     "cpm": "16.78125",
-    "frequency": "1.247563",
     "date_start": "2026-10-17",
     "date_stop": "2026-10-17",
     "link_clicks": 4,
-    "all_clicks": 5,
-    "link_ctr": 0.625,
-    "cost_per_link_click": 2.69,
+    "all_clicks": 0,
+    "link_ctr": 0,
+    "cost_per_link_click": 0.0,
     "installs": 0,
     "video_views": 123
    },
    {
-    "spend": 10.31,
-    "impressions": 546,
-    "reach": 435,
+    "spend": 0.0,
+    "impressions": 0,
+    "reach": 0,
     "cpm": "18.882784",
-    "frequency": "1.255172",
     "date_start": "2026-10-18",
     "date_stop": "2026-10-18",
     "link_clicks": 3,
-    "all_clicks": 5,
-    "link_ctr": 0.549,
-    "cost_per_link_click": 3.44,
+    "all_clicks": 0,
+    "link_ctr": 0,
+    "cost_per_link_click": 0.0,
     "installs": 0,
     "video_views": 107
    }
   ],
   "campaigns_7d": [
    {
-    "spend": 44.13,
-    "impressions": 2595,
-    "reach": 1468,
-    "cpm": "17.00578",
-    "frequency": "1.767711",
+    "spend": 39.6,
+    "impressions": 2289,
+    "reach": 1349,
+    "cpm": "17.300131",
+    "frequency": "1.696812",
     "campaign_id": "52589865683494",
     "campaign_name": "LaneSync | US | $50 total video test",
-    "date_start": "2026-10-14",
-    "date_stop": "2026-10-20",
-    "link_clicks": 13,
-    "all_clicks": 19,
-    "link_ctr": 0.501,
-    "cost_per_link_click": 3.39,
+    "date_start": "2026-10-15",
+    "date_stop": "2026-10-21",
+    "link_clicks": 11,
+    "all_clicks": 16,
+    "link_ctr": 0.481,
+    "cost_per_link_click": 3.6,
     "installs": 0,
-    "video_views": 523,
+    "video_views": 463,
     "status": "PAUSED",
     "lifetime_budget": 50.0,
-    "budget_remaining": 5.87
+    "budget_remaining": 10.4
    }
   ],
   "campaigns_lifetime": [
@@ -167,8 +162,8 @@
     "frequency": "1.772541",
     "campaign_id": "52589865683494",
     "campaign_name": "LaneSync | US | $50 total video test",
-    "date_start": "2023-09-20",
-    "date_stop": "2026-10-20",
+    "date_start": "2023-09-21",
+    "date_stop": "2026-10-21",
     "link_clicks": 13,
     "all_clicks": 19,
     "link_ctr": 0.501,
@@ -439,7 +434,7 @@
   "reports": {
    "range": [
     "2026-10-11",
-    "2026-10-19"
+    "2026-10-20"
    ],
    "dates": [
     "2026-10-11",
@@ -450,7 +445,8 @@
     "2026-10-16",
     "2026-10-17",
     "2026-10-18",
-    "2026-10-19"
+    "2026-10-19",
+    "2026-10-20"
    ],
    "sales_status": {
     "2026-10-11": "ok",
@@ -461,7 +457,8 @@
     "2026-10-16": "ok",
     "2026-10-17": "ok",
     "2026-10-18": "ok",
-    "2026-10-19": "ok"
+    "2026-10-19": "ok",
+    "2026-10-20": "pending"
    },
    "event_report_days": [
     "2026-10-12",
@@ -469,8 +466,8 @@
     "2026-10-17"
    ],
    "pending_days": [
-    "2026-10-18",
-    "2026-10-19"
+    "2026-10-19",
+    "2026-10-20"
    ],
    "installs": {
     "6805914932": {
@@ -484,7 +481,8 @@
       5,
       5,
       8,
-      3
+      3,
+      null
      ],
      "redownloads": [
       0,
@@ -495,7 +493,8 @@
       2,
       0,
       1,
-      1
+      1,
+      null
      ],
      "updates": [
       0,
@@ -506,7 +505,8 @@
       14,
       17,
       1,
-      1
+      1,
+      null
      ],
      "launch": "2026-10-11",
      "total_first_time": 54,
@@ -523,7 +523,8 @@
       2,
       9,
       2,
-      1
+      1,
+      null
      ],
      "redownloads": [
       0,
@@ -534,7 +535,8 @@
       0,
       0,
       1,
-      0
+      0,
+      null
      ],
      "updates": [
       0,
@@ -545,7 +547,8 @@
       0,
       4,
       3,
-      0
+      0,
+      null
      ],
      "launch": "2026-10-16",
      "total_first_time": 14,
@@ -717,11 +720,11 @@
     }
    },
    "stats": {
-    "days": 9,
-    "requests": 2,
+    "days": 10,
+    "requests": 4,
     "cache_hits": 16,
-    "seconds": 0.81,
-    "latest_requested": "2026-10-19"
+    "seconds": 0.82,
+    "latest_requested": "2026-10-20"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
   }
