@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-21 09:37 EDT",
+ "updated_at": "2026-10-21 10:33 EDT",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -207,38 +207,6 @@
   ],
   "sales": [
    {
-    "date": "2026-10-13",
-    "apps": {
-     "6805914932": {
-      "downloads": 5,
-      "redownloads": 1,
-      "new_subs": 0,
-      "new_subs_paid": 0,
-      "new_subs_free": 0,
-      "renewals": 0,
-      "proceeds": 0.0
-     },
-     "6819824551": {
-      "downloads": 0,
-      "redownloads": 0,
-      "new_subs": 0,
-      "new_subs_paid": 0,
-      "new_subs_free": 0,
-      "renewals": 0,
-      "proceeds": 0.0
-     },
-     "6812496973": {
-      "downloads": 0,
-      "redownloads": 0,
-      "new_subs": 0,
-      "new_subs_paid": 0,
-      "new_subs_free": 0,
-      "renewals": 0,
-      "proceeds": 0.0
-     }
-    }
-   },
-   {
     "date": "2026-10-14",
     "apps": {
      "6805914932": {
@@ -429,6 +397,38 @@
       "proceeds": 0.0
      }
     }
+   },
+   {
+    "date": "2026-10-20",
+    "apps": {
+     "6805914932": {
+      "downloads": 4,
+      "redownloads": 0,
+      "new_subs": 1,
+      "new_subs_paid": 0,
+      "new_subs_free": 1,
+      "renewals": 0,
+      "proceeds": 0.0
+     },
+     "6819824551": {
+      "downloads": 3,
+      "redownloads": 0,
+      "new_subs": 0,
+      "new_subs_paid": 0,
+      "new_subs_free": 0,
+      "renewals": 0,
+      "proceeds": 0.0
+     },
+     "6812496973": {
+      "downloads": 0,
+      "redownloads": 0,
+      "new_subs": 0,
+      "new_subs_paid": 0,
+      "new_subs_free": 0,
+      "renewals": 0,
+      "proceeds": 0.0
+     }
+    }
    }
   ],
   "reports": {
@@ -458,16 +458,16 @@
     "2026-10-17": "ok",
     "2026-10-18": "ok",
     "2026-10-19": "ok",
-    "2026-10-20": "pending"
+    "2026-10-20": "ok"
    },
    "event_report_days": [
     "2026-10-12",
     "2026-10-16",
-    "2026-10-17"
+    "2026-10-17",
+    "2026-10-20"
    ],
    "pending_days": [
-    "2026-10-19",
-    "2026-10-20"
+    "2026-10-19"
    ],
    "installs": {
     "6805914932": {
@@ -482,7 +482,7 @@
       5,
       8,
       3,
-      null
+      4
      ],
      "redownloads": [
       0,
@@ -494,7 +494,7 @@
       0,
       1,
       1,
-      null
+      0
      ],
      "updates": [
       0,
@@ -506,10 +506,10 @@
       17,
       1,
       1,
-      null
+      0
      ],
      "launch": "2026-10-11",
-     "total_first_time": 54,
+     "total_first_time": 58,
      "total_redownloads": 12
     },
     "6819824551": {
@@ -524,7 +524,7 @@
       9,
       2,
       1,
-      null
+      3
      ],
      "redownloads": [
       0,
@@ -536,7 +536,7 @@
       0,
       1,
       0,
-      null
+      0
      ],
      "updates": [
       0,
@@ -548,10 +548,10 @@
       4,
       3,
       0,
-      null
+      0
      ],
      "launch": "2026-10-16",
-     "total_first_time": 14,
+     "total_first_time": 17,
      "total_redownloads": 1
     }
    },
@@ -565,7 +565,7 @@
     "F1"
    ],
    "product_types_seen": {
-    "1F": 68,
+    "1F": 75,
     "3F": 13,
     "7F": 40
    },
@@ -669,6 +669,31 @@
      "price_usd": 39.99,
      "price_local": "HK$288",
      "status": "in trial"
+    },
+    {
+     "start": "2026-10-20",
+     "app_id": "6805914932",
+     "app": "LaneSync",
+     "subscription_id": "6819810991",
+     "product": "Monthly",
+     "period": "1 Month",
+     "type": "offer code",
+     "free": true,
+     "offer_name": "Free month - auto-renew",
+     "offer_code": "LANESYNCMONTH",
+     "trial_length": "1 Month",
+     "count": 1,
+     "countries": {
+      "US": 1
+     },
+     "conversions": 0,
+     "cancellations": 0,
+     "events": [],
+     "expected_first_charge": "2026-11-20",
+     "expected_in_reports": "2026-11-21",
+     "price_usd": 4.99,
+     "price_local": null,
+     "status": "in trial"
     }
    ],
    "next_conversion": {
@@ -723,7 +748,7 @@
     "days": 10,
     "requests": 3,
     "cache_hits": 17,
-    "seconds": 0.77,
+    "seconds": 0.8,
     "latest_requested": "2026-10-20"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
