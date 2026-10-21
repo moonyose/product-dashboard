@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-21 13:34 EDT",
+ "updated_at": "2026-10-21 14:35 EDT",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -186,18 +186,18 @@
    {
     "id": "6805914932",
     "name": "LaneSync - Sprint Timer",
-    "version": "1.0.1",
-    "state": "READY_FOR_SALE",
-    "created": "2026-10-14T14:04:32-07:00",
+    "version": "1.0.2",
+    "state": "PREPARE_FOR_SUBMISSION",
+    "created": "2026-10-21T11:35:24-07:00",
     "public": true,
     "icon": "icons/app_6805914932.png"
    },
    {
     "id": "6819824551",
     "name": "StrideLab - Sprint Analysis",
-    "version": "1.0.1",
-    "state": "READY_FOR_SALE",
-    "created": "2026-10-16T16:40:49-07:00",
+    "version": "1.0.2",
+    "state": "PREPARE_FOR_SUBMISSION",
+    "created": "2026-10-21T11:35:27-07:00",
     "public": true,
     "icon": "icons/app_6819824551.png"
    },
@@ -753,7 +753,7 @@
     "days": 10,
     "requests": 1,
     "cache_hits": 19,
-    "seconds": 0.79,
+    "seconds": 0.76,
     "latest_requested": "2026-10-20"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
