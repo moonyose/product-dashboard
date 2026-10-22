@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-22 08:06 EDT",
+ "updated_at": "2026-10-22 08:09 EDT",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -759,9 +759,9 @@
    },
    "stats": {
     "days": 11,
-    "requests": 3,
-    "cache_hits": 19,
-    "seconds": 0.84,
+    "requests": 2,
+    "cache_hits": 20,
+    "seconds": 0.87,
     "latest_requested": "2026-10-21"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
@@ -770,7 +770,7 @@
  "apple_ads": {
   "as_of": "2026-10-20 ~8:45 AM ET (data through Oct 19, UTC)",
   "source": "manual (browser)",
-  "note": "Apple reports in UTC, ~3h delay. Campaign started within the last 7 days, so 7-day and lifetime match. | Oct 21 morning refresh failed: Apple Ads sign-in required; figures still from Oct 20.",
+  "note": "Apple reports in UTC, ~3h delay. Campaign started within the last 7 days, so 7-day and lifetime match. | Oct 21 and Oct 22 morning refreshes failed: Apple Ads sign-in required; figures still from Oct 20.",
   "campaigns": [
    {
     "name": "LaneSync - US - Search",
@@ -810,20 +810,20 @@
   ]
  },
  "roblox": {
-  "period": "last 7 days (as shown 2026-10-21 morning; charts through Oct 20)",
+  "period": "last 7 days (as shown 2026-10-22 morning; charts Oct 15-21)",
   "source": "manual (browser) Creator Engagement last 7 days",
   "games": [
    {
     "name": "Crash a Car",
     "universe_id": 10769917513,
-    "avg_playtime_min": 4.0,
-    "avg_playtime_change_pct": -9.1,
-    "dau": 5,
-    "dau_change_pct": -64.3,
-    "sessions_per_day": 6,
+    "avg_playtime_min": 5.2,
+    "avg_playtime_change_pct": null,
+    "dau": 4,
+    "dau_change_pct": null,
+    "sessions_per_day": 5,
     "lifetime_visits": 247,
     "new_users": 3,
-    "avg_session_min": 2.7,
+    "avg_session_min": 4.1,
     "revenue": 0,
     "note": "Oct 18 campaign Paused: $4.28, 1,858 impr, 1.9% CTR, 36 clicks, 16 plays, 1.2h playtime",
     "ad_spend": 61.8,
@@ -839,7 +839,7 @@
      "campaign": "Paused (Oct 18 campaign); Oct 8 campaign completed"
     },
     "returning_users": 1,
-    "mau": 176,
+    "mau": 179,
     "ads_7d": {
      "spend": 4.28,
      "impressions": 1858,
@@ -855,10 +855,10 @@
    {
     "name": "Infection",
     "universe_id": 10520154400,
-    "avg_playtime_min": 0.371,
-    "avg_playtime_change_pct": 55.9,
+    "avg_playtime_min": 0.198,
+    "avg_playtime_change_pct": null,
     "dau": 0,
-    "dau_change_pct": null,
+    "dau_change_pct": 0.0,
     "lifetime_visits": 1122,
     "revenue": 0,
     "ad_spend": 83.21,
@@ -873,11 +873,11 @@
      "ad_playtime_h": 16.5,
      "campaign": "Completed"
     },
-    "sessions_per_day": 1,
+    "sessions_per_day": 0,
     "new_users": 0,
     "returning_users": 0,
-    "avg_session_min": 0.285,
-    "mau": 147,
+    "avg_session_min": 0.198,
+    "mau": 98,
     "note": null,
     "ads_7d": null,
     "ads_playtime_per_play_min": 2.67,
@@ -887,9 +887,9 @@
     "name": "Ghosts In The Graveyard - Insane Asylum",
     "universe_id": 10308497838,
     "avg_playtime_min": 1.0,
-    "avg_playtime_change_pct": -63.0,
+    "avg_playtime_change_pct": -45.0,
     "dau": 0,
-    "dau_change_pct": -100.0,
+    "dau_change_pct": -25.0,
     "lifetime_visits": 377,
     "revenue": 0,
     "ad_spend": 68.48,
@@ -915,7 +915,7 @@
     "icon": "icons/rbx_10308497838.png"
    }
   ],
-  "as_of": "2026-10-21"
+  "as_of": "2026-10-22"
  },
  "roblox_ads": {
   "source": "Roblox Ads Manager (manual)",
@@ -923,7 +923,7 @@
   "currency": "USD",
   "total_spend_28d": 213.47,
   "total_spend_7d": 4.28,
-  "as_of": "2026-10-21",
+  "as_of": "2026-10-22",
   "note": "All campaigns completed or paused. 28d: $213.47, 173.7k impr, 922 plays, 46.5h playtime. 7d: $4.28, 1.9k impr, 16 plays. Roblox play metrics may lag up to 48h."
  }
 }
