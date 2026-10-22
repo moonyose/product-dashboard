@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-22 10:30 EDT",
+ "updated_at": "2026-10-22 11:31 EDT",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -471,11 +471,10 @@
     "2026-10-12",
     "2026-10-16",
     "2026-10-17",
-    "2026-10-20"
-   ],
-   "pending_days": [
+    "2026-10-20",
     "2026-10-21"
    ],
+   "pending_days": [],
    "installs": {
     "6805914932": {
      "name": "LaneSync",
@@ -707,6 +706,31 @@
      "price_usd": 4.99,
      "price_local": null,
      "status": "in trial"
+    },
+    {
+     "start": "2026-10-22",
+     "app_id": "6805914932",
+     "app": "LaneSync",
+     "subscription_id": "6819810991",
+     "product": "Monthly",
+     "period": "1 Month",
+     "type": "offer code",
+     "free": true,
+     "offer_name": "Free month - auto-renew",
+     "offer_code": "LANESYNCMONTH",
+     "trial_length": "1 Month",
+     "count": 1,
+     "countries": {
+      "DE": 1
+     },
+     "conversions": 0,
+     "cancellations": 0,
+     "events": [],
+     "expected_first_charge": "2026-11-22",
+     "expected_in_reports": "2026-11-23",
+     "price_usd": 4.99,
+     "price_local": "DEU 5.99",
+     "status": "in trial"
     }
    ],
    "next_conversion": {
@@ -761,7 +785,7 @@
     "days": 11,
     "requests": 1,
     "cache_hits": 21,
-    "seconds": 0.74,
+    "seconds": 0.77,
     "latest_requested": "2026-10-21"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
