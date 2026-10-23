@@ -1,186 +1,10 @@
 {
- "updated_at": "2026-10-23 09:35 EDT",
- "errors": [],
- "meta": {
-  "account_timezone": "America/Los_Angeles",
-  "currency": "USD",
-  "notes": "Days follow the ad account timezone. 7d/14d include today. Clicks/CTR = link clicks (Ads Manager 'Link clicks', 'CTR (link click-through rate)').",
-  "today": {
-   "spend": 0.0,
-   "impressions": 0,
-   "reach": 0,
-   "link_clicks": 0,
-   "all_clicks": 0,
-   "link_ctr": 0,
-   "cost_per_link_click": null,
-   "installs": 0,
-   "video_views": 0
-  },
-  "yesterday": {
-   "spend": 0.0,
-   "impressions": 0,
-   "reach": 0,
-   "link_clicks": 0,
-   "all_clicks": 0,
-   "link_ctr": 0,
-   "cost_per_link_click": null,
-   "installs": 0,
-   "video_views": 0
-  },
-  "last_7d": {
-   "spend": 21.05,
-   "impressions": 1186,
-   "reach": 866,
-   "cpm": "17.748735",
-   "frequency": "1.369515",
-   "date_start": "2026-10-17",
-   "date_stop": "2026-10-23",
-   "link_clicks": 7,
-   "all_clicks": 10,
-   "link_ctr": 0.59,
-   "cost_per_link_click": 3.01,
-   "installs": 0,
-   "video_views": 230
-  },
-  "lifetime": {
-   "spend": 44.13,
-   "impressions": 2595,
-   "reach": 1464,
-   "cpm": "17.00578",
-   "frequency": "1.772541",
-   "date_start": "2023-09-23",
-   "date_stop": "2026-10-23",
-   "link_clicks": 13,
-   "all_clicks": 19,
-   "link_ctr": 0.501,
-   "cost_per_link_click": 3.39,
-   "installs": 0,
-   "video_views": 523,
-   "lifetime_budget": 50.0,
-   "budget_remaining": 5.87
-  },
-  "daily_14d": [
-   {
-    "spend": 4.53,
-    "impressions": 306,
-    "reach": 265,
-    "cpm": "14.803922",
-    "frequency": "1.154717",
-    "date_start": "2026-10-14",
-    "date_stop": "2026-10-14",
-    "link_clicks": 2,
-    "all_clicks": 3,
-    "link_ctr": 0.654,
-    "cost_per_link_click": 2.27,
-    "installs": 0,
-    "video_views": 60
-   },
-   {
-    "spend": 8.26,
-    "impressions": 517,
-    "reach": 393,
-    "cpm": "15.976789",
-    "frequency": "1.315522",
-    "date_start": "2026-10-15",
-    "date_stop": "2026-10-15",
-    "link_clicks": 2,
-    "all_clicks": 3,
-    "link_ctr": 0.387,
-    "cost_per_link_click": 4.13,
-    "installs": 0,
-    "video_views": 113
-   },
-   {
-    "spend": 10.29,
-    "impressions": 586,
-    "reach": 488,
-    "cpm": "17.559727",
-    "frequency": "1.20082",
-    "date_start": "2026-10-16",
-    "date_stop": "2026-10-16",
-    "link_clicks": 2,
-    "all_clicks": 3,
-    "link_ctr": 0.341,
-    "cost_per_link_click": 5.14,
-    "installs": 0,
-    "video_views": 120
-   },
-   {
-    "spend": 10.74,
-    "impressions": 640,
-    "reach": 513,
-    "cpm": "16.78125",
-    "frequency": "1.247563",
-    "date_start": "2026-10-17",
-    "date_stop": "2026-10-17",
-    "link_clicks": 4,
-    "all_clicks": 5,
-    "link_ctr": 0.625,
-    "cost_per_link_click": 2.69,
-    "installs": 0,
-    "video_views": 123
-   },
-   {
-    "spend": 10.31,
-    "impressions": 546,
-    "reach": 435,
-    "cpm": "18.882784",
-    "frequency": "1.255172",
-    "date_start": "2026-10-18",
-    "date_stop": "2026-10-18",
-    "link_clicks": 3,
-    "all_clicks": 5,
-    "link_ctr": 0.549,
-    "cost_per_link_click": 3.44,
-    "installs": 0,
-    "video_views": 107
-   }
-  ],
-  "campaigns_7d": [
-   {
-    "spend": 21.05,
-    "impressions": 1186,
-    "reach": 866,
-    "cpm": "17.748735",
-    "frequency": "1.369515",
-    "campaign_id": "52589865683494",
-    "campaign_name": "LaneSync | US | $50 total video test",
-    "date_start": "2026-10-17",
-    "date_stop": "2026-10-23",
-    "link_clicks": 7,
-    "all_clicks": 10,
-    "link_ctr": 0.59,
-    "cost_per_link_click": 3.01,
-    "installs": 0,
-    "video_views": 230,
-    "status": "PAUSED",
-    "lifetime_budget": 50.0,
-    "budget_remaining": 28.95
-   }
-  ],
-  "campaigns_lifetime": [
-   {
-    "spend": 44.13,
-    "impressions": 2595,
-    "reach": 1464,
-    "cpm": "17.00578",
-    "frequency": "1.772541",
-    "campaign_id": "52589865683494",
-    "campaign_name": "LaneSync | US | $50 total video test",
-    "date_start": "2023-09-23",
-    "date_stop": "2026-10-23",
-    "link_clicks": 13,
-    "all_clicks": 19,
-    "link_ctr": 0.501,
-    "cost_per_link_click": 3.39,
-    "installs": 0,
-    "video_views": 523,
-    "status": "PAUSED",
-    "lifetime_budget": 50.0,
-    "budget_remaining": 5.87
-   }
-  ]
- },
+ "updated_at": "2026-10-23 10:39 EDT",
+ "errors": [
+  "meta: HTTPSConnectionPool(host='graph.facebook.com', port=443): Read timed out. (read timeout=30)",
+  "asc_reports SUBEVT: fetch failed for 2026-10-22 (error:HTTP 500)"
+ ],
+ "meta": null,
  "asc": {
   "apps": [
    {
@@ -204,9 +28,7 @@
    {
     "id": "6812496973",
     "name": "Miami Beach Transit Tracker",
-    "version": "1.0",
-    "state": "PREPARE_FOR_SUBMISSION",
-    "created": "2026-09-15T12:51:58-07:00",
+    "error": "HTTPSConnectionPool(host='api.appstoreconnect.apple.com', port=443): Read timed out. (read timeout=30)",
     "icon": "icons/app_6812496973.png"
    }
   ],
@@ -476,9 +298,7 @@
     "2026-10-20",
     "2026-10-21"
    ],
-   "pending_days": [
-    "2026-10-22"
-   ],
+   "pending_days": [],
    "installs": {
     "6805914932": {
      "name": "LaneSync",
@@ -795,7 +615,7 @@
     "days": 12,
     "requests": 1,
     "cache_hits": 23,
-    "seconds": 0.58,
+    "seconds": 37.37,
     "latest_requested": "2026-10-22"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
