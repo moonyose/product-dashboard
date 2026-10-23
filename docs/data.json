@@ -1,6 +1,8 @@
 {
- "updated_at": "2026-10-23 16:31 EDT",
- "errors": [],
+ "updated_at": "2026-10-23 17:39 EDT",
+ "errors": [
+  "roblox icons: HTTPSConnectionPool(host='tr.rbxcdn.com', port=443): Read timed out. (read timeout=30)"
+ ],
  "meta": {
   "account_timezone": "America/Los_Angeles",
   "currency": "USD",
@@ -844,7 +846,7 @@
     "days": 12,
     "requests": 0,
     "cache_hits": 24,
-    "seconds": 0.01,
+    "seconds": 0.0,
     "latest_requested": "2026-10-22"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
@@ -944,8 +946,7 @@
      "cost_per_play": 1.013,
      "ad_playtime_h": 1.2
     },
-    "ads_playtime_per_play_min": 4.21,
-    "icon": "icons/rbx_10769917513.png"
+    "ads_playtime_per_play_min": 4.21
    },
    {
     "name": "Infection",
@@ -975,8 +976,7 @@
     "mau": 98,
     "note": null,
     "ads_7d": null,
-    "ads_playtime_per_play_min": 2.67,
-    "icon": "icons/rbx_10520154400.png"
+    "ads_playtime_per_play_min": 2.67
    },
    {
     "name": "Ghosts In The Graveyard - Insane Asylum",
@@ -1006,8 +1006,7 @@
     "mau": 94,
     "note": null,
     "ads_7d": null,
-    "ads_playtime_per_play_min": 2.57,
-    "icon": "icons/rbx_10308497838.png"
+    "ads_playtime_per_play_min": 2.57
    }
   ],
   "as_of": "2026-10-22"
