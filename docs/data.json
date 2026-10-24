@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-24 11:33 EDT",
+ "updated_at": "2026-10-24 12:34 EDT",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -212,38 +212,6 @@
   ],
   "sales": [
    {
-    "date": "2026-10-16",
-    "apps": {
-     "6805914932": {
-      "downloads": 5,
-      "redownloads": 2,
-      "new_subs": 0,
-      "new_subs_paid": 0,
-      "new_subs_free": 0,
-      "renewals": 0,
-      "proceeds": 0.0
-     },
-     "6819824551": {
-      "downloads": 2,
-      "redownloads": 0,
-      "new_subs": 1,
-      "new_subs_paid": 0,
-      "new_subs_free": 1,
-      "renewals": 0,
-      "proceeds": 0.0
-     },
-     "6812496973": {
-      "downloads": 0,
-      "redownloads": 0,
-      "new_subs": 0,
-      "new_subs_paid": 0,
-      "new_subs_free": 0,
-      "renewals": 0,
-      "proceeds": 0.0
-     }
-    }
-   },
-   {
     "date": "2026-10-17",
     "apps": {
      "6805914932": {
@@ -434,6 +402,38 @@
       "proceeds": 0.0
      }
     }
+   },
+   {
+    "date": "2026-10-23",
+    "apps": {
+     "6805914932": {
+      "downloads": 7,
+      "redownloads": 0,
+      "new_subs": 0,
+      "new_subs_paid": 0,
+      "new_subs_free": 0,
+      "renewals": 0,
+      "proceeds": 0.0
+     },
+     "6819824551": {
+      "downloads": 8,
+      "redownloads": 0,
+      "new_subs": 1,
+      "new_subs_paid": 0,
+      "new_subs_free": 1,
+      "renewals": 0,
+      "proceeds": 0.0
+     },
+     "6812496973": {
+      "downloads": 0,
+      "redownloads": 0,
+      "new_subs": 0,
+      "new_subs_paid": 0,
+      "new_subs_free": 0,
+      "renewals": 0,
+      "proceeds": 0.0
+     }
+    }
    }
   ],
   "reports": {
@@ -469,7 +469,7 @@
     "2026-10-20": "ok",
     "2026-10-21": "ok",
     "2026-10-22": "ok",
-    "2026-10-23": "pending"
+    "2026-10-23": "ok"
    },
    "event_report_days": [
     "2026-10-12",
@@ -480,9 +480,7 @@
     "2026-10-22",
     "2026-10-23"
    ],
-   "pending_days": [
-    "2026-10-23"
-   ],
+   "pending_days": [],
    "installs": {
     "6805914932": {
      "name": "LaneSync",
@@ -499,7 +497,7 @@
       4,
       12,
       6,
-      null
+      7
      ],
      "redownloads": [
       0,
@@ -514,7 +512,7 @@
       0,
       1,
       6,
-      null
+      0
      ],
      "updates": [
       0,
@@ -529,10 +527,10 @@
       0,
       10,
       36,
-      null
+      3
      ],
      "launch": "2026-10-11",
-     "total_first_time": 76,
+     "total_first_time": 83,
      "total_redownloads": 19
     },
     "6819824551": {
@@ -550,7 +548,7 @@
       3,
       0,
       5,
-      null
+      8
      ],
      "redownloads": [
       0,
@@ -565,7 +563,7 @@
       0,
       0,
       0,
-      null
+      0
      ],
      "updates": [
       0,
@@ -580,10 +578,10 @@
       0,
       2,
       5,
-      null
+      1
      ],
      "launch": "2026-10-16",
-     "total_first_time": 22,
+     "total_first_time": 30,
      "total_redownloads": 1
     }
    },
@@ -597,9 +595,9 @@
     "F1"
    ],
    "product_types_seen": {
-    "1F": 98,
+    "1F": 113,
     "3F": 20,
-    "7F": 93
+    "7F": 97
    },
    "cohorts": [
     {
@@ -880,7 +878,7 @@
     "days": 13,
     "requests": 1,
     "cache_hits": 25,
-    "seconds": 0.71,
+    "seconds": 1.03,
     "latest_requested": "2026-10-23"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
