@@ -1,6 +1,8 @@
 {
- "updated_at": "2026-10-23 22:33 EDT",
- "errors": [],
+ "updated_at": "2026-10-24 08:09 EDT",
+ "errors": [
+  "roblox icons: HTTPSConnectionPool(host='tr.rbxcdn.com', port=443): Max retries exceeded with url: /180DAY-d779f9b5318e0916daf636342c49ce7b/256/256/Image/Png/noFilter (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)')))"
+ ],
  "meta": {
   "account_timezone": "America/Los_Angeles",
   "currency": "USD",
@@ -28,19 +30,19 @@
    "video_views": 0
   },
   "last_7d": {
-   "spend": 21.05,
-   "impressions": 1186,
-   "reach": 866,
-   "cpm": "17.748735",
-   "frequency": "1.369515",
-   "date_start": "2026-10-17",
-   "date_stop": "2026-10-23",
-   "link_clicks": 7,
-   "all_clicks": 10,
-   "link_ctr": 0.59,
-   "cost_per_link_click": 3.01,
+   "spend": 10.31,
+   "impressions": 546,
+   "reach": 435,
+   "cpm": "18.882784",
+   "frequency": "1.255172",
+   "date_start": "2026-10-18",
+   "date_stop": "2026-10-24",
+   "link_clicks": 3,
+   "all_clicks": 5,
+   "link_ctr": 0.549,
+   "cost_per_link_click": 3.44,
    "installs": 0,
-   "video_views": 230
+   "video_views": 107
   },
   "lifetime": {
    "spend": 44.13,
@@ -48,8 +50,8 @@
    "reach": 1464,
    "cpm": "17.00578",
    "frequency": "1.772541",
-   "date_start": "2023-09-23",
-   "date_stop": "2026-10-23",
+   "date_start": "2023-09-24",
+   "date_stop": "2026-10-24",
    "link_clicks": 13,
    "all_clicks": 19,
    "link_ctr": 0.501,
@@ -138,24 +140,24 @@
   ],
   "campaigns_7d": [
    {
-    "spend": 21.05,
-    "impressions": 1186,
-    "reach": 866,
-    "cpm": "17.748735",
-    "frequency": "1.369515",
+    "spend": 10.31,
+    "impressions": 546,
+    "reach": 435,
+    "cpm": "18.882784",
+    "frequency": "1.255172",
     "campaign_id": "52589865683494",
     "campaign_name": "LaneSync | US | $50 total video test",
-    "date_start": "2026-10-17",
-    "date_stop": "2026-10-23",
-    "link_clicks": 7,
-    "all_clicks": 10,
-    "link_ctr": 0.59,
-    "cost_per_link_click": 3.01,
+    "date_start": "2026-10-18",
+    "date_stop": "2026-10-24",
+    "link_clicks": 3,
+    "all_clicks": 5,
+    "link_ctr": 0.549,
+    "cost_per_link_click": 3.44,
     "installs": 0,
-    "video_views": 230,
+    "video_views": 107,
     "status": "PAUSED",
     "lifetime_budget": 50.0,
-    "budget_remaining": 28.95
+    "budget_remaining": 39.69
    }
   ],
   "campaigns_lifetime": [
@@ -167,8 +169,8 @@
     "frequency": "1.772541",
     "campaign_id": "52589865683494",
     "campaign_name": "LaneSync | US | $50 total video test",
-    "date_start": "2023-09-23",
-    "date_stop": "2026-10-23",
+    "date_start": "2023-09-24",
+    "date_stop": "2026-10-24",
     "link_clicks": 13,
     "all_clicks": 19,
     "link_ctr": 0.501,
@@ -439,7 +441,7 @@
   "reports": {
    "range": [
     "2026-10-11",
-    "2026-10-22"
+    "2026-10-23"
    ],
    "dates": [
     "2026-10-11",
@@ -453,7 +455,8 @@
     "2026-10-19",
     "2026-10-20",
     "2026-10-21",
-    "2026-10-22"
+    "2026-10-22",
+    "2026-10-23"
    ],
    "sales_status": {
     "2026-10-11": "ok",
@@ -467,7 +470,8 @@
     "2026-10-19": "ok",
     "2026-10-20": "ok",
     "2026-10-21": "ok",
-    "2026-10-22": "ok"
+    "2026-10-22": "ok",
+    "2026-10-23": "pending"
    },
    "event_report_days": [
     "2026-10-12",
@@ -477,7 +481,9 @@
     "2026-10-21",
     "2026-10-22"
    ],
-   "pending_days": [],
+   "pending_days": [
+    "2026-10-23"
+   ],
    "installs": {
     "6805914932": {
      "name": "LaneSync",
@@ -493,7 +499,8 @@
       3,
       4,
       12,
-      6
+      6,
+      null
      ],
      "redownloads": [
       0,
@@ -507,7 +514,8 @@
       1,
       0,
       1,
-      6
+      6,
+      null
      ],
      "updates": [
       0,
@@ -521,7 +529,8 @@
       1,
       0,
       10,
-      36
+      36,
+      null
      ],
      "launch": "2026-10-11",
      "total_first_time": 76,
@@ -541,7 +550,8 @@
       1,
       3,
       0,
-      5
+      5,
+      null
      ],
      "redownloads": [
       0,
@@ -555,7 +565,8 @@
       0,
       0,
       0,
-      0
+      0,
+      null
      ],
      "updates": [
       0,
@@ -569,7 +580,8 @@
       0,
       0,
       2,
-      5
+      5,
+      null
      ],
      "launch": "2026-10-16",
      "total_first_time": 22,
@@ -841,11 +853,11 @@
     }
    },
    "stats": {
-    "days": 12,
-    "requests": 0,
+    "days": 13,
+    "requests": 2,
     "cache_hits": 24,
-    "seconds": 0.01,
-    "latest_requested": "2026-10-22"
+    "seconds": 0.82,
+    "latest_requested": "2026-10-23"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
   }
@@ -975,8 +987,7 @@
     "mau": 98,
     "note": null,
     "ads_7d": null,
-    "ads_playtime_per_play_min": 2.67,
-    "icon": "icons/rbx_10520154400.png"
+    "ads_playtime_per_play_min": 2.67
    },
    {
     "name": "Ghosts In The Graveyard - Insane Asylum",
@@ -1006,8 +1017,7 @@
     "mau": 94,
     "note": null,
     "ads_7d": null,
-    "ads_playtime_per_play_min": 2.57,
-    "icon": "icons/rbx_10308497838.png"
+    "ads_playtime_per_play_min": 2.57
    }
   ],
   "as_of": "2026-10-22"
