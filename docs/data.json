@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-25 09:33 EDT",
+ "updated_at": "2026-10-25 10:36 EDT",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -455,11 +455,10 @@
     "2026-10-20",
     "2026-10-21",
     "2026-10-22",
-    "2026-10-23"
-   ],
-   "pending_days": [
+    "2026-10-23",
     "2026-10-24"
    ],
+   "pending_days": [],
    "installs": {
     "6805914932": {
      "name": "LaneSync",
@@ -677,13 +676,21 @@
       "HK": 1
      },
      "conversions": 0,
-     "cancellations": 0,
-     "events": [],
+     "cancellations": 1,
+     "events": [
+      {
+       "report_date": "2026-10-24",
+       "event_date": "2026-10-25",
+       "event": "Cancel",
+       "quantity": 1,
+       "country": "HK"
+      }
+     ],
      "expected_first_charge": "2026-10-25",
      "expected_in_reports": "2026-10-26",
      "price_usd": 39.99,
      "price_local": "HK$288",
-     "status": "due / awaiting report"
+     "status": "cancelled"
     },
     {
      "start": "2026-10-20",
@@ -812,13 +819,13 @@
     }
    ],
    "next_conversion": {
-    "start": "2026-10-18",
+    "start": "2026-10-22",
     "app": "StrideLab",
-    "product": "StrideLab Pro Yearly",
+    "product": "StrideLab Pro Monthly",
     "type": "intro trial",
     "count": 1,
-    "expected_first_charge": "2026-10-25",
-    "expected_in_reports": "2026-10-26",
+    "expected_first_charge": "2026-10-29",
+    "expected_in_reports": "2026-10-30",
     "trial_length": "7 Days"
    },
    "subscriptions": {
