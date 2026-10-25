@@ -1,8 +1,8 @@
 {
   "apple_ads": {
-    "as_of": "2026-10-20 ~8:45 AM ET (data through Oct 19, UTC)",
-    "source": "manual (browser)",
-    "note": "Apple reports in UTC, ~3h delay. | Oct 21-25 morning refreshes failed: Apple Ads sign-in required; figures still from Oct 20.",
+    "as_of": "2026-10-25",
+    "source": "manual (browser) app-ads.apple.com campaigns page, read Oct 25, 2026 ~8:14 AM ET",
+    "note": "Apple reports in UTC (reporting time zone UTC), ~3h delay.",
     "campaigns": [
       {
         "name": "LaneSync - US - Search",
@@ -13,45 +13,56 @@
         "daily_budget": 90.0,
         "placement": "US Search Results",
         "last_7d": {
-          "spend": 14.2,
-          "impressions": 1145,
-          "taps": 23,
-          "ttr_pct": 2.01,
-          "installs": 11,
-          "tap_through_installs": 9,
-          "cpa": 1.29,
-          "cpt": 0.62,
-          "cpm": 12.4,
-          "cr_pct": 47.83
+          "spend": 85.44,
+          "impressions": 3741,
+          "taps": 94,
+          "ttr_pct": 2.51,
+          "installs": 35,
+          "tap_through_installs": 34,
+          "cpa": 2.44,
+          "cpt": 0.91,
+          "cpm": 22.84,
+          "cr_pct": 37.23
         },
-        "lifetime": {
-          "spend": 14.2,
-          "impressions": 1145,
-          "taps": 23,
-          "ttr_pct": 2.01,
-          "installs": 11,
-          "tap_through_installs": 9,
-          "cpa": 1.29,
-          "cpt": 0.62,
-          "cpm": 12.4,
-          "cr_pct": 47.83
-        },
-        "last_7d_spend": 14.2,
-        "last_7d_impressions": 1145
+        "lifetime": null,
+        "last_7d_spend": 85.44,
+        "last_7d_impressions": 3741
       },
       {
         "name": "StrideLab - US - Search",
         "app_id": "6819824551",
-        "status": "App pending review (as of Oct 22 creation; not re-checked, sign-in required)",
+        "status": "Running",
         "bid_strategy": "Maximize Conversions",
         "target_cpa": 3.0,
         "daily_budget": 90.0,
         "placement": "US Search Results",
         "created": "2026-10-22",
-        "last_7d": null,
-        "lifetime": null
+        "last_7d": {
+          "spend": 29.49,
+          "impressions": 1918,
+          "taps": 46,
+          "ttr_pct": 2.4,
+          "installs": 12,
+          "tap_through_installs": 12,
+          "cpa": 2.46,
+          "cpt": 0.64,
+          "cpm": 15.38,
+          "cr_pct": 26.09
+        },
+        "lifetime": null,
+        "last_7d_spend": 29.49,
+        "last_7d_impressions": 1918
       }
-    ]
+    ],
+    "period": "Last 7 days",
+    "totals_7d": {
+      "spend": 114.94,
+      "impressions": 5659,
+      "taps": 140,
+      "installs": 47,
+      "ttr_pct": 2.47,
+      "cpa": 2.45
+    }
   },
   "roblox": {
     "period": "last 7 days (charts Oct 17-23)",
