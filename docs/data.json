@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-25 08:09 EDT",
+ "updated_at": "2026-10-25 08:11 EDT",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -863,7 +863,7 @@
     "days": 14,
     "requests": 2,
     "cache_hits": 26,
-    "seconds": 0.74,
+    "seconds": 0.76,
     "latest_requested": "2026-10-24"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
@@ -872,7 +872,7 @@
  "apple_ads": {
   "as_of": "2026-10-20 ~8:45 AM ET (data through Oct 19, UTC)",
   "source": "manual (browser)",
-  "note": "Apple reports in UTC, ~3h delay. | Oct 21-24 morning refreshes failed: Apple Ads sign-in required; figures still from Oct 20.",
+  "note": "Apple reports in UTC, ~3h delay. | Oct 21-25 morning refreshes failed: Apple Ads sign-in required; figures still from Oct 20.",
   "campaigns": [
    {
     "name": "LaneSync - US - Search",
@@ -925,7 +925,7 @@
  },
  "roblox": {
   "period": "last 7 days (charts Oct 17-23)",
-  "source": "manual (browser) Creator Engagement last 7 days",
+  "source": "manual (browser) Creator Engagement last 7 days, re-checked Oct 25 morning (charts still Oct 17-23)",
   "games": [
    {
     "name": "Crash a Car",

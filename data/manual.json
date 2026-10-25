@@ -2,7 +2,7 @@
   "apple_ads": {
     "as_of": "2026-10-20 ~8:45 AM ET (data through Oct 19, UTC)",
     "source": "manual (browser)",
-    "note": "Apple reports in UTC, ~3h delay. | Oct 21-24 morning refreshes failed: Apple Ads sign-in required; figures still from Oct 20.",
+    "note": "Apple reports in UTC, ~3h delay. | Oct 21-25 morning refreshes failed: Apple Ads sign-in required; figures still from Oct 20.",
     "campaigns": [
       {
         "name": "LaneSync - US - Search",
@@ -55,7 +55,7 @@
   },
   "roblox": {
     "period": "last 7 days (charts Oct 17-23)",
-    "source": "manual (browser) Creator Engagement last 7 days",
+    "source": "manual (browser) Creator Engagement last 7 days, re-checked Oct 25 morning (charts still Oct 17-23)",
     "games": [
       {
         "name": "Crash a Car",
