@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-26 08:35 EDT",
+ "updated_at": "2026-10-26 08:43 EDT",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -186,38 +186,6 @@
    }
   ],
   "sales": [
-   {
-    "date": "2026-10-18",
-    "apps": {
-     "6805914932": {
-      "downloads": 8,
-      "redownloads": 1,
-      "new_subs": 0,
-      "new_subs_paid": 0,
-      "new_subs_free": 0,
-      "renewals": 0,
-      "proceeds": 0.0
-     },
-     "6819824551": {
-      "downloads": 2,
-      "redownloads": 1,
-      "new_subs": 1,
-      "new_subs_paid": 0,
-      "new_subs_free": 1,
-      "renewals": 0,
-      "proceeds": 0.0
-     },
-     "6812496973": {
-      "downloads": 0,
-      "redownloads": 0,
-      "new_subs": 0,
-      "new_subs_paid": 0,
-      "new_subs_free": 0,
-      "renewals": 0,
-      "proceeds": 0.0
-     }
-    }
-   },
    {
     "date": "2026-10-19",
     "apps": {
@@ -409,6 +377,38 @@
       "proceeds": 0.0
      }
     }
+   },
+   {
+    "date": "2026-10-25",
+    "apps": {
+     "6805914932": {
+      "downloads": 10,
+      "redownloads": 1,
+      "new_subs": 0,
+      "new_subs_paid": 0,
+      "new_subs_free": 0,
+      "renewals": 0,
+      "proceeds": 0.0
+     },
+     "6819824551": {
+      "downloads": 10,
+      "redownloads": 0,
+      "new_subs": 1,
+      "new_subs_paid": 0,
+      "new_subs_free": 1,
+      "renewals": 0,
+      "proceeds": 0.0
+     },
+     "6812496973": {
+      "downloads": 0,
+      "redownloads": 0,
+      "new_subs": 0,
+      "new_subs_paid": 0,
+      "new_subs_free": 0,
+      "renewals": 0,
+      "proceeds": 0.0
+     }
+    }
    }
   ],
   "reports": {
@@ -448,7 +448,7 @@
     "2026-10-22": "ok",
     "2026-10-23": "ok",
     "2026-10-24": "ok",
-    "2026-10-25": "pending"
+    "2026-10-25": "ok"
    },
    "event_report_days": [
     "2026-10-12",
@@ -481,7 +481,7 @@
       6,
       7,
       7,
-      null
+      10
      ],
      "redownloads": [
       0,
@@ -498,7 +498,7 @@
       6,
       0,
       2,
-      null
+      1
      ],
      "updates": [
       0,
@@ -515,11 +515,11 @@
       36,
       3,
       4,
-      null
+      0
      ],
      "launch": "2026-10-11",
-     "total_first_time": 90,
-     "total_redownloads": 21
+     "total_first_time": 100,
+     "total_redownloads": 22
     },
     "6819824551": {
      "name": "StrideLab",
@@ -538,7 +538,7 @@
       5,
       8,
       9,
-      null
+      10
      ],
      "redownloads": [
       0,
@@ -555,7 +555,7 @@
       0,
       0,
       0,
-      null
+      0
      ],
      "updates": [
       0,
@@ -572,10 +572,10 @@
       5,
       1,
       0,
-      null
+      0
      ],
      "launch": "2026-10-16",
-     "total_first_time": 39,
+     "total_first_time": 49,
      "total_redownloads": 1
     }
    },
@@ -589,8 +589,8 @@
     "F1"
    ],
    "product_types_seen": {
-    "1F": 129,
-    "3F": 22,
+    "1F": 149,
+    "3F": 23,
     "7F": 101
    },
    "cohorts": [
@@ -887,9 +887,9 @@
   }
  },
  "apple_ads": {
-  "as_of": "2026-10-25",
-  "source": "manual (browser) app-ads.apple.com campaigns page, read Oct 25, 2026 ~8:14 AM ET",
-  "note": "Apple reports in UTC (reporting time zone UTC), ~3h delay. Oct 26 morning: sign-in required, numbers are from Oct 25.",
+  "as_of": "2026-10-26",
+  "source": "manual (browser) app-ads.apple.com campaigns page, read Oct 26, 2026",
+  "note": "Apple reports in UTC (reporting time zone UTC), ~3h delay.",
   "campaigns": [
    {
     "name": "LaneSync - US - Search",
@@ -900,20 +900,20 @@
     "daily_budget": 90.0,
     "placement": "US Search Results",
     "last_7d": {
-     "spend": 85.44,
-     "impressions": 3741,
-     "taps": 94,
-     "ttr_pct": 2.51,
-     "installs": 35,
-     "tap_through_installs": 34,
-     "cpa": 2.44,
-     "cpt": 0.91,
-     "cpm": 22.84,
-     "cr_pct": 37.23
+     "spend": 107.69,
+     "impressions": 4109,
+     "taps": 109,
+     "ttr_pct": 2.65,
+     "installs": 38,
+     "tap_through_installs": 37,
+     "cpa": 2.83,
+     "cpt": 0.99,
+     "cpm": 26.21,
+     "cr_pct": 34.86
     },
     "lifetime": null,
-    "last_7d_spend": 85.44,
-    "last_7d_impressions": 3741
+    "last_7d_spend": 107.69,
+    "last_7d_impressions": 4109
    },
    {
     "name": "StrideLab - US - Search",
@@ -925,30 +925,30 @@
     "placement": "US Search Results",
     "created": "2026-10-22",
     "last_7d": {
-     "spend": 29.49,
-     "impressions": 1918,
-     "taps": 46,
-     "ttr_pct": 2.4,
-     "installs": 12,
-     "tap_through_installs": 12,
-     "cpa": 2.46,
-     "cpt": 0.64,
-     "cpm": 15.38,
-     "cr_pct": 26.09
+     "spend": 44.38,
+     "impressions": 2580,
+     "taps": 65,
+     "ttr_pct": 2.52,
+     "installs": 19,
+     "tap_through_installs": 18,
+     "cpa": 2.34,
+     "cpt": 0.68,
+     "cpm": 17.2,
+     "cr_pct": 29.23
     },
     "lifetime": null,
-    "last_7d_spend": 29.49,
-    "last_7d_impressions": 1918
+    "last_7d_spend": 44.38,
+    "last_7d_impressions": 2580
    }
   ],
   "period": "Last 7 days",
   "totals_7d": {
-   "spend": 114.94,
-   "impressions": 5659,
-   "taps": 140,
-   "installs": 47,
-   "ttr_pct": 2.47,
-   "cpa": 2.45
+   "spend": 152.07,
+   "impressions": 6689,
+   "taps": 174,
+   "installs": 57,
+   "ttr_pct": 2.6,
+   "cpa": 2.67
   }
  },
  "roblox": {

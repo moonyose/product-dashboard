@@ -1,8 +1,8 @@
 {
   "apple_ads": {
-    "as_of": "2026-10-25",
-    "source": "manual (browser) app-ads.apple.com campaigns page, read Oct 25, 2026 ~8:14 AM ET",
-    "note": "Apple reports in UTC (reporting time zone UTC), ~3h delay. Oct 26 morning: sign-in required, numbers are from Oct 25.",
+    "as_of": "2026-10-26",
+    "source": "manual (browser) app-ads.apple.com campaigns page, read Oct 26, 2026",
+    "note": "Apple reports in UTC (reporting time zone UTC), ~3h delay.",
     "campaigns": [
       {
         "name": "LaneSync - US - Search",
@@ -13,20 +13,20 @@
         "daily_budget": 90.0,
         "placement": "US Search Results",
         "last_7d": {
-          "spend": 85.44,
-          "impressions": 3741,
-          "taps": 94,
-          "ttr_pct": 2.51,
-          "installs": 35,
-          "tap_through_installs": 34,
-          "cpa": 2.44,
-          "cpt": 0.91,
-          "cpm": 22.84,
-          "cr_pct": 37.23
+          "spend": 107.69,
+          "impressions": 4109,
+          "taps": 109,
+          "ttr_pct": 2.65,
+          "installs": 38,
+          "tap_through_installs": 37,
+          "cpa": 2.83,
+          "cpt": 0.99,
+          "cpm": 26.21,
+          "cr_pct": 34.86
         },
         "lifetime": null,
-        "last_7d_spend": 85.44,
-        "last_7d_impressions": 3741
+        "last_7d_spend": 107.69,
+        "last_7d_impressions": 4109
       },
       {
         "name": "StrideLab - US - Search",
@@ -38,30 +38,30 @@
         "placement": "US Search Results",
         "created": "2026-10-22",
         "last_7d": {
-          "spend": 29.49,
-          "impressions": 1918,
-          "taps": 46,
-          "ttr_pct": 2.4,
-          "installs": 12,
-          "tap_through_installs": 12,
-          "cpa": 2.46,
-          "cpt": 0.64,
-          "cpm": 15.38,
-          "cr_pct": 26.09
+          "spend": 44.38,
+          "impressions": 2580,
+          "taps": 65,
+          "ttr_pct": 2.52,
+          "installs": 19,
+          "tap_through_installs": 18,
+          "cpa": 2.34,
+          "cpt": 0.68,
+          "cpm": 17.2,
+          "cr_pct": 29.23
         },
         "lifetime": null,
-        "last_7d_spend": 29.49,
-        "last_7d_impressions": 1918
+        "last_7d_spend": 44.38,
+        "last_7d_impressions": 2580
       }
     ],
     "period": "Last 7 days",
     "totals_7d": {
-      "spend": 114.94,
-      "impressions": 5659,
-      "taps": 140,
-      "installs": 47,
-      "ttr_pct": 2.47,
-      "cpa": 2.45
+      "spend": 152.07,
+      "impressions": 6689,
+      "taps": 174,
+      "installs": 57,
+      "ttr_pct": 2.6,
+      "cpa": 2.67
     }
   },
   "roblox": {
