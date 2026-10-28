@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-28 10:35 EDT",
+ "updated_at": "2026-10-28 11:32 EDT",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -449,11 +449,10 @@
     "2026-10-23",
     "2026-10-24",
     "2026-10-25",
-    "2026-10-26"
-   ],
-   "pending_days": [
+    "2026-10-26",
     "2026-10-27"
    ],
+   "pending_days": [],
    "installs": {
     "6805914932": {
      "name": "LaneSync",
@@ -904,6 +903,31 @@
      "price_usd": 39.99,
      "price_local": null,
      "status": "in trial"
+    },
+    {
+     "start": "2026-10-27",
+     "app_id": "6819824551",
+     "app": "StrideLab",
+     "subscription_id": "6819859533",
+     "product": "StrideLab Pro Yearly",
+     "period": "1 Year",
+     "type": "intro trial",
+     "free": true,
+     "offer_name": null,
+     "offer_code": null,
+     "trial_length": "7 Days",
+     "count": 1,
+     "countries": {
+      "US": 1
+     },
+     "conversions": 0,
+     "cancellations": 0,
+     "events": [],
+     "expected_first_charge": "2026-11-03",
+     "expected_in_reports": "2026-11-04",
+     "price_usd": 39.99,
+     "price_local": null,
+     "status": "in trial"
     }
    ],
    "next_conversion": {
@@ -958,7 +982,7 @@
     "days": 17,
     "requests": 1,
     "cache_hits": 33,
-    "seconds": 0.72,
+    "seconds": 0.7,
     "latest_requested": "2026-10-27"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
