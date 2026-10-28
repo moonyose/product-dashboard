@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-28 08:00 EDT",
+ "updated_at": "2026-10-28 08:04 EDT",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -958,7 +958,7 @@
     "days": 17,
     "requests": 2,
     "cache_hits": 32,
-    "seconds": 2.26,
+    "seconds": 0.68,
     "latest_requested": "2026-10-27"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
@@ -1030,20 +1030,20 @@
   }
  },
  "roblox": {
-  "period": "last 7 days (charts Oct 19-25)",
-  "source": "manual (browser) Creator Engagement last 7 days, read Oct 27 morning",
+  "period": "last 7 days (charts Oct 20-26)",
+  "source": "manual (browser) Creator Engagement last 7 days, read Oct 28 morning",
   "games": [
    {
     "name": "Crash a Car",
     "universe_id": 10769917513,
-    "avg_playtime_min": 4.4,
-    "avg_playtime_change_pct": -0.5,
-    "dau": 10,
-    "dau_change_pct": -32.7,
-    "sessions_per_day": 10,
+    "avg_playtime_min": 3.8,
+    "avg_playtime_change_pct": -25.3,
+    "dau": 7,
+    "dau_change_pct": -31.5,
+    "sessions_per_day": 7,
     "lifetime_visits": 247,
-    "new_users": 9,
-    "avg_session_min": 4.3,
+    "new_users": 6,
+    "avg_session_min": 3.7,
     "revenue": 0,
     "note": "Oct 18 campaign Completed: $16.06, 6,659 impr, 1.8% CTR, 121 clicks, 55 plays, $0.292/play, 3.2h playtime",
     "ad_spend": 73.55,
@@ -1054,12 +1054,12 @@
      "ctr_pct": 1.3,
      "clicks": 547,
      "plays": 279,
-     "cost_per_play": 0.27,
+     "cost_per_play": 0.264,
      "ad_playtime_h": 18.9,
      "campaign": "Oct 18 campaign completed ($16.21); Oct 8 campaign completed ($57.52)"
     },
     "returning_users": 1,
-    "mau": 196,
+    "mau": 174,
     "ads_7d": {
      "spend": 11.76,
      "impressions": 4786,
@@ -1075,32 +1075,32 @@
    {
     "name": "Infection",
     "universe_id": 10520154400,
-    "avg_playtime_min": 0.133,
-    "avg_playtime_change_pct": -44.0,
+    "avg_playtime_min": 0.0,
+    "avg_playtime_change_pct": null,
     "dau": 0,
-    "dau_change_pct": -50.0,
+    "dau_change_pct": null,
     "lifetime_visits": 1122,
     "revenue": 0,
-    "ad_spend": 83.21,
+    "ad_spend": 61.4,
     "ads": {
-     "spend_28d": 83.21,
+     "spend_28d": 61.4,
      "spend_7d": 0,
-     "impressions": 70635,
-     "ctr_pct": 1.4,
-     "clicks": 1021,
-     "plays": 371,
-     "cost_per_play": 0.224,
-     "ad_playtime_h": 16.5,
+     "impressions": 43213,
+     "ctr_pct": 1.6,
+     "clicks": 675,
+     "plays": 272,
+     "cost_per_play": 0.226,
+     "ad_playtime_h": 12.5,
      "campaign": "Completed"
     },
     "sessions_per_day": 0,
     "new_users": 0,
     "returning_users": 0,
-    "avg_session_min": 0.133,
-    "mau": 98,
+    "avg_session_min": 0.0,
+    "mau": 0,
     "note": null,
     "ads_7d": null,
-    "ads_playtime_per_play_min": 2.67,
+    "ads_playtime_per_play_min": 2.76,
     "icon": "icons/rbx_10520154400.png"
    },
    {
@@ -1112,38 +1112,38 @@
     "dau_change_pct": null,
     "lifetime_visits": 377,
     "revenue": 0,
-    "ad_spend": 68.48,
+    "ad_spend": 61.14,
     "ads": {
-     "spend_28d": 68.48,
+     "spend_28d": 61.14,
      "spend_7d": 0,
-     "impressions": 65491,
-     "ctr_pct": 1.5,
-     "clicks": 998,
-     "plays": 317,
-     "cost_per_play": 0.216,
-     "ad_playtime_h": 13.6,
+     "impressions": 49946,
+     "ctr_pct": 1.6,
+     "clicks": 784,
+     "plays": 288,
+     "cost_per_play": 0.212,
+     "ad_playtime_h": 12.5,
      "campaign": "Completed"
     },
     "sessions_per_day": 0,
     "new_users": 0,
     "returning_users": 0,
-    "avg_session_min": 0.0381,
-    "mau": 47,
+    "avg_session_min": 0.0,
+    "mau": 0,
     "note": null,
     "ads_7d": null,
-    "ads_playtime_per_play_min": 2.57,
+    "ads_playtime_per_play_min": 2.6,
     "icon": "icons/rbx_10308497838.png"
    }
   ],
-  "as_of": "2026-10-27"
+  "as_of": "2026-10-28"
  },
  "roblox_ads": {
   "source": "Roblox Ads Manager (manual)",
   "period": "last 28 days",
   "currency": "USD",
-  "total_spend_28d": 220.02,
+  "total_spend_28d": 196.09,
   "total_spend_7d": 11.76,
-  "as_of": "2026-10-27",
-  "note": "All 5 campaigns completed, none running. 28d: $220.02, 164.8k impr, 943 plays, 48.2h playtime. 7d: $11.76, 4.8k impr, 45 plays, 2.5h (Crash a Car Oct 18 campaign). Roblox play metrics may lag up to 48h."
+  "as_of": "2026-10-28",
+  "note": "All 5 campaigns completed, none running (latest ended Oct 22). 28d: $196.09, 135.6k impr, 839 plays, 43.9h playtime. 7d: $11.76, 4.8k impr, 45 plays, 2.5h (Crash a Car Oct 18 campaign). Roblox play metrics may lag up to 48h."
  }
 }
