@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-29 08:01 EDT",
+ "updated_at": "2026-10-29 08:04 EDT",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -977,7 +977,7 @@
     "days": 18,
     "requests": 2,
     "cache_hits": 34,
-    "seconds": 0.83,
+    "seconds": 0.98,
     "latest_requested": "2026-10-28"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
@@ -1050,15 +1050,15 @@
  },
  "roblox": {
   "period": "last 7 days (charts Oct 20-26)",
-  "source": "manual (browser) Creator Engagement last 7 days, read Oct 28 morning",
+  "source": "manual (browser) Creator Engagement last 7 days, read Oct 29 morning",
   "games": [
    {
     "name": "Crash a Car",
     "universe_id": 10769917513,
     "avg_playtime_min": 3.8,
-    "avg_playtime_change_pct": -25.3,
+    "avg_playtime_change_pct": 7.1,
     "dau": 7,
-    "dau_change_pct": -31.5,
+    "dau_change_pct": 41.2,
     "sessions_per_day": 7,
     "lifetime_visits": 247,
     "new_users": 6,
@@ -1068,7 +1068,7 @@
     "ad_spend": 73.55,
     "ads": {
      "spend_28d": 73.55,
-     "spend_7d": 11.76,
+     "spend_7d": 0,
      "impressions": 42391,
      "ctr_pct": 1.3,
      "clicks": 547,
@@ -1078,15 +1078,15 @@
      "campaign": "Oct 18 campaign completed ($16.21); Oct 8 campaign completed ($57.52)"
     },
     "returning_users": 1,
-    "mau": 174,
+    "mau": 143,
     "ads_7d": {
-     "spend": 11.76,
-     "impressions": 4786,
-     "ctr_pct": 1.8,
-     "clicks": 85,
-     "plays": 45,
-     "cost_per_play": 0.261,
-     "ad_playtime_h": 2.5
+     "spend": 0,
+     "impressions": 369,
+     "ctr_pct": null,
+     "clicks": null,
+     "plays": 3,
+     "cost_per_play": null,
+     "ad_playtime_h": 0.1
     },
     "ads_playtime_per_play_min": 4.06,
     "icon": "icons/rbx_10769917513.png"
@@ -1160,9 +1160,9 @@
   "source": "Roblox Ads Manager (manual)",
   "period": "last 28 days",
   "currency": "USD",
-  "total_spend_28d": 196.09,
-  "total_spend_7d": 11.76,
-  "as_of": "2026-10-28",
-  "note": "All 5 campaigns completed, none running (latest ended Oct 22). 28d: $196.09, 135.6k impr, 839 plays, 43.9h playtime. 7d: $11.76, 4.8k impr, 45 plays, 2.5h (Crash a Car Oct 18 campaign). Roblox play metrics may lag up to 48h."
+  "total_spend_28d": 164.49,
+  "total_spend_7d": 0,
+  "as_of": "2026-10-29",
+  "note": "All 5 campaigns completed, none running. 28d: $164.49, 99.2k impr, 728 plays, 38.8h playtime. 7d: no spend shown, 369 impr, 3 plays, 0.1h (trailing delivery). Roblox play metrics may lag up to 48h."
  }
 }
