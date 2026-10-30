@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-29 22:31 EDT",
+ "updated_at": "2026-10-30 08:05 EDT",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -44,8 +44,8 @@
    "reach": 1464,
    "cpm": "17.00578",
    "frequency": "1.772541",
-   "date_start": "2023-09-29",
-   "date_stop": "2026-10-29",
+   "date_start": "2023-09-30",
+   "date_stop": "2026-10-30",
    "link_clicks": 13,
    "all_clicks": 19,
    "link_ctr": 0.501,
@@ -56,21 +56,6 @@
    "budget_remaining": 5.87
   },
   "daily_14d": [
-   {
-    "spend": 10.29,
-    "impressions": 586,
-    "reach": 488,
-    "cpm": "17.559727",
-    "frequency": "1.20082",
-    "date_start": "2026-10-16",
-    "date_stop": "2026-10-16",
-    "link_clicks": 2,
-    "all_clicks": 3,
-    "link_ctr": 0.341,
-    "cost_per_link_click": 5.14,
-    "installs": 0,
-    "video_views": 120
-   },
    {
     "spend": 10.74,
     "impressions": 640,
@@ -112,8 +97,8 @@
     "frequency": "1.772541",
     "campaign_id": "52589865683494",
     "campaign_name": "LaneSync | US | $50 total video test",
-    "date_start": "2023-09-29",
-    "date_stop": "2026-10-29",
+    "date_start": "2023-09-30",
+    "date_stop": "2026-10-30",
     "link_clicks": 13,
     "all_clicks": 19,
     "link_ctr": 0.501,
@@ -384,7 +369,7 @@
   "reports": {
    "range": [
     "2026-10-11",
-    "2026-10-28"
+    "2026-10-29"
    ],
    "dates": [
     "2026-10-11",
@@ -404,7 +389,8 @@
     "2026-10-25",
     "2026-10-26",
     "2026-10-27",
-    "2026-10-28"
+    "2026-10-28",
+    "2026-10-29"
    ],
    "sales_status": {
     "2026-10-11": "ok",
@@ -424,7 +410,8 @@
     "2026-10-25": "ok",
     "2026-10-26": "ok",
     "2026-10-27": "ok",
-    "2026-10-28": "ok"
+    "2026-10-28": "ok",
+    "2026-10-29": "pending"
    },
    "event_report_days": [
     "2026-10-12",
@@ -437,10 +424,11 @@
     "2026-10-24",
     "2026-10-25",
     "2026-10-26",
-    "2026-10-27"
+    "2026-10-27",
+    "2026-10-28"
    ],
    "pending_days": [
-    "2026-10-28"
+    "2026-10-29"
    ],
    "installs": {
     "6805914932": {
@@ -463,7 +451,8 @@
       10,
       3,
       11,
-      10
+      10,
+      null
      ],
      "redownloads": [
       0,
@@ -483,7 +472,8 @@
       1,
       1,
       1,
-      2
+      2,
+      null
      ],
      "updates": [
       0,
@@ -503,7 +493,8 @@
       0,
       1,
       1,
-      1
+      1,
+      null
      ],
      "launch": "2026-10-11",
      "total_first_time": 124,
@@ -529,7 +520,8 @@
       10,
       9,
       7,
-      7
+      7,
+      null
      ],
      "redownloads": [
       0,
@@ -549,7 +541,8 @@
       0,
       0,
       0,
-      0
+      0,
+      null
      ],
      "updates": [
       0,
@@ -569,7 +562,8 @@
       0,
       0,
       0,
-      0
+      0,
+      null
      ],
      "launch": "2026-10-16",
      "total_first_time": 72,
@@ -822,7 +816,7 @@
      "expected_in_reports": "2026-10-31",
      "price_usd": 4.99,
      "price_local": null,
-     "status": "in trial"
+     "status": "due / awaiting report"
     },
     {
      "start": "2026-10-25",
@@ -923,6 +917,31 @@
      "price_usd": 39.99,
      "price_local": null,
      "status": "in trial"
+    },
+    {
+     "start": "2026-10-28",
+     "app_id": "6819824551",
+     "app": "StrideLab",
+     "subscription_id": "6819859533",
+     "product": "StrideLab Pro Yearly",
+     "period": "1 Year",
+     "type": "intro trial",
+     "free": true,
+     "offer_name": null,
+     "offer_code": null,
+     "trial_length": "7 Days",
+     "count": 1,
+     "countries": {
+      "US": 1
+     },
+     "conversions": 0,
+     "cancellations": 0,
+     "events": [],
+     "expected_first_charge": "2026-11-04",
+     "expected_in_reports": "2026-11-05",
+     "price_usd": 39.99,
+     "price_local": null,
+     "status": "in trial"
     }
    ],
    "next_conversion": {
@@ -974,11 +993,11 @@
     }
    },
    "stats": {
-    "days": 18,
-    "requests": 1,
+    "days": 19,
+    "requests": 3,
     "cache_hits": 35,
-    "seconds": 0.77,
-    "latest_requested": "2026-10-28"
+    "seconds": 0.84,
+    "latest_requested": "2026-10-29"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
   }
