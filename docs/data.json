@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-31 11:35 EDT",
+ "updated_at": "2026-10-31 12:37 EDT",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -413,11 +413,10 @@
     "2026-10-26",
     "2026-10-27",
     "2026-10-28",
-    "2026-10-29"
-   ],
-   "pending_days": [
+    "2026-10-29",
     "2026-10-30"
    ],
+   "pending_days": [],
    "installs": {
     "6805914932": {
      "name": "LaneSync",
@@ -819,14 +818,22 @@
      "countries": {
       "US": 1
      },
-     "conversions": 0,
+     "conversions": 1,
      "cancellations": 0,
-     "events": [],
+     "events": [
+      {
+       "report_date": "2026-10-30",
+       "event_date": "2026-10-30",
+       "event": "Paid Subscription from Introductory Offer",
+       "quantity": 1,
+       "country": "US"
+      }
+     ],
      "expected_first_charge": "2026-10-30",
      "expected_in_reports": "2026-10-31",
      "price_usd": 4.99,
      "price_local": null,
-     "status": "due / awaiting report"
+     "status": "converted"
     },
     {
      "start": "2026-10-25",
@@ -1031,7 +1038,7 @@
     "days": 20,
     "requests": 1,
     "cache_hits": 39,
-    "seconds": 0.66,
+    "seconds": 0.79,
     "latest_requested": "2026-10-30"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
