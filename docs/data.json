@@ -1,9 +1,101 @@
 {
  "updated_at": "2026-10-31 13:36 EDT",
- "errors": [
-  "meta: HTTPSConnectionPool(host='graph.facebook.com', port=443): Read timed out. (read timeout=30)"
- ],
- "meta": null,
+ "errors": [],
+ "meta": {
+  "account_timezone": "America/Los_Angeles",
+  "currency": "USD",
+  "notes": "Days follow the ad account timezone. 7d/14d include today. Clicks/CTR = link clicks (Ads Manager 'Link clicks', 'CTR (link click-through rate)').",
+  "today": {
+   "spend": 0.0,
+   "impressions": 0,
+   "reach": 0,
+   "link_clicks": 0,
+   "all_clicks": 0,
+   "link_ctr": 0,
+   "cost_per_link_click": null,
+   "installs": 0,
+   "video_views": 0
+  },
+  "yesterday": {
+   "spend": 0.0,
+   "impressions": 0,
+   "reach": 0,
+   "link_clicks": 0,
+   "all_clicks": 0,
+   "link_ctr": 0,
+   "cost_per_link_click": null,
+   "installs": 0,
+   "video_views": 0
+  },
+  "last_7d": {
+   "spend": 0.0,
+   "impressions": 0,
+   "reach": 0,
+   "link_clicks": 0,
+   "all_clicks": 0,
+   "link_ctr": 0,
+   "cost_per_link_click": null,
+   "installs": 0,
+   "video_views": 0
+  },
+  "lifetime": {
+   "spend": 44.13,
+   "impressions": 2595,
+   "reach": 1464,
+   "cpm": "17.00578",
+   "frequency": "1.772541",
+   "date_start": "2023-10-01",
+   "date_stop": "2026-10-31",
+   "link_clicks": 13,
+   "all_clicks": 19,
+   "link_ctr": 0.501,
+   "cost_per_link_click": 3.39,
+   "installs": 0,
+   "video_views": 523,
+   "lifetime_budget": 50.0,
+   "budget_remaining": 5.87
+  },
+  "daily_14d": [
+   {
+    "spend": 10.31,
+    "impressions": 546,
+    "reach": 435,
+    "cpm": "18.882784",
+    "frequency": "1.255172",
+    "date_start": "2026-10-18",
+    "date_stop": "2026-10-18",
+    "link_clicks": 3,
+    "all_clicks": 5,
+    "link_ctr": 0.549,
+    "cost_per_link_click": 3.44,
+    "installs": 0,
+    "video_views": 107
+   }
+  ],
+  "campaigns_7d": [],
+  "campaigns_lifetime": [
+   {
+    "spend": 44.13,
+    "impressions": 2595,
+    "reach": 1464,
+    "cpm": "17.00578",
+    "frequency": "1.772541",
+    "campaign_id": "52589865683494",
+    "campaign_name": "LaneSync | US | $50 total video test",
+    "date_start": "2023-10-01",
+    "date_stop": "2026-10-31",
+    "link_clicks": 13,
+    "all_clicks": 19,
+    "link_ctr": 0.501,
+    "cost_per_link_click": 3.39,
+    "installs": 0,
+    "video_views": 523,
+    "status": "PAUSED",
+    "lifetime_budget": 50.0,
+    "budget_remaining": 5.87
+   }
+  ]
+ },
  "asc": {
   "apps": [
    {
@@ -946,7 +1038,7 @@
     "days": 20,
     "requests": 0,
     "cache_hits": 40,
-    "seconds": 0.02,
+    "seconds": 0.01,
     "latest_requested": "2026-10-30"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
