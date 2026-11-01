@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-01 08:10 EST",
+ "updated_at": "2026-11-01 08:12 EST",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -1032,7 +1032,7 @@
     "days": 21,
     "requests": 2,
     "cache_hits": 40,
-    "seconds": 0.75,
+    "seconds": 0.74,
     "latest_requested": "2026-10-31"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
@@ -1104,22 +1104,22 @@
   }
  },
  "roblox": {
-  "period": "last 7 days (charts Oct 23-29)",
-  "source": "manual (browser) Creator Engagement last 7 days, read Oct 31 morning",
+  "period": "last 7 days (charts Oct 24-30)",
+  "source": "manual (browser) Creator Engagement last 7 days, read Nov 1 morning",
   "games": [
    {
     "name": "Crash a Car",
     "universe_id": 10769917513,
-    "avg_playtime_min": 4.7,
-    "avg_playtime_change_pct": 23.2,
-    "dau": 1,
-    "dau_change_pct": -90.8,
+    "avg_playtime_min": 0.683,
+    "avg_playtime_change_pct": -82.3,
+    "dau": 0,
+    "dau_change_pct": -98.6,
     "sessions_per_day": 1,
     "lifetime_visits": 247,
     "new_users": 0,
-    "avg_session_min": 4.7,
+    "avg_session_min": 0.683,
     "revenue": 0,
-    "note": "Oct 31 read: playtime +23.2%, DAU -90.8%, total playtime 0.067 h/day (-88.6%).",
+    "note": "Nov 1 read: playtime 0.683 min (-82.3%), DAU ~0 (-98.6%), MAU 37, total playtime 0.0016 h/day (-99.7%). Directions inferred from 28d view.",
     "ad_spend": 73.55,
     "ads": {
      "spend_28d": 73.55,
@@ -1133,7 +1133,7 @@
      "campaign": "Oct 18 campaign completed ($16.03); Oct 8 campaign completed ($57.52)"
     },
     "returning_users": 0,
-    "mau": 75,
+    "mau": 37,
     "ads_7d": {
      "spend": 0,
      "impressions": null,
@@ -1180,8 +1180,8 @@
    {
     "name": "Ghosts In The Graveyard - Insane Asylum",
     "universe_id": 10308497838,
-    "avg_playtime_min": 1.2,
-    "avg_playtime_change_pct": -64.7,
+    "avg_playtime_min": null,
+    "avg_playtime_change_pct": null,
     "dau": 0,
     "dau_change_pct": null,
     "lifetime_visits": 377,
@@ -1202,8 +1202,8 @@
     "new_users": 0,
     "returning_users": 0,
     "avg_session_min": 1.2,
-    "mau": 47,
-    "note": "Oct 31 read: playtime 1.2 min (-64.7%).",
+    "mau": 90,
+    "note": "Nov 1 read: avg playtime no data, DAU rounds to 0, MAU 90, total playtime 0.0074 h/day.",
     "ads_7d": null,
     "ads_playtime_per_play_min": 2.6,
     "icon": "icons/rbx_10308497838.png"
@@ -1215,9 +1215,9 @@
   "source": "Roblox Ads Manager (manual)",
   "period": "last 28 days",
   "currency": "USD",
-  "total_spend_28d": 103.12,
+  "total_spend_28d": 73.62,
   "total_spend_7d": 0,
-  "as_of": "2026-10-31",
-  "note": "All 5 campaigns completed, none running. 28d (Oct 31 read): $103.12, 48.4k impr, 428 plays, 25.9h playtime. Last 7 days: no campaigns. Per-game ad figures for Infection and Ghosts are from earlier reads."
+  "as_of": "2026-11-01",
+  "note": "All 5 campaigns completed, none running. 28d (Nov 1 read): $73.62, 42.4k impr, 279 plays, 18.9h playtime. Last 7 days: no campaigns."
  }
 }
