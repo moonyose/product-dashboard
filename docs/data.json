@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-31 22:36 EDT",
+ "updated_at": "2026-11-01 08:10 EST",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -45,7 +45,7 @@
    "cpm": "17.00578",
    "frequency": "1.772541",
    "date_start": "2023-10-01",
-   "date_stop": "2026-10-31",
+   "date_stop": "2026-11-01",
    "link_clicks": 13,
    "all_clicks": 19,
    "link_ctr": 0.501,
@@ -55,23 +55,7 @@
    "lifetime_budget": 50.0,
    "budget_remaining": 5.87
   },
-  "daily_14d": [
-   {
-    "spend": 10.31,
-    "impressions": 546,
-    "reach": 435,
-    "cpm": "18.882784",
-    "frequency": "1.255172",
-    "date_start": "2026-10-18",
-    "date_stop": "2026-10-18",
-    "link_clicks": 3,
-    "all_clicks": 5,
-    "link_ctr": 0.549,
-    "cost_per_link_click": 3.44,
-    "installs": 0,
-    "video_views": 107
-   }
-  ],
+  "daily_14d": [],
   "campaigns_7d": [],
   "campaigns_lifetime": [
    {
@@ -83,7 +67,7 @@
     "campaign_id": "52589865683494",
     "campaign_name": "LaneSync | US | $50 total video test",
     "date_start": "2023-10-01",
-    "date_stop": "2026-10-31",
+    "date_stop": "2026-11-01",
     "link_clicks": 13,
     "all_clicks": 19,
     "link_ctr": 0.501,
@@ -354,7 +338,7 @@
   "reports": {
    "range": [
     "2026-10-11",
-    "2026-10-30"
+    "2026-10-31"
    ],
    "dates": [
     "2026-10-11",
@@ -376,7 +360,8 @@
     "2026-10-27",
     "2026-10-28",
     "2026-10-29",
-    "2026-10-30"
+    "2026-10-30",
+    "2026-10-31"
    ],
    "sales_status": {
     "2026-10-11": "ok",
@@ -398,7 +383,8 @@
     "2026-10-27": "ok",
     "2026-10-28": "ok",
     "2026-10-29": "ok",
-    "2026-10-30": "ok"
+    "2026-10-30": "ok",
+    "2026-10-31": "pending"
    },
    "event_report_days": [
     "2026-10-12",
@@ -416,7 +402,9 @@
     "2026-10-29",
     "2026-10-30"
    ],
-   "pending_days": [],
+   "pending_days": [
+    "2026-10-31"
+   ],
    "installs": {
     "6805914932": {
      "name": "LaneSync",
@@ -440,7 +428,8 @@
       11,
       10,
       6,
-      5
+      5,
+      null
      ],
      "redownloads": [
       0,
@@ -462,7 +451,8 @@
       1,
       2,
       0,
-      2
+      2,
+      null
      ],
      "updates": [
       0,
@@ -484,7 +474,8 @@
       1,
       1,
       0,
-      1
+      1,
+      null
      ],
      "launch": "2026-10-11",
      "total_first_time": 135,
@@ -512,7 +503,8 @@
       7,
       7,
       5,
-      3
+      3,
+      null
      ],
      "redownloads": [
       0,
@@ -534,7 +526,8 @@
       0,
       0,
       0,
-      0
+      0,
+      null
      ],
      "updates": [
       0,
@@ -556,7 +549,8 @@
       0,
       0,
       0,
-      0
+      0,
+      null
      ],
      "launch": "2026-10-16",
      "total_first_time": 80,
@@ -858,7 +852,7 @@
      "expected_in_reports": "2026-11-02",
      "price_usd": 4.99,
      "price_local": "\u00a34.99",
-     "status": "in trial"
+     "status": "due / awaiting report"
     },
     {
      "start": "2026-10-26",
@@ -987,13 +981,13 @@
     }
    ],
    "next_conversion": {
-    "start": "2026-10-22",
+    "start": "2026-10-25",
     "app": "StrideLab",
-    "product": "StrideLab Pro Yearly",
+    "product": "StrideLab Pro Monthly",
     "type": "intro trial",
     "count": 1,
-    "expected_first_charge": "2026-10-29",
-    "expected_in_reports": "2026-10-30",
+    "expected_first_charge": "2026-11-01",
+    "expected_in_reports": "2026-11-02",
     "trial_length": "7 Days"
    },
    "subscriptions": {
@@ -1035,11 +1029,11 @@
     }
    },
    "stats": {
-    "days": 20,
-    "requests": 0,
+    "days": 21,
+    "requests": 2,
     "cache_hits": 40,
-    "seconds": 0.01,
-    "latest_requested": "2026-10-30"
+    "seconds": 0.75,
+    "latest_requested": "2026-10-31"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
   }
