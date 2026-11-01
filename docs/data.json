@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-01 08:35 EST",
+ "updated_at": "2026-11-01 09:36 EST",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -400,7 +400,8 @@
     "2026-10-27",
     "2026-10-28",
     "2026-10-29",
-    "2026-10-30"
+    "2026-10-30",
+    "2026-10-31"
    ],
    "pending_days": [
     "2026-10-31"
@@ -978,6 +979,31 @@
      "price_usd": 4.99,
      "price_local": "ZAF 99.99",
      "status": "in trial"
+    },
+    {
+     "start": "2026-10-31",
+     "app_id": "6819824551",
+     "app": "StrideLab",
+     "subscription_id": "6819858281",
+     "product": "StrideLab Pro Monthly",
+     "period": "1 Month",
+     "type": "intro trial",
+     "free": true,
+     "offer_name": null,
+     "offer_code": null,
+     "trial_length": "7 Days",
+     "count": 1,
+     "countries": {
+      "US": 1
+     },
+     "conversions": 0,
+     "cancellations": 0,
+     "events": [],
+     "expected_first_charge": "2026-11-07",
+     "expected_in_reports": "2026-11-08",
+     "price_usd": 4.99,
+     "price_local": null,
+     "status": "in trial"
     }
    ],
    "next_conversion": {
@@ -1032,7 +1058,7 @@
     "days": 21,
     "requests": 2,
     "cache_hits": 40,
-    "seconds": 0.74,
+    "seconds": 0.76,
     "latest_requested": "2026-10-31"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
