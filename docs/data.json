@@ -1,6 +1,8 @@
 {
- "updated_at": "2026-11-02 12:38 EST",
- "errors": [],
+ "updated_at": "2026-11-02 13:11 EST",
+ "errors": [
+  "asc_reports subscription metadata: HTTPSConnectionPool(host='api.appstoreconnect.apple.com', port=443): Read timed out. (read timeout=60)"
+ ],
  "meta": {
   "account_timezone": "America/Los_Angeles",
   "currency": "USD",
@@ -601,7 +603,7 @@
      "events": [],
      "expected_first_charge": "2027-10-12",
      "expected_in_reports": "2027-10-13",
-     "price_usd": 39.99,
+     "price_usd": null,
      "price_local": null,
      "status": "in trial"
     },
@@ -626,7 +628,7 @@
      "events": [],
      "expected_first_charge": "2027-10-16",
      "expected_in_reports": "2027-10-17",
-     "price_usd": 39.99,
+     "price_usd": null,
      "price_local": null,
      "status": "in trial"
     },
@@ -651,7 +653,7 @@
      "events": [],
      "expected_first_charge": "2027-10-17",
      "expected_in_reports": "2027-10-18",
-     "price_usd": 39.99,
+     "price_usd": null,
      "price_local": null,
      "status": "in trial"
     },
@@ -684,8 +686,8 @@
      ],
      "expected_first_charge": "2026-10-25",
      "expected_in_reports": "2026-10-26",
-     "price_usd": 39.99,
-     "price_local": "HK$288",
+     "price_usd": null,
+     "price_local": null,
      "status": "cancelled"
     },
     {
@@ -709,7 +711,7 @@
      "events": [],
      "expected_first_charge": "2026-11-20",
      "expected_in_reports": "2026-11-21",
-     "price_usd": 4.99,
+     "price_usd": null,
      "price_local": null,
      "status": "in trial"
     },
@@ -734,8 +736,8 @@
      "events": [],
      "expected_first_charge": "2026-11-22",
      "expected_in_reports": "2026-11-23",
-     "price_usd": 4.99,
-     "price_local": "DEU 5.99",
+     "price_usd": null,
+     "price_local": null,
      "status": "in trial"
     },
     {
@@ -767,7 +769,7 @@
      ],
      "expected_first_charge": "2026-10-29",
      "expected_in_reports": "2026-10-30",
-     "price_usd": 4.99,
+     "price_usd": null,
      "price_local": null,
      "status": "cancelled"
     },
@@ -800,7 +802,7 @@
      ],
      "expected_first_charge": "2026-10-29",
      "expected_in_reports": "2026-10-30",
-     "price_usd": 39.99,
+     "price_usd": null,
      "price_local": null,
      "status": "due / awaiting report"
     },
@@ -833,7 +835,7 @@
      ],
      "expected_first_charge": "2026-10-30",
      "expected_in_reports": "2026-10-31",
-     "price_usd": 4.99,
+     "price_usd": null,
      "price_local": null,
      "status": "converted"
     },
@@ -866,8 +868,8 @@
      ],
      "expected_first_charge": "2026-11-01",
      "expected_in_reports": "2026-11-02",
-     "price_usd": 4.99,
-     "price_local": "\u00a34.99",
+     "price_usd": null,
+     "price_local": null,
      "status": "cancelled"
     },
     {
@@ -891,7 +893,7 @@
      "events": [],
      "expected_first_charge": "2026-11-02",
      "expected_in_reports": "2026-11-03",
-     "price_usd": 4.99,
+     "price_usd": null,
      "price_local": null,
      "status": "due / awaiting report"
     },
@@ -916,7 +918,7 @@
      "events": [],
      "expected_first_charge": "2027-10-26",
      "expected_in_reports": "2027-10-27",
-     "price_usd": 39.99,
+     "price_usd": null,
      "price_local": null,
      "status": "in trial"
     },
@@ -941,7 +943,7 @@
      "events": [],
      "expected_first_charge": "2026-11-03",
      "expected_in_reports": "2026-11-04",
-     "price_usd": 39.99,
+     "price_usd": null,
      "price_local": null,
      "status": "in trial"
     },
@@ -966,7 +968,7 @@
      "events": [],
      "expected_first_charge": "2026-11-04",
      "expected_in_reports": "2026-11-05",
-     "price_usd": 39.99,
+     "price_usd": null,
      "price_local": null,
      "status": "in trial"
     },
@@ -991,8 +993,8 @@
      "events": [],
      "expected_first_charge": "2026-11-05",
      "expected_in_reports": "2026-11-06",
-     "price_usd": 4.99,
-     "price_local": "ZAF 99.99",
+     "price_usd": null,
+     "price_local": null,
      "status": "in trial"
     },
     {
@@ -1016,7 +1018,7 @@
      "events": [],
      "expected_first_charge": "2026-11-07",
      "expected_in_reports": "2026-11-08",
-     "price_usd": 4.99,
+     "price_usd": null,
      "price_local": null,
      "status": "in trial"
     },
@@ -1041,8 +1043,8 @@
      "events": [],
      "expected_first_charge": "2026-11-08",
      "expected_in_reports": "2026-11-09",
-     "price_usd": 39.99,
-     "price_local": "CA$49.99",
+     "price_usd": null,
+     "price_local": null,
      "status": "in trial"
     }
    ],
@@ -1056,49 +1058,12 @@
     "expected_in_reports": "2026-11-03",
     "trial_length": "7 Days"
    },
-   "subscriptions": {
-    "6819810991": {
-     "app": "6805914932",
-     "name": "Monthly",
-     "period": "ONE_MONTH",
-     "price_usd": "4.99",
-     "intro_offers": [
-      "FREE_TRIAL ONE_WEEK"
-     ]
-    },
-    "6819811523": {
-     "app": "6805914932",
-     "name": "Yearly",
-     "period": "ONE_YEAR",
-     "price_usd": "39.99",
-     "intro_offers": [
-      "FREE_TRIAL ONE_WEEK"
-     ]
-    },
-    "6819858281": {
-     "app": "6819824551",
-     "name": "StrideLab Pro Monthly",
-     "period": "ONE_MONTH",
-     "price_usd": "4.99",
-     "intro_offers": [
-      "FREE_TRIAL ONE_WEEK"
-     ]
-    },
-    "6819859533": {
-     "app": "6819824551",
-     "name": "StrideLab Pro Yearly",
-     "period": "ONE_YEAR",
-     "price_usd": "39.99",
-     "intro_offers": [
-      "FREE_TRIAL ONE_WEEK"
-     ]
-    }
-   },
+   "subscriptions": {},
    "stats": {
     "days": 22,
-    "requests": 1,
-    "cache_hits": 43,
-    "seconds": 0.71,
+    "requests": 0,
+    "cache_hits": 44,
+    "seconds": 0.01,
     "latest_requested": "2026-11-01"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
