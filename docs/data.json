@@ -1,6 +1,8 @@
 {
- "updated_at": "2026-11-02 22:39 EST",
- "errors": [],
+ "updated_at": "2026-11-03 08:08 EST",
+ "errors": [
+  "asc_reports SUBEVT: fetch failed for 2026-11-02 (error:HTTP 500)"
+ ],
  "meta": {
   "account_timezone": "America/Los_Angeles",
   "currency": "USD",
@@ -44,8 +46,8 @@
    "reach": 1464,
    "cpm": "17.00578",
    "frequency": "1.772541",
-   "date_start": "2023-10-02",
-   "date_stop": "2026-11-02",
+   "date_start": "2023-10-03",
+   "date_stop": "2026-11-03",
    "link_clicks": 13,
    "all_clicks": 19,
    "link_ctr": 0.501,
@@ -66,8 +68,8 @@
     "frequency": "1.772541",
     "campaign_id": "52589865683494",
     "campaign_name": "LaneSync | US | $50 total video test",
-    "date_start": "2023-10-02",
-    "date_stop": "2026-11-02",
+    "date_start": "2023-10-03",
+    "date_stop": "2026-11-03",
     "link_clicks": 13,
     "all_clicks": 19,
     "link_ctr": 0.501,
@@ -338,7 +340,7 @@
   "reports": {
    "range": [
     "2026-10-11",
-    "2026-11-01"
+    "2026-11-02"
    ],
    "dates": [
     "2026-10-11",
@@ -362,7 +364,8 @@
     "2026-10-29",
     "2026-10-30",
     "2026-10-31",
-    "2026-11-01"
+    "2026-11-01",
+    "2026-11-02"
    ],
    "sales_status": {
     "2026-10-11": "ok",
@@ -386,7 +389,8 @@
     "2026-10-29": "ok",
     "2026-10-30": "ok",
     "2026-10-31": "ok",
-    "2026-11-01": "ok"
+    "2026-11-01": "ok",
+    "2026-11-02": "pending"
    },
    "event_report_days": [
     "2026-10-12",
@@ -406,7 +410,9 @@
     "2026-10-31",
     "2026-11-01"
    ],
-   "pending_days": [],
+   "pending_days": [
+    "2026-11-02"
+   ],
    "installs": {
     "6805914932": {
      "name": "LaneSync",
@@ -432,7 +438,8 @@
       6,
       5,
       7,
-      7
+      7,
+      null
      ],
      "redownloads": [
       0,
@@ -456,7 +463,8 @@
       0,
       2,
       2,
-      1
+      1,
+      null
      ],
      "updates": [
       0,
@@ -480,7 +488,8 @@
       0,
       1,
       0,
-      2
+      2,
+      null
      ],
      "launch": "2026-10-11",
      "total_first_time": 149,
@@ -510,7 +519,8 @@
       5,
       3,
       7,
-      15
+      15,
+      null
      ],
      "redownloads": [
       0,
@@ -534,7 +544,8 @@
       0,
       0,
       0,
-      0
+      0,
+      null
      ],
      "updates": [
       0,
@@ -558,7 +569,8 @@
       0,
       0,
       0,
-      0
+      0,
+      null
      ],
      "launch": "2026-10-16",
      "total_first_time": 102,
@@ -943,7 +955,7 @@
      "expected_in_reports": "2026-11-04",
      "price_usd": 39.99,
      "price_local": null,
-     "status": "in trial"
+     "status": "due / awaiting report"
     },
     {
      "start": "2026-10-28",
@@ -1095,11 +1107,11 @@
     }
    },
    "stats": {
-    "days": 22,
-    "requests": 0,
+    "days": 23,
+    "requests": 2,
     "cache_hits": 44,
-    "seconds": 0.01,
-    "latest_requested": "2026-11-01"
+    "seconds": 20.35,
+    "latest_requested": "2026-11-02"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
   }
