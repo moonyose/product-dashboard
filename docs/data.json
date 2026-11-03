@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-03 08:38 EST",
+ "updated_at": "2026-11-03 09:31 EST",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -1106,9 +1106,9 @@
    },
    "stats": {
     "days": 23,
-    "requests": 2,
-    "cache_hits": 44,
-    "seconds": 0.85,
+    "requests": 1,
+    "cache_hits": 45,
+    "seconds": 0.78,
     "latest_requested": "2026-11-02"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
