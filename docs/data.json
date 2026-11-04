@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-04 10:35 EST",
+ "updated_at": "2026-11-04 11:31 EST",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -409,11 +409,10 @@
     "2026-10-30",
     "2026-10-31",
     "2026-11-01",
-    "2026-11-02"
-   ],
-   "pending_days": [
+    "2026-11-02",
     "2026-11-03"
    ],
+   "pending_days": [],
    "installs": {
     "6805914932": {
      "name": "LaneSync",
@@ -964,13 +963,21 @@
       "US": 1
      },
      "conversions": 0,
-     "cancellations": 0,
-     "events": [],
+     "cancellations": 1,
+     "events": [
+      {
+       "report_date": "2026-11-03",
+       "event_date": "2026-11-03",
+       "event": "Cancel",
+       "quantity": 1,
+       "country": "US"
+      }
+     ],
      "expected_first_charge": "2026-11-03",
      "expected_in_reports": "2026-11-04",
      "price_usd": 39.99,
      "price_local": null,
-     "status": "due / awaiting report"
+     "status": "cancelled"
     },
     {
      "start": "2026-10-28",
@@ -1096,16 +1103,41 @@
      "price_usd": 4.99,
      "price_local": null,
      "status": "in trial"
+    },
+    {
+     "start": "2026-11-03",
+     "app_id": "6819824551",
+     "app": "StrideLab",
+     "subscription_id": "6819858281",
+     "product": "StrideLab Pro Monthly",
+     "period": "1 Month",
+     "type": "intro trial",
+     "free": true,
+     "offer_name": null,
+     "offer_code": null,
+     "trial_length": "7 Days",
+     "count": 1,
+     "countries": {
+      "US": 1
+     },
+     "conversions": 0,
+     "cancellations": 0,
+     "events": [],
+     "expected_first_charge": "2026-11-10",
+     "expected_in_reports": "2026-11-11",
+     "price_usd": 4.99,
+     "price_local": null,
+     "status": "in trial"
     }
    ],
    "next_conversion": {
-    "start": "2026-10-27",
+    "start": "2026-10-28",
     "app": "StrideLab",
     "product": "StrideLab Pro Yearly",
     "type": "intro trial",
     "count": 1,
-    "expected_first_charge": "2026-11-03",
-    "expected_in_reports": "2026-11-04",
+    "expected_first_charge": "2026-11-04",
+    "expected_in_reports": "2026-11-05",
     "trial_length": "7 Days"
    },
    "subscriptions": {
@@ -1150,7 +1182,7 @@
     "days": 24,
     "requests": 1,
     "cache_hits": 47,
-    "seconds": 0.62,
+    "seconds": 0.75,
     "latest_requested": "2026-11-03"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
