@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-04 12:33 EST",
+ "updated_at": "2026-11-04 13:02 EST",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -61,12 +61,12 @@
    {
     "spend": 44.13,
     "impressions": 2595,
-    "reach": 1464,
+    "reach": 1468,
     "cpm": "17.00578",
-    "frequency": "1.772541",
+    "frequency": "1.767711",
     "campaign_id": "52589865683494",
     "campaign_name": "LaneSync | US | $50 total video test",
-    "date_start": "2023-10-04",
+    "date_start": "2026-10-14",
     "date_stop": "2026-11-04",
     "link_clicks": 13,
     "all_clicks": 19,
@@ -1182,7 +1182,7 @@
     "days": 24,
     "requests": 0,
     "cache_hits": 48,
-    "seconds": 0.01,
+    "seconds": 0.02,
     "latest_requested": "2026-11-03"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
