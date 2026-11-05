@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-05 08:10 EST",
+ "updated_at": "2026-11-05 08:19 EST",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -1192,7 +1192,7 @@
     "days": 25,
     "requests": 2,
     "cache_hits": 48,
-    "seconds": 0.74,
+    "seconds": 0.75,
     "latest_requested": "2026-11-04"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
@@ -1200,8 +1200,8 @@
  },
  "apple_ads": {
   "as_of": "2026-10-26",
-  "source": "manual (browser) app-ads.apple.com campaigns page, read Oct 26, 2026",
-  "note": "Apple reports in UTC, ~3h delay. Nov 3 and Nov 4 morning reads failed: Apple Ads needs sign-in; numbers are from Oct 26.",
+  "source": "manual (browser) app-ads.apple.com campaigns page, read Oct 26, 2026; Nov 5 sign-in blocked",
+  "note": "Apple reports in UTC, ~3h delay. Nov 3\u20135 morning reads failed: Apple Ads needs sign-in (redirected to idmsa.apple.com). Numbers below are from Oct 26, 2026.",
   "campaigns": [
    {
     "name": "LaneSync - US - Search",
@@ -1264,8 +1264,9 @@
   }
  },
  "roblox": {
-  "period": "last 7 days (Oct 26 - ~Nov 1)",
-  "source": "manual (browser) Creator Engagement last 7 days, read Nov 4 morning",
+  "period": "last 7 days (and 28d noted)",
+  "source": "manual (browser) Creator Engagement Last 7 / Last 28 days, read Nov 5 morning",
+  "as_of": "2026-11-05",
   "games": [
    {
     "name": "Crash a Car",
@@ -1275,11 +1276,13 @@
     "dau": 0,
     "dau_change_pct": null,
     "sessions_per_day": 0,
-    "lifetime_visits": 247,
+    "lifetime_visits": 314,
     "new_users": 0,
+    "returning_users": 0,
     "avg_session_min": 0.0,
+    "mau": 0,
     "revenue": 0,
-    "note": "Nov 4 read: 7d empty (playtime '--', DAU 0, 0 sessions). 28d: 4.7 min avg playtime, DAU 10, 11 sessions/day, MAU 96, 23.11% of new users still playing at 5 min.",
+    "note": "Nov 5: 7d empty (0.0 min playtime, DAU 0, 0 sessions). 28d: 4.7 min avg playtime, DAU 10, 11 sessions/day, MAU 96, 9 new / 1 returning, 23.11% of new users still playing at 5 min.",
     "ad_spend": 73.55,
     "ads": {
      "spend_28d": 73.55,
@@ -1292,8 +1295,6 @@
      "ad_playtime_h": 18.9,
      "campaign": "Oct 18 campaign completed ($16.03); Oct 8 campaign completed ($57.52)"
     },
-    "returning_users": 0,
-    "mau": 96,
     "ads_7d": {
      "spend": 0,
      "impressions": null,
@@ -1309,67 +1310,46 @@
    {
     "name": "Infection",
     "universe_id": 10520154400,
-    "avg_playtime_min": 0.0,
+    "avg_playtime_min": 9.3,
     "avg_playtime_change_pct": null,
     "dau": 0,
-    "dau_change_pct": 162.5,
-    "lifetime_visits": 1122,
-    "revenue": 0,
-    "ad_spend": 61.4,
-    "ads": {
-     "spend_28d": 61.4,
-     "spend_7d": 0,
-     "impressions": 43213,
-     "ctr_pct": 1.6,
-     "clicks": 675,
-     "plays": 272,
-     "cost_per_play": 0.226,
-     "ad_playtime_h": 12.5,
-     "campaign": "Completed"
-    },
+    "dau_change_pct": null,
     "sessions_per_day": 1,
+    "lifetime_visits": null,
     "new_users": 0,
-    "returning_users": 0,
+    "returning_users": null,
     "avg_session_min": 7.0,
-    "mau": 82,
-    "note": "Nov 4 read: 7d playtime '--', DAU 0 (162.5% change), sessions 1/day (+250%). 28d: 4.7 min avg playtime (51.7% change), DAU 0 (97.3% change), MAU 82, 25% still playing at 5 min.",
+    "mau": 41,
+    "revenue": 0,
+    "ad_spend": 0,
+    "ads": null,
     "ads_7d": null,
-    "ads_playtime_per_play_min": 2.76,
+    "note": "Nov 5: 7d avg playtime 9.3 min from ~1 session (tiny sample), DAU 0, sessions 1/day, MAU 41, 33.33% still playing at 5 min. 28d: 5.6 min playtime, DAU ~0, MAU 70, 25% at 5 min.",
+    "ads_playtime_per_play_min": null,
     "icon": "icons/rbx_10520154400.png"
    },
    {
     "name": "Ghosts In The Graveyard - Insane Asylum",
     "universe_id": 10308497838,
-    "avg_playtime_min": 0.0,
+    "avg_playtime_min": 1.5,
     "avg_playtime_change_pct": null,
     "dau": 1,
     "dau_change_pct": null,
-    "lifetime_visits": 377,
-    "revenue": 0,
-    "ad_spend": 61.14,
-    "ads": {
-     "spend_28d": 61.14,
-     "spend_7d": 0,
-     "impressions": 49946,
-     "ctr_pct": 1.6,
-     "clicks": 784,
-     "plays": 288,
-     "cost_per_play": 0.212,
-     "ad_playtime_h": 12.5,
-     "campaign": "Completed"
-    },
     "sessions_per_day": 1,
+    "lifetime_visits": 383,
     "new_users": 0,
     "returning_users": 0,
     "avg_session_min": 1.5,
-    "mau": 117,
-    "note": "Nov 4 read: 7d playtime '--', DAU 1, sessions 1/day. 28d: 3.2 min avg playtime (2.4% change), DAU 1 (95.6% change), MAU 117, 20% still playing at 5 min.",
+    "mau": 99,
+    "revenue": 0,
+    "ad_spend": 0,
+    "ads": null,
     "ads_7d": null,
-    "ads_playtime_per_play_min": 2.6,
+    "note": "Nov 5: 7d playtime 1.5 min, DAU 1, sessions 1/day, MAU 99, 0% still playing at 5 min. 28d: 3.1 min playtime, DAU ~0, MAU 106, 20% at 5 min.",
+    "ads_playtime_per_play_min": null,
     "icon": "icons/rbx_10308497838.png"
    }
-  ],
-  "as_of": "2026-11-03"
+  ]
  },
  "roblox_ads": {
   "source": "Roblox Ads Manager (manual)",
@@ -1377,7 +1357,7 @@
   "currency": "USD",
   "total_spend_28d": 73.55,
   "total_spend_7d": 0,
-  "as_of": "2026-11-04",
-  "note": "Nov 4 read: no active campaigns. 28d: $73.55, 42.4k impr, 279 plays, 18.9h playtime (~4.1 min per ad play); both Crash a Car campaigns completed (Oct 8 $57.52, Oct 18 $16.03). No campaigns for Infection or Ghosts."
+  "as_of": "2026-11-05",
+  "note": "Nov 5: no active campaigns; last 7d empty. 28d: $73.55, 42.4k impr, 279 plays, 18.9h playtime (~4.1 min per ad play). Both Crash a Car campaigns completed (Oct 8 $57.52 / 35.7k impr / 218 plays / $0.264 CPP; Oct 18 $16.03 / 6.6k impr / 61 plays / $0.263 CPP). No campaigns for Infection or Ghosts."
  }
 }
