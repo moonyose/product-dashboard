@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-10 14:49 EST",
+ "updated_at": "2026-11-10 15:53 EST",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -103,7 +103,9 @@
    {
     "id": "6812496973",
     "name": "Miami Beach Transit Tracker",
-    "error": "HTTPSConnectionPool(host='api.appstoreconnect.apple.com', port=443): Max retries exceeded with url: /v1/apps/6812496973/appStoreVersions?limit=3 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)')))",
+    "version": "1.0",
+    "state": "PREPARE_FOR_SUBMISSION",
+    "created": "2026-09-15T12:51:58-07:00",
     "icon": "icons/app_6812496973.png"
    }
   ],
