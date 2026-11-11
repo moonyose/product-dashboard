@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-11 10:46 EST",
+ "updated_at": "2026-11-11 11:52 EST",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -430,11 +430,10 @@
     "2026-11-06",
     "2026-11-07",
     "2026-11-08",
-    "2026-11-09"
-   ],
-   "pending_days": [
+    "2026-11-09",
     "2026-11-10"
    ],
+   "pending_days": [],
    "installs": {
     "6805914932": {
      "name": "LaneSync",
@@ -1225,13 +1224,21 @@
       "US": 1
      },
      "conversions": 0,
-     "cancellations": 0,
-     "events": [],
+     "cancellations": 1,
+     "events": [
+      {
+       "report_date": "2026-11-10",
+       "event_date": "2026-11-10",
+       "event": "Cancel",
+       "quantity": 1,
+       "country": "US"
+      }
+     ],
      "expected_first_charge": "2026-11-10",
      "expected_in_reports": "2026-11-11",
      "price_usd": 4.99,
      "price_local": null,
-     "status": "due / awaiting report"
+     "status": "cancelled"
     },
     {
      "start": "2026-11-05",
@@ -1382,16 +1389,66 @@
      "price_usd": 4.99,
      "price_local": "A$7.99",
      "status": "in trial"
+    },
+    {
+     "start": "2026-11-10",
+     "app_id": "6819824551",
+     "app": "StrideLab",
+     "subscription_id": "6819858281",
+     "product": "StrideLab Pro Monthly",
+     "period": "1 Month",
+     "type": "intro trial",
+     "free": true,
+     "offer_name": null,
+     "offer_code": null,
+     "trial_length": "7 Days",
+     "count": 1,
+     "countries": {
+      "IT": 1
+     },
+     "conversions": 0,
+     "cancellations": 0,
+     "events": [],
+     "expected_first_charge": "2026-11-17",
+     "expected_in_reports": "2026-11-18",
+     "price_usd": 4.99,
+     "price_local": "ITA 5.99",
+     "status": "in trial"
+    },
+    {
+     "start": "2026-11-10",
+     "app_id": "6819824551",
+     "app": "StrideLab",
+     "subscription_id": "6819859533",
+     "product": "StrideLab Pro Yearly",
+     "period": "1 Year",
+     "type": "intro trial",
+     "free": true,
+     "offer_name": null,
+     "offer_code": null,
+     "trial_length": "7 Days",
+     "count": 1,
+     "countries": {
+      "JP": 1
+     },
+     "conversions": 0,
+     "cancellations": 0,
+     "events": [],
+     "expected_first_charge": "2026-11-17",
+     "expected_in_reports": "2026-11-18",
+     "price_usd": 39.99,
+     "price_local": "\u00a56000",
+     "status": "in trial"
     }
    ],
    "next_conversion": {
-    "start": "2026-11-03",
+    "start": "2026-11-05",
     "app": "StrideLab",
     "product": "StrideLab Pro Monthly",
     "type": "intro trial",
     "count": 1,
-    "expected_first_charge": "2026-11-10",
-    "expected_in_reports": "2026-11-11",
+    "expected_first_charge": "2026-11-12",
+    "expected_in_reports": "2026-11-13",
     "trial_length": "7 Days"
    },
    "subscriptions": {
@@ -1436,7 +1493,7 @@
     "days": 31,
     "requests": 1,
     "cache_hits": 61,
-    "seconds": 1.61,
+    "seconds": 2.2,
     "latest_requested": "2026-11-10"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
