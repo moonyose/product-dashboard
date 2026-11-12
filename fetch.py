@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import json, os, time, gzip, io, csv, datetime as dt
+import json, os, time, datetime as dt
 from zoneinfo import ZoneInfo
 import jwt, requests
 B = os.path.dirname(os.path.abspath(__file__))
@@ -97,35 +97,15 @@ def asc():
         res["reports"] = rb; res["report_errors"] = rerr
     except Exception as x:
         res["reports"] = None; res["report_errors"] = [f"asc_reports: {type(x).__name__}: {x}"]
-    try: rep, _ = asc_reports.get_reports(H, vendor, kinds=("SALES",))
-    except Exception as x: rep = {"SALES": {}}; res["report_errors"].append(f"asc sales cache: {x}")
-    days = []
-    for d in sorted(rep["SALES"], reverse=True):
-        if len(days) >= 7: break
-        st, txt = rep["SALES"][d]
-        if st != "ok": continue
-        rows = list(csv.DictReader(io.StringIO(txt), delimiter="\t"))
-        sku2app = {row["SKU"]: row["Apple Identifier"] for row in rows if not row.get("Parent Identifier", "").strip()}
-        per = {aid: {"downloads": 0, "redownloads": 0, "new_subs": 0, "new_subs_paid": 0, "new_subs_free": 0, "renewals": 0, "proceeds": 0.0} for aid in apps}
-        for row in rows:
-            ty = row.get("Product Type Identifier", "").strip(); u = int(float(row.get("Units") or 0))
-            parent = row.get("Parent Identifier", "").strip()
-            aid = sku2app.get(parent, parent) if parent else row["Apple Identifier"]
-            p = per.setdefault(aid, {"downloads": 0, "redownloads": 0, "new_subs": 0, "new_subs_paid": 0, "new_subs_free": 0, "renewals": 0, "proceeds": 0.0})
-            p["proceeds"] += u * float(row.get("Developer Proceeds") or 0)
-            if ty in ("1", "1F", "1T", "F1", "1E", "1EP", "1EU"): p["downloads"] += u
-            elif ty in ("3", "3F", "3T", "F3"): p["redownloads"] += u
-            elif ty.startswith("IA") or ty.startswith("FI"):
-                sub = row.get("Subscription", "").strip()
-                if sub == "Renewal": p["renewals"] += u
-                else:
-                    p["new_subs"] += u
-                    if float(row.get("Customer Price") or 0) > 0: p["new_subs_paid"] += u
-                    else: p["new_subs_free"] += u
-        days.append({"date": d, "apps": per})
-    days.reverse()
-    res["sales"] = days
-    if not days: res["sales_note"] = "No daily SALES reports returned for last 7 days"
+    try:
+        rep, _ = asc_reports.get_reports(H, vendor, kinds=("SALES",))
+        summ = asc_reports.summarize_sales(rep, {aid: n.split(" - ")[0] for aid, n in apps.items()})
+        res["sales"] = summ["last_7d"]
+        res["lifetime"] = summ["lifetime"]
+    except Exception as x:
+        res["sales"] = []; res["lifetime"] = None
+        res.setdefault("report_errors", []).append(f"asc sales cache: {x}")
+    if not res.get("sales"): res["sales_note"] = "No daily SALES reports returned for last 7 days"
     return res
 
 for k, fn in (("meta", meta), ("asc", asc)):

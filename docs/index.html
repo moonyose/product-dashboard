@@ -92,7 +92,10 @@ function render(d){
  ads+=sec('rbxads',`<span>🎮 Roblox Ads</span> <span class="mut small">${esc(ra.period||'')} · manual${ra.note?' · '+esc(ra.note):''}</span>`,`<table><tr><th></th><th>Game</th><th>Spend 28d</th><th>Spend 7d</th><th>Impr.</th><th>CTR</th><th>Clicks</th><th>Plays</th><th>$/play</th><th>Playtime/ad play</th><th>Status</th></tr>${games.map(g=>{const x=g.ads||{};return `<tr><td>${icon(g.icon,g.name)}</td><td>${esc(g.name)}</td><td>${usd(x.spend_28d)}</td><td>${usd(x.spend_7d)}</td><td>${num(x.impressions)}</td><td>${x.ctr_pct??'—'}%</td><td>${num(x.clicks)}</td><td>${num(x.plays)}</td><td>${usd(x.cost_per_play)}</td><td>${fm(ppp(g))}</td><td class="mut">${esc(x.campaign)}</td></tr>`}).join('')}</table>`);
  // ---- APP STORE
  const sales=d.asc?.sales||[];const tot=k=>sales.reduce((s,x)=>s+Object.values(x.apps).reduce((a,p)=>a+(p[k]||0),0),0);
- let asc=`<div class="grid">${card(`Downloads · ${sales.length}d`,num(tot('downloads')),'','hero')}${card('New subs / trials',num(tot('new_subs')),`<div class="t mut">${tot('new_subs_paid')} paid · ${tot('new_subs_free')} free/trial</div>`)}${card('Redownloads',num(tot('redownloads')))}${card('Proceeds',usd(tot('proceeds')))}</div>
+ const life=d.asc?.lifetime||{}, lifeApps=Object.values(life.apps||{}).filter(a=>(+a.proceeds_usd||0)!==0);
+ const lifeLine=lifeApps.map(a=>`${esc(a.name)} ${usd(a.proceeds_usd)}`).join(' · ');
+ let asc=`<div class="grid">${card(`Downloads · ${sales.length}d`,num(tot('downloads')),'','hero')}${card('New subs / trials',num(tot('new_subs')),`<div class="t mut">${tot('new_subs_paid')} paid · ${tot('new_subs_free')} free/trial</div>`)}${card('Redownloads',num(tot('redownloads')))}${card('Proceeds · 7d',usd(tot('proceeds')))}${card('Lifetime proceeds',usd(life.proceeds_usd),lifeLine?`<div class="t mut">${lifeLine}</div>`:'','hero')}</div>
+  <div class="mut small">Proceeds are in USD. Non-USD developer proceeds are converted at the report date's exchange rate${life.fx?.source&&life.fx.source!=='usd'?` (${esc(life.fx.source)})`:''}.</div>
   ${sales.length?'':`<div class="err">${esc(d.asc?.sales_note||'No sales data')}</div>`}`;
 
  // ---- installs per day + trial cohorts (from asc.reports)
@@ -122,7 +125,7 @@ function render(d){
  (d.asc?.apps||[]).forEach(a=>{const s=sales.map(x=>x.apps[a.id]||{});const dl=s.map(p=>p.downloads||0),sb=s.map(p=>p.new_subs||0);const n=dl.length;
   asc+=sec('app-'+a.id,`${icon(a.icon,a.name)} <span>${esc(a.name)}</span> <span class="pill ${esc(a.state)}">${esc((a.state||a.error||'?').replace(/_/g,' '))}</span>`,
   `<div class="mut small">Version ${esc(a.version)} · App ID ${a.id}${a.public?' · live on App Store':''}</div><div class="grid" style="margin-top:10px">
-  ${card('Downloads · '+n+'d',num(dl.reduce((x,y)=>x+y,0)))}${card('Latest day',num(dl[n-1]),trend(dl[n-1],dl[n-2],'vs prev day'))}${card('New subs · '+n+'d',num(sb.reduce((x,y)=>x+y,0)))}${card('Redownloads',num(s.reduce((x,p)=>x+(p.redownloads||0),0)))}</div>
+  ${card('Downloads · '+n+'d',num(dl.reduce((x,y)=>x+y,0)))}${card('Latest day',num(dl[n-1]),trend(dl[n-1],dl[n-2],'vs prev day'))}${card('New subs · '+n+'d',num(sb.reduce((x,y)=>x+y,0)))}${card('Redownloads',num(s.reduce((x,p)=>x+(p.redownloads||0),0)))}${card('Proceeds · '+n+'d',usd(s.reduce((x,p)=>x+(p.proceeds||0),0)))}${card('Lifetime proceeds',usd((life.apps||{})[a.id]?.proceeds_usd))}</div>
   ${dl.some(x=>x)||sb.some(x=>x)?`<div class="chart"><canvas id="cApp${a.id}" height="70"></canvas></div>`:''}`);
   mk('cApp'+a.id,{type:'bar',data:{labels:sales.map(x=>x.date.slice(5)),datasets:[{label:'Downloads',data:dl,backgroundColor:'#6aa8ff',borderRadius:6},{label:'New subs',data:sb,backgroundColor:'#3ddc97',borderRadius:6}]}})});
  // ---- ROBLOX

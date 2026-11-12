@@ -159,3 +159,133 @@ def build(H, vendor, apps):
             "subscriptions": {k: {"app": v["app"], "name": v["name"], "period": v["period"], "price_usd": v["prices"].get("USA", {}).get("price"), "intro_offers": v["intro"]} for k, v in meta.items()},
             "stats": stats,
             "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."}, errs
+
+
+# ---- proceeds in USD (FX rates cached in data/cache/fx_rates.json; not committed)
+FX_PATH = f"{CACHE}/fx_rates.json"
+# Fallback: units of foreign currency per 1 USD, approx late 2026. Used only if live FX fetch fails.
+FX_FALLBACK = {
+    "USD": 1.0, "EUR": 0.86, "GBP": 0.76, "CAD": 1.39, "AUD": 1.52, "NZD": 1.73,
+    "JPY": 154.0, "HKD": 7.78, "CNY": 7.12, "TWD": 31.0, "KRW": 1450.0, "SGD": 1.30,
+    "INR": 88.5, "ZAR": 16.4, "BRL": 5.35, "MXN": 18.4, "CLP": 950.0, "COP": 3900.0,
+    "ARS": 1450.0, "CHF": 0.80, "SEK": 9.45, "NOK": 10.1, "DKK": 6.42, "PLN": 3.65,
+    "CZK": 21.0, "HUF": 335.0, "RON": 4.38, "BGN": 1.69, "TRY": 42.0, "ILS": 3.25,
+    "AED": 3.67, "SAR": 3.75, "QAR": 3.64, "KWD": 0.31, "EGP": 48.0, "THB": 32.3,
+    "MYR": 4.18, "PHP": 58.5, "IDR": 16600.0, "VND": 26300.0,
+}
+_FX = None
+
+def _fx_load():
+    global _FX
+    if _FX is None:
+        try: _FX = json.load(open(FX_PATH))
+        except Exception: _FX = {"frankfurter": {}, "erapi_latest": None}
+    return _FX
+
+def _fx_save():
+    os.makedirs(CACHE, exist_ok=True)
+    tmp = FX_PATH + ".tmp"
+    json.dump(_FX, open(tmp, "w"), indent=1); os.replace(tmp, FX_PATH)
+
+def _fx_get(currency, day):
+    """Return (foreign_per_usd, source, as_of) for currency on report date. USD -> (1, 'usd', day)."""
+    cur = (currency or "USD").strip().upper() or "USD"
+    if cur == "USD": return 1.0, "usd", day
+    store = _fx_load()
+    ft = store["frankfurter"].get(day)
+    if ft and cur in ft.get("rates", {}):
+        return ft["rates"][cur], "frankfurter", ft.get("as_of") or day
+    # Fetch historical ECB rates for this date (weekends/holidays snap to prior business day)
+    if day not in store["frankfurter"]:
+        try:
+            r = requests.get(f"https://api.frankfurter.dev/v1/{day}", params={"base": "USD"}, timeout=15)
+            if r.status_code == 200:
+                j = r.json(); rates = {k.upper(): float(v) for k, v in (j.get("rates") or {}).items()}
+                store["frankfurter"][day] = {"as_of": j.get("date") or day, "rates": rates}
+                _fx_save()
+            else:
+                store["frankfurter"][day] = {"as_of": None, "rates": {}, "error": f"HTTP {r.status_code}"}
+                _fx_save()
+        except Exception as x:
+            store["frankfurter"][day] = {"as_of": None, "rates": {}, "error": f"{type(x).__name__}"}
+            _fx_save()
+        ft = store["frankfurter"].get(day) or {}
+        if cur in ft.get("rates", {}):
+            return ft["rates"][cur], "frankfurter", ft.get("as_of") or day
+    # Latest rates from open.er-api.com (no historical); cache 12h
+    er = store.get("erapi_latest") or {}
+    fresh = er.get("fetched_at") and (time.time() - er["fetched_at"] < 12 * 3600)
+    if not fresh:
+        try:
+            r = requests.get("https://open.er-api.com/v6/latest/USD", timeout=15)
+            j = r.json() if r.status_code == 200 else {}
+            if j.get("result") == "success":
+                as_of = (j.get("time_last_update_utc") or "")[:16].strip()
+                store["erapi_latest"] = {"fetched_at": time.time(), "as_of": as_of or "latest",
+                                          "rates": {k.upper(): float(v) for k, v in (j.get("rates") or {}).items()}}
+                _fx_save(); er = store["erapi_latest"]
+        except Exception:
+            pass
+    if cur in (er.get("rates") or {}):
+        return er["rates"][cur], "open.er-api.com", er.get("as_of") or "latest"
+    if cur in FX_FALLBACK:
+        return FX_FALLBACK[cur], "fallback", "hardcoded"
+    return None, "missing", None
+
+def to_usd(amount, currency, day):
+    """Convert developer proceeds in `currency` to USD. Returns (usd, fx_info_or_None)."""
+    amt = float(amount or 0)
+    cur = (currency or "USD").strip().upper() or "USD"
+    if amt == 0: return 0.0, None
+    rate, src, as_of = _fx_get(cur, day)
+    if rate is None or rate == 0:
+        return amt if cur == "USD" else 0.0, {"date": day, "currency": cur, "source": src or "missing", "error": "no rate"}
+    usd = amt if cur == "USD" else amt / rate
+    info = None if cur == "USD" else {"date": day, "currency": cur, "foreign_per_usd": rate, "as_of": as_of, "source": src, "original": round(amt, 4), "usd": round(usd, 4)}
+    return usd, info
+
+def _sales_apps(rows, apps, day, fx_used):
+    sku2app = {row["SKU"]: row["Apple Identifier"] for row in rows if not row.get("Parent Identifier", "").strip()}
+    per = {aid: {"downloads": 0, "redownloads": 0, "new_subs": 0, "new_subs_paid": 0, "new_subs_free": 0, "renewals": 0, "proceeds": 0.0} for aid in apps}
+    for row in rows:
+        ty = row.get("Product Type Identifier", "").strip(); u = int(float(row.get("Units") or 0))
+        parent = row.get("Parent Identifier", "").strip()
+        aid = sku2app.get(parent, parent) if parent else row["Apple Identifier"]
+        p = per.setdefault(aid, {"downloads": 0, "redownloads": 0, "new_subs": 0, "new_subs_paid": 0, "new_subs_free": 0, "renewals": 0, "proceeds": 0.0})
+        raw = u * float(row.get("Developer Proceeds") or 0)
+        usd, info = to_usd(raw, row.get("Currency of Proceeds") or "USD", day)
+        p["proceeds"] += usd
+        if info: fx_used.append(info)
+        if ty in ("1", "1F", "1T", "F1", "1E", "1EP", "1EU"): p["downloads"] += u
+        elif ty in ("3", "3F", "3T", "F3"): p["redownloads"] += u
+        elif ty.startswith("IA") or ty.startswith("FI"):
+            sub = row.get("Subscription", "").strip()
+            if sub == "Renewal": p["renewals"] += u
+            else:
+                p["new_subs"] += u
+                if float(row.get("Customer Price") or 0) > 0: p["new_subs_paid"] += u
+                else: p["new_subs_free"] += u
+    for p in per.values(): p["proceeds"] = round(p["proceeds"], 2)
+    return per
+
+def summarize_sales(rep, apps):
+    """All daily SALES reports, with proceeds converted to USD. last_7d is the 7 most recent ok days."""
+    fx_used = []
+    days = []
+    for d in sorted(rep.get("SALES") or {}):
+        st, txt = rep["SALES"][d]
+        if st != "ok": continue
+        days.append({"date": d, "apps": _sales_apps(_rows(txt), apps, d, fx_used)})
+    life_apps = {}
+    for aid, name in apps.items():
+        life_apps[aid] = {"name": name, "proceeds_usd": round(sum((x["apps"].get(aid) or {}).get("proceeds") or 0 for x in days), 2)}
+    total = round(sum(a["proceeds_usd"] for a in life_apps.values()), 2)
+    srcs = sorted({x["source"] for x in fx_used})
+    lifetime = {
+        "proceeds_usd": total, "currency": "USD",
+        "from": days[0]["date"] if days else None, "to": days[-1]["date"] if days else None,
+        "days": len(days), "apps": life_apps,
+        "fx": {"source": ", ".join(srcs) if srcs else "usd", "conversions": fx_used,
+               "notes": "Developer proceeds converted to USD at the report date's rate. Primary: Frankfurter (ECB). Fallback: open.er-api.com latest, then a hardcoded table."},
+    }
+    return {"last_7d": days[-7:], "all": days, "lifetime": lifetime}
