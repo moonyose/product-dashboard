@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-13 17:53 EST",
+ "updated_at": "2026-11-13 18:54 EST",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -95,7 +95,7 @@
     "id": "6819824551",
     "name": "StrideLab - Sprint Analysis",
     "version": "1.0.3",
-    "state": "WAITING_FOR_REVIEW",
+    "state": "IN_REVIEW",
     "created": "2026-11-13T07:47:30-08:00",
     "public": true,
     "icon": "icons/app_6819824551.png"
@@ -1739,7 +1739,7 @@
      "error": null
     }
    },
-   "generated_at": "2026-11-13 17:54 EST",
+   "generated_at": "2026-11-13 18:55 EST",
    "disclaimer": "App Analytics usage, crashes, and retention only count users who opted in to sharing analytics with developers. Low-volume days may be blank because Apple omits rows with fewer than five users."
   }
  },
