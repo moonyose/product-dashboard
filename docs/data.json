@@ -1,9 +1,6 @@
 {
- "updated_at": "2026-11-13 09:51 EST",
- "errors": [
-  "asc_reports SALES: fetch failed for 2026-11-12 (error:HTTP 403)",
-  "asc_reports SUBEVT: fetch failed for 2026-11-12 (error:HTTP 403)"
- ],
+ "updated_at": "2026-11-13 10:50 EST",
+ "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
   "currency": "USD",
@@ -88,56 +85,31 @@
    {
     "id": "6805914932",
     "name": "LaneSync - Sprint Timer",
-    "error": "This request requires an in-effect agreement that has not been signed or has expired.",
+    "version": "1.0.2",
+    "state": "READY_FOR_SALE",
+    "created": "2026-10-21T11:35:24-07:00",
     "public": true,
     "icon": "icons/app_6805914932.png"
    },
    {
     "id": "6819824551",
     "name": "StrideLab - Sprint Analysis",
-    "error": "This request requires an in-effect agreement that has not been signed or has expired.",
+    "version": "1.0.3",
+    "state": "WAITING_FOR_REVIEW",
+    "created": "2026-11-13T07:47:30-08:00",
     "public": true,
     "icon": "icons/app_6819824551.png"
    },
    {
     "id": "6812496973",
     "name": "Miami Beach Transit Tracker",
-    "error": "This request requires an in-effect agreement that has not been signed or has expired."
+    "version": "1.0",
+    "state": "PREPARE_FOR_SUBMISSION",
+    "created": "2026-09-15T12:51:58-07:00",
+    "icon": "icons/app_6812496973.png"
    }
   ],
   "sales": [
-   {
-    "date": "2026-11-05",
-    "apps": {
-     "6805914932": {
-      "downloads": 11,
-      "redownloads": 2,
-      "new_subs": 0,
-      "new_subs_paid": 0,
-      "new_subs_free": 0,
-      "renewals": 0,
-      "proceeds": 0.0
-     },
-     "6819824551": {
-      "downloads": 8,
-      "redownloads": 0,
-      "new_subs": 1,
-      "new_subs_paid": 0,
-      "new_subs_free": 1,
-      "renewals": 1,
-      "proceeds": 3.71
-     },
-     "6812496973": {
-      "downloads": 0,
-      "redownloads": 0,
-      "new_subs": 0,
-      "new_subs_paid": 0,
-      "new_subs_free": 0,
-      "renewals": 0,
-      "proceeds": 0.0
-     }
-    }
-   },
    {
     "date": "2026-11-06",
     "apps": {
@@ -329,6 +301,38 @@
       "proceeds": 0.0
      }
     }
+   },
+   {
+    "date": "2026-11-12",
+    "apps": {
+     "6805914932": {
+      "downloads": 3,
+      "redownloads": 0,
+      "new_subs": 0,
+      "new_subs_paid": 0,
+      "new_subs_free": 0,
+      "renewals": 0,
+      "proceeds": 0.0
+     },
+     "6819824551": {
+      "downloads": 14,
+      "redownloads": 0,
+      "new_subs": 2,
+      "new_subs_paid": 0,
+      "new_subs_free": 2,
+      "renewals": 0,
+      "proceeds": 0.0
+     },
+     "6812496973": {
+      "downloads": 0,
+      "redownloads": 0,
+      "new_subs": 0,
+      "new_subs_paid": 0,
+      "new_subs_free": 0,
+      "renewals": 0,
+      "proceeds": 0.0
+     }
+    }
    }
   ],
   "reports": {
@@ -404,7 +408,7 @@
     "2026-11-09": "ok",
     "2026-11-10": "ok",
     "2026-11-11": "ok",
-    "2026-11-12": "error:HTTP 403"
+    "2026-11-12": "ok"
    },
    "event_report_days": [
     "2026-10-12",
@@ -434,7 +438,9 @@
     "2026-11-10",
     "2026-11-11"
    ],
-   "pending_days": [],
+   "pending_days": [
+    "2026-11-12"
+   ],
    "installs": {
     "6805914932": {
      "name": "LaneSync",
@@ -471,7 +477,7 @@
       5,
       10,
       4,
-      null
+      3
      ],
      "redownloads": [
       0,
@@ -506,7 +512,7 @@
       2,
       3,
       1,
-      null
+      0
      ],
      "updates": [
       0,
@@ -541,10 +547,10 @@
       0,
       0,
       0,
-      null
+      0
      ],
      "launch": "2026-10-11",
-     "total_first_time": 222,
+     "total_first_time": 225,
      "total_redownloads": 52
     },
     "6819824551": {
@@ -582,7 +588,7 @@
       4,
       8,
       13,
-      null
+      14
      ],
      "redownloads": [
       0,
@@ -617,7 +623,7 @@
       1,
       0,
       0,
-      null
+      0
      ],
      "updates": [
       0,
@@ -652,10 +658,10 @@
       0,
       0,
       0,
-      null
+      0
      ],
      "launch": "2026-10-16",
-     "total_first_time": 205,
+     "total_first_time": 219,
      "total_redownloads": 6
     }
    },
@@ -669,7 +675,7 @@
     "F1"
    ],
    "product_types_seen": {
-    "1F": 427,
+    "1F": 444,
     "3F": 58,
     "7F": 111
    },
@@ -1531,7 +1537,7 @@
     "days": 33,
     "requests": 2,
     "cache_hits": 64,
-    "seconds": 1.57,
+    "seconds": 2.33,
     "latest_requested": "2026-11-12"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
@@ -1540,8 +1546,8 @@
    "proceeds_usd": 52.2,
    "currency": "USD",
    "from": "2026-10-11",
-   "to": "2026-11-11",
-   "days": 32,
+   "to": "2026-11-12",
+   "days": 33,
    "apps": {
     "6805914932": {
      "name": "LaneSync",
