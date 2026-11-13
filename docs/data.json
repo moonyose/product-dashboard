@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-13 08:19 EST",
+ "updated_at": "2026-11-13 08:54 EST",
  "errors": [
   "asc_reports SALES: fetch failed for 2026-11-12 (error:HTTP 403)",
   "asc_reports SUBEVT: fetch failed for 2026-11-12 (error:HTTP 403)"
@@ -1531,7 +1531,7 @@
     "days": 33,
     "requests": 2,
     "cache_hits": 64,
-    "seconds": 1.43,
+    "seconds": 0.99,
     "latest_requested": "2026-11-12"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
