@@ -52,6 +52,44 @@ function trend(cur,prev,label='vs prev'){if(prev==null||cur==null)return '';cur=
  if(prev===0)return `<div class="t up">▲ new ${label}</div>`;const p=(cur-prev)/prev*100;return `<div class="t ${p>0?'up':p<0?'down':'flat'}">${p>0?'▲':p<0?'▼':'→'} ${Math.abs(p).toFixed(1)}% ${label}</div>`}
 function pctT(p){if(p==null)return '';return `<div class="t ${p>0?'up':p<0?'down':'flat'}">${p>0?'▲':p<0?'▼':'→'} ${Math.abs(p)}% vs prior 7d</div>`}
 const card=(l,v,t='',cls='')=>`<div class="card ${cls}"><div class="l">${l}</div><div class="v">${v}</div>${t}</div>`;
+const secUse=x=>x==null||x===''?'—':(Math.round(+x)+'s');
+const pctN=x=>x==null?'—':(+x).toFixed(1)+'%';
+function usageBlock(a, analytics){
+  const skip=new Set(['6812496973']);
+  if(skip.has(String(a.id))) return '';
+  const U=(analytics&&analytics.apps||{})[a.id];
+  const disclaimer=esc((U&&U.opt_in_note)||(analytics&&analytics.disclaimer)||'App Analytics only counts users who opted in to sharing analytics.');
+  let h=`<h4>Usage</h4><div class="mut small">${disclaimer}</div>`;
+  if(!U || U.status==='generating' || U.status==='no_request'){
+    return h+`<div class="mut" style="margin-top:8px">${esc((U&&U.note)||'Generating, usually ready in 1–2 days')}</div>`;
+  }
+  if(U.status==='error' || U.status==='forbidden'){
+    return h+`<div class="err" style="margin-top:8px">${esc(U.note||'Usage reports unavailable')}</div>`;
+  }
+  const ret=U.retention||{}, fun=U.funnel||{}, win=U.window||{};
+  const retT=s=>s==null?'<div class="t mut">not available yet</div>':'<div class="t mut">opt-in estimate</div>';
+  h+=`<div class="grid" style="margin-top:10px">
+    ${card('Sessions · 7d',num(U.sessions_7d),win.start?`<div class="t mut">${esc(win.start)} – ${esc(win.end)}</div>`:'')}
+    ${card('Active devices',num(U.active_devices_latest),`<div class="t mut">latest day · avg ${num(U.avg_daily_active_devices)} / day</div>`)}
+    ${card('Day-1 retention',pctN(ret.day1_pct),retT(ret.day1_pct))}
+    ${card('Day-7 retention',pctN(ret.day7_pct),retT(ret.day7_pct))}
+    ${card('Deletions · 7d',num(U.deletions_7d),'<div class="t mut">opt-in users</div>')}
+    ${card('Crashes · 7d',num(U.crashes_7d))}
+    ${card('Avg session',secUse(U.avg_session_sec))}
+    ${U.opt_in_rate_pct!=null?card('Opt-in rate · 7d',pctN(U.opt_in_rate_pct),`<div class="t mut">${num(U.opt_in_users_7d)} of ${num(U.opt_in_downloaders_7d)} first-time downloaders</div>`):''}
+  </div>
+  <h4>Store funnel · 7d</h4>
+  <div class="grid">
+    ${card('Impressions',num(fun.impressions),'<div class="t mut">all devices</div>')}
+    ${card('Page views',num(fun.page_views),fun.impression_to_page_view_pct!=null?`<div class="t mut">${fun.impression_to_page_view_pct}% of impressions</div>`:'')}
+    ${card('Product page views',num(fun.product_page_views))}
+    ${card('First-time downloads',num(fun.first_time_downloads),fun.page_view_to_download_pct!=null?`<div class="t mut">${fun.page_view_to_download_pct}% of page views</div>`:fun.impression_to_download_pct!=null?`<div class="t mut">${fun.impression_to_download_pct}% of impressions</div>`:'')}
+  </div>`;
+  if((U.daily||[]).some(x=>x.sessions||x.impressions||x.crashes||x.deletions||x.first_time_downloads)){
+    h+=`<div class="chart"><canvas id="cUse${a.id}" height="80"></canvas></div>`;
+  }
+  return h;
+}
 const icon=(src,name)=>src?`<img class="ico" src="${src}" alt="">`:`<span class="ico ava">${esc(name)[0]}</span>`;
 function sec(id,title,inner,open=true){return `<details data-id="${id}" ${open?'open':''}><summary>${title}</summary><div class="body">${inner}</div></details>`}
 function restore(){document.querySelectorAll('details[data-id]').forEach(d=>{const s=localStorage.getItem('dash:'+d.dataset.id);if(s!==null)d.open=s==='1';
@@ -126,8 +164,10 @@ function render(d){
   asc+=sec('app-'+a.id,`${icon(a.icon,a.name)} <span>${esc(a.name)}</span> <span class="pill ${esc(a.state)}">${esc((a.state||a.error||'?').replace(/_/g,' '))}</span>`,
   `<div class="mut small">Version ${esc(a.version)} · App ID ${a.id}${a.public?' · live on App Store':''}</div><div class="grid" style="margin-top:10px">
   ${card('Downloads · '+n+'d',num(dl.reduce((x,y)=>x+y,0)))}${card('Latest day',num(dl[n-1]),trend(dl[n-1],dl[n-2],'vs prev day'))}${card('New subs · '+n+'d',num(sb.reduce((x,y)=>x+y,0)))}${card('Redownloads',num(s.reduce((x,p)=>x+(p.redownloads||0),0)))}${card('Proceeds · '+n+'d',usd(s.reduce((x,p)=>x+(p.proceeds||0),0)))}${card('Lifetime proceeds',usd((life.apps||{})[a.id]?.proceeds_usd))}</div>
-  ${dl.some(x=>x)||sb.some(x=>x)?`<div class="chart"><canvas id="cApp${a.id}" height="70"></canvas></div>`:''}`);
-  mk('cApp'+a.id,{type:'bar',data:{labels:sales.map(x=>x.date.slice(5)),datasets:[{label:'Downloads',data:dl,backgroundColor:'#6aa8ff',borderRadius:6},{label:'New subs',data:sb,backgroundColor:'#3ddc97',borderRadius:6}]}})});
+  ${dl.some(x=>x)||sb.some(x=>x)?`<div class="chart"><canvas id="cApp${a.id}" height="70"></canvas></div>`:''}${usageBlock(a,d.asc&&d.asc.analytics)}`);
+  mk('cApp'+a.id,{type:'bar',data:{labels:sales.map(x=>x.date.slice(5)),datasets:[{label:'Downloads',data:dl,backgroundColor:'#6aa8ff',borderRadius:6},{label:'New subs',data:sb,backgroundColor:'#3ddc97',borderRadius:6}]}});
+  const use=(d.asc&&d.asc.analytics&&d.asc.analytics.apps||{})[a.id], ud=use&&use.daily||[];
+  if(ud.some(x=>x.sessions||x.impressions||x.crashes||x.deletions||x.first_time_downloads)) mk('cUse'+a.id,{data:{labels:ud.map(x=>x.date.slice(5)),datasets:[{type:'bar',label:'Sessions',data:ud.map(x=>x.sessions||0),backgroundColor:'#6aa8ff',borderRadius:6},{type:'line',label:'Impressions',data:ud.map(x=>x.impressions||0),yAxisID:'y1',borderColor:'#ff9f43',tension:.3},{type:'line',label:'Crashes',data:ud.map(x=>x.crashes||0),yAxisID:'y1',borderColor:'#ff6b6b',tension:.3}]},options:{scales:{y1:{position:'right',grid:{display:false},ticks:{precision:0}}}}}})});
  // ---- ROBLOX
  let rbx=`<div class="mut small">${esc(d.roblox?.period)} · manual</div><div class="chart"><canvas id="cRbx" height="60"></canvas></div>`;
  games.forEach(g=>{const x=g.ads||{};rbx+=sec('game-'+g.universe_id,`${icon(g.icon,g.name)} <span>${esc(g.name)}</span>`,

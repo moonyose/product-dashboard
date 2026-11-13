@@ -105,6 +105,15 @@ def asc():
     except Exception as x:
         res["sales"] = []; res["lifetime"] = None
         res.setdefault("report_errors", []).append(f"asc sales cache: {x}")
+    try:
+        import asc_analytics
+        an, aerr = asc_analytics.build(H, {"6805914932": "LaneSync", "6819824551": "StrideLab"})
+        res["analytics"] = an
+        if aerr:
+            res.setdefault("report_errors", []).extend(aerr)
+    except Exception as x:
+        res["analytics"] = None
+        res.setdefault("report_errors", []).append(f"asc_analytics: {type(x).__name__}: {x}")
     if not res.get("sales"): res["sales_note"] = "No daily SALES reports returned for last 7 days"
     return res
 

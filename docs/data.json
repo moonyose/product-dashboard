@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-13 13:13 EST",
+ "updated_at": "2026-11-13 13:49 EST",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -1609,6 +1609,138 @@
     ],
     "notes": "Developer proceeds converted to USD at the report date's rate. Primary: Frankfurter (ECB). Fallback: open.er-api.com latest, then a hardcoded table."
    }
+  },
+  "analytics": {
+   "apps": {
+    "6805914932": {
+     "id": "6805914932",
+     "name": "LaneSync",
+     "status": "generating",
+     "note": "Generating, usually ready in 1\u20132 days",
+     "request_id": "69bd9a41-cc00-442a-906c-f2caedc19f1e",
+     "access_type": "ONGOING",
+     "stopped_due_to_inactivity": false,
+     "window": null,
+     "opt_in_rate_pct": null,
+     "sessions_7d": null,
+     "active_devices_latest": null,
+     "avg_daily_active_devices": null,
+     "avg_session_sec": null,
+     "retention": null,
+     "deletions_7d": null,
+     "installs_7d": null,
+     "crashes_7d": null,
+     "funnel": null,
+     "daily": [],
+     "reports_found": [
+      {
+       "kind": "downloads",
+       "name": "App Downloads Standard",
+       "category": "COMMERCE"
+      },
+      {
+       "kind": "installs_deletes",
+       "name": "App Store Installation and Deletion Standard",
+       "category": "APP_USAGE"
+      },
+      {
+       "kind": "sessions",
+       "name": "App Sessions Standard",
+       "category": "APP_USAGE"
+      },
+      {
+       "kind": "discovery",
+       "name": "App Store Discovery and Engagement Standard",
+       "category": "APP_STORE_ENGAGEMENT"
+      },
+      {
+       "kind": "crashes",
+       "name": "App Crashes",
+       "category": "APP_USAGE"
+      },
+      {
+       "kind": "opt_in",
+       "name": "App Opt In",
+       "category": "APP_USAGE"
+      }
+     ],
+     "opt_in_note": "Sessions, active devices, retention, crashes, and deletions include only users who opted in to share analytics with developers. Impressions, page views, and downloads count all devices."
+    },
+    "6819824551": {
+     "id": "6819824551",
+     "name": "StrideLab",
+     "status": "generating",
+     "note": "Generating, usually ready in 1\u20132 days",
+     "request_id": "a72a1638-238a-44e6-9ce1-a22864e752dd",
+     "access_type": "ONGOING",
+     "stopped_due_to_inactivity": false,
+     "window": null,
+     "opt_in_rate_pct": null,
+     "sessions_7d": null,
+     "active_devices_latest": null,
+     "avg_daily_active_devices": null,
+     "avg_session_sec": null,
+     "retention": null,
+     "deletions_7d": null,
+     "installs_7d": null,
+     "crashes_7d": null,
+     "funnel": null,
+     "daily": [],
+     "reports_found": [
+      {
+       "kind": "downloads",
+       "name": "App Downloads Standard",
+       "category": "COMMERCE"
+      },
+      {
+       "kind": "installs_deletes",
+       "name": "App Store Installation and Deletion Standard",
+       "category": "APP_USAGE"
+      },
+      {
+       "kind": "sessions",
+       "name": "App Sessions Standard",
+       "category": "APP_USAGE"
+      },
+      {
+       "kind": "discovery",
+       "name": "App Store Discovery and Engagement Standard",
+       "category": "APP_STORE_ENGAGEMENT"
+      },
+      {
+       "kind": "crashes",
+       "name": "App Crashes",
+       "category": "APP_USAGE"
+      },
+      {
+       "kind": "opt_in",
+       "name": "App Opt In",
+       "category": "APP_USAGE"
+      }
+     ],
+     "opt_in_note": "Sessions, active devices, retention, crashes, and deletions include only users who opted in to share analytics with developers. Impressions, page views, and downloads count all devices."
+    }
+   },
+   "requests": {
+    "6805914932": {
+     "name": "LaneSync",
+     "request_id": "69bd9a41-cc00-442a-906c-f2caedc19f1e",
+     "created_this_run": false,
+     "access_type": "ONGOING",
+     "stopped_due_to_inactivity": false,
+     "error": null
+    },
+    "6819824551": {
+     "name": "StrideLab",
+     "request_id": "a72a1638-238a-44e6-9ce1-a22864e752dd",
+     "created_this_run": false,
+     "access_type": "ONGOING",
+     "stopped_due_to_inactivity": false,
+     "error": null
+    }
+   },
+   "generated_at": "2026-11-13 13:49 EST",
+   "disclaimer": "App Analytics usage, crashes, and retention only count users who opted in to sharing analytics with developers. Low-volume days may be blank because Apple omits rows with fewer than five users."
   }
  },
  "apple_ads": {

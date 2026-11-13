@@ -4,3 +4,6 @@ __pycache__/
 *.p8
 *.pem
 data/cache/
+
+# Internal planning doc; not part of the GitHub Pages site
+docs_event_plan.md
