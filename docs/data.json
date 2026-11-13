@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-12 21:49 EST",
+ "updated_at": "2026-11-12 22:55 EST",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -85,20 +85,28 @@
    {
     "id": "6805914932",
     "name": "LaneSync - Sprint Timer",
-    "error": "HTTPSConnectionPool(host='api.appstoreconnect.apple.com', port=443): Max retries exceeded with url: /v1/apps/6805914932/appStoreVersions?limit=3 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)')))",
-    "icon_error": "HTTPSConnectionPool(host='itunes.apple.com', port=443): Read timed out. (read timeout=20)"
+    "version": "1.0.2",
+    "state": "READY_FOR_SALE",
+    "created": "2026-10-21T11:35:24-07:00",
+    "public": true,
+    "icon": "icons/app_6805914932.png"
    },
    {
     "id": "6819824551",
     "name": "StrideLab - Sprint Analysis",
-    "error": "HTTPSConnectionPool(host='api.appstoreconnect.apple.com', port=443): Max retries exceeded with url: /v1/apps/6819824551/appStoreVersions?limit=3 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)')))",
-    "icon_error": "HTTPSConnectionPool(host='itunes.apple.com', port=443): Read timed out. (read timeout=20)"
+    "version": "1.0.2",
+    "state": "READY_FOR_SALE",
+    "created": "2026-10-21T11:35:27-07:00",
+    "public": true,
+    "icon": "icons/app_6819824551.png"
    },
    {
     "id": "6812496973",
     "name": "Miami Beach Transit Tracker",
-    "error": "HTTPSConnectionPool(host='api.appstoreconnect.apple.com', port=443): Max retries exceeded with url: /v1/apps/6812496973/appStoreVersions?limit=3 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)')))",
-    "icon_error": "HTTPSConnectionPool(host='itunes.apple.com', port=443): Read timed out. (read timeout=20)"
+    "version": "1.0",
+    "state": "PREPARE_FOR_SUBMISSION",
+    "created": "2026-09-15T12:51:58-07:00",
+    "icon": "icons/app_6812496973.png"
    }
   ],
   "sales": [
@@ -1519,7 +1527,7 @@
     "days": 32,
     "requests": 0,
     "cache_hits": 64,
-    "seconds": 0.05,
+    "seconds": 0.01,
     "latest_requested": "2026-11-11"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
