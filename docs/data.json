@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-13 19:46 EST",
+ "updated_at": "2026-11-13 20:47 EST",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -1664,7 +1664,10 @@
        "category": "APP_USAGE"
       }
      ],
-     "opt_in_note": "Sessions, active devices, retention, crashes, and deletions include only users who opted in to share analytics with developers. Impressions, page views, and downloads count all devices."
+     "opt_in_note": "Sessions, active devices, retention, crashes, and deletions include only users who opted in to share analytics with developers. Impressions, page views, and downloads count all devices.",
+     "kind_errors": [
+      "sessions: ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+     ]
     },
     "6819824551": {
      "id": "6819824551",
@@ -1739,7 +1742,7 @@
      "error": null
     }
    },
-   "generated_at": "2026-11-13 19:47 EST",
+   "generated_at": "2026-11-13 20:48 EST",
    "disclaimer": "App Analytics usage, crashes, and retention only count users who opted in to sharing analytics with developers. Low-volume days may be blank because Apple omits rows with fewer than five users."
   }
  },
