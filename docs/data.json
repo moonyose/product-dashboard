@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-14 08:12 EST",
+ "updated_at": "2026-11-14 08:51 EST",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -110,38 +110,6 @@
    }
   ],
   "sales": [
-   {
-    "date": "2026-11-06",
-    "apps": {
-     "6805914932": {
-      "downloads": 8,
-      "redownloads": 3,
-      "new_subs": 0,
-      "new_subs_paid": 0,
-      "new_subs_free": 0,
-      "renewals": 0,
-      "proceeds": 0.0
-     },
-     "6819824551": {
-      "downloads": 12,
-      "redownloads": 0,
-      "new_subs": 1,
-      "new_subs_paid": 0,
-      "new_subs_free": 1,
-      "renewals": 0,
-      "proceeds": 0.0
-     },
-     "6812496973": {
-      "downloads": 0,
-      "redownloads": 0,
-      "new_subs": 0,
-      "new_subs_paid": 0,
-      "new_subs_free": 0,
-      "renewals": 0,
-      "proceeds": 0.0
-     }
-    }
-   },
    {
     "date": "2026-11-07",
     "apps": {
@@ -333,6 +301,38 @@
       "proceeds": 0.0
      }
     }
+   },
+   {
+    "date": "2026-11-13",
+    "apps": {
+     "6805914932": {
+      "downloads": 2,
+      "redownloads": 1,
+      "new_subs": 0,
+      "new_subs_paid": 0,
+      "new_subs_free": 0,
+      "renewals": 0,
+      "proceeds": 0.0
+     },
+     "6819824551": {
+      "downloads": 10,
+      "redownloads": 0,
+      "new_subs": 0,
+      "new_subs_paid": 0,
+      "new_subs_free": 0,
+      "renewals": 0,
+      "proceeds": 0.0
+     },
+     "6812496973": {
+      "downloads": 0,
+      "redownloads": 0,
+      "new_subs": 0,
+      "new_subs_paid": 0,
+      "new_subs_free": 0,
+      "renewals": 0,
+      "proceeds": 0.0
+     }
+    }
    }
   ],
   "reports": {
@@ -410,7 +410,7 @@
     "2026-11-10": "ok",
     "2026-11-11": "ok",
     "2026-11-12": "ok",
-    "2026-11-13": "pending"
+    "2026-11-13": "ok"
    },
    "event_report_days": [
     "2026-10-12",
@@ -481,7 +481,7 @@
       10,
       4,
       3,
-      null
+      2
      ],
      "redownloads": [
       0,
@@ -517,7 +517,7 @@
       3,
       1,
       0,
-      null
+      1
      ],
      "updates": [
       0,
@@ -553,11 +553,11 @@
       0,
       0,
       0,
-      null
+      0
      ],
      "launch": "2026-10-11",
-     "total_first_time": 225,
-     "total_redownloads": 52
+     "total_first_time": 227,
+     "total_redownloads": 53
     },
     "6819824551": {
      "name": "StrideLab",
@@ -595,7 +595,7 @@
       8,
       13,
       14,
-      null
+      10
      ],
      "redownloads": [
       0,
@@ -631,7 +631,7 @@
       0,
       0,
       0,
-      null
+      0
      ],
      "updates": [
       0,
@@ -667,10 +667,10 @@
       0,
       0,
       0,
-      null
+      36
      ],
      "launch": "2026-10-16",
-     "total_first_time": 219,
+     "total_first_time": 229,
      "total_redownloads": 6
     }
    },
@@ -684,9 +684,9 @@
     "F1"
    ],
    "product_types_seen": {
-    "1F": 444,
-    "3F": 58,
-    "7F": 111
+    "1F": 456,
+    "3F": 59,
+    "7F": 147
    },
    "cohorts": [
     {
@@ -1579,7 +1579,7 @@
     "days": 34,
     "requests": 2,
     "cache_hits": 66,
-    "seconds": 1.73,
+    "seconds": 1.82,
     "latest_requested": "2026-11-13"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
@@ -1588,8 +1588,8 @@
    "proceeds_usd": 52.2,
    "currency": "USD",
    "from": "2026-10-11",
-   "to": "2026-11-12",
-   "days": 33,
+   "to": "2026-11-13",
+   "days": 34,
    "apps": {
     "6805914932": {
      "name": "LaneSync",
@@ -1852,7 +1852,7 @@
      "error": null
     }
    },
-   "generated_at": "2026-11-14 08:12 EST",
+   "generated_at": "2026-11-14 08:52 EST",
    "disclaimer": "App Analytics usage, crashes, and retention only count users who opted in to sharing analytics with developers. Low-volume days may be blank because Apple omits rows with fewer than five users."
   }
  },
