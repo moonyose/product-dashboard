@@ -1,7 +1,7 @@
 {
- "updated_at": "2026-11-15 08:37 EST",
+ "updated_at": "2026-11-15 09:27 EST",
  "errors": [
-  "LaneSync analytics: list analyticsReportRequests failed: ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+  "LaneSync analytics: SSLError: HTTPSConnectionPool(host='api.appstoreconnect.apple.com', port=443): Max retries exceeded with url: /v1/analyticsReportRequests/69bd9a41-cc00-442a-906c-f2caedc19f1e/reports?limit=200 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)')))"
  ],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -87,8 +87,11 @@
    {
     "id": "6805914932",
     "name": "LaneSync - Sprint Timer",
-    "error": "HTTPSConnectionPool(host='api.appstoreconnect.apple.com', port=443): Max retries exceeded with url: /v1/apps/6805914932/appStoreVersions?limit=3 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)')))",
-    "icon_error": "HTTPSConnectionPool(host='itunes.apple.com', port=443): Read timed out. (read timeout=20)"
+    "version": "1.0.2",
+    "state": "READY_FOR_SALE",
+    "created": "2026-10-21T11:35:24-07:00",
+    "public": true,
+    "icon": "icons/app_6805914932.png"
    },
    {
     "id": "6819824551",
@@ -1593,9 +1596,9 @@
    },
    "stats": {
     "days": 35,
-    "requests": 2,
-    "cache_hits": 68,
-    "seconds": 3.38,
+    "requests": 1,
+    "cache_hits": 69,
+    "seconds": 1.61,
     "latest_requested": "2026-11-14"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
@@ -1642,9 +1645,8 @@
      "id": "6805914932",
      "name": "LaneSync",
      "status": "error",
-     "note": "list analyticsReportRequests failed: ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
-     "permission_error": false,
-     "request_id": null
+     "note": "SSLError: HTTPSConnectionPool(host='api.appstoreconnect.apple.com', port=443): Max retries exceeded with url: /v1/analyticsReportRequests/69bd9a41-cc00-442a-906c-f2caedc19f1e/reports?limit=200 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)')))",
+     "request_id": "69bd9a41-cc00-442a-906c-f2caedc19f1e"
     },
     "6819824551": {
      "id": "6819824551",
@@ -1660,15 +1662,11 @@
       "days": 5
      },
      "opt_in_rate_pct": 57.9,
-     "sessions_7d": 34,
-     "active_devices_latest": 2,
-     "avg_daily_active_devices": 2.0,
-     "avg_session_sec": 61.9,
-     "retention": {
-      "day1_pct": 14.3,
-      "day7_pct": null,
-      "source": "app sessions, App Download Date, opted-in users"
-     },
+     "sessions_7d": null,
+     "active_devices_latest": null,
+     "avg_daily_active_devices": null,
+     "avg_session_sec": null,
+     "retention": null,
      "deletions_7d": 11,
      "installs_7d": 33,
      "crashes_7d": null,
@@ -1716,9 +1714,9 @@
       },
       {
        "date": "2026-11-12",
-       "sessions": 9,
-       "active_devices": 1,
-       "avg_session_sec": 48.4,
+       "sessions": null,
+       "active_devices": null,
+       "avg_session_sec": null,
        "deletions": 1,
        "installs": 5,
        "crashes": null,
@@ -1731,9 +1729,9 @@
       },
       {
        "date": "2026-11-13",
-       "sessions": 16,
-       "active_devices": 3,
-       "avg_session_sec": 34.4,
+       "sessions": null,
+       "active_devices": null,
+       "avg_session_sec": null,
        "deletions": 2,
        "installs": 6,
        "crashes": null,
@@ -1746,9 +1744,9 @@
       },
       {
        "date": "2026-11-14",
-       "sessions": 9,
-       "active_devices": 2,
-       "avg_session_sec": 124.3,
+       "sessions": null,
+       "active_devices": null,
+       "avg_session_sec": null,
        "deletions": 5,
        "installs": 15,
        "crashes": null,
@@ -1793,6 +1791,9 @@
       }
      ],
      "opt_in_note": "Sessions, active devices, retention, crashes, and deletions include only users who opted in to share analytics with developers. Impressions, page views, and downloads count all devices.",
+     "kind_errors": [
+      "sessions: SSLError: HTTPSConnectionPool(host='api.appstoreconnect.apple.com', port=443): Max retries exceeded with url: /v1/analyticsReports/r8-a72a1638-238a-44e6-9ce1-a22864e752dd/instances?limit=200&filter%5Bgranularity%5D=DAILY (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)')))"
+     ],
      "opt_in_users_7d": 22,
      "opt_in_downloaders_7d": 38
     }
@@ -1800,11 +1801,11 @@
    "requests": {
     "6805914932": {
      "name": "LaneSync",
-     "request_id": null,
+     "request_id": "69bd9a41-cc00-442a-906c-f2caedc19f1e",
      "created_this_run": false,
-     "access_type": null,
-     "stopped_due_to_inactivity": null,
-     "error": "list analyticsReportRequests failed: ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+     "access_type": "ONGOING",
+     "stopped_due_to_inactivity": false,
+     "error": null
     },
     "6819824551": {
      "name": "StrideLab",
@@ -1815,7 +1816,7 @@
      "error": null
     }
    },
-   "generated_at": "2026-11-15 08:38 EST",
+   "generated_at": "2026-11-15 09:27 EST",
    "disclaimer": "App Analytics usage, crashes, and retention only count users who opted in to sharing analytics with developers. Low-volume days may be blank because Apple omits rows with fewer than five users."
   }
  },
