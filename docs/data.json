@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-15 14:28 EST",
+ "updated_at": "2026-11-15 15:32 EST",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -1860,7 +1860,7 @@
       "end": "2026-11-14",
       "days": 5
      },
-     "opt_in_rate_pct": null,
+     "opt_in_rate_pct": 57.9,
      "sessions_7d": 34,
      "active_devices_latest": 2,
      "avg_daily_active_devices": 2.0,
@@ -1928,7 +1928,7 @@
        "product_page_views": 27,
        "downloads": 10,
        "first_time_downloads": 10,
-       "opt_in_rate_pct": null
+       "opt_in_rate_pct": 60.0
       },
       {
        "date": "2026-11-13",
@@ -1943,7 +1943,7 @@
        "product_page_views": 28,
        "downloads": 15,
        "first_time_downloads": 15,
-       "opt_in_rate_pct": null
+       "opt_in_rate_pct": 66.7
       },
       {
        "date": "2026-11-14",
@@ -1958,7 +1958,7 @@
        "product_page_views": 48,
        "downloads": 13,
        "first_time_downloads": 13,
-       "opt_in_rate_pct": null
+       "opt_in_rate_pct": 46.2
       }
      ],
      "reports_found": [
@@ -1994,9 +1994,8 @@
       }
      ],
      "opt_in_note": "Sessions, active devices, retention, crashes, and deletions include only users who opted in to share analytics with developers. Impressions, page views, and downloads count all devices.",
-     "kind_errors": [
-      "opt_in: SSLError: HTTPSConnectionPool(host='api.appstoreconnect.apple.com', port=443): Max retries exceeded with url: /v1/analyticsReportInstances/23f23a7c-5b37-4ee0-997c-fb9ca5898516/segments?limit=200 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)')))"
-     ]
+     "opt_in_users_7d": 22,
+     "opt_in_downloaders_7d": 38
     }
    },
    "requests": {
@@ -2017,7 +2016,7 @@
      "error": null
     }
    },
-   "generated_at": "2026-11-15 14:28 EST",
+   "generated_at": "2026-11-15 15:32 EST",
    "disclaimer": "App Analytics usage, crashes, and retention only count users who opted in to sharing analytics with developers. Low-volume days may be blank because Apple omits rows with fewer than five users."
   }
  },
