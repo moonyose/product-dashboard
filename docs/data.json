@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-16 14:36 EST",
+ "updated_at": "2026-11-16 15:27 EST",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -1942,7 +1942,7 @@
       "end": "2026-11-15",
       "days": 6
      },
-     "opt_in_rate_pct": 61.5,
+     "opt_in_rate_pct": null,
      "sessions_7d": 39,
      "active_devices_latest": 2,
      "avg_daily_active_devices": 2.0,
@@ -2010,7 +2010,7 @@
        "product_page_views": 27,
        "downloads": 10,
        "first_time_downloads": 10,
-       "opt_in_rate_pct": 60.0
+       "opt_in_rate_pct": null
       },
       {
        "date": "2026-11-13",
@@ -2025,7 +2025,7 @@
        "product_page_views": 28,
        "downloads": 15,
        "first_time_downloads": 15,
-       "opt_in_rate_pct": 66.7
+       "opt_in_rate_pct": null
       },
       {
        "date": "2026-11-14",
@@ -2040,7 +2040,7 @@
        "product_page_views": 49,
        "downloads": 13,
        "first_time_downloads": 13,
-       "opt_in_rate_pct": 46.2
+       "opt_in_rate_pct": null
       },
       {
        "date": "2026-11-15",
@@ -2055,7 +2055,7 @@
        "product_page_views": 52,
        "downloads": 14,
        "first_time_downloads": 14,
-       "opt_in_rate_pct": 71.4
+       "opt_in_rate_pct": null
       }
      ],
      "reports_found": [
@@ -2091,8 +2091,9 @@
       }
      ],
      "opt_in_note": "Sessions, active devices, retention, crashes, and deletions include only users who opted in to share analytics with developers. Impressions, page views, and downloads count all devices.",
-     "opt_in_users_7d": 32,
-     "opt_in_downloaders_7d": 52
+     "kind_errors": [
+      "opt_in: SSLError: HTTPSConnectionPool(host='api.appstoreconnect.apple.com', port=443): Max retries exceeded with url: /v1/analyticsReportInstances/051a7a0b-6cac-493e-beec-7903ce96322a/segments?limit=200 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)')))"
+     ]
     }
    },
    "requests": {
@@ -2113,7 +2114,7 @@
      "error": null
     }
    },
-   "generated_at": "2026-11-16 14:36 EST",
+   "generated_at": "2026-11-16 15:28 EST",
    "disclaimer": "App Analytics usage, crashes, and retention only count users who opted in to sharing analytics with developers. Low-volume days may be blank because Apple omits rows with fewer than five users."
   }
  },
