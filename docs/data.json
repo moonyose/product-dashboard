@@ -1,11 +1,6 @@
 {
- "updated_at": "2026-11-16 07:53 EST",
- "errors": [
-  "asc_reports SALES: fetch failed for 2026-11-15 (error:SSLError)",
-  "asc_reports SUBEVT: fetch failed for 2026-11-15 (error:SSLError)",
-  "LaneSync analytics: list analyticsReportRequests failed: SSLError: HTTPSConnectionPool(host='api.appstoreconnect.apple.com', port=443): Max retries exceeded with url: /v1/apps/6805914932/analyticsReportRequests?limit=200 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)')))",
-  "StrideLab analytics: list analyticsReportRequests failed: SSLError: HTTPSConnectionPool(host='api.appstoreconnect.apple.com', port=443): Max retries exceeded with url: /v1/apps/6819824551/analyticsReportRequests?limit=200 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)')))"
- ],
+ "updated_at": "2026-11-16 08:28 EST",
+ "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
   "currency": "USD",
@@ -90,20 +85,28 @@
    {
     "id": "6805914932",
     "name": "LaneSync - Sprint Timer",
-    "error": "HTTPSConnectionPool(host='api.appstoreconnect.apple.com', port=443): Max retries exceeded with url: /v1/apps/6805914932/appStoreVersions?limit=3 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)')))",
-    "icon_error": "HTTPSConnectionPool(host='itunes.apple.com', port=443): Read timed out. (read timeout=20)"
+    "version": "1.0.2",
+    "state": "READY_FOR_SALE",
+    "created": "2026-10-21T11:35:24-07:00",
+    "public": true,
+    "icon": "icons/app_6805914932.png"
    },
    {
     "id": "6819824551",
     "name": "StrideLab - Sprint Analysis",
-    "error": "HTTPSConnectionPool(host='api.appstoreconnect.apple.com', port=443): Max retries exceeded with url: /v1/apps/6819824551/appStoreVersions?limit=3 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)')))",
-    "icon_error": "HTTPSConnectionPool(host='itunes.apple.com', port=443): Read timed out. (read timeout=20)"
+    "version": "1.0.3",
+    "state": "READY_FOR_SALE",
+    "created": "2026-11-13T07:47:30-08:00",
+    "public": true,
+    "icon": "icons/app_6819824551.png"
    },
    {
     "id": "6812496973",
     "name": "Miami Beach Transit Tracker",
-    "error": "HTTPSConnectionPool(host='api.appstoreconnect.apple.com', port=443): Max retries exceeded with url: /v1/apps/6812496973/appStoreVersions?limit=3 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)')))",
-    "icon_error": "HTTPSConnectionPool(host='itunes.apple.com', port=443): Read timed out. (read timeout=20)"
+    "version": "1.0",
+    "state": "PREPARE_FOR_SUBMISSION",
+    "created": "2026-09-15T12:51:58-07:00",
+    "icon": "icons/app_6812496973.png"
    }
   ],
   "sales": [
@@ -411,7 +414,7 @@
     "2026-11-12": "ok",
     "2026-11-13": "ok",
     "2026-11-14": "ok",
-    "2026-11-15": "error:SSLError"
+    "2026-11-15": "pending"
    },
    "event_report_days": [
     "2026-10-12",
@@ -444,7 +447,9 @@
     "2026-11-13",
     "2026-11-14"
    ],
-   "pending_days": [],
+   "pending_days": [
+    "2026-11-15"
+   ],
    "installs": {
     "6805914932": {
      "name": "LaneSync",
@@ -1680,7 +1685,7 @@
     "days": 36,
     "requests": 2,
     "cache_hits": 70,
-    "seconds": 12.2,
+    "seconds": 2.28,
     "latest_requested": "2026-11-15"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
@@ -1726,39 +1731,317 @@
     "6805914932": {
      "id": "6805914932",
      "name": "LaneSync",
-     "status": "error",
-     "note": "list analyticsReportRequests failed: SSLError: HTTPSConnectionPool(host='api.appstoreconnect.apple.com', port=443): Max retries exceeded with url: /v1/apps/6805914932/analyticsReportRequests?limit=200 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)')))",
-     "permission_error": false,
-     "request_id": null
+     "status": "ready",
+     "note": null,
+     "request_id": "69bd9a41-cc00-442a-906c-f2caedc19f1e",
+     "access_type": "ONGOING",
+     "stopped_due_to_inactivity": false,
+     "window": {
+      "start": "2026-11-11",
+      "end": "2026-11-14",
+      "days": 4
+     },
+     "opt_in_rate_pct": null,
+     "sessions_7d": null,
+     "active_devices_latest": null,
+     "avg_daily_active_devices": null,
+     "avg_session_sec": null,
+     "retention": null,
+     "deletions_7d": null,
+     "installs_7d": null,
+     "crashes_7d": null,
+     "funnel": {
+      "impressions": 2390,
+      "page_views": 39,
+      "product_page_views": 39,
+      "taps": 30,
+      "downloads": 7,
+      "first_time_downloads": 7,
+      "redownloads": 0,
+      "impression_to_page_view_pct": 1.63,
+      "page_view_to_download_pct": 17.95
+     },
+     "daily": [
+      {
+       "date": "2026-11-11",
+       "sessions": null,
+       "active_devices": null,
+       "avg_session_sec": null,
+       "deletions": null,
+       "installs": null,
+       "crashes": null,
+       "impressions": 793,
+       "page_views": 11,
+       "product_page_views": 11,
+       "downloads": null,
+       "first_time_downloads": null,
+       "opt_in_rate_pct": null
+      },
+      {
+       "date": "2026-11-12",
+       "sessions": null,
+       "active_devices": null,
+       "avg_session_sec": null,
+       "deletions": null,
+       "installs": null,
+       "crashes": null,
+       "impressions": 570,
+       "page_views": 7,
+       "product_page_views": 7,
+       "downloads": 1,
+       "first_time_downloads": 1,
+       "opt_in_rate_pct": null
+      },
+      {
+       "date": "2026-11-13",
+       "sessions": null,
+       "active_devices": null,
+       "avg_session_sec": null,
+       "deletions": null,
+       "installs": null,
+       "crashes": null,
+       "impressions": 583,
+       "page_views": 15,
+       "product_page_views": 15,
+       "downloads": 4,
+       "first_time_downloads": 4,
+       "opt_in_rate_pct": null
+      },
+      {
+       "date": "2026-11-14",
+       "sessions": null,
+       "active_devices": null,
+       "avg_session_sec": null,
+       "deletions": null,
+       "installs": null,
+       "crashes": null,
+       "impressions": 444,
+       "page_views": 6,
+       "product_page_views": 6,
+       "downloads": 2,
+       "first_time_downloads": 2,
+       "opt_in_rate_pct": null
+      }
+     ],
+     "reports_found": [
+      {
+       "kind": "downloads",
+       "name": "App Downloads Standard",
+       "category": "COMMERCE"
+      },
+      {
+       "kind": "installs_deletes",
+       "name": "App Store Installation and Deletion Standard",
+       "category": "APP_USAGE"
+      },
+      {
+       "kind": "sessions",
+       "name": "App Sessions Standard",
+       "category": "APP_USAGE"
+      },
+      {
+       "kind": "discovery",
+       "name": "App Store Discovery and Engagement Standard",
+       "category": "APP_STORE_ENGAGEMENT"
+      },
+      {
+       "kind": "crashes",
+       "name": "App Crashes",
+       "category": "APP_USAGE"
+      },
+      {
+       "kind": "opt_in",
+       "name": "App Opt In",
+       "category": "APP_USAGE"
+      }
+     ],
+     "opt_in_note": "Sessions, active devices, retention, crashes, and deletions include only users who opted in to share analytics with developers. Impressions, page views, and downloads count all devices."
     },
     "6819824551": {
      "id": "6819824551",
      "name": "StrideLab",
-     "status": "error",
-     "note": "list analyticsReportRequests failed: SSLError: HTTPSConnectionPool(host='api.appstoreconnect.apple.com', port=443): Max retries exceeded with url: /v1/apps/6819824551/analyticsReportRequests?limit=200 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)')))",
-     "permission_error": false,
-     "request_id": null
+     "status": "ready",
+     "note": null,
+     "request_id": "a72a1638-238a-44e6-9ce1-a22864e752dd",
+     "access_type": "ONGOING",
+     "stopped_due_to_inactivity": false,
+     "window": {
+      "start": "2026-11-09",
+      "end": "2026-11-15",
+      "days": 6
+     },
+     "opt_in_rate_pct": 61.5,
+     "sessions_7d": 39,
+     "active_devices_latest": 2,
+     "avg_daily_active_devices": 2.0,
+     "avg_session_sec": 57.6,
+     "retention": {
+      "day1_pct": 14.3,
+      "day7_pct": null,
+      "source": "app sessions, App Download Date, opted-in users"
+     },
+     "deletions_7d": 13,
+     "installs_7d": 56,
+     "crashes_7d": null,
+     "funnel": {
+      "impressions": 4249,
+      "page_views": 146,
+      "product_page_views": 145,
+      "taps": 96,
+      "downloads": 38,
+      "first_time_downloads": 38,
+      "redownloads": 0,
+      "impression_to_page_view_pct": 3.44,
+      "page_view_to_download_pct": 26.03
+     },
+     "daily": [
+      {
+       "date": "2026-11-09",
+       "sessions": null,
+       "active_devices": null,
+       "avg_session_sec": null,
+       "deletions": 3,
+       "installs": 7,
+       "crashes": null,
+       "impressions": null,
+       "page_views": null,
+       "product_page_views": null,
+       "downloads": null,
+       "first_time_downloads": null,
+       "opt_in_rate_pct": null
+      },
+      {
+       "date": "2026-11-11",
+       "sessions": null,
+       "active_devices": null,
+       "avg_session_sec": null,
+       "deletions": null,
+       "installs": null,
+       "crashes": null,
+       "impressions": 936,
+       "page_views": 42,
+       "product_page_views": 42,
+       "downloads": null,
+       "first_time_downloads": null,
+       "opt_in_rate_pct": null
+      },
+      {
+       "date": "2026-11-12",
+       "sessions": 9,
+       "active_devices": 1,
+       "avg_session_sec": 48.4,
+       "deletions": 1,
+       "installs": 5,
+       "crashes": null,
+       "impressions": 934,
+       "page_views": 27,
+       "product_page_views": 27,
+       "downloads": 10,
+       "first_time_downloads": 10,
+       "opt_in_rate_pct": 60.0
+      },
+      {
+       "date": "2026-11-13",
+       "sessions": 16,
+       "active_devices": 3,
+       "avg_session_sec": 34.4,
+       "deletions": 2,
+       "installs": 6,
+       "crashes": null,
+       "impressions": 894,
+       "page_views": 28,
+       "product_page_views": 28,
+       "downloads": 15,
+       "first_time_downloads": 15,
+       "opt_in_rate_pct": 66.7
+      },
+      {
+       "date": "2026-11-14",
+       "sessions": 14,
+       "active_devices": 2,
+       "avg_session_sec": 89.9,
+       "deletions": 5,
+       "installs": 15,
+       "crashes": null,
+       "impressions": 1485,
+       "page_views": 49,
+       "product_page_views": 48,
+       "downloads": 13,
+       "first_time_downloads": 13,
+       "opt_in_rate_pct": 46.2
+      },
+      {
+       "date": "2026-11-15",
+       "sessions": null,
+       "active_devices": null,
+       "avg_session_sec": null,
+       "deletions": 2,
+       "installs": 23,
+       "crashes": null,
+       "impressions": null,
+       "page_views": null,
+       "product_page_views": null,
+       "downloads": null,
+       "first_time_downloads": null,
+       "opt_in_rate_pct": 71.4
+      }
+     ],
+     "reports_found": [
+      {
+       "kind": "downloads",
+       "name": "App Downloads Standard",
+       "category": "COMMERCE"
+      },
+      {
+       "kind": "installs_deletes",
+       "name": "App Store Installation and Deletion Standard",
+       "category": "APP_USAGE"
+      },
+      {
+       "kind": "sessions",
+       "name": "App Sessions Standard",
+       "category": "APP_USAGE"
+      },
+      {
+       "kind": "discovery",
+       "name": "App Store Discovery and Engagement Standard",
+       "category": "APP_STORE_ENGAGEMENT"
+      },
+      {
+       "kind": "crashes",
+       "name": "App Crashes",
+       "category": "APP_USAGE"
+      },
+      {
+       "kind": "opt_in",
+       "name": "App Opt In",
+       "category": "APP_USAGE"
+      }
+     ],
+     "opt_in_note": "Sessions, active devices, retention, crashes, and deletions include only users who opted in to share analytics with developers. Impressions, page views, and downloads count all devices.",
+     "opt_in_users_7d": 32,
+     "opt_in_downloaders_7d": 52
     }
    },
    "requests": {
     "6805914932": {
      "name": "LaneSync",
-     "request_id": null,
+     "request_id": "69bd9a41-cc00-442a-906c-f2caedc19f1e",
      "created_this_run": false,
-     "access_type": null,
-     "stopped_due_to_inactivity": null,
-     "error": "list analyticsReportRequests failed: SSLError: HTTPSConnectionPool(host='api.appstoreconnect.apple.com', port=443): Max retries exceeded with url: /v1/apps/6805914932/analyticsReportRequests?limit=200 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)')))"
+     "access_type": "ONGOING",
+     "stopped_due_to_inactivity": false,
+     "error": null
     },
     "6819824551": {
      "name": "StrideLab",
-     "request_id": null,
+     "request_id": "a72a1638-238a-44e6-9ce1-a22864e752dd",
      "created_this_run": false,
-     "access_type": null,
-     "stopped_due_to_inactivity": null,
-     "error": "list analyticsReportRequests failed: SSLError: HTTPSConnectionPool(host='api.appstoreconnect.apple.com', port=443): Max retries exceeded with url: /v1/apps/6819824551/analyticsReportRequests?limit=200 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)')))"
+     "access_type": "ONGOING",
+     "stopped_due_to_inactivity": false,
+     "error": null
     }
    },
-   "generated_at": "2026-11-16 07:55 EST",
+   "generated_at": "2026-11-16 08:29 EST",
    "disclaimer": "App Analytics usage, crashes, and retention only count users who opted in to sharing analytics with developers. Low-volume days may be blank because Apple omits rows with fewer than five users."
   }
  },
