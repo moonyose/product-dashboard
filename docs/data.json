@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-16 07:51 EST",
+ "updated_at": "2026-11-16 07:53 EST",
  "errors": [
   "asc_reports SALES: fetch failed for 2026-11-15 (error:SSLError)",
   "asc_reports SUBEVT: fetch failed for 2026-11-15 (error:SSLError)",
@@ -1680,7 +1680,7 @@
     "days": 36,
     "requests": 2,
     "cache_hits": 70,
-    "seconds": 11.02,
+    "seconds": 12.2,
     "latest_requested": "2026-11-15"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
@@ -1758,7 +1758,7 @@
      "error": "list analyticsReportRequests failed: SSLError: HTTPSConnectionPool(host='api.appstoreconnect.apple.com', port=443): Max retries exceeded with url: /v1/apps/6819824551/analyticsReportRequests?limit=200 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)')))"
     }
    },
-   "generated_at": "2026-11-16 07:52 EST",
+   "generated_at": "2026-11-16 07:55 EST",
    "disclaimer": "App Analytics usage, crashes, and retention only count users who opted in to sharing analytics with developers. Low-volume days may be blank because Apple omits rows with fewer than five users."
   }
  },
