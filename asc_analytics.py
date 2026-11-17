@@ -11,6 +11,7 @@ import csv, gzip, hashlib, io, json, os, time, datetime as dt
 from urllib.parse import urljoin
 
 import jwt, requests
+import retry_patch  # noqa: F401
 
 B = os.path.dirname(os.path.abspath(__file__))
 API = "https://api.appstoreconnect.apple.com/v1"

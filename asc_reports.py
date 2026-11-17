@@ -3,6 +3,7 @@ Cache: data/cache/<KIND>/<YYYY-MM-DD>.tsv (report body) or .none (older 404 = no
 import os, io, csv, gzip, json, time, datetime as dt, concurrent.futures as cf
 from zoneinfo import ZoneInfo
 import requests
+import retry_patch  # noqa: F401
 B = os.path.dirname(os.path.abspath(__file__))
 CACHE = f"{B}/data/cache"
 START = dt.date(2026, 10, 11)

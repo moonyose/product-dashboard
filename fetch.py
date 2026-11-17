@@ -2,6 +2,7 @@
 import json, os, time, datetime as dt
 from zoneinfo import ZoneInfo
 import jwt, requests
+import retry_patch  # noqa: F401
 B = os.path.dirname(os.path.abspath(__file__))
 ET = ZoneInfo("America/New_York")
 out = {"updated_at": dt.datetime.now(ET).strftime("%Y-%m-%d %H:%M %Z"), "errors": []}
