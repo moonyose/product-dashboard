@@ -1,8 +1,6 @@
 {
- "updated_at": "2026-11-17 12:28 EST",
- "errors": [
-  "LaneSync analytics: ASC Analytics API error (500): An unexpected error occurred on the server side. If this issue continues, contact us at https://developer.apple.com/contact/."
- ],
+ "updated_at": "2026-11-17 12:51 EST",
+ "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
   "currency": "USD",
@@ -1818,8 +1816,24 @@
      "name": "LaneSync",
      "status": "error",
      "note": "ASC Analytics API error (500): An unexpected error occurred on the server side. If this issue continues, contact us at https://developer.apple.com/contact/.",
-     "permission_error": false,
-     "request_id": null
+     "request_id": "69bd9a41-cc00-442a-906c-f2caedc19f1e",
+     "access_type": "ONGOING",
+     "stopped_due_to_inactivity": false,
+     "window": null,
+     "opt_in_rate_pct": null,
+     "sessions_7d": null,
+     "active_devices_latest": null,
+     "avg_daily_active_devices": null,
+     "avg_session_sec": null,
+     "retention": null,
+     "deletions_7d": null,
+     "installs_7d": null,
+     "crashes_7d": null,
+     "funnel": null,
+     "daily": [],
+     "reports_found": [],
+     "opt_in_note": "Sessions, active devices, retention, crashes, and deletions include only users who opted in to share analytics with developers. Impressions, page views, and downloads count all devices.",
+     "permission_error": false
     },
     "6819824551": {
      "id": "6819824551",
@@ -1849,11 +1863,11 @@
    "requests": {
     "6805914932": {
      "name": "LaneSync",
-     "request_id": null,
+     "request_id": "69bd9a41-cc00-442a-906c-f2caedc19f1e",
      "created_this_run": false,
-     "access_type": null,
-     "stopped_due_to_inactivity": null,
-     "error": "ASC Analytics API error (500): An unexpected error occurred on the server side. If this issue continues, contact us at https://developer.apple.com/contact/."
+     "access_type": "ONGOING",
+     "stopped_due_to_inactivity": false,
+     "error": null
     },
     "6819824551": {
      "name": "StrideLab",
@@ -1864,7 +1878,7 @@
      "error": null
     }
    },
-   "generated_at": "2026-11-17 12:28 EST",
+   "generated_at": "2026-11-17 12:53 EST",
    "disclaimer": "App Analytics usage, crashes, and retention only count users who opted in to sharing analytics with developers. Low-volume days may be blank because Apple omits rows with fewer than five users."
   }
  },
