@@ -1,7 +1,8 @@
 {
- "updated_at": "2026-11-17 14:28 EST",
+ "updated_at": "2026-11-17 15:34 EST",
  "errors": [
-  "LaneSync analytics: list analyticsReportRequests failed: ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+  "LaneSync analytics: ASC Analytics API error (500): An unexpected error occurred on the server side. If this issue continues, contact us at https://developer.apple.com/contact/.",
+  "StrideLab analytics: ASC Analytics API error (500): An unexpected error occurred on the server side. If this issue continues, contact us at https://developer.apple.com/contact/."
  ],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -87,9 +88,7 @@
    {
     "id": "6805914932",
     "name": "LaneSync - Sprint Timer",
-    "version": "1.0.2",
-    "state": "READY_FOR_SALE",
-    "created": "2026-10-21T11:35:24-07:00",
+    "error": "An unexpected error occurred on the server side. If this issue continues, contact us at https://developer.apple.com/contact/.",
     "public": true,
     "icon": "icons/app_6805914932.png"
    },
@@ -105,7 +104,9 @@
    {
     "id": "6812496973",
     "name": "Miami Beach Transit Tracker",
-    "error": "An unexpected error occurred on the server side. If this issue continues, contact us at https://developer.apple.com/contact/.",
+    "version": "1.0",
+    "state": "PREPARE_FOR_SUBMISSION",
+    "created": "2026-09-15T12:51:58-07:00",
     "icon": "icons/app_6812496973.png"
    }
   ],
@@ -1815,7 +1816,7 @@
      "id": "6805914932",
      "name": "LaneSync",
      "status": "error",
-     "note": "list analyticsReportRequests failed: ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+     "note": "ASC Analytics API error (500): An unexpected error occurred on the server side. If this issue continues, contact us at https://developer.apple.com/contact/.",
      "permission_error": false,
      "request_id": null
     },
@@ -1824,24 +1825,8 @@
      "name": "StrideLab",
      "status": "error",
      "note": "ASC Analytics API error (500): An unexpected error occurred on the server side. If this issue continues, contact us at https://developer.apple.com/contact/.",
-     "request_id": "a72a1638-238a-44e6-9ce1-a22864e752dd",
-     "access_type": "ONGOING",
-     "stopped_due_to_inactivity": false,
-     "window": null,
-     "opt_in_rate_pct": null,
-     "sessions_7d": null,
-     "active_devices_latest": null,
-     "avg_daily_active_devices": null,
-     "avg_session_sec": null,
-     "retention": null,
-     "deletions_7d": null,
-     "installs_7d": null,
-     "crashes_7d": null,
-     "funnel": null,
-     "daily": [],
-     "reports_found": [],
-     "opt_in_note": "Sessions, active devices, retention, crashes, and deletions include only users who opted in to share analytics with developers. Impressions, page views, and downloads count all devices.",
-     "permission_error": false
+     "permission_error": false,
+     "request_id": null
     }
    },
    "requests": {
@@ -1851,18 +1836,18 @@
      "created_this_run": false,
      "access_type": null,
      "stopped_due_to_inactivity": null,
-     "error": "list analyticsReportRequests failed: ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+     "error": "ASC Analytics API error (500): An unexpected error occurred on the server side. If this issue continues, contact us at https://developer.apple.com/contact/."
     },
     "6819824551": {
      "name": "StrideLab",
-     "request_id": "a72a1638-238a-44e6-9ce1-a22864e752dd",
+     "request_id": null,
      "created_this_run": false,
-     "access_type": "ONGOING",
-     "stopped_due_to_inactivity": false,
-     "error": null
+     "access_type": null,
+     "stopped_due_to_inactivity": null,
+     "error": "ASC Analytics API error (500): An unexpected error occurred on the server side. If this issue continues, contact us at https://developer.apple.com/contact/."
     }
    },
-   "generated_at": "2026-11-17 14:29 EST",
+   "generated_at": "2026-11-17 15:35 EST",
    "disclaimer": "App Analytics usage, crashes, and retention only count users who opted in to sharing analytics with developers. Low-volume days may be blank because Apple omits rows with fewer than five users."
   }
  },
