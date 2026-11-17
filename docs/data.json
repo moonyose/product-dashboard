@@ -1,9 +1,6 @@
 {
- "updated_at": "2026-11-17 15:34 EST",
- "errors": [
-  "LaneSync analytics: ASC Analytics API error (500): An unexpected error occurred on the server side. If this issue continues, contact us at https://developer.apple.com/contact/.",
-  "StrideLab analytics: ASC Analytics API error (500): An unexpected error occurred on the server side. If this issue continues, contact us at https://developer.apple.com/contact/."
- ],
+ "updated_at": "2026-11-17 16:25 EST",
+ "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
   "currency": "USD",
@@ -88,7 +85,9 @@
    {
     "id": "6805914932",
     "name": "LaneSync - Sprint Timer",
-    "error": "An unexpected error occurred on the server side. If this issue continues, contact us at https://developer.apple.com/contact/.",
+    "version": "1.0.2",
+    "state": "READY_FOR_SALE",
+    "created": "2026-10-21T11:35:24-07:00",
     "public": true,
     "icon": "icons/app_6805914932.png"
    },
@@ -1815,39 +1814,362 @@
     "6805914932": {
      "id": "6805914932",
      "name": "LaneSync",
-     "status": "error",
-     "note": "ASC Analytics API error (500): An unexpected error occurred on the server side. If this issue continues, contact us at https://developer.apple.com/contact/.",
-     "permission_error": false,
-     "request_id": null
+     "status": "ready",
+     "note": null,
+     "request_id": "69bd9a41-cc00-442a-906c-f2caedc19f1e",
+     "access_type": "ONGOING",
+     "stopped_due_to_inactivity": false,
+     "window": {
+      "start": "2026-11-11",
+      "end": "2026-11-16",
+      "days": 6
+     },
+     "opt_in_rate_pct": null,
+     "sessions_7d": null,
+     "active_devices_latest": null,
+     "avg_daily_active_devices": null,
+     "avg_session_sec": null,
+     "retention": null,
+     "deletions_7d": null,
+     "installs_7d": null,
+     "crashes_7d": null,
+     "funnel": {
+      "impressions": 2803,
+      "page_views": 60,
+      "product_page_views": 57,
+      "taps": 40,
+      "downloads": 17,
+      "first_time_downloads": 17,
+      "redownloads": 0,
+      "impression_to_page_view_pct": 2.14,
+      "page_view_to_download_pct": 28.33
+     },
+     "daily": [
+      {
+       "date": "2026-11-11",
+       "sessions": null,
+       "active_devices": null,
+       "avg_session_sec": null,
+       "deletions": null,
+       "installs": null,
+       "crashes": null,
+       "impressions": 793,
+       "page_views": 11,
+       "product_page_views": 11,
+       "downloads": null,
+       "first_time_downloads": null,
+       "opt_in_rate_pct": null
+      },
+      {
+       "date": "2026-11-12",
+       "sessions": null,
+       "active_devices": null,
+       "avg_session_sec": null,
+       "deletions": null,
+       "installs": null,
+       "crashes": null,
+       "impressions": 570,
+       "page_views": 7,
+       "product_page_views": 7,
+       "downloads": 1,
+       "first_time_downloads": 1,
+       "opt_in_rate_pct": null
+      },
+      {
+       "date": "2026-11-13",
+       "sessions": null,
+       "active_devices": null,
+       "avg_session_sec": null,
+       "deletions": null,
+       "installs": null,
+       "crashes": null,
+       "impressions": 583,
+       "page_views": 15,
+       "product_page_views": 15,
+       "downloads": 4,
+       "first_time_downloads": 4,
+       "opt_in_rate_pct": null
+      },
+      {
+       "date": "2026-11-14",
+       "sessions": null,
+       "active_devices": null,
+       "avg_session_sec": null,
+       "deletions": null,
+       "installs": null,
+       "crashes": null,
+       "impressions": 445,
+       "page_views": 6,
+       "product_page_views": 6,
+       "downloads": 2,
+       "first_time_downloads": 2,
+       "opt_in_rate_pct": null
+      },
+      {
+       "date": "2026-11-15",
+       "sessions": null,
+       "active_devices": null,
+       "avg_session_sec": null,
+       "deletions": null,
+       "installs": null,
+       "crashes": null,
+       "impressions": 412,
+       "page_views": 21,
+       "product_page_views": 18,
+       "downloads": 6,
+       "first_time_downloads": 6,
+       "opt_in_rate_pct": null
+      },
+      {
+       "date": "2026-11-16",
+       "sessions": null,
+       "active_devices": null,
+       "avg_session_sec": null,
+       "deletions": null,
+       "installs": null,
+       "crashes": null,
+       "impressions": null,
+       "page_views": null,
+       "product_page_views": null,
+       "downloads": 4,
+       "first_time_downloads": 4,
+       "opt_in_rate_pct": null
+      }
+     ],
+     "reports_found": [
+      {
+       "kind": "downloads",
+       "name": "App Downloads Standard",
+       "category": "COMMERCE"
+      },
+      {
+       "kind": "installs_deletes",
+       "name": "App Store Installation and Deletion Standard",
+       "category": "APP_USAGE"
+      },
+      {
+       "kind": "sessions",
+       "name": "App Sessions Standard",
+       "category": "APP_USAGE"
+      },
+      {
+       "kind": "discovery",
+       "name": "App Store Discovery and Engagement Standard",
+       "category": "APP_STORE_ENGAGEMENT"
+      },
+      {
+       "kind": "crashes",
+       "name": "App Crashes",
+       "category": "APP_USAGE"
+      },
+      {
+       "kind": "opt_in",
+       "name": "App Opt In",
+       "category": "APP_USAGE"
+      }
+     ],
+     "opt_in_note": "Sessions, active devices, retention, crashes, and deletions include only users who opted in to share analytics with developers. Impressions, page views, and downloads count all devices."
     },
     "6819824551": {
      "id": "6819824551",
      "name": "StrideLab",
-     "status": "error",
-     "note": "ASC Analytics API error (500): An unexpected error occurred on the server side. If this issue continues, contact us at https://developer.apple.com/contact/.",
-     "permission_error": false,
-     "request_id": null
+     "status": "ready",
+     "note": null,
+     "request_id": "a72a1638-238a-44e6-9ce1-a22864e752dd",
+     "access_type": "ONGOING",
+     "stopped_due_to_inactivity": false,
+     "window": {
+      "start": "2026-11-09",
+      "end": "2026-11-16",
+      "days": 7
+     },
+     "opt_in_rate_pct": 61.5,
+     "sessions_7d": 81,
+     "active_devices_latest": 4,
+     "avg_daily_active_devices": 2.8,
+     "avg_session_sec": 84.2,
+     "retention": {
+      "day1_pct": 14.3,
+      "day7_pct": null,
+      "source": "app sessions, App Download Date, opted-in users"
+     },
+     "deletions_7d": 15,
+     "installs_7d": 75,
+     "crashes_7d": null,
+     "funnel": {
+      "impressions": 5798,
+      "page_views": 200,
+      "product_page_views": 198,
+      "taps": 134,
+      "downloads": 64,
+      "first_time_downloads": 64,
+      "redownloads": 0,
+      "impression_to_page_view_pct": 3.45,
+      "page_view_to_download_pct": 32.0
+     },
+     "daily": [
+      {
+       "date": "2026-11-09",
+       "sessions": null,
+       "active_devices": null,
+       "avg_session_sec": null,
+       "deletions": 3,
+       "installs": 7,
+       "crashes": null,
+       "impressions": null,
+       "page_views": null,
+       "product_page_views": null,
+       "downloads": null,
+       "first_time_downloads": null,
+       "opt_in_rate_pct": null
+      },
+      {
+       "date": "2026-11-11",
+       "sessions": null,
+       "active_devices": null,
+       "avg_session_sec": null,
+       "deletions": null,
+       "installs": null,
+       "crashes": null,
+       "impressions": 936,
+       "page_views": 42,
+       "product_page_views": 42,
+       "downloads": null,
+       "first_time_downloads": null,
+       "opt_in_rate_pct": null
+      },
+      {
+       "date": "2026-11-12",
+       "sessions": 9,
+       "active_devices": 1,
+       "avg_session_sec": 48.4,
+       "deletions": 1,
+       "installs": 5,
+       "crashes": null,
+       "impressions": 934,
+       "page_views": 27,
+       "product_page_views": 27,
+       "downloads": 10,
+       "first_time_downloads": 10,
+       "opt_in_rate_pct": 60.0
+      },
+      {
+       "date": "2026-11-13",
+       "sessions": 16,
+       "active_devices": 3,
+       "avg_session_sec": 34.4,
+       "deletions": 2,
+       "installs": 6,
+       "crashes": null,
+       "impressions": 894,
+       "page_views": 28,
+       "product_page_views": 28,
+       "downloads": 15,
+       "first_time_downloads": 15,
+       "opt_in_rate_pct": 66.7
+      },
+      {
+       "date": "2026-11-14",
+       "sessions": 15,
+       "active_devices": 3,
+       "avg_session_sec": 84.9,
+       "deletions": 5,
+       "installs": 15,
+       "crashes": null,
+       "impressions": 1488,
+       "page_views": 50,
+       "product_page_views": 49,
+       "downloads": 13,
+       "first_time_downloads": 13,
+       "opt_in_rate_pct": 46.2
+      },
+      {
+       "date": "2026-11-15",
+       "sessions": 41,
+       "active_devices": 4,
+       "avg_session_sec": 111.3,
+       "deletions": 2,
+       "installs": 23,
+       "crashes": null,
+       "impressions": 1546,
+       "page_views": 53,
+       "product_page_views": 52,
+       "downloads": 14,
+       "first_time_downloads": 14,
+       "opt_in_rate_pct": 71.4
+      },
+      {
+       "date": "2026-11-16",
+       "sessions": null,
+       "active_devices": null,
+       "avg_session_sec": null,
+       "deletions": 2,
+       "installs": 19,
+       "crashes": null,
+       "impressions": null,
+       "page_views": null,
+       "product_page_views": null,
+       "downloads": 12,
+       "first_time_downloads": 12,
+       "opt_in_rate_pct": null
+      }
+     ],
+     "reports_found": [
+      {
+       "kind": "downloads",
+       "name": "App Downloads Standard",
+       "category": "COMMERCE"
+      },
+      {
+       "kind": "installs_deletes",
+       "name": "App Store Installation and Deletion Standard",
+       "category": "APP_USAGE"
+      },
+      {
+       "kind": "sessions",
+       "name": "App Sessions Standard",
+       "category": "APP_USAGE"
+      },
+      {
+       "kind": "discovery",
+       "name": "App Store Discovery and Engagement Standard",
+       "category": "APP_STORE_ENGAGEMENT"
+      },
+      {
+       "kind": "crashes",
+       "name": "App Crashes",
+       "category": "APP_USAGE"
+      },
+      {
+       "kind": "opt_in",
+       "name": "App Opt In",
+       "category": "APP_USAGE"
+      }
+     ],
+     "opt_in_note": "Sessions, active devices, retention, crashes, and deletions include only users who opted in to share analytics with developers. Impressions, page views, and downloads count all devices.",
+     "opt_in_users_7d": 32,
+     "opt_in_downloaders_7d": 52
     }
    },
    "requests": {
     "6805914932": {
      "name": "LaneSync",
-     "request_id": null,
+     "request_id": "69bd9a41-cc00-442a-906c-f2caedc19f1e",
      "created_this_run": false,
-     "access_type": null,
-     "stopped_due_to_inactivity": null,
-     "error": "ASC Analytics API error (500): An unexpected error occurred on the server side. If this issue continues, contact us at https://developer.apple.com/contact/."
+     "access_type": "ONGOING",
+     "stopped_due_to_inactivity": false,
+     "error": null
     },
     "6819824551": {
      "name": "StrideLab",
-     "request_id": null,
+     "request_id": "a72a1638-238a-44e6-9ce1-a22864e752dd",
      "created_this_run": false,
-     "access_type": null,
-     "stopped_due_to_inactivity": null,
-     "error": "ASC Analytics API error (500): An unexpected error occurred on the server side. If this issue continues, contact us at https://developer.apple.com/contact/."
+     "access_type": "ONGOING",
+     "stopped_due_to_inactivity": false,
+     "error": null
     }
    },
-   "generated_at": "2026-11-17 15:35 EST",
+   "generated_at": "2026-11-17 16:25 EST",
    "disclaimer": "App Analytics usage, crashes, and retention only count users who opted in to sharing analytics with developers. Low-volume days may be blank because Apple omits rows with fewer than five users."
   }
  },
