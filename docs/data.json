@@ -1,6 +1,9 @@
 {
- "updated_at": "2026-11-17 07:53 EST",
- "errors": [],
+ "updated_at": "2026-11-17 08:30 EST",
+ "errors": [
+  "asc_reports SUBEVT: fetch failed for 2026-11-16 (error:SSLError)",
+  "LaneSync analytics: list analyticsReportRequests failed: SSLError: HTTPSConnectionPool(host='api.appstoreconnect.apple.com', port=443): Max retries exceeded with url: /v1/apps/6805914932/analyticsReportRequests?limit=200 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)')))"
+ ],
  "meta": {
   "account_timezone": "America/Los_Angeles",
   "currency": "USD",
@@ -1752,7 +1755,7 @@
     "days": 37,
     "requests": 2,
     "cache_hits": 72,
-    "seconds": 2.24,
+    "seconds": 8.03,
     "latest_requested": "2026-11-16"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
@@ -1798,161 +1801,10 @@
     "6805914932": {
      "id": "6805914932",
      "name": "LaneSync",
-     "status": "ready",
-     "note": null,
-     "request_id": "69bd9a41-cc00-442a-906c-f2caedc19f1e",
-     "access_type": "ONGOING",
-     "stopped_due_to_inactivity": false,
-     "window": {
-      "start": "2026-11-11",
-      "end": "2026-11-16",
-      "days": 6
-     },
-     "opt_in_rate_pct": null,
-     "sessions_7d": null,
-     "active_devices_latest": null,
-     "avg_daily_active_devices": null,
-     "avg_session_sec": null,
-     "retention": null,
-     "deletions_7d": null,
-     "installs_7d": null,
-     "crashes_7d": null,
-     "funnel": {
-      "impressions": 2803,
-      "page_views": 60,
-      "product_page_views": 57,
-      "taps": 40,
-      "downloads": 17,
-      "first_time_downloads": 17,
-      "redownloads": 0,
-      "impression_to_page_view_pct": 2.14,
-      "page_view_to_download_pct": 28.33
-     },
-     "daily": [
-      {
-       "date": "2026-11-11",
-       "sessions": null,
-       "active_devices": null,
-       "avg_session_sec": null,
-       "deletions": null,
-       "installs": null,
-       "crashes": null,
-       "impressions": 793,
-       "page_views": 11,
-       "product_page_views": 11,
-       "downloads": null,
-       "first_time_downloads": null,
-       "opt_in_rate_pct": null
-      },
-      {
-       "date": "2026-11-12",
-       "sessions": null,
-       "active_devices": null,
-       "avg_session_sec": null,
-       "deletions": null,
-       "installs": null,
-       "crashes": null,
-       "impressions": 570,
-       "page_views": 7,
-       "product_page_views": 7,
-       "downloads": 1,
-       "first_time_downloads": 1,
-       "opt_in_rate_pct": null
-      },
-      {
-       "date": "2026-11-13",
-       "sessions": null,
-       "active_devices": null,
-       "avg_session_sec": null,
-       "deletions": null,
-       "installs": null,
-       "crashes": null,
-       "impressions": 583,
-       "page_views": 15,
-       "product_page_views": 15,
-       "downloads": 4,
-       "first_time_downloads": 4,
-       "opt_in_rate_pct": null
-      },
-      {
-       "date": "2026-11-14",
-       "sessions": null,
-       "active_devices": null,
-       "avg_session_sec": null,
-       "deletions": null,
-       "installs": null,
-       "crashes": null,
-       "impressions": 445,
-       "page_views": 6,
-       "product_page_views": 6,
-       "downloads": 2,
-       "first_time_downloads": 2,
-       "opt_in_rate_pct": null
-      },
-      {
-       "date": "2026-11-15",
-       "sessions": null,
-       "active_devices": null,
-       "avg_session_sec": null,
-       "deletions": null,
-       "installs": null,
-       "crashes": null,
-       "impressions": 412,
-       "page_views": 21,
-       "product_page_views": 18,
-       "downloads": 6,
-       "first_time_downloads": 6,
-       "opt_in_rate_pct": null
-      },
-      {
-       "date": "2026-11-16",
-       "sessions": null,
-       "active_devices": null,
-       "avg_session_sec": null,
-       "deletions": null,
-       "installs": null,
-       "crashes": null,
-       "impressions": null,
-       "page_views": null,
-       "product_page_views": null,
-       "downloads": 4,
-       "first_time_downloads": 4,
-       "opt_in_rate_pct": null
-      }
-     ],
-     "reports_found": [
-      {
-       "kind": "downloads",
-       "name": "App Downloads Standard",
-       "category": "COMMERCE"
-      },
-      {
-       "kind": "installs_deletes",
-       "name": "App Store Installation and Deletion Standard",
-       "category": "APP_USAGE"
-      },
-      {
-       "kind": "sessions",
-       "name": "App Sessions Standard",
-       "category": "APP_USAGE"
-      },
-      {
-       "kind": "discovery",
-       "name": "App Store Discovery and Engagement Standard",
-       "category": "APP_STORE_ENGAGEMENT"
-      },
-      {
-       "kind": "crashes",
-       "name": "App Crashes",
-       "category": "APP_USAGE"
-      },
-      {
-       "kind": "opt_in",
-       "name": "App Opt In",
-       "category": "APP_USAGE"
-      }
-     ],
-     "opt_in_note": "Sessions, active devices, retention, crashes, and deletions include only users who opted in to share analytics with developers. Impressions, page views, and downloads count all devices."
+     "status": "error",
+     "note": "list analyticsReportRequests failed: SSLError: HTTPSConnectionPool(host='api.appstoreconnect.apple.com', port=443): Max retries exceeded with url: /v1/apps/6805914932/analyticsReportRequests?limit=200 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)')))",
+     "permission_error": false,
+     "request_id": null
     },
     "6819824551": {
      "id": "6819824551",
@@ -2138,11 +1990,11 @@
    "requests": {
     "6805914932": {
      "name": "LaneSync",
-     "request_id": "69bd9a41-cc00-442a-906c-f2caedc19f1e",
+     "request_id": null,
      "created_this_run": false,
-     "access_type": "ONGOING",
-     "stopped_due_to_inactivity": false,
-     "error": null
+     "access_type": null,
+     "stopped_due_to_inactivity": null,
+     "error": "list analyticsReportRequests failed: SSLError: HTTPSConnectionPool(host='api.appstoreconnect.apple.com', port=443): Max retries exceeded with url: /v1/apps/6805914932/analyticsReportRequests?limit=200 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)')))"
     },
     "6819824551": {
      "name": "StrideLab",
@@ -2153,7 +2005,7 @@
      "error": null
     }
    },
-   "generated_at": "2026-11-17 07:53 EST",
+   "generated_at": "2026-11-17 08:31 EST",
    "disclaimer": "App Analytics usage, crashes, and retention only count users who opted in to sharing analytics with developers. Low-volume days may be blank because Apple omits rows with fewer than five users."
   }
  },
