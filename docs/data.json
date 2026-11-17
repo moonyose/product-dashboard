@@ -1,7 +1,7 @@
 {
- "updated_at": "2026-11-17 13:27 EST",
+ "updated_at": "2026-11-17 14:28 EST",
  "errors": [
-  "LaneSync analytics: ASC Analytics API error (500): An unexpected error occurred on the server side. If this issue continues, contact us at https://developer.apple.com/contact/."
+  "LaneSync analytics: list analyticsReportRequests failed: ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
  ],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -96,16 +96,16 @@
    {
     "id": "6819824551",
     "name": "StrideLab - Sprint Analysis",
-    "error": "An unexpected error occurred on the server side. If this issue continues, contact us at https://developer.apple.com/contact/.",
+    "version": "1.0.3",
+    "state": "READY_FOR_SALE",
+    "created": "2026-11-13T07:47:30-08:00",
     "public": true,
     "icon": "icons/app_6819824551.png"
    },
    {
     "id": "6812496973",
     "name": "Miami Beach Transit Tracker",
-    "version": "1.0",
-    "state": "PREPARE_FOR_SUBMISSION",
-    "created": "2026-09-15T12:51:58-07:00",
+    "error": "An unexpected error occurred on the server side. If this issue continues, contact us at https://developer.apple.com/contact/.",
     "icon": "icons/app_6812496973.png"
    }
   ],
@@ -1815,7 +1815,7 @@
      "id": "6805914932",
      "name": "LaneSync",
      "status": "error",
-     "note": "ASC Analytics API error (500): An unexpected error occurred on the server side. If this issue continues, contact us at https://developer.apple.com/contact/.",
+     "note": "list analyticsReportRequests failed: ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
      "permission_error": false,
      "request_id": null
     },
@@ -1851,7 +1851,7 @@
      "created_this_run": false,
      "access_type": null,
      "stopped_due_to_inactivity": null,
-     "error": "ASC Analytics API error (500): An unexpected error occurred on the server side. If this issue continues, contact us at https://developer.apple.com/contact/."
+     "error": "list analyticsReportRequests failed: ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
     },
     "6819824551": {
      "name": "StrideLab",
@@ -1862,7 +1862,7 @@
      "error": null
     }
    },
-   "generated_at": "2026-11-17 13:28 EST",
+   "generated_at": "2026-11-17 14:29 EST",
    "disclaimer": "App Analytics usage, crashes, and retention only count users who opted in to sharing analytics with developers. Low-volume days may be blank because Apple omits rows with fewer than five users."
   }
  },
