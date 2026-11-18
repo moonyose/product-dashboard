@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-18 08:33 EST",
+ "updated_at": "2026-11-18 09:26 EST",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -110,38 +110,6 @@
    }
   ],
   "sales": [
-   {
-    "date": "2026-11-10",
-    "apps": {
-     "6805914932": {
-      "downloads": 10,
-      "redownloads": 3,
-      "new_subs": 0,
-      "new_subs_paid": 0,
-      "new_subs_free": 0,
-      "renewals": 0,
-      "proceeds": 0.0
-     },
-     "6819824551": {
-      "downloads": 8,
-      "redownloads": 0,
-      "new_subs": 2,
-      "new_subs_paid": 0,
-      "new_subs_free": 2,
-      "renewals": 0,
-      "proceeds": 0.0
-     },
-     "6812496973": {
-      "downloads": 0,
-      "redownloads": 0,
-      "new_subs": 0,
-      "new_subs_paid": 0,
-      "new_subs_free": 0,
-      "renewals": 0,
-      "proceeds": 0.0
-     }
-    }
-   },
    {
     "date": "2026-11-11",
     "apps": {
@@ -333,6 +301,38 @@
       "proceeds": 0.0
      }
     }
+   },
+   {
+    "date": "2026-11-17",
+    "apps": {
+     "6805914932": {
+      "downloads": 2,
+      "redownloads": 0,
+      "new_subs": 0,
+      "new_subs_paid": 0,
+      "new_subs_free": 0,
+      "renewals": 0,
+      "proceeds": 0.0
+     },
+     "6819824551": {
+      "downloads": 13,
+      "redownloads": 0,
+      "new_subs": 2,
+      "new_subs_paid": 0,
+      "new_subs_free": 2,
+      "renewals": 1,
+      "proceeds": 25.34
+     },
+     "6812496973": {
+      "downloads": 0,
+      "redownloads": 0,
+      "new_subs": 0,
+      "new_subs_paid": 0,
+      "new_subs_free": 0,
+      "renewals": 0,
+      "proceeds": 0.0
+     }
+    }
    }
   ],
   "reports": {
@@ -418,7 +418,7 @@
     "2026-11-14": "ok",
     "2026-11-15": "ok",
     "2026-11-16": "ok",
-    "2026-11-17": "pending"
+    "2026-11-17": "ok"
    },
    "event_report_days": [
     "2026-10-12",
@@ -497,7 +497,7 @@
       4,
       7,
       5,
-      null
+      2
      ],
      "redownloads": [
       0,
@@ -537,7 +537,7 @@
       0,
       0,
       0,
-      null
+      0
      ],
      "updates": [
       0,
@@ -577,10 +577,10 @@
       0,
       0,
       0,
-      null
+      0
      ],
      "launch": "2026-10-11",
-     "total_first_time": 243,
+     "total_first_time": 245,
      "total_redownloads": 53
     },
     "6819824551": {
@@ -623,7 +623,7 @@
       13,
       15,
       14,
-      null
+      13
      ],
      "redownloads": [
       0,
@@ -663,7 +663,7 @@
       0,
       0,
       0,
-      null
+      0
      ],
      "updates": [
       0,
@@ -703,10 +703,10 @@
       80,
       1,
       5,
-      null
+      4
      ],
      "launch": "2026-10-16",
-     "total_first_time": 271,
+     "total_first_time": 284,
      "total_redownloads": 6
     }
    },
@@ -720,9 +720,9 @@
     "F1"
    ],
    "product_types_seen": {
-    "1F": 514,
+    "1F": 529,
     "3F": 59,
-    "7F": 233
+    "7F": 237
    },
    "cohorts": [
     {
@@ -1769,17 +1769,17 @@
     "days": 38,
     "requests": 2,
     "cache_hits": 74,
-    "seconds": 2.38,
+    "seconds": 1.38,
     "latest_requested": "2026-11-17"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
   },
   "lifetime": {
-   "proceeds_usd": 83.63,
+   "proceeds_usd": 108.97,
    "currency": "USD",
    "from": "2026-10-11",
-   "to": "2026-11-16",
-   "days": 37,
+   "to": "2026-11-17",
+   "days": 38,
    "apps": {
     "6805914932": {
      "name": "LaneSync",
@@ -1787,7 +1787,7 @@
     },
     "6819824551": {
      "name": "StrideLab",
-     "proceeds_usd": 80.2
+     "proceeds_usd": 105.54
     },
     "6812496973": {
      "name": "Miami Beach Transit Tracker",
@@ -1814,6 +1814,15 @@
       "source": "frankfurter",
       "original": 5.08,
       "usd": 3.4324
+     },
+     {
+      "date": "2026-11-17",
+      "currency": "JPY",
+      "foreign_per_usd": 159.3,
+      "as_of": "2026-11-17",
+      "source": "frankfurter",
+      "original": 4036.0,
+      "usd": 25.3358
      }
     ],
     "notes": "Developer proceeds converted to USD at the report date's rate. Primary: Frankfurter (ECB). Fallback: open.er-api.com latest, then a hardcoded table."
@@ -2194,7 +2203,7 @@
      "error": null
     }
    },
-   "generated_at": "2026-11-18 08:33 EST",
+   "generated_at": "2026-11-18 09:26 EST",
    "disclaimer": "App Analytics usage, crashes, and retention only count users who opted in to sharing analytics with developers. Low-volume days may be blank because Apple omits rows with fewer than five users."
   }
  },
