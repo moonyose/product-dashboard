@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-17 19:26 EST",
+ "updated_at": "2026-11-17 20:32 EST",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -1759,7 +1759,7 @@
     "days": 37,
     "requests": 0,
     "cache_hits": 74,
-    "seconds": 0.01,
+    "seconds": 0.02,
     "latest_requested": "2026-11-16"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
@@ -1820,9 +1820,9 @@
      "access_type": "ONGOING",
      "stopped_due_to_inactivity": false,
      "window": {
-      "start": "2026-11-12",
+      "start": "2026-11-11",
       "end": "2026-11-16",
-      "days": 5
+      "days": 6
      },
      "opt_in_rate_pct": null,
      "sessions_7d": null,
@@ -1834,15 +1834,32 @@
      "installs_7d": null,
      "crashes_7d": null,
      "funnel": {
-      "impressions": null,
-      "page_views": null,
-      "product_page_views": null,
-      "taps": null,
+      "impressions": 2803,
+      "page_views": 60,
+      "product_page_views": 57,
+      "taps": 40,
       "downloads": 17,
       "first_time_downloads": 17,
-      "redownloads": 0
+      "redownloads": 0,
+      "impression_to_page_view_pct": 2.14,
+      "page_view_to_download_pct": 28.33
      },
      "daily": [
+      {
+       "date": "2026-11-11",
+       "sessions": null,
+       "active_devices": null,
+       "avg_session_sec": null,
+       "deletions": null,
+       "installs": null,
+       "crashes": null,
+       "impressions": 793,
+       "page_views": 11,
+       "product_page_views": 11,
+       "downloads": null,
+       "first_time_downloads": null,
+       "opt_in_rate_pct": null
+      },
       {
        "date": "2026-11-12",
        "sessions": null,
@@ -1851,9 +1868,9 @@
        "deletions": null,
        "installs": null,
        "crashes": null,
-       "impressions": null,
-       "page_views": null,
-       "product_page_views": null,
+       "impressions": 570,
+       "page_views": 7,
+       "product_page_views": 7,
        "downloads": 1,
        "first_time_downloads": 1,
        "opt_in_rate_pct": null
@@ -1866,9 +1883,9 @@
        "deletions": null,
        "installs": null,
        "crashes": null,
-       "impressions": null,
-       "page_views": null,
-       "product_page_views": null,
+       "impressions": 583,
+       "page_views": 15,
+       "product_page_views": 15,
        "downloads": 4,
        "first_time_downloads": 4,
        "opt_in_rate_pct": null
@@ -1881,9 +1898,9 @@
        "deletions": null,
        "installs": null,
        "crashes": null,
-       "impressions": null,
-       "page_views": null,
-       "product_page_views": null,
+       "impressions": 445,
+       "page_views": 6,
+       "product_page_views": 6,
        "downloads": 2,
        "first_time_downloads": 2,
        "opt_in_rate_pct": null
@@ -1896,9 +1913,9 @@
        "deletions": null,
        "installs": null,
        "crashes": null,
-       "impressions": null,
-       "page_views": null,
-       "product_page_views": null,
+       "impressions": 412,
+       "page_views": 21,
+       "product_page_views": 18,
        "downloads": 6,
        "first_time_downloads": 6,
        "opt_in_rate_pct": null
@@ -1951,11 +1968,7 @@
        "category": "APP_USAGE"
       }
      ],
-     "opt_in_note": "Sessions, active devices, retention, crashes, and deletions include only users who opted in to share analytics with developers. Impressions, page views, and downloads count all devices.",
-     "kind_errors": [
-      "discovery: ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
-      "crashes: SSLError: HTTPSConnectionPool(host='api.appstoreconnect.apple.com', port=443): Max retries exceeded with url: /v1/analyticsReports/r2-69bd9a41-cc00-442a-906c-f2caedc19f1e/instances?limit=200&filter%5Bgranularity%5D=DAILY (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)')))"
-     ]
+     "opt_in_note": "Sessions, active devices, retention, crashes, and deletions include only users who opted in to share analytics with developers. Impressions, page views, and downloads count all devices."
     },
     "6819824551": {
      "id": "6819824551",
@@ -1968,18 +1981,32 @@
      "window": {
       "start": "2026-11-09",
       "end": "2026-11-16",
-      "days": 6
+      "days": 7
      },
-     "opt_in_rate_pct": null,
-     "sessions_7d": null,
-     "active_devices_latest": null,
-     "avg_daily_active_devices": null,
-     "avg_session_sec": null,
-     "retention": null,
+     "opt_in_rate_pct": 61.5,
+     "sessions_7d": 81,
+     "active_devices_latest": 4,
+     "avg_daily_active_devices": 2.8,
+     "avg_session_sec": 84.2,
+     "retention": {
+      "day1_pct": 14.3,
+      "day7_pct": null,
+      "source": "app sessions, App Download Date, opted-in users"
+     },
      "deletions_7d": 15,
      "installs_7d": 75,
      "crashes_7d": null,
-     "funnel": null,
+     "funnel": {
+      "impressions": 5798,
+      "page_views": 200,
+      "product_page_views": 198,
+      "taps": 134,
+      "downloads": 64,
+      "first_time_downloads": 64,
+      "redownloads": 0,
+      "impression_to_page_view_pct": 3.45,
+      "page_view_to_download_pct": 32.0
+     },
      "daily": [
       {
        "date": "2026-11-09",
@@ -1997,64 +2024,79 @@
        "opt_in_rate_pct": null
       },
       {
-       "date": "2026-11-12",
+       "date": "2026-11-11",
        "sessions": null,
        "active_devices": null,
        "avg_session_sec": null,
+       "deletions": null,
+       "installs": null,
+       "crashes": null,
+       "impressions": 936,
+       "page_views": 42,
+       "product_page_views": 42,
+       "downloads": null,
+       "first_time_downloads": null,
+       "opt_in_rate_pct": null
+      },
+      {
+       "date": "2026-11-12",
+       "sessions": 9,
+       "active_devices": 1,
+       "avg_session_sec": 48.4,
        "deletions": 1,
        "installs": 5,
        "crashes": null,
-       "impressions": null,
-       "page_views": null,
-       "product_page_views": null,
-       "downloads": null,
-       "first_time_downloads": null,
-       "opt_in_rate_pct": null
+       "impressions": 934,
+       "page_views": 27,
+       "product_page_views": 27,
+       "downloads": 10,
+       "first_time_downloads": 10,
+       "opt_in_rate_pct": 60.0
       },
       {
        "date": "2026-11-13",
-       "sessions": null,
-       "active_devices": null,
-       "avg_session_sec": null,
+       "sessions": 16,
+       "active_devices": 3,
+       "avg_session_sec": 34.4,
        "deletions": 2,
        "installs": 6,
        "crashes": null,
-       "impressions": null,
-       "page_views": null,
-       "product_page_views": null,
-       "downloads": null,
-       "first_time_downloads": null,
-       "opt_in_rate_pct": null
+       "impressions": 894,
+       "page_views": 28,
+       "product_page_views": 28,
+       "downloads": 15,
+       "first_time_downloads": 15,
+       "opt_in_rate_pct": 66.7
       },
       {
        "date": "2026-11-14",
-       "sessions": null,
-       "active_devices": null,
-       "avg_session_sec": null,
+       "sessions": 15,
+       "active_devices": 3,
+       "avg_session_sec": 84.9,
        "deletions": 5,
        "installs": 15,
        "crashes": null,
-       "impressions": null,
-       "page_views": null,
-       "product_page_views": null,
-       "downloads": null,
-       "first_time_downloads": null,
-       "opt_in_rate_pct": null
+       "impressions": 1488,
+       "page_views": 50,
+       "product_page_views": 49,
+       "downloads": 13,
+       "first_time_downloads": 13,
+       "opt_in_rate_pct": 46.2
       },
       {
        "date": "2026-11-15",
-       "sessions": null,
-       "active_devices": null,
-       "avg_session_sec": null,
+       "sessions": 41,
+       "active_devices": 4,
+       "avg_session_sec": 111.3,
        "deletions": 2,
        "installs": 23,
        "crashes": null,
-       "impressions": null,
-       "page_views": null,
-       "product_page_views": null,
-       "downloads": null,
-       "first_time_downloads": null,
-       "opt_in_rate_pct": null
+       "impressions": 1546,
+       "page_views": 53,
+       "product_page_views": 52,
+       "downloads": 14,
+       "first_time_downloads": 14,
+       "opt_in_rate_pct": 71.4
       },
       {
        "date": "2026-11-16",
@@ -2067,8 +2109,8 @@
        "impressions": null,
        "page_views": null,
        "product_page_views": null,
-       "downloads": null,
-       "first_time_downloads": null,
+       "downloads": 12,
+       "first_time_downloads": 12,
        "opt_in_rate_pct": null
       }
      ],
@@ -2105,12 +2147,8 @@
       }
      ],
      "opt_in_note": "Sessions, active devices, retention, crashes, and deletions include only users who opted in to share analytics with developers. Impressions, page views, and downloads count all devices.",
-     "kind_errors": [
-      "downloads: SSLError: HTTPSConnectionPool(host='api.appstoreconnect.apple.com', port=443): Max retries exceeded with url: /v1/analyticsReportInstances/ab841e0f-abf3-4bba-9e5b-74020fcd3499/segments?limit=200 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)')))",
-      "sessions: SSLError: HTTPSConnectionPool(host='api.appstoreconnect.apple.com', port=443): Max retries exceeded with url: /v1/analyticsReports/r8-a72a1638-238a-44e6-9ce1-a22864e752dd/instances?limit=200&filter%5Bgranularity%5D=DAILY (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)')))",
-      "discovery: SSLError: HTTPSConnectionPool(host='api.appstoreconnect.apple.com', port=443): Max retries exceeded with url: /v1/analyticsReports/r14-a72a1638-238a-44e6-9ce1-a22864e752dd/instances?limit=200&filter%5Bgranularity%5D=DAILY (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)')))",
-      "opt_in: SSLError: HTTPSConnectionPool(host='api.appstoreconnect.apple.com', port=443): Max retries exceeded with url: /v1/analyticsReportInstances/23f23a7c-5b37-4ee0-997c-fb9ca5898516/segments?limit=200 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)')))"
-     ]
+     "opt_in_users_7d": 32,
+     "opt_in_downloaders_7d": 52
     }
    },
    "requests": {
@@ -2131,7 +2169,7 @@
      "error": null
     }
    },
-   "generated_at": "2026-11-17 19:26 EST",
+   "generated_at": "2026-11-17 20:32 EST",
    "disclaimer": "App Analytics usage, crashes, and retention only count users who opted in to sharing analytics with developers. Low-volume days may be blank because Apple omits rows with fewer than five users."
   }
  },
