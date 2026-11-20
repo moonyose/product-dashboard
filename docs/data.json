@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-20 12:51 EST",
+ "updated_at": "2026-11-20 13:32 EST",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -95,7 +95,7 @@
     "id": "6819824551",
     "name": "StrideLab - Sprint Analysis",
     "version": "1.0.4",
-    "state": "IN_REVIEW",
+    "state": "READY_FOR_SALE",
     "created": "2026-11-19T21:13:33-08:00",
     "public": true,
     "icon": "icons/app_6819824551.png"
@@ -1861,7 +1861,7 @@
     "days": 40,
     "requests": 1,
     "cache_hits": 79,
-    "seconds": 0.67,
+    "seconds": 0.69,
     "latest_requested": "2026-11-19"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
@@ -1945,13 +1945,15 @@
      "installs_7d": null,
      "crashes_7d": null,
      "funnel": {
-      "impressions": null,
-      "page_views": null,
-      "product_page_views": null,
-      "taps": null,
+      "impressions": 3240,
+      "page_views": 78,
+      "product_page_views": 73,
+      "taps": 45,
       "downloads": 33,
       "first_time_downloads": 32,
-      "redownloads": 1
+      "redownloads": 1,
+      "impression_to_page_view_pct": 2.41,
+      "page_view_to_download_pct": 41.03
      },
      "daily": [
       {
@@ -1962,9 +1964,9 @@
        "deletions": null,
        "installs": null,
        "crashes": null,
-       "impressions": null,
-       "page_views": null,
-       "product_page_views": null,
+       "impressions": 583,
+       "page_views": 15,
+       "product_page_views": 15,
        "downloads": 4,
        "first_time_downloads": 4,
        "opt_in_rate_pct": null
@@ -1977,9 +1979,9 @@
        "deletions": null,
        "installs": null,
        "crashes": null,
-       "impressions": null,
-       "page_views": null,
-       "product_page_views": null,
+       "impressions": 445,
+       "page_views": 6,
+       "product_page_views": 6,
        "downloads": 2,
        "first_time_downloads": 2,
        "opt_in_rate_pct": null
@@ -1992,9 +1994,9 @@
        "deletions": null,
        "installs": null,
        "crashes": null,
-       "impressions": null,
-       "page_views": null,
-       "product_page_views": null,
+       "impressions": 412,
+       "page_views": 21,
+       "product_page_views": 18,
        "downloads": 6,
        "first_time_downloads": 6,
        "opt_in_rate_pct": null
@@ -2007,9 +2009,9 @@
        "deletions": null,
        "installs": null,
        "crashes": null,
-       "impressions": null,
-       "page_views": null,
-       "product_page_views": null,
+       "impressions": 529,
+       "page_views": 8,
+       "product_page_views": 8,
        "downloads": 4,
        "first_time_downloads": 4,
        "opt_in_rate_pct": null
@@ -2022,9 +2024,9 @@
        "deletions": null,
        "installs": null,
        "crashes": null,
-       "impressions": null,
-       "page_views": null,
-       "product_page_views": null,
+       "impressions": 545,
+       "page_views": 19,
+       "product_page_views": 17,
        "downloads": 6,
        "first_time_downloads": 6,
        "opt_in_rate_pct": null
@@ -2037,9 +2039,9 @@
        "deletions": null,
        "installs": null,
        "crashes": null,
-       "impressions": null,
-       "page_views": null,
-       "product_page_views": null,
+       "impressions": 726,
+       "page_views": 9,
+       "product_page_views": 9,
        "downloads": 4,
        "first_time_downloads": 3,
        "opt_in_rate_pct": null
@@ -2092,10 +2094,7 @@
        "category": "APP_USAGE"
       }
      ],
-     "opt_in_note": "Sessions, active devices, retention, crashes, and deletions include only users who opted in to share analytics with developers. Impressions, page views, and downloads count all devices.",
-     "kind_errors": [
-      "discovery: SSLError: HTTPSConnectionPool(host='api.appstoreconnect.apple.com', port=443): Max retries exceeded with url: /v1/analyticsReportInstances/16cdc7a8-4015-419c-8238-deef2e8cbcb0/segments?limit=200 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)')))"
-     ]
+     "opt_in_note": "Sessions, active devices, retention, crashes, and deletions include only users who opted in to share analytics with developers. Impressions, page views, and downloads count all devices."
     },
     "6819824551": {
      "id": "6819824551",
@@ -2296,7 +2295,7 @@
      "error": null
     }
    },
-   "generated_at": "2026-11-20 12:51 EST",
+   "generated_at": "2026-11-20 13:33 EST",
    "disclaimer": "App Analytics usage, crashes, and retention only count users who opted in to sharing analytics with developers. Low-volume days may be blank because Apple omits rows with fewer than five users."
   }
  },
