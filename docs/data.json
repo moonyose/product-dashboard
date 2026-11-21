@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-21 09:31 EST",
+ "updated_at": "2026-11-21 10:26 EST",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -110,38 +110,6 @@
    }
   ],
   "sales": [
-   {
-    "date": "2026-11-13",
-    "apps": {
-     "6805914932": {
-      "downloads": 2,
-      "redownloads": 1,
-      "new_subs": 0,
-      "new_subs_paid": 0,
-      "new_subs_free": 0,
-      "renewals": 0,
-      "proceeds": 0.0
-     },
-     "6819824551": {
-      "downloads": 10,
-      "redownloads": 0,
-      "new_subs": 0,
-      "new_subs_paid": 0,
-      "new_subs_free": 0,
-      "renewals": 0,
-      "proceeds": 0.0
-     },
-     "6812496973": {
-      "downloads": 0,
-      "redownloads": 0,
-      "new_subs": 0,
-      "new_subs_paid": 0,
-      "new_subs_free": 0,
-      "renewals": 0,
-      "proceeds": 0.0
-     }
-    }
-   },
    {
     "date": "2026-11-14",
     "apps": {
@@ -333,6 +301,38 @@
       "proceeds": 0.0
      }
     }
+   },
+   {
+    "date": "2026-11-20",
+    "apps": {
+     "6805914932": {
+      "downloads": 4,
+      "redownloads": 3,
+      "new_subs": 0,
+      "new_subs_paid": 0,
+      "new_subs_free": 0,
+      "renewals": 1,
+      "proceeds": 3.5
+     },
+     "6819824551": {
+      "downloads": 14,
+      "redownloads": 0,
+      "new_subs": 3,
+      "new_subs_paid": 0,
+      "new_subs_free": 3,
+      "renewals": 0,
+      "proceeds": 0.0
+     },
+     "6812496973": {
+      "downloads": 0,
+      "redownloads": 0,
+      "new_subs": 0,
+      "new_subs_paid": 0,
+      "new_subs_free": 0,
+      "renewals": 0,
+      "proceeds": 0.0
+     }
+    }
    }
   ],
   "reports": {
@@ -424,7 +424,7 @@
     "2026-11-17": "ok",
     "2026-11-18": "ok",
     "2026-11-19": "ok",
-    "2026-11-20": "pending"
+    "2026-11-20": "ok"
    },
    "event_report_days": [
     "2026-10-12",
@@ -509,7 +509,7 @@
       2,
       8,
       5,
-      null
+      4
      ],
      "redownloads": [
       0,
@@ -552,7 +552,7 @@
       0,
       3,
       0,
-      null
+      3
      ],
      "updates": [
       0,
@@ -595,11 +595,11 @@
       0,
       0,
       0,
-      null
+      0
      ],
      "launch": "2026-10-11",
-     "total_first_time": 258,
-     "total_redownloads": 56
+     "total_first_time": 262,
+     "total_redownloads": 59
     },
     "6819824551": {
      "name": "StrideLab",
@@ -644,7 +644,7 @@
       13,
       12,
       20,
-      null
+      14
      ],
      "redownloads": [
       0,
@@ -687,7 +687,7 @@
       0,
       0,
       0,
-      null
+      0
      ],
      "updates": [
       0,
@@ -730,10 +730,10 @@
       4,
       2,
       0,
-      null
+      74
      ],
      "launch": "2026-10-16",
-     "total_first_time": 316,
+     "total_first_time": 330,
      "total_redownloads": 6
     }
    },
@@ -747,9 +747,9 @@
     "F1"
    ],
    "product_types_seen": {
-    "1F": 574,
-    "3F": 62,
-    "7F": 239
+    "1F": 592,
+    "3F": 65,
+    "7F": 313
    },
    "cohorts": [
     {
@@ -1935,21 +1935,21 @@
     "days": 41,
     "requests": 2,
     "cache_hits": 80,
-    "seconds": 2.31,
+    "seconds": 1.44,
     "latest_requested": "2026-11-20"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
   },
   "lifetime": {
-   "proceeds_usd": 136.97,
+   "proceeds_usd": 140.47,
    "currency": "USD",
    "from": "2026-10-11",
-   "to": "2026-11-19",
-   "days": 40,
+   "to": "2026-11-20",
+   "days": 41,
    "apps": {
     "6805914932": {
      "name": "LaneSync",
-     "proceeds_usd": 3.43
+     "proceeds_usd": 6.93
     },
     "6819824551": {
      "name": "StrideLab",
@@ -2369,7 +2369,7 @@
      "error": null
     }
    },
-   "generated_at": "2026-11-21 09:32 EST",
+   "generated_at": "2026-11-21 10:28 EST",
    "disclaimer": "App Analytics usage, crashes, and retention only count users who opted in to sharing analytics with developers. Low-volume days may be blank because Apple omits rows with fewer than five users."
   }
  },
