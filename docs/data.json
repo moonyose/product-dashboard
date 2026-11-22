@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-22 14:28 EST",
+ "updated_at": "2026-11-22 15:35 EST",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -86,7 +86,7 @@
     "id": "6805914932",
     "name": "LaneSync - Sprint Timer",
     "version": "1.0.3",
-    "state": "WAITING_FOR_REVIEW",
+    "state": "IN_REVIEW",
     "created": "2026-11-22T09:43:09-08:00",
     "public": true,
     "icon": "icons/app_6805914932.png"
@@ -2159,15 +2159,15 @@
      "installs_7d": null,
      "crashes_7d": null,
      "funnel": {
-      "impressions": 3249,
-      "page_views": 80,
-      "product_page_views": 75,
-      "taps": 58,
+      "impressions": 3951,
+      "page_views": 93,
+      "product_page_views": 87,
+      "taps": 63,
       "downloads": 37,
       "first_time_downloads": 35,
       "redownloads": 2,
-      "impression_to_page_view_pct": 2.46,
-      "page_view_to_download_pct": 43.75
+      "impression_to_page_view_pct": 2.35,
+      "page_view_to_download_pct": 37.63
      },
      "daily": [
       {
@@ -2253,7 +2253,7 @@
        "deletions": null,
        "installs": null,
        "crashes": null,
-       "impressions": 531,
+       "impressions": 532,
        "page_views": 13,
        "product_page_views": 13,
        "downloads": 7,
@@ -2268,9 +2268,9 @@
        "deletions": null,
        "installs": null,
        "crashes": null,
-       "impressions": null,
-       "page_views": null,
-       "product_page_views": null,
+       "impressions": 701,
+       "page_views": 13,
+       "product_page_views": 12,
        "downloads": 3,
        "first_time_downloads": 3,
        "opt_in_rate_pct": null
@@ -2337,15 +2337,15 @@
      "installs_7d": 96,
      "crashes_7d": null,
      "funnel": {
-      "impressions": 10272,
-      "page_views": 256,
-      "product_page_views": 249,
-      "taps": 196,
+      "impressions": 13802,
+      "page_views": 344,
+      "product_page_views": 336,
+      "taps": 235,
       "downloads": 104,
       "first_time_downloads": 104,
       "redownloads": 0,
       "impression_to_page_view_pct": 2.49,
-      "page_view_to_download_pct": 40.62
+      "page_view_to_download_pct": 30.23
      },
      "daily": [
       {
@@ -2431,7 +2431,7 @@
        "deletions": 5,
        "installs": 6,
        "crashes": null,
-       "impressions": 1521,
+       "impressions": 1525,
        "page_views": 37,
        "product_page_views": 36,
        "downloads": 21,
@@ -2446,9 +2446,9 @@
        "deletions": 4,
        "installs": 26,
        "crashes": null,
-       "impressions": null,
-       "page_views": null,
-       "product_page_views": null,
+       "impressions": 3526,
+       "page_views": 88,
+       "product_page_views": 87,
        "downloads": 19,
        "first_time_downloads": 19,
        "opt_in_rate_pct": 26.3
@@ -2509,7 +2509,7 @@
      "error": null
     }
    },
-   "generated_at": "2026-11-22 14:28 EST",
+   "generated_at": "2026-11-22 15:35 EST",
    "disclaimer": "App Analytics usage, crashes, and retention only count users who opted in to sharing analytics with developers. Low-volume days may be blank because Apple omits rows with fewer than five users."
   }
  },
