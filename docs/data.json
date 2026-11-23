@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-22 18:48 EST",
+ "updated_at": "2026-11-22 19:30 EST",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -2333,8 +2333,8 @@
       "day7_pct": null,
       "source": "app sessions, App Download Date, opted-in users"
      },
-     "deletions_7d": null,
-     "installs_7d": null,
+     "deletions_7d": 22,
+     "installs_7d": 96,
      "crashes_7d": null,
      "funnel": {
       "impressions": 13802,
@@ -2353,8 +2353,8 @@
        "sessions": 41,
        "active_devices": 4,
        "avg_session_sec": 111.3,
-       "deletions": null,
-       "installs": null,
+       "deletions": 2,
+       "installs": 23,
        "crashes": null,
        "impressions": 1546,
        "page_views": 53,
@@ -2368,8 +2368,8 @@
        "sessions": null,
        "active_devices": null,
        "avg_session_sec": null,
-       "deletions": null,
-       "installs": null,
+       "deletions": 2,
+       "installs": 19,
        "crashes": null,
        "impressions": 1344,
        "page_views": 32,
@@ -2383,8 +2383,8 @@
        "sessions": 16,
        "active_devices": 2,
        "avg_session_sec": 74.8,
-       "deletions": null,
-       "installs": null,
+       "deletions": 3,
+       "installs": 9,
        "crashes": null,
        "impressions": 1706,
        "page_views": 42,
@@ -2398,8 +2398,8 @@
        "sessions": 16,
        "active_devices": 1,
        "avg_session_sec": 18.4,
-       "deletions": null,
-       "installs": null,
+       "deletions": 2,
+       "installs": 7,
        "crashes": null,
        "impressions": 3477,
        "page_views": 62,
@@ -2413,8 +2413,8 @@
        "sessions": 24,
        "active_devices": 2,
        "avg_session_sec": 65.4,
-       "deletions": null,
-       "installs": null,
+       "deletions": 4,
+       "installs": 6,
        "crashes": null,
        "impressions": 678,
        "page_views": 30,
@@ -2428,8 +2428,8 @@
        "sessions": 17,
        "active_devices": 1,
        "avg_session_sec": 75.8,
-       "deletions": null,
-       "installs": null,
+       "deletions": 5,
+       "installs": 6,
        "crashes": null,
        "impressions": 1525,
        "page_views": 37,
@@ -2443,8 +2443,8 @@
        "sessions": 8,
        "active_devices": 1,
        "avg_session_sec": 57.1,
-       "deletions": null,
-       "installs": null,
+       "deletions": 4,
+       "installs": 26,
        "crashes": null,
        "impressions": 3526,
        "page_views": 88,
@@ -2487,9 +2487,6 @@
       }
      ],
      "opt_in_note": "Sessions, active devices, retention, crashes, and deletions include only users who opted in to share analytics with developers. Impressions, page views, and downloads count all devices.",
-     "kind_errors": [
-      "installs_deletes: SSLError: HTTPSConnectionPool(host='api.appstoreconnect.apple.com', port=443): Max retries exceeded with url: /v1/analyticsReportInstances/223f948a-e6f9-410a-b580-d138e11a1c44/segments?limit=200 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)')))"
-     ],
      "opt_in_users_7d": 34,
      "opt_in_downloaders_7d": 81
     }
@@ -2512,7 +2509,7 @@
      "error": null
     }
    },
-   "generated_at": "2026-11-22 18:48 EST",
+   "generated_at": "2026-11-22 19:30 EST",
    "disclaimer": "App Analytics usage, crashes, and retention only count users who opted in to sharing analytics with developers. Low-volume days may be blank because Apple omits rows with fewer than five users."
   }
  },
