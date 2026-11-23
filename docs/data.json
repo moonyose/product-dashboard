@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-23 13:28 EST",
+ "updated_at": "2026-11-23 14:32 EST",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -95,7 +95,7 @@
     "id": "6819824551",
     "name": "StrideLab - Sprint Analysis",
     "version": "1.0.5",
-    "state": "IN_REVIEW",
+    "state": "READY_FOR_SALE",
     "created": "2026-11-22T10:29:12-08:00",
     "public": true,
     "icon": "icons/app_6819824551.png"
@@ -2209,15 +2209,15 @@
      "installs_7d": null,
      "crashes_7d": null,
      "funnel": {
-      "impressions": 3539,
-      "page_views": 72,
-      "product_page_views": 69,
-      "taps": 53,
+      "impressions": 4503,
+      "page_views": 87,
+      "product_page_views": 83,
+      "taps": 68,
       "downloads": 39,
       "first_time_downloads": 37,
       "redownloads": 2,
-      "impression_to_page_view_pct": 2.03,
-      "page_view_to_download_pct": 51.39
+      "impression_to_page_view_pct": 1.93,
+      "page_view_to_download_pct": 42.53
      },
      "daily": [
       {
@@ -2303,7 +2303,7 @@
        "deletions": null,
        "installs": null,
        "crashes": null,
-       "impressions": 701,
+       "impressions": 702,
        "page_views": 13,
        "product_page_views": 12,
        "downloads": 3,
@@ -2318,9 +2318,9 @@
        "deletions": null,
        "installs": null,
        "crashes": null,
-       "impressions": null,
-       "page_views": null,
-       "product_page_views": null,
+       "impressions": 963,
+       "page_views": 15,
+       "product_page_views": 14,
        "downloads": 8,
        "first_time_downloads": 8,
        "opt_in_rate_pct": null
@@ -2387,15 +2387,15 @@
      "installs_7d": 97,
      "crashes_7d": null,
      "funnel": {
-      "impressions": 12256,
-      "page_views": 291,
-      "product_page_views": 284,
-      "taps": 197,
+      "impressions": 13055,
+      "page_views": 321,
+      "product_page_views": 314,
+      "taps": 210,
       "downloads": 100,
       "first_time_downloads": 100,
       "redownloads": 0,
-      "impression_to_page_view_pct": 2.37,
-      "page_view_to_download_pct": 34.36
+      "impression_to_page_view_pct": 2.46,
+      "page_view_to_download_pct": 31.15
      },
      "daily": [
       {
@@ -2496,9 +2496,9 @@
        "deletions": 3,
        "installs": 24,
        "crashes": null,
-       "impressions": null,
-       "page_views": null,
-       "product_page_views": null,
+       "impressions": 799,
+       "page_views": 30,
+       "product_page_views": 30,
        "downloads": 10,
        "first_time_downloads": 10,
        "opt_in_rate_pct": null
@@ -2559,7 +2559,7 @@
      "error": null
     }
    },
-   "generated_at": "2026-11-23 13:28 EST",
+   "generated_at": "2026-11-23 14:32 EST",
    "disclaimer": "App Analytics usage, crashes, and retention only count users who opted in to sharing analytics with developers. Low-volume days may be blank because Apple omits rows with fewer than five users."
   }
  },
