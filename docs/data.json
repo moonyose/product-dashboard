@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-23 18:33 EST",
+ "updated_at": "2026-11-23 18:46 EST",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -2387,15 +2387,13 @@
      "installs_7d": 97,
      "crashes_7d": null,
      "funnel": {
-      "impressions": 13055,
-      "page_views": 321,
-      "product_page_views": 314,
-      "taps": 210,
+      "impressions": null,
+      "page_views": null,
+      "product_page_views": null,
+      "taps": null,
       "downloads": 100,
       "first_time_downloads": 100,
-      "redownloads": 0,
-      "impression_to_page_view_pct": 2.46,
-      "page_view_to_download_pct": 31.15
+      "redownloads": 0
      },
      "daily": [
       {
@@ -2406,9 +2404,9 @@
        "deletions": 2,
        "installs": 19,
        "crashes": null,
-       "impressions": 1344,
-       "page_views": 32,
-       "product_page_views": 32,
+       "impressions": null,
+       "page_views": null,
+       "product_page_views": null,
        "downloads": 12,
        "first_time_downloads": 12,
        "opt_in_rate_pct": null
@@ -2421,9 +2419,9 @@
        "deletions": 3,
        "installs": 9,
        "crashes": null,
-       "impressions": 1706,
-       "page_views": 42,
-       "product_page_views": 41,
+       "impressions": null,
+       "page_views": null,
+       "product_page_views": null,
        "downloads": 16,
        "first_time_downloads": 16,
        "opt_in_rate_pct": 43.8
@@ -2436,9 +2434,9 @@
        "deletions": 2,
        "installs": 7,
        "crashes": null,
-       "impressions": 3477,
-       "page_views": 62,
-       "product_page_views": 62,
+       "impressions": null,
+       "page_views": null,
+       "product_page_views": null,
        "downloads": 11,
        "first_time_downloads": 11,
        "opt_in_rate_pct": null
@@ -2451,9 +2449,9 @@
        "deletions": 4,
        "installs": 6,
        "crashes": null,
-       "impressions": 678,
-       "page_views": 30,
-       "product_page_views": 26,
+       "impressions": null,
+       "page_views": null,
+       "product_page_views": null,
        "downloads": 11,
        "first_time_downloads": 11,
        "opt_in_rate_pct": 54.5
@@ -2466,9 +2464,9 @@
        "deletions": 5,
        "installs": 6,
        "crashes": null,
-       "impressions": 1525,
-       "page_views": 37,
-       "product_page_views": 36,
+       "impressions": null,
+       "page_views": null,
+       "product_page_views": null,
        "downloads": 21,
        "first_time_downloads": 21,
        "opt_in_rate_pct": 28.6
@@ -2481,9 +2479,9 @@
        "deletions": 4,
        "installs": 26,
        "crashes": null,
-       "impressions": 3526,
-       "page_views": 88,
-       "product_page_views": 87,
+       "impressions": null,
+       "page_views": null,
+       "product_page_views": null,
        "downloads": 19,
        "first_time_downloads": 19,
        "opt_in_rate_pct": 26.3
@@ -2496,9 +2494,9 @@
        "deletions": 3,
        "installs": 24,
        "crashes": null,
-       "impressions": 799,
-       "page_views": 30,
-       "product_page_views": 30,
+       "impressions": null,
+       "page_views": null,
+       "product_page_views": null,
        "downloads": 10,
        "first_time_downloads": 10,
        "opt_in_rate_pct": null
@@ -2537,6 +2535,9 @@
       }
      ],
      "opt_in_note": "Sessions, active devices, retention, crashes, and deletions include only users who opted in to share analytics with developers. Impressions, page views, and downloads count all devices.",
+     "kind_errors": [
+      "discovery: ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+     ],
      "opt_in_users_7d": 24,
      "opt_in_downloaders_7d": 67
     }
@@ -2559,7 +2560,7 @@
      "error": null
     }
    },
-   "generated_at": "2026-11-23 18:33 EST",
+   "generated_at": "2026-11-23 18:47 EST",
    "disclaimer": "App Analytics usage, crashes, and retention only count users who opted in to sharing analytics with developers. Low-volume days may be blank because Apple omits rows with fewer than five users."
   }
  },
