@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-22 22:31 EST",
+ "updated_at": "2026-11-23 07:52 EST",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -44,8 +44,8 @@
    "reach": 1464,
    "cpm": "17.00578",
    "frequency": "1.772541",
-   "date_start": "2023-10-22",
-   "date_stop": "2026-11-22",
+   "date_start": "2023-10-23",
+   "date_stop": "2026-11-23",
    "link_clicks": 13,
    "all_clicks": 19,
    "link_ctr": 0.501,
@@ -338,7 +338,7 @@
   "reports": {
    "range": [
     "2026-10-11",
-    "2026-11-21"
+    "2026-11-22"
    ],
    "dates": [
     "2026-10-11",
@@ -382,7 +382,8 @@
     "2026-11-18",
     "2026-11-19",
     "2026-11-20",
-    "2026-11-21"
+    "2026-11-21",
+    "2026-11-22"
    ],
    "sales_status": {
     "2026-10-11": "ok",
@@ -426,7 +427,8 @@
     "2026-11-18": "ok",
     "2026-11-19": "ok",
     "2026-11-20": "ok",
-    "2026-11-21": "ok"
+    "2026-11-21": "ok",
+    "2026-11-22": "pending"
    },
    "event_report_days": [
     "2026-10-12",
@@ -466,7 +468,9 @@
     "2026-11-20",
     "2026-11-21"
    ],
-   "pending_days": [],
+   "pending_days": [
+    "2026-11-22"
+   ],
    "installs": {
     "6805914932": {
      "name": "LaneSync",
@@ -512,7 +516,8 @@
       8,
       5,
       4,
-      3
+      3,
+      null
      ],
      "redownloads": [
       0,
@@ -556,7 +561,8 @@
       3,
       0,
       3,
-      0
+      0,
+      null
      ],
      "updates": [
       0,
@@ -600,7 +606,8 @@
       0,
       0,
       0,
-      0
+      0,
+      null
      ],
      "launch": "2026-10-11",
      "total_first_time": 265,
@@ -650,7 +657,8 @@
       12,
       20,
       14,
-      13
+      13,
+      null
      ],
      "redownloads": [
       0,
@@ -694,7 +702,8 @@
       0,
       0,
       0,
-      0
+      0,
+      null
      ],
      "updates": [
       0,
@@ -738,7 +747,8 @@
       2,
       0,
       74,
-      79
+      79,
+      null
      ],
      "launch": "2026-10-16",
      "total_first_time": 343,
@@ -2072,11 +2082,11 @@
     }
    },
    "stats": {
-    "days": 42,
-    "requests": 0,
+    "days": 43,
+    "requests": 2,
     "cache_hits": 84,
-    "seconds": 0.01,
-    "latest_requested": "2026-11-21"
+    "seconds": 1.74,
+    "latest_requested": "2026-11-22"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
   },
@@ -2145,8 +2155,8 @@
      "access_type": "ONGOING",
      "stopped_due_to_inactivity": false,
      "window": {
-      "start": "2026-11-15",
-      "end": "2026-11-21",
+      "start": "2026-11-16",
+      "end": "2026-11-22",
       "days": 7
      },
      "opt_in_rate_pct": null,
@@ -2159,32 +2169,17 @@
      "installs_7d": null,
      "crashes_7d": null,
      "funnel": {
-      "impressions": 3951,
-      "page_views": 93,
-      "product_page_views": 87,
-      "taps": 63,
-      "downloads": 37,
-      "first_time_downloads": 35,
+      "impressions": 3539,
+      "page_views": 72,
+      "product_page_views": 69,
+      "taps": 53,
+      "downloads": 39,
+      "first_time_downloads": 37,
       "redownloads": 2,
-      "impression_to_page_view_pct": 2.35,
-      "page_view_to_download_pct": 37.63
+      "impression_to_page_view_pct": 2.03,
+      "page_view_to_download_pct": 51.39
      },
      "daily": [
-      {
-       "date": "2026-11-15",
-       "sessions": null,
-       "active_devices": null,
-       "avg_session_sec": null,
-       "deletions": null,
-       "installs": null,
-       "crashes": null,
-       "impressions": 412,
-       "page_views": 21,
-       "product_page_views": 18,
-       "downloads": 6,
-       "first_time_downloads": 6,
-       "opt_in_rate_pct": null
-      },
       {
        "date": "2026-11-16",
        "sessions": null,
@@ -2274,6 +2269,21 @@
        "downloads": 3,
        "first_time_downloads": 3,
        "opt_in_rate_pct": null
+      },
+      {
+       "date": "2026-11-22",
+       "sessions": null,
+       "active_devices": null,
+       "avg_session_sec": null,
+       "deletions": null,
+       "installs": null,
+       "crashes": null,
+       "impressions": null,
+       "page_views": null,
+       "product_page_views": null,
+       "downloads": 8,
+       "first_time_downloads": 8,
+       "opt_in_rate_pct": null
       }
      ],
      "reports_found": [
@@ -2319,50 +2329,35 @@
      "access_type": "ONGOING",
      "stopped_due_to_inactivity": false,
      "window": {
-      "start": "2026-11-15",
-      "end": "2026-11-21",
+      "start": "2026-11-16",
+      "end": "2026-11-22",
       "days": 7
      },
-     "opt_in_rate_pct": 42.0,
-     "sessions_7d": 122,
+     "opt_in_rate_pct": 35.8,
+     "sessions_7d": 83,
      "active_devices_latest": 1,
-     "avg_daily_active_devices": 1.8,
-     "avg_session_sec": 76.8,
+     "avg_daily_active_devices": 1.4,
+     "avg_session_sec": 59.2,
      "retention": {
       "day1_pct": 14.3,
       "day7_pct": null,
       "source": "app sessions, App Download Date, opted-in users"
      },
-     "deletions_7d": 22,
-     "installs_7d": 96,
+     "deletions_7d": 23,
+     "installs_7d": 97,
      "crashes_7d": null,
      "funnel": {
-      "impressions": 13802,
-      "page_views": 344,
-      "product_page_views": 336,
-      "taps": 235,
-      "downloads": 104,
-      "first_time_downloads": 104,
+      "impressions": 12256,
+      "page_views": 291,
+      "product_page_views": 284,
+      "taps": 197,
+      "downloads": 100,
+      "first_time_downloads": 100,
       "redownloads": 0,
-      "impression_to_page_view_pct": 2.49,
-      "page_view_to_download_pct": 30.23
+      "impression_to_page_view_pct": 2.37,
+      "page_view_to_download_pct": 34.36
      },
      "daily": [
-      {
-       "date": "2026-11-15",
-       "sessions": 41,
-       "active_devices": 4,
-       "avg_session_sec": 111.3,
-       "deletions": 2,
-       "installs": 23,
-       "crashes": null,
-       "impressions": 1546,
-       "page_views": 53,
-       "product_page_views": 52,
-       "downloads": 14,
-       "first_time_downloads": 14,
-       "opt_in_rate_pct": 71.4
-      },
       {
        "date": "2026-11-16",
        "sessions": null,
@@ -2440,9 +2435,9 @@
       },
       {
        "date": "2026-11-21",
-       "sessions": 8,
+       "sessions": 10,
        "active_devices": 1,
-       "avg_session_sec": 57.1,
+       "avg_session_sec": 56.6,
        "deletions": 4,
        "installs": 26,
        "crashes": null,
@@ -2452,6 +2447,21 @@
        "downloads": 19,
        "first_time_downloads": 19,
        "opt_in_rate_pct": 26.3
+      },
+      {
+       "date": "2026-11-22",
+       "sessions": null,
+       "active_devices": null,
+       "avg_session_sec": null,
+       "deletions": 3,
+       "installs": 24,
+       "crashes": null,
+       "impressions": null,
+       "page_views": null,
+       "product_page_views": null,
+       "downloads": 10,
+       "first_time_downloads": 10,
+       "opt_in_rate_pct": null
       }
      ],
      "reports_found": [
@@ -2487,8 +2497,8 @@
       }
      ],
      "opt_in_note": "Sessions, active devices, retention, crashes, and deletions include only users who opted in to share analytics with developers. Impressions, page views, and downloads count all devices.",
-     "opt_in_users_7d": 34,
-     "opt_in_downloaders_7d": 81
+     "opt_in_users_7d": 24,
+     "opt_in_downloaders_7d": 67
     }
    },
    "requests": {
@@ -2509,7 +2519,7 @@
      "error": null
     }
    },
-   "generated_at": "2026-11-22 22:31 EST",
+   "generated_at": "2026-11-23 07:53 EST",
    "disclaimer": "App Analytics usage, crashes, and retention only count users who opted in to sharing analytics with developers. Low-volume days may be blank because Apple omits rows with fewer than five users."
   }
  },
