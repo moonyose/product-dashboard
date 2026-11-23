@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-23 09:29 EST",
+ "updated_at": "2026-11-23 10:31 EST",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -86,7 +86,7 @@
     "id": "6805914932",
     "name": "LaneSync - Sprint Timer",
     "version": "1.0.3",
-    "state": "IN_REVIEW",
+    "state": "READY_FOR_SALE",
     "created": "2026-11-22T09:43:09-08:00",
     "public": true,
     "icon": "icons/app_6805914932.png"
@@ -2085,7 +2085,7 @@
     "days": 43,
     "requests": 1,
     "cache_hits": 85,
-    "seconds": 0.69,
+    "seconds": 0.62,
     "latest_requested": "2026-11-22"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
@@ -2160,10 +2160,10 @@
       "days": 7
      },
      "opt_in_rate_pct": null,
-     "sessions_7d": null,
-     "active_devices_latest": null,
-     "avg_daily_active_devices": null,
-     "avg_session_sec": null,
+     "sessions_7d": 7,
+     "active_devices_latest": 2,
+     "avg_daily_active_devices": 2.0,
+     "avg_session_sec": 16.6,
      "retention": null,
      "deletions_7d": null,
      "installs_7d": null,
@@ -2227,9 +2227,9 @@
       },
       {
        "date": "2026-11-19",
-       "sessions": null,
-       "active_devices": null,
-       "avg_session_sec": null,
+       "sessions": 7,
+       "active_devices": 2,
+       "avg_session_sec": 16.6,
        "deletions": null,
        "installs": null,
        "crashes": null,
@@ -2318,10 +2318,7 @@
        "category": "APP_USAGE"
       }
      ],
-     "opt_in_note": "Sessions, active devices, retention, crashes, and deletions include only users who opted in to share analytics with developers. Impressions, page views, and downloads count all devices.",
-     "kind_errors": [
-      "sessions: SSLError: HTTPSConnectionPool(host='api.appstoreconnect.apple.com', port=443): Max retries exceeded with url: /v1/analyticsReports/r8-69bd9a41-cc00-442a-906c-f2caedc19f1e/instances?limit=200&filter%5Bgranularity%5D=DAILY (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)')))"
-     ]
+     "opt_in_note": "Sessions, active devices, retention, crashes, and deletions include only users who opted in to share analytics with developers. Impressions, page views, and downloads count all devices."
     },
     "6819824551": {
      "id": "6819824551",
@@ -2522,7 +2519,7 @@
      "error": null
     }
    },
-   "generated_at": "2026-11-23 09:29 EST",
+   "generated_at": "2026-11-23 10:31 EST",
    "disclaimer": "App Analytics usage, crashes, and retention only count users who opted in to sharing analytics with developers. Low-volume days may be blank because Apple omits rows with fewer than five users."
   }
  },
