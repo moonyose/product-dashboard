@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-24 13:32 EST",
+ "updated_at": "2026-11-24 14:28 EST",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -2243,15 +2243,15 @@
      "installs_7d": null,
      "crashes_7d": null,
      "funnel": {
-      "impressions": 3974,
-      "page_views": 79,
-      "product_page_views": 75,
-      "taps": 61,
+      "impressions": 4771,
+      "page_views": 96,
+      "product_page_views": 92,
+      "taps": 69,
       "downloads": 40,
       "first_time_downloads": 38,
       "redownloads": 2,
-      "impression_to_page_view_pct": 1.99,
-      "page_view_to_download_pct": 48.1
+      "impression_to_page_view_pct": 2.01,
+      "page_view_to_download_pct": 39.58
      },
      "daily": [
       {
@@ -2337,9 +2337,9 @@
        "deletions": null,
        "installs": null,
        "crashes": null,
-       "impressions": 963,
-       "page_views": 15,
-       "product_page_views": 14,
+       "impressions": 965,
+       "page_views": 16,
+       "product_page_views": 15,
        "downloads": 8,
        "first_time_downloads": 8,
        "opt_in_rate_pct": null
@@ -2352,9 +2352,9 @@
        "deletions": null,
        "installs": null,
        "crashes": null,
-       "impressions": null,
-       "page_views": null,
-       "product_page_views": null,
+       "impressions": 795,
+       "page_views": 16,
+       "product_page_views": 16,
        "downloads": 5,
        "first_time_downloads": 5,
        "opt_in_rate_pct": null
@@ -2421,15 +2421,15 @@
      "installs_7d": 92,
      "crashes_7d": null,
      "funnel": {
-      "impressions": 11711,
-      "page_views": 289,
-      "product_page_views": 282,
-      "taps": 186,
+      "impressions": 12764,
+      "page_views": 347,
+      "product_page_views": 338,
+      "taps": 216,
       "downloads": 103,
       "first_time_downloads": 102,
       "redownloads": 1,
-      "impression_to_page_view_pct": 2.47,
-      "page_view_to_download_pct": 35.29
+      "impression_to_page_view_pct": 2.72,
+      "page_view_to_download_pct": 29.39
      },
      "daily": [
       {
@@ -2500,7 +2500,7 @@
        "deletions": 4,
        "installs": 26,
        "crashes": null,
-       "impressions": 3526,
+       "impressions": 3528,
        "page_views": 88,
        "product_page_views": 87,
        "downloads": 19,
@@ -2530,9 +2530,9 @@
        "deletions": 4,
        "installs": 14,
        "crashes": null,
-       "impressions": null,
-       "page_views": null,
-       "product_page_views": null,
+       "impressions": 1051,
+       "page_views": 58,
+       "product_page_views": 56,
        "downloads": 15,
        "first_time_downloads": 14,
        "opt_in_rate_pct": null
@@ -2593,7 +2593,7 @@
      "error": null
     }
    },
-   "generated_at": "2026-11-24 13:32 EST",
+   "generated_at": "2026-11-24 14:28 EST",
    "disclaimer": "App Analytics usage, crashes, and retention only count users who opted in to sharing analytics with developers. Low-volume days may be blank because Apple omits rows with fewer than five users."
   }
  },
