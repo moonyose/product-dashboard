@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-24 09:27 EST",
+ "updated_at": "2026-11-24 10:31 EST",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -94,9 +94,9 @@
    {
     "id": "6819824551",
     "name": "StrideLab - Sprint Analysis",
-    "version": "1.0.5",
-    "state": "READY_FOR_SALE",
-    "created": "2026-11-22T10:29:12-08:00",
+    "version": "1.0.6",
+    "state": "WAITING_FOR_REVIEW",
+    "created": "2026-11-24T06:58:15-08:00",
     "public": true,
     "icon": "icons/app_6819824551.png"
    },
@@ -2133,9 +2133,9 @@
    },
    "stats": {
     "days": 44,
-    "requests": 2,
-    "cache_hits": 86,
-    "seconds": 1.98,
+    "requests": 1,
+    "cache_hits": 87,
+    "seconds": 0.72,
     "latest_requested": "2026-11-23"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
@@ -2569,7 +2569,7 @@
      "error": null
     }
    },
-   "generated_at": "2026-11-24 09:27 EST",
+   "generated_at": "2026-11-24 10:32 EST",
    "disclaimer": "App Analytics usage, crashes, and retention only count users who opted in to sharing analytics with developers. Low-volume days may be blank because Apple omits rows with fewer than five users."
   }
  },
