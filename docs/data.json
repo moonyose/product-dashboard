@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-24 08:32 EST",
+ "updated_at": "2026-11-24 09:27 EST",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -110,38 +110,6 @@
    }
   ],
   "sales": [
-   {
-    "date": "2026-11-16",
-    "apps": {
-     "6805914932": {
-      "downloads": 5,
-      "redownloads": 0,
-      "new_subs": 0,
-      "new_subs_paid": 0,
-      "new_subs_free": 0,
-      "renewals": 1,
-      "proceeds": 3.43
-     },
-     "6819824551": {
-      "downloads": 14,
-      "redownloads": 0,
-      "new_subs": 0,
-      "new_subs_paid": 0,
-      "new_subs_free": 0,
-      "renewals": 0,
-      "proceeds": 0.0
-     },
-     "6812496973": {
-      "downloads": 0,
-      "redownloads": 0,
-      "new_subs": 0,
-      "new_subs_paid": 0,
-      "new_subs_free": 0,
-      "renewals": 0,
-      "proceeds": 0.0
-     }
-    }
-   },
    {
     "date": "2026-11-17",
     "apps": {
@@ -333,6 +301,38 @@
       "proceeds": 0.0
      }
     }
+   },
+   {
+    "date": "2026-11-23",
+    "apps": {
+     "6805914932": {
+      "downloads": 8,
+      "redownloads": 1,
+      "new_subs": 0,
+      "new_subs_paid": 0,
+      "new_subs_free": 0,
+      "renewals": 0,
+      "proceeds": 0.0
+     },
+     "6819824551": {
+      "downloads": 10,
+      "redownloads": 1,
+      "new_subs": 1,
+      "new_subs_paid": 0,
+      "new_subs_free": 1,
+      "renewals": 0,
+      "proceeds": 0.0
+     },
+     "6812496973": {
+      "downloads": 0,
+      "redownloads": 0,
+      "new_subs": 0,
+      "new_subs_paid": 0,
+      "new_subs_free": 0,
+      "renewals": 0,
+      "proceeds": 0.0
+     }
+    }
    }
   ],
   "reports": {
@@ -430,7 +430,7 @@
     "2026-11-20": "ok",
     "2026-11-21": "ok",
     "2026-11-22": "ok",
-    "2026-11-23": "pending"
+    "2026-11-23": "ok"
    },
    "event_report_days": [
     "2026-10-12",
@@ -521,7 +521,7 @@
       4,
       3,
       7,
-      null
+      8
      ],
      "redownloads": [
       0,
@@ -567,7 +567,7 @@
       3,
       0,
       1,
-      null
+      1
      ],
      "updates": [
       0,
@@ -613,11 +613,11 @@
       0,
       0,
       0,
-      null
+      97
      ],
      "launch": "2026-10-11",
-     "total_first_time": 272,
-     "total_redownloads": 60
+     "total_first_time": 280,
+     "total_redownloads": 61
     },
     "6819824551": {
      "name": "StrideLab",
@@ -665,7 +665,7 @@
       14,
       13,
       16,
-      null
+      10
      ],
      "redownloads": [
       0,
@@ -711,7 +711,7 @@
       0,
       0,
       1,
-      null
+      1
      ],
      "updates": [
       0,
@@ -757,11 +757,11 @@
       74,
       79,
       7,
-      null
+      80
      ],
      "launch": "2026-10-16",
-     "total_first_time": 359,
-     "total_redownloads": 7
+     "total_first_time": 369,
+     "total_redownloads": 8
     }
    },
    "product_types_counted": [
@@ -774,9 +774,9 @@
     "F1"
    ],
    "product_types_seen": {
-    "1F": 631,
-    "3F": 67,
-    "7F": 399
+    "1F": 649,
+    "3F": 69,
+    "7F": 576
    },
    "cohorts": [
     {
@@ -2135,7 +2135,7 @@
     "days": 44,
     "requests": 2,
     "cache_hits": 86,
-    "seconds": 2.46,
+    "seconds": 1.98,
     "latest_requested": "2026-11-23"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
@@ -2144,8 +2144,8 @@
    "proceeds_usd": 143.97,
    "currency": "USD",
    "from": "2026-10-11",
-   "to": "2026-11-22",
-   "days": 43,
+   "to": "2026-11-23",
+   "days": 44,
    "apps": {
     "6805914932": {
      "name": "LaneSync",
@@ -2205,8 +2205,8 @@
      "access_type": "ONGOING",
      "stopped_due_to_inactivity": false,
      "window": {
-      "start": "2026-11-16",
-      "end": "2026-11-22",
+      "start": "2026-11-17",
+      "end": "2026-11-23",
       "days": 7
      },
      "opt_in_rate_pct": null,
@@ -2219,32 +2219,17 @@
      "installs_7d": null,
      "crashes_7d": null,
      "funnel": {
-      "impressions": 4503,
-      "page_views": 87,
-      "product_page_views": 83,
-      "taps": 68,
-      "downloads": 39,
-      "first_time_downloads": 37,
+      "impressions": 3974,
+      "page_views": 79,
+      "product_page_views": 75,
+      "taps": 61,
+      "downloads": 40,
+      "first_time_downloads": 38,
       "redownloads": 2,
-      "impression_to_page_view_pct": 1.93,
-      "page_view_to_download_pct": 42.53
+      "impression_to_page_view_pct": 1.99,
+      "page_view_to_download_pct": 48.1
      },
      "daily": [
-      {
-       "date": "2026-11-16",
-       "sessions": null,
-       "active_devices": null,
-       "avg_session_sec": null,
-       "deletions": null,
-       "installs": null,
-       "crashes": null,
-       "impressions": 529,
-       "page_views": 8,
-       "product_page_views": 8,
-       "downloads": 4,
-       "first_time_downloads": 4,
-       "opt_in_rate_pct": null
-      },
       {
        "date": "2026-11-17",
        "sessions": null,
@@ -2334,6 +2319,21 @@
        "downloads": 8,
        "first_time_downloads": 8,
        "opt_in_rate_pct": null
+      },
+      {
+       "date": "2026-11-23",
+       "sessions": null,
+       "active_devices": null,
+       "avg_session_sec": null,
+       "deletions": null,
+       "installs": null,
+       "crashes": null,
+       "impressions": null,
+       "page_views": null,
+       "product_page_views": null,
+       "downloads": 5,
+       "first_time_downloads": 5,
+       "opt_in_rate_pct": null
       }
      ],
      "reports_found": [
@@ -2384,11 +2384,15 @@
       "days": 7
      },
      "opt_in_rate_pct": 35.8,
-     "sessions_7d": null,
-     "active_devices_latest": null,
-     "avg_daily_active_devices": null,
-     "avg_session_sec": null,
-     "retention": null,
+     "sessions_7d": 107,
+     "active_devices_latest": 1,
+     "avg_daily_active_devices": 1.3,
+     "avg_session_sec": 54.2,
+     "retention": {
+      "day1_pct": 14.3,
+      "day7_pct": 25.0,
+      "source": "app sessions, App Download Date, opted-in users"
+     },
      "deletions_7d": 25,
      "installs_7d": 92,
      "crashes_7d": null,
@@ -2397,18 +2401,18 @@
       "page_views": 289,
       "product_page_views": 282,
       "taps": 186,
-      "downloads": 88,
-      "first_time_downloads": 88,
-      "redownloads": 0,
+      "downloads": 103,
+      "first_time_downloads": 102,
+      "redownloads": 1,
       "impression_to_page_view_pct": 2.47,
-      "page_view_to_download_pct": 30.45
+      "page_view_to_download_pct": 35.29
      },
      "daily": [
       {
        "date": "2026-11-17",
-       "sessions": null,
-       "active_devices": null,
-       "avg_session_sec": null,
+       "sessions": 16,
+       "active_devices": 2,
+       "avg_session_sec": 74.8,
        "deletions": 3,
        "installs": 9,
        "crashes": null,
@@ -2421,9 +2425,9 @@
       },
       {
        "date": "2026-11-18",
-       "sessions": null,
-       "active_devices": null,
-       "avg_session_sec": null,
+       "sessions": 16,
+       "active_devices": 1,
+       "avg_session_sec": 18.4,
        "deletions": 2,
        "installs": 7,
        "crashes": null,
@@ -2436,9 +2440,9 @@
       },
       {
        "date": "2026-11-19",
-       "sessions": null,
-       "active_devices": null,
-       "avg_session_sec": null,
+       "sessions": 24,
+       "active_devices": 2,
+       "avg_session_sec": 65.4,
        "deletions": 4,
        "installs": 6,
        "crashes": null,
@@ -2451,9 +2455,9 @@
       },
       {
        "date": "2026-11-20",
-       "sessions": null,
-       "active_devices": null,
-       "avg_session_sec": null,
+       "sessions": 17,
+       "active_devices": 1,
+       "avg_session_sec": 75.8,
        "deletions": 5,
        "installs": 6,
        "crashes": null,
@@ -2466,9 +2470,9 @@
       },
       {
        "date": "2026-11-21",
-       "sessions": null,
-       "active_devices": null,
-       "avg_session_sec": null,
+       "sessions": 10,
+       "active_devices": 1,
+       "avg_session_sec": 56.6,
        "deletions": 4,
        "installs": 26,
        "crashes": null,
@@ -2481,9 +2485,9 @@
       },
       {
        "date": "2026-11-22",
-       "sessions": null,
-       "active_devices": null,
-       "avg_session_sec": null,
+       "sessions": 15,
+       "active_devices": 1,
+       "avg_session_sec": 37.0,
        "deletions": 3,
        "installs": 24,
        "crashes": null,
@@ -2496,17 +2500,17 @@
       },
       {
        "date": "2026-11-23",
-       "sessions": null,
-       "active_devices": null,
-       "avg_session_sec": null,
+       "sessions": 9,
+       "active_devices": 1,
+       "avg_session_sec": 36.8,
        "deletions": 4,
        "installs": 14,
        "crashes": null,
        "impressions": null,
        "page_views": null,
        "product_page_views": null,
-       "downloads": null,
-       "first_time_downloads": null,
+       "downloads": 15,
+       "first_time_downloads": 14,
        "opt_in_rate_pct": null
       }
      ],
@@ -2543,9 +2547,6 @@
       }
      ],
      "opt_in_note": "Sessions, active devices, retention, crashes, and deletions include only users who opted in to share analytics with developers. Impressions, page views, and downloads count all devices.",
-     "kind_errors": [
-      "sessions: SSLError: HTTPSConnectionPool(host='api.appstoreconnect.apple.com', port=443): Max retries exceeded with url: /v1/analyticsReportInstances/a241d8fd-d18d-4ea3-aa19-19245c98b67f/segments?limit=200 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)')))"
-     ],
      "opt_in_users_7d": 24,
      "opt_in_downloaders_7d": 67
     }
@@ -2568,7 +2569,7 @@
      "error": null
     }
    },
-   "generated_at": "2026-11-24 08:33 EST",
+   "generated_at": "2026-11-24 09:27 EST",
    "disclaimer": "App Analytics usage, crashes, and retention only count users who opted in to sharing analytics with developers. Low-volume days may be blank because Apple omits rows with fewer than five users."
   }
  },
