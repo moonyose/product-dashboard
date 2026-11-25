@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-25 13:25 EST",
+ "updated_at": "2026-11-25 14:31 EST",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -2233,7 +2233,7 @@
     "days": 45,
     "requests": 0,
     "cache_hits": 90,
-    "seconds": 0.04,
+    "seconds": 0.01,
     "latest_requested": "2026-11-24"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
@@ -2317,15 +2317,15 @@
      "installs_7d": 26,
      "crashes_7d": null,
      "funnel": {
-      "impressions": 4226,
-      "page_views": 77,
-      "product_page_views": 75,
-      "taps": 60,
+      "impressions": 5023,
+      "page_views": 94,
+      "product_page_views": 91,
+      "taps": 75,
       "downloads": 43,
       "first_time_downloads": 40,
       "redownloads": 3,
-      "impression_to_page_view_pct": 1.82,
-      "page_view_to_download_pct": 51.95
+      "impression_to_page_view_pct": 1.87,
+      "page_view_to_download_pct": 42.55
      },
      "daily": [
       {
@@ -2396,7 +2396,7 @@
        "deletions": null,
        "installs": null,
        "crashes": null,
-       "impressions": 965,
+       "impressions": 966,
        "page_views": 16,
        "product_page_views": 15,
        "downloads": 8,
@@ -2411,7 +2411,7 @@
        "deletions": null,
        "installs": null,
        "crashes": null,
-       "impressions": 795,
+       "impressions": 796,
        "page_views": 16,
        "product_page_views": 16,
        "downloads": 5,
@@ -2426,9 +2426,9 @@
        "deletions": 2,
        "installs": 26,
        "crashes": null,
-       "impressions": null,
-       "page_views": null,
-       "product_page_views": null,
+       "impressions": 795,
+       "page_views": 17,
+       "product_page_views": 16,
        "downloads": 9,
        "first_time_downloads": 8,
        "opt_in_rate_pct": null
@@ -2495,15 +2495,15 @@
      "installs_7d": 108,
      "crashes_7d": null,
      "funnel": {
-      "impressions": 11058,
-      "page_views": 305,
-      "product_page_views": 297,
-      "taps": 178,
+      "impressions": 12399,
+      "page_views": 355,
+      "product_page_views": 345,
+      "taps": 205,
       "downloads": 104,
       "first_time_downloads": 103,
       "redownloads": 1,
-      "impression_to_page_view_pct": 2.76,
-      "page_view_to_download_pct": 33.77
+      "impression_to_page_view_pct": 2.86,
+      "page_view_to_download_pct": 29.01
      },
      "daily": [
       {
@@ -2589,7 +2589,7 @@
        "deletions": 4,
        "installs": 14,
        "crashes": null,
-       "impressions": 1051,
+       "impressions": 1052,
        "page_views": 58,
        "product_page_views": 56,
        "downloads": 15,
@@ -2604,9 +2604,9 @@
        "deletions": 4,
        "installs": 25,
        "crashes": null,
-       "impressions": null,
-       "page_views": null,
-       "product_page_views": null,
+       "impressions": 1340,
+       "page_views": 50,
+       "product_page_views": 48,
        "downloads": 17,
        "first_time_downloads": 17,
        "opt_in_rate_pct": 41.2
@@ -2667,7 +2667,7 @@
      "error": null
     }
    },
-   "generated_at": "2026-11-25 13:26 EST",
+   "generated_at": "2026-11-25 14:31 EST",
    "disclaimer": "App Analytics usage, crashes, and retention only count users who opted in to sharing analytics with developers. Low-volume days may be blank because Apple omits rows with fewer than five users."
   }
  },
