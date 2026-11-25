@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-25 12:47 EST",
+ "updated_at": "2026-11-25 13:25 EST",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -2233,7 +2233,7 @@
     "days": 45,
     "requests": 0,
     "cache_hits": 90,
-    "seconds": 0.01,
+    "seconds": 0.04,
     "latest_requested": "2026-11-24"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
@@ -2667,7 +2667,7 @@
      "error": null
     }
    },
-   "generated_at": "2026-11-25 12:47 EST",
+   "generated_at": "2026-11-25 13:26 EST",
    "disclaimer": "App Analytics usage, crashes, and retention only count users who opted in to sharing analytics with developers. Low-volume days may be blank because Apple omits rows with fewer than five users."
   }
  },
