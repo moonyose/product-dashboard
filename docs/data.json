@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-26 08:26 EST",
+ "updated_at": "2026-11-26 09:25 EST",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -110,38 +110,6 @@
    }
   ],
   "sales": [
-   {
-    "date": "2026-11-18",
-    "apps": {
-     "6805914932": {
-      "downloads": 8,
-      "redownloads": 3,
-      "new_subs": 0,
-      "new_subs_paid": 0,
-      "new_subs_free": 0,
-      "renewals": 0,
-      "proceeds": 0.0
-     },
-     "6819824551": {
-      "downloads": 12,
-      "redownloads": 0,
-      "new_subs": 2,
-      "new_subs_paid": 0,
-      "new_subs_free": 2,
-      "renewals": 0,
-      "proceeds": 0.0
-     },
-     "6812496973": {
-      "downloads": 0,
-      "redownloads": 0,
-      "new_subs": 0,
-      "new_subs_paid": 0,
-      "new_subs_free": 0,
-      "renewals": 0,
-      "proceeds": 0.0
-     }
-    }
-   },
    {
     "date": "2026-11-19",
     "apps": {
@@ -333,6 +301,38 @@
       "proceeds": 0.0
      }
     }
+   },
+   {
+    "date": "2026-11-25",
+    "apps": {
+     "6805914932": {
+      "downloads": 3,
+      "redownloads": 0,
+      "new_subs": 0,
+      "new_subs_paid": 0,
+      "new_subs_free": 0,
+      "renewals": 0,
+      "proceeds": 0.0
+     },
+     "6819824551": {
+      "downloads": 10,
+      "redownloads": 0,
+      "new_subs": 0,
+      "new_subs_paid": 0,
+      "new_subs_free": 0,
+      "renewals": 0,
+      "proceeds": 0.0
+     },
+     "6812496973": {
+      "downloads": 0,
+      "redownloads": 0,
+      "new_subs": 0,
+      "new_subs_paid": 0,
+      "new_subs_free": 0,
+      "renewals": 0,
+      "proceeds": 0.0
+     }
+    }
    }
   ],
   "reports": {
@@ -434,7 +434,7 @@
     "2026-11-22": "ok",
     "2026-11-23": "ok",
     "2026-11-24": "ok",
-    "2026-11-25": "pending"
+    "2026-11-25": "ok"
    },
    "event_report_days": [
     "2026-10-12",
@@ -529,7 +529,7 @@
       7,
       8,
       6,
-      null
+      3
      ],
      "redownloads": [
       0,
@@ -577,7 +577,7 @@
       1,
       1,
       2,
-      null
+      0
      ],
      "updates": [
       0,
@@ -625,10 +625,10 @@
       0,
       97,
       78,
-      null
+      9
      ],
      "launch": "2026-10-11",
-     "total_first_time": 286,
+     "total_first_time": 289,
      "total_redownloads": 63
     },
     "6819824551": {
@@ -679,7 +679,7 @@
       16,
       10,
       15,
-      null
+      10
      ],
      "redownloads": [
       0,
@@ -727,7 +727,7 @@
       1,
       1,
       0,
-      null
+      0
      ],
      "updates": [
       0,
@@ -775,10 +775,10 @@
       7,
       80,
       131,
-      null
+      83
      ],
      "launch": "2026-10-16",
-     "total_first_time": 384,
+     "total_first_time": 394,
      "total_redownloads": 8
     }
    },
@@ -792,9 +792,9 @@
     "F1"
    ],
    "product_types_seen": {
-    "1F": 670,
+    "1F": 683,
     "3F": 71,
-    "7F": 785
+    "7F": 877
    },
    "cohorts": [
     {
@@ -2243,7 +2243,7 @@
     "days": 46,
     "requests": 2,
     "cache_hits": 90,
-    "seconds": 1.75,
+    "seconds": 1.39,
     "latest_requested": "2026-11-25"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
@@ -2252,8 +2252,8 @@
    "proceeds_usd": 147.47,
    "currency": "USD",
    "from": "2026-10-11",
-   "to": "2026-11-24",
-   "days": 45,
+   "to": "2026-11-25",
+   "days": 46,
    "apps": {
     "6805914932": {
      "name": "LaneSync",
@@ -2323,8 +2323,8 @@
      "avg_daily_active_devices": 1.5,
      "avg_session_sec": 40.4,
      "retention": null,
-     "deletions_7d": 2,
-     "installs_7d": 43,
+     "deletions_7d": null,
+     "installs_7d": null,
      "crashes_7d": null,
      "funnel": {
       "impressions": 4296,
@@ -2418,8 +2418,8 @@
        "sessions": null,
        "active_devices": null,
        "avg_session_sec": null,
-       "deletions": 2,
-       "installs": 26,
+       "deletions": null,
+       "installs": null,
        "crashes": null,
        "impressions": 795,
        "page_views": 17,
@@ -2433,8 +2433,8 @@
        "sessions": 8,
        "active_devices": 1,
        "avg_session_sec": 61.2,
-       "deletions": 0,
-       "installs": 17,
+       "deletions": null,
+       "installs": null,
        "crashes": null,
        "impressions": null,
        "page_views": null,
@@ -2476,7 +2476,10 @@
        "category": "APP_USAGE"
       }
      ],
-     "opt_in_note": "Sessions, active devices, retention, crashes, and deletions include only users who opted in to share analytics with developers. Impressions, page views, and downloads count all devices."
+     "opt_in_note": "Sessions, active devices, retention, crashes, and deletions include only users who opted in to share analytics with developers. Impressions, page views, and downloads count all devices.",
+     "kind_errors": [
+      "installs_deletes: SSLError: HTTPSConnectionPool(host='api.appstoreconnect.apple.com', port=443): Max retries exceeded with url: /v1/analyticsReportInstances/a1625fd1-d057-4c88-b4df-012b16729e9b/segments?limit=200 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)')))"
+     ]
     },
     "6819824551": {
      "id": "6819824551",
@@ -2677,7 +2680,7 @@
      "error": null
     }
    },
-   "generated_at": "2026-11-26 08:26 EST",
+   "generated_at": "2026-11-26 09:25 EST",
    "disclaimer": "App Analytics usage, crashes, and retention only count users who opted in to sharing analytics with developers. Low-volume days may be blank because Apple omits rows with fewer than five users."
   }
  },
