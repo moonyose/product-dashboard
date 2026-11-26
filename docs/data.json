@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-26 07:48 EST",
+ "updated_at": "2026-11-26 08:26 EST",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -2243,7 +2243,7 @@
     "days": 46,
     "requests": 2,
     "cache_hits": 90,
-    "seconds": 1.57,
+    "seconds": 1.75,
     "latest_requested": "2026-11-25"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
@@ -2331,11 +2331,11 @@
       "page_views": 85,
       "product_page_views": 82,
       "taps": 68,
-      "downloads": 39,
-      "first_time_downloads": 37,
+      "downloads": 43,
+      "first_time_downloads": 41,
       "redownloads": 2,
       "impression_to_page_view_pct": 1.98,
-      "page_view_to_download_pct": 43.53
+      "page_view_to_download_pct": 48.24
      },
      "daily": [
       {
@@ -2439,8 +2439,8 @@
        "impressions": null,
        "page_views": null,
        "product_page_views": null,
-       "downloads": null,
-       "first_time_downloads": null,
+       "downloads": 4,
+       "first_time_downloads": 4,
        "opt_in_rate_pct": null
       }
      ],
@@ -2509,11 +2509,11 @@
       "page_views": 293,
       "product_page_views": 283,
       "taps": 172,
-      "downloads": 93,
-      "first_time_downloads": 92,
+      "downloads": 102,
+      "first_time_downloads": 101,
       "redownloads": 1,
       "impression_to_page_view_pct": 3.28,
-      "page_view_to_download_pct": 31.4
+      "page_view_to_download_pct": 34.47
      },
      "daily": [
       {
@@ -2617,8 +2617,8 @@
        "impressions": null,
        "page_views": null,
        "product_page_views": null,
-       "downloads": null,
-       "first_time_downloads": null,
+       "downloads": 9,
+       "first_time_downloads": 9,
        "opt_in_rate_pct": null
       }
      ],
@@ -2677,7 +2677,7 @@
      "error": null
     }
    },
-   "generated_at": "2026-11-26 07:48 EST",
+   "generated_at": "2026-11-26 08:26 EST",
    "disclaimer": "App Analytics usage, crashes, and retention only count users who opted in to sharing analytics with developers. Low-volume days may be blank because Apple omits rows with fewer than five users."
   }
  },
