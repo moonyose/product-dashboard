@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-26 15:27 EST",
+ "updated_at": "2026-11-26 16:32 EST",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -2345,10 +2345,11 @@
       "page_views": 96,
       "product_page_views": 93,
       "taps": 75,
-      "downloads": null,
-      "first_time_downloads": null,
-      "redownloads": null,
-      "impression_to_page_view_pct": 1.79
+      "downloads": 43,
+      "first_time_downloads": 41,
+      "redownloads": 2,
+      "impression_to_page_view_pct": 1.79,
+      "page_view_to_download_pct": 42.71
      },
      "daily": [
       {
@@ -2362,8 +2363,8 @@
        "impressions": 505,
        "page_views": 10,
        "product_page_views": 10,
-       "downloads": null,
-       "first_time_downloads": null,
+       "downloads": 7,
+       "first_time_downloads": 7,
        "opt_in_rate_pct": null
       },
       {
@@ -2377,8 +2378,8 @@
        "impressions": 532,
        "page_views": 13,
        "product_page_views": 13,
-       "downloads": null,
-       "first_time_downloads": null,
+       "downloads": 7,
+       "first_time_downloads": 6,
        "opt_in_rate_pct": null
       },
       {
@@ -2392,8 +2393,8 @@
        "impressions": 702,
        "page_views": 13,
        "product_page_views": 12,
-       "downloads": null,
-       "first_time_downloads": null,
+       "downloads": 3,
+       "first_time_downloads": 3,
        "opt_in_rate_pct": null
       },
       {
@@ -2407,8 +2408,8 @@
        "impressions": 966,
        "page_views": 16,
        "product_page_views": 15,
-       "downloads": null,
-       "first_time_downloads": null,
+       "downloads": 8,
+       "first_time_downloads": 8,
        "opt_in_rate_pct": null
       },
       {
@@ -2422,8 +2423,8 @@
        "impressions": 796,
        "page_views": 16,
        "product_page_views": 16,
-       "downloads": null,
-       "first_time_downloads": null,
+       "downloads": 5,
+       "first_time_downloads": 5,
        "opt_in_rate_pct": null
       },
       {
@@ -2437,8 +2438,8 @@
        "impressions": 796,
        "page_views": 17,
        "product_page_views": 16,
-       "downloads": null,
-       "first_time_downloads": null,
+       "downloads": 9,
+       "first_time_downloads": 8,
        "opt_in_rate_pct": null
       },
       {
@@ -2452,8 +2453,8 @@
        "impressions": 1065,
        "page_views": 11,
        "product_page_views": 11,
-       "downloads": null,
-       "first_time_downloads": null,
+       "downloads": 4,
+       "first_time_downloads": 4,
        "opt_in_rate_pct": null
       }
      ],
@@ -2489,10 +2490,7 @@
        "category": "APP_USAGE"
       }
      ],
-     "opt_in_note": "Sessions, active devices, retention, crashes, and deletions include only users who opted in to share analytics with developers. Impressions, page views, and downloads count all devices.",
-     "kind_errors": [
-      "downloads: ReadTimeout: HTTPSConnectionPool(host='api.appstoreconnect.apple.com', port=443): Read timed out. (read timeout=60)"
-     ]
+     "opt_in_note": "Sessions, active devices, retention, crashes, and deletions include only users who opted in to share analytics with developers. Impressions, page views, and downloads count all devices."
     },
     "6819824551": {
      "id": "6819824551",
@@ -2693,7 +2691,7 @@
      "error": null
     }
    },
-   "generated_at": "2026-11-26 15:27 EST",
+   "generated_at": "2026-11-26 16:32 EST",
    "disclaimer": "App Analytics usage, crashes, and retention only count users who opted in to sharing analytics with developers. Low-volume days may be blank because Apple omits rows with fewer than five users."
   }
  },
