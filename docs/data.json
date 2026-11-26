@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-26 10:28 EST",
+ "updated_at": "2026-11-26 11:33 EST",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -85,9 +85,9 @@
    {
     "id": "6805914932",
     "name": "LaneSync - Sprint Timer",
-    "version": "1.0.3",
-    "state": "READY_FOR_SALE",
-    "created": "2026-11-22T09:43:09-08:00",
+    "version": "1.0.4",
+    "state": "WAITING_FOR_REVIEW",
+    "created": "2026-11-26T07:52:01-08:00",
     "public": true,
     "icon": "icons/app_6805914932.png"
    },
@@ -475,11 +475,10 @@
     "2026-11-21",
     "2026-11-22",
     "2026-11-23",
-    "2026-11-24"
-   ],
-   "pending_days": [
+    "2026-11-24",
     "2026-11-25"
    ],
+   "pending_days": [],
    "installs": {
     "6805914932": {
      "name": "LaneSync",
@@ -1932,13 +1931,28 @@
       "US": 2
      },
      "conversions": 0,
-     "cancellations": 0,
-     "events": [],
+     "cancellations": 1,
+     "events": [
+      {
+       "report_date": "2026-11-25",
+       "event_date": "2026-11-25",
+       "event": "Billing Retry from Introductory Offer",
+       "quantity": 1,
+       "country": "US"
+      },
+      {
+       "report_date": "2026-11-25",
+       "event_date": "2026-11-25",
+       "event": "Cancel",
+       "quantity": 1,
+       "country": "US"
+      }
+     ],
      "expected_first_charge": "2026-11-25",
      "expected_in_reports": "2026-11-26",
      "price_usd": 4.99,
      "price_local": null,
-     "status": "due / awaiting report"
+     "status": "partly cancelled"
     },
     {
      "start": "2026-11-19",
@@ -2243,7 +2257,7 @@
     "days": 46,
     "requests": 1,
     "cache_hits": 91,
-    "seconds": 0.73,
+    "seconds": 0.65,
     "latest_requested": "2026-11-25"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
@@ -2677,7 +2691,7 @@
      "error": null
     }
    },
-   "generated_at": "2026-11-26 10:28 EST",
+   "generated_at": "2026-11-26 11:33 EST",
    "disclaimer": "App Analytics usage, crashes, and retention only count users who opted in to sharing analytics with developers. Low-volume days may be blank because Apple omits rows with fewer than five users."
   }
  },
