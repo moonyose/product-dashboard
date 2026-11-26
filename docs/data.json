@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-26 13:31 EST",
+ "updated_at": "2026-11-26 14:25 EST",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -2341,15 +2341,15 @@
      "installs_7d": 43,
      "crashes_7d": null,
      "funnel": {
-      "impressions": 4296,
-      "page_views": 85,
-      "product_page_views": 82,
-      "taps": 68,
+      "impressions": 5362,
+      "page_views": 96,
+      "product_page_views": 93,
+      "taps": 75,
       "downloads": 43,
       "first_time_downloads": 41,
       "redownloads": 2,
-      "impression_to_page_view_pct": 1.98,
-      "page_view_to_download_pct": 48.24
+      "impression_to_page_view_pct": 1.79,
+      "page_view_to_download_pct": 42.71
      },
      "daily": [
       {
@@ -2435,7 +2435,7 @@
        "deletions": 2,
        "installs": 26,
        "crashes": null,
-       "impressions": 795,
+       "impressions": 796,
        "page_views": 17,
        "product_page_views": 16,
        "downloads": 9,
@@ -2450,9 +2450,9 @@
        "deletions": 0,
        "installs": 17,
        "crashes": null,
-       "impressions": null,
-       "page_views": null,
-       "product_page_views": null,
+       "impressions": 1065,
+       "page_views": 11,
+       "product_page_views": 11,
        "downloads": 4,
        "first_time_downloads": 4,
        "opt_in_rate_pct": null
@@ -2519,15 +2519,15 @@
      "installs_7d": 146,
      "crashes_7d": null,
      "funnel": {
-      "impressions": 8922,
-      "page_views": 293,
-      "product_page_views": 283,
-      "taps": 172,
+      "impressions": 9839,
+      "page_views": 323,
+      "product_page_views": 312,
+      "taps": 186,
       "downloads": 102,
       "first_time_downloads": 101,
       "redownloads": 1,
       "impression_to_page_view_pct": 3.28,
-      "page_view_to_download_pct": 34.47
+      "page_view_to_download_pct": 31.27
      },
      "daily": [
       {
@@ -2628,9 +2628,9 @@
        "deletions": 1,
        "installs": 45,
        "crashes": null,
-       "impressions": null,
-       "page_views": null,
-       "product_page_views": null,
+       "impressions": 917,
+       "page_views": 30,
+       "product_page_views": 29,
        "downloads": 9,
        "first_time_downloads": 9,
        "opt_in_rate_pct": null
@@ -2691,7 +2691,7 @@
      "error": null
     }
    },
-   "generated_at": "2026-11-26 13:31 EST",
+   "generated_at": "2026-11-26 14:25 EST",
    "disclaimer": "App Analytics usage, crashes, and retention only count users who opted in to sharing analytics with developers. Low-volume days may be blank because Apple omits rows with fewer than five users."
   }
  },
