@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-27 11:34 EST",
+ "updated_at": "2026-11-27 12:27 EST",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -2286,9 +2286,9 @@
    },
    "stats": {
     "days": 47,
-    "requests": 1,
-    "cache_hits": 93,
-    "seconds": 0.84,
+    "requests": 0,
+    "cache_hits": 94,
+    "seconds": 0.02,
     "latest_requested": "2026-11-26"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
@@ -2363,13 +2363,13 @@
       "days": 7
      },
      "opt_in_rate_pct": null,
-     "sessions_7d": null,
-     "active_devices_latest": null,
-     "avg_daily_active_devices": null,
-     "avg_session_sec": null,
+     "sessions_7d": 10,
+     "active_devices_latest": 1,
+     "avg_daily_active_devices": 1.0,
+     "avg_session_sec": 52.4,
      "retention": null,
-     "deletions_7d": null,
-     "installs_7d": null,
+     "deletions_7d": 3,
+     "installs_7d": 49,
      "crashes_7d": null,
      "funnel": {
       "impressions": 4857,
@@ -2448,8 +2448,8 @@
        "sessions": null,
        "active_devices": null,
        "avg_session_sec": null,
-       "deletions": null,
-       "installs": null,
+       "deletions": 2,
+       "installs": 26,
        "crashes": null,
        "impressions": 796,
        "page_views": 17,
@@ -2460,11 +2460,11 @@
       },
       {
        "date": "2026-11-25",
-       "sessions": null,
-       "active_devices": null,
-       "avg_session_sec": null,
-       "deletions": null,
-       "installs": null,
+       "sessions": 10,
+       "active_devices": 1,
+       "avg_session_sec": 52.4,
+       "deletions": 0,
+       "installs": 17,
        "crashes": null,
        "impressions": 1065,
        "page_views": 11,
@@ -2478,8 +2478,8 @@
        "sessions": null,
        "active_devices": null,
        "avg_session_sec": null,
-       "deletions": null,
-       "installs": null,
+       "deletions": 1,
+       "installs": 6,
        "crashes": null,
        "impressions": null,
        "page_views": null,
@@ -2521,11 +2521,7 @@
        "category": "APP_USAGE"
       }
      ],
-     "opt_in_note": "Sessions, active devices, retention, crashes, and deletions include only users who opted in to share analytics with developers. Impressions, page views, and downloads count all devices.",
-     "kind_errors": [
-      "installs_deletes: ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
-      "sessions: SSLError: HTTPSConnectionPool(host='api.appstoreconnect.apple.com', port=443): Max retries exceeded with url: /v1/analyticsReportInstances/686b0984-c66e-4ab5-870a-12101fbdc7a0/segments?limit=200 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)')))"
-     ]
+     "opt_in_note": "Sessions, active devices, retention, crashes, and deletions include only users who opted in to share analytics with developers. Impressions, page views, and downloads count all devices."
     },
     "6819824551": {
      "id": "6819824551",
@@ -2726,7 +2722,7 @@
      "error": null
     }
    },
-   "generated_at": "2026-11-27 11:34 EST",
+   "generated_at": "2026-11-27 12:27 EST",
    "disclaimer": "App Analytics usage, crashes, and retention only count users who opted in to sharing analytics with developers. Low-volume days may be blank because Apple omits rows with fewer than five users."
   }
  },
