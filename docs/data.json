@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-26 18:50 EST",
+ "updated_at": "2026-11-26 19:34 EST",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -2515,8 +2515,8 @@
       "day7_pct": 19.6,
       "source": "app sessions, App Download Date, opted-in users"
      },
-     "deletions_7d": null,
-     "installs_7d": null,
+     "deletions_7d": 25,
+     "installs_7d": 146,
      "crashes_7d": null,
      "funnel": {
       "impressions": 9839,
@@ -2535,8 +2535,8 @@
        "sessions": 24,
        "active_devices": 2,
        "avg_session_sec": 65.4,
-       "deletions": null,
-       "installs": null,
+       "deletions": 4,
+       "installs": 6,
        "crashes": null,
        "impressions": 678,
        "page_views": 30,
@@ -2550,8 +2550,8 @@
        "sessions": 17,
        "active_devices": 1,
        "avg_session_sec": 75.8,
-       "deletions": null,
-       "installs": null,
+       "deletions": 5,
+       "installs": 6,
        "crashes": null,
        "impressions": 1525,
        "page_views": 37,
@@ -2565,8 +2565,8 @@
        "sessions": 10,
        "active_devices": 1,
        "avg_session_sec": 56.6,
-       "deletions": null,
-       "installs": null,
+       "deletions": 4,
+       "installs": 26,
        "crashes": null,
        "impressions": 3528,
        "page_views": 88,
@@ -2580,8 +2580,8 @@
        "sessions": 15,
        "active_devices": 1,
        "avg_session_sec": 37.0,
-       "deletions": null,
-       "installs": null,
+       "deletions": 3,
+       "installs": 24,
        "crashes": null,
        "impressions": 799,
        "page_views": 30,
@@ -2595,8 +2595,8 @@
        "sessions": 20,
        "active_devices": 1,
        "avg_session_sec": 52.2,
-       "deletions": null,
-       "installs": null,
+       "deletions": 4,
+       "installs": 14,
        "crashes": null,
        "impressions": 1052,
        "page_views": 58,
@@ -2610,8 +2610,8 @@
        "sessions": 24,
        "active_devices": 2,
        "avg_session_sec": 123.8,
-       "deletions": null,
-       "installs": null,
+       "deletions": 4,
+       "installs": 25,
        "crashes": null,
        "impressions": 1340,
        "page_views": 50,
@@ -2625,8 +2625,8 @@
        "sessions": 9,
        "active_devices": 1,
        "avg_session_sec": 69.1,
-       "deletions": null,
-       "installs": null,
+       "deletions": 1,
+       "installs": 45,
        "crashes": null,
        "impressions": 917,
        "page_views": 30,
@@ -2669,9 +2669,6 @@
       }
      ],
      "opt_in_note": "Sessions, active devices, retention, crashes, and deletions include only users who opted in to share analytics with developers. Impressions, page views, and downloads count all devices.",
-     "kind_errors": [
-      "installs_deletes: ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
-     ],
      "opt_in_users_7d": 24,
      "opt_in_downloaders_7d": 68
     }
@@ -2694,7 +2691,7 @@
      "error": null
     }
    },
-   "generated_at": "2026-11-26 18:50 EST",
+   "generated_at": "2026-11-26 19:34 EST",
    "disclaimer": "App Analytics usage, crashes, and retention only count users who opted in to sharing analytics with developers. Low-volume days may be blank because Apple omits rows with fewer than five users."
   }
  },
