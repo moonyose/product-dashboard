@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-27 08:28 EST",
+ "updated_at": "2026-11-27 09:30 EST",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -110,38 +110,6 @@
    }
   ],
   "sales": [
-   {
-    "date": "2026-11-19",
-    "apps": {
-     "6805914932": {
-      "downloads": 5,
-      "redownloads": 0,
-      "new_subs": 1,
-      "new_subs_paid": 0,
-      "new_subs_free": 1,
-      "renewals": 0,
-      "proceeds": 0.0
-     },
-     "6819824551": {
-      "downloads": 20,
-      "redownloads": 0,
-      "new_subs": 3,
-      "new_subs_paid": 0,
-      "new_subs_free": 3,
-      "renewals": 1,
-      "proceeds": 28.0
-     },
-     "6812496973": {
-      "downloads": 0,
-      "redownloads": 0,
-      "new_subs": 0,
-      "new_subs_paid": 0,
-      "new_subs_free": 0,
-      "renewals": 0,
-      "proceeds": 0.0
-     }
-    }
-   },
    {
     "date": "2026-11-20",
     "apps": {
@@ -333,6 +301,38 @@
       "proceeds": 0.0
      }
     }
+   },
+   {
+    "date": "2026-11-26",
+    "apps": {
+     "6805914932": {
+      "downloads": 0,
+      "redownloads": 0,
+      "new_subs": 0,
+      "new_subs_paid": 0,
+      "new_subs_free": 0,
+      "renewals": 0,
+      "proceeds": 0.0
+     },
+     "6819824551": {
+      "downloads": 1,
+      "redownloads": 1,
+      "new_subs": 0,
+      "new_subs_paid": 0,
+      "new_subs_free": 0,
+      "renewals": 2,
+      "proceeds": 7.0
+     },
+     "6812496973": {
+      "downloads": 0,
+      "redownloads": 0,
+      "new_subs": 0,
+      "new_subs_paid": 0,
+      "new_subs_free": 0,
+      "renewals": 0,
+      "proceeds": 0.0
+     }
+    }
    }
   ],
   "reports": {
@@ -436,7 +436,7 @@
     "2026-11-23": "ok",
     "2026-11-24": "ok",
     "2026-11-25": "ok",
-    "2026-11-26": "pending"
+    "2026-11-26": "ok"
    },
    "event_report_days": [
     "2026-10-12",
@@ -533,7 +533,7 @@
       8,
       6,
       3,
-      null
+      0
      ],
      "redownloads": [
       0,
@@ -582,7 +582,7 @@
       1,
       2,
       0,
-      null
+      0
      ],
      "updates": [
       0,
@@ -631,7 +631,7 @@
       97,
       78,
       9,
-      null
+      40
      ],
      "launch": "2026-10-11",
      "total_first_time": 289,
@@ -686,7 +686,7 @@
       10,
       15,
       10,
-      null
+      1
      ],
      "redownloads": [
       0,
@@ -735,7 +735,7 @@
       1,
       0,
       0,
-      null
+      1
      ],
      "updates": [
       0,
@@ -784,11 +784,11 @@
       80,
       131,
       83,
-      null
+      37
      ],
      "launch": "2026-10-16",
-     "total_first_time": 394,
-     "total_redownloads": 8
+     "total_first_time": 395,
+     "total_redownloads": 9
     }
    },
    "product_types_counted": [
@@ -801,9 +801,9 @@
     "F1"
    ],
    "product_types_seen": {
-    "1F": 683,
-    "3F": 71,
-    "7F": 877
+    "1F": 684,
+    "3F": 72,
+    "7F": 954
    },
    "cohorts": [
     {
@@ -2267,17 +2267,17 @@
     "days": 47,
     "requests": 2,
     "cache_hits": 92,
-    "seconds": 1.79,
+    "seconds": 1.39,
     "latest_requested": "2026-11-26"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
   },
   "lifetime": {
-   "proceeds_usd": 147.47,
+   "proceeds_usd": 154.47,
    "currency": "USD",
    "from": "2026-10-11",
-   "to": "2026-11-25",
-   "days": 46,
+   "to": "2026-11-26",
+   "days": 47,
    "apps": {
     "6805914932": {
      "name": "LaneSync",
@@ -2285,7 +2285,7 @@
     },
     "6819824551": {
      "name": "StrideLab",
-     "proceeds_usd": 140.54
+     "proceeds_usd": 147.54
     },
     "6812496973": {
      "name": "Miami Beach Transit Tracker",
@@ -2463,8 +2463,8 @@
        "impressions": null,
        "page_views": null,
        "product_page_views": null,
-       "downloads": null,
-       "first_time_downloads": null,
+       "downloads": 0,
+       "first_time_downloads": 0,
        "opt_in_rate_pct": null
       }
      ],
@@ -2533,11 +2533,11 @@
       "page_views": 293,
       "product_page_views": 286,
       "taps": 164,
-      "downloads": 91,
-      "first_time_downloads": 90,
+      "downloads": 93,
+      "first_time_downloads": 92,
       "redownloads": 1,
       "impression_to_page_view_pct": 3.2,
-      "page_view_to_download_pct": 30.72
+      "page_view_to_download_pct": 31.4
      },
      "daily": [
       {
@@ -2641,8 +2641,8 @@
        "impressions": null,
        "page_views": null,
        "product_page_views": null,
-       "downloads": null,
-       "first_time_downloads": null,
+       "downloads": 2,
+       "first_time_downloads": 2,
        "opt_in_rate_pct": null
       }
      ],
@@ -2701,7 +2701,7 @@
      "error": null
     }
    },
-   "generated_at": "2026-11-27 08:28 EST",
+   "generated_at": "2026-11-27 09:30 EST",
    "disclaimer": "App Analytics usage, crashes, and retention only count users who opted in to sharing analytics with developers. Low-volume days may be blank because Apple omits rows with fewer than five users."
   }
  },
