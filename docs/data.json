@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-27 16:25 EST",
+ "updated_at": "2026-11-27 17:34 EST",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -2363,10 +2363,10 @@
       "days": 7
      },
      "opt_in_rate_pct": null,
-     "sessions_7d": null,
-     "active_devices_latest": null,
-     "avg_daily_active_devices": null,
-     "avg_session_sec": null,
+     "sessions_7d": 10,
+     "active_devices_latest": 1,
+     "avg_daily_active_devices": 1.0,
+     "avg_session_sec": 52.4,
      "retention": null,
      "deletions_7d": 3,
      "installs_7d": 49,
@@ -2460,9 +2460,9 @@
       },
       {
        "date": "2026-11-25",
-       "sessions": null,
-       "active_devices": null,
-       "avg_session_sec": null,
+       "sessions": 10,
+       "active_devices": 1,
+       "avg_session_sec": 52.4,
        "deletions": 0,
        "installs": 17,
        "crashes": null,
@@ -2521,10 +2521,7 @@
        "category": "APP_USAGE"
       }
      ],
-     "opt_in_note": "Sessions, active devices, retention, crashes, and deletions include only users who opted in to share analytics with developers. Impressions, page views, and downloads count all devices.",
-     "kind_errors": [
-      "sessions: ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
-     ]
+     "opt_in_note": "Sessions, active devices, retention, crashes, and deletions include only users who opted in to share analytics with developers. Impressions, page views, and downloads count all devices."
     },
     "6819824551": {
      "id": "6819824551",
@@ -2725,7 +2722,7 @@
      "error": null
     }
    },
-   "generated_at": "2026-11-27 16:25 EST",
+   "generated_at": "2026-11-27 17:34 EST",
    "disclaimer": "App Analytics usage, crashes, and retention only count users who opted in to sharing analytics with developers. Low-volume days may be blank because Apple omits rows with fewer than five users."
   }
  },
