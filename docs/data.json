@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-27 09:30 EST",
+ "updated_at": "2026-11-27 10:34 EST",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -2265,9 +2265,9 @@
    },
    "stats": {
     "days": 47,
-    "requests": 2,
-    "cache_hits": 92,
-    "seconds": 1.39,
+    "requests": 1,
+    "cache_hits": 93,
+    "seconds": 0.67,
     "latest_requested": "2026-11-26"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
@@ -2516,15 +2516,11 @@
       "days": 7
      },
      "opt_in_rate_pct": 31.6,
-     "sessions_7d": 103,
-     "active_devices_latest": 1,
-     "avg_daily_active_devices": 1.1,
-     "avg_session_sec": 70.4,
-     "retention": {
-      "day1_pct": 20.7,
-      "day7_pct": 19.6,
-      "source": "app sessions, App Download Date, opted-in users"
-     },
+     "sessions_7d": null,
+     "active_devices_latest": null,
+     "avg_daily_active_devices": null,
+     "avg_session_sec": null,
+     "retention": null,
      "deletions_7d": 23,
      "installs_7d": 173,
      "crashes_7d": null,
@@ -2542,9 +2538,9 @@
      "daily": [
       {
        "date": "2026-11-20",
-       "sessions": 17,
-       "active_devices": 1,
-       "avg_session_sec": 75.8,
+       "sessions": null,
+       "active_devices": null,
+       "avg_session_sec": null,
        "deletions": 5,
        "installs": 6,
        "crashes": null,
@@ -2557,9 +2553,9 @@
       },
       {
        "date": "2026-11-21",
-       "sessions": 10,
-       "active_devices": 1,
-       "avg_session_sec": 56.6,
+       "sessions": null,
+       "active_devices": null,
+       "avg_session_sec": null,
        "deletions": 4,
        "installs": 26,
        "crashes": null,
@@ -2572,9 +2568,9 @@
       },
       {
        "date": "2026-11-22",
-       "sessions": 15,
-       "active_devices": 1,
-       "avg_session_sec": 37.0,
+       "sessions": null,
+       "active_devices": null,
+       "avg_session_sec": null,
        "deletions": 3,
        "installs": 24,
        "crashes": null,
@@ -2587,9 +2583,9 @@
       },
       {
        "date": "2026-11-23",
-       "sessions": 20,
-       "active_devices": 1,
-       "avg_session_sec": 52.2,
+       "sessions": null,
+       "active_devices": null,
+       "avg_session_sec": null,
        "deletions": 4,
        "installs": 14,
        "crashes": null,
@@ -2602,9 +2598,9 @@
       },
       {
        "date": "2026-11-24",
-       "sessions": 24,
-       "active_devices": 2,
-       "avg_session_sec": 123.8,
+       "sessions": null,
+       "active_devices": null,
+       "avg_session_sec": null,
        "deletions": 4,
        "installs": 25,
        "crashes": null,
@@ -2617,9 +2613,9 @@
       },
       {
        "date": "2026-11-25",
-       "sessions": 10,
-       "active_devices": 1,
-       "avg_session_sec": 62.4,
+       "sessions": null,
+       "active_devices": null,
+       "avg_session_sec": null,
        "deletions": 1,
        "installs": 45,
        "crashes": null,
@@ -2632,9 +2628,9 @@
       },
       {
        "date": "2026-11-26",
-       "sessions": 7,
-       "active_devices": 1,
-       "avg_session_sec": 29.1,
+       "sessions": null,
+       "active_devices": null,
+       "avg_session_sec": null,
        "deletions": 2,
        "installs": 33,
        "crashes": null,
@@ -2679,6 +2675,9 @@
       }
      ],
      "opt_in_note": "Sessions, active devices, retention, crashes, and deletions include only users who opted in to share analytics with developers. Impressions, page views, and downloads count all devices.",
+     "kind_errors": [
+      "sessions: SSLError: HTTPSConnectionPool(host='api.appstoreconnect.apple.com', port=443): Max retries exceeded with url: /v1/analyticsReports/r8-a72a1638-238a-44e6-9ce1-a22864e752dd/instances?limit=200&filter%5Bgranularity%5D=DAILY (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)')))"
+     ],
      "opt_in_users_7d": 18,
      "opt_in_downloaders_7d": 57
     }
@@ -2701,7 +2700,7 @@
      "error": null
     }
    },
-   "generated_at": "2026-11-27 09:30 EST",
+   "generated_at": "2026-11-27 10:34 EST",
    "disclaimer": "App Analytics usage, crashes, and retention only count users who opted in to sharing analytics with developers. Low-volume days may be blank because Apple omits rows with fewer than five users."
   }
  },
