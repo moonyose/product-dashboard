@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-28 08:27 EST",
+ "updated_at": "2026-11-28 09:30 EST",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -110,38 +110,6 @@
    }
   ],
   "sales": [
-   {
-    "date": "2026-11-20",
-    "apps": {
-     "6805914932": {
-      "downloads": 4,
-      "redownloads": 3,
-      "new_subs": 0,
-      "new_subs_paid": 0,
-      "new_subs_free": 0,
-      "renewals": 1,
-      "proceeds": 3.5
-     },
-     "6819824551": {
-      "downloads": 14,
-      "redownloads": 0,
-      "new_subs": 3,
-      "new_subs_paid": 0,
-      "new_subs_free": 3,
-      "renewals": 0,
-      "proceeds": 0.0
-     },
-     "6812496973": {
-      "downloads": 0,
-      "redownloads": 0,
-      "new_subs": 0,
-      "new_subs_paid": 0,
-      "new_subs_free": 0,
-      "renewals": 0,
-      "proceeds": 0.0
-     }
-    }
-   },
    {
     "date": "2026-11-21",
     "apps": {
@@ -333,6 +301,38 @@
       "proceeds": 0.0
      }
     }
+   },
+   {
+    "date": "2026-11-27",
+    "apps": {
+     "6805914932": {
+      "downloads": 0,
+      "redownloads": 0,
+      "new_subs": 0,
+      "new_subs_paid": 0,
+      "new_subs_free": 0,
+      "renewals": 0,
+      "proceeds": 0.0
+     },
+     "6819824551": {
+      "downloads": 3,
+      "redownloads": 2,
+      "new_subs": 1,
+      "new_subs_paid": 0,
+      "new_subs_free": 1,
+      "renewals": 0,
+      "proceeds": 0.0
+     },
+     "6812496973": {
+      "downloads": 0,
+      "redownloads": 0,
+      "new_subs": 0,
+      "new_subs_paid": 0,
+      "new_subs_free": 0,
+      "renewals": 0,
+      "proceeds": 0.0
+     }
+    }
    }
   ],
   "reports": {
@@ -438,7 +438,7 @@
     "2026-11-24": "ok",
     "2026-11-25": "ok",
     "2026-11-26": "ok",
-    "2026-11-27": "pending"
+    "2026-11-27": "ok"
    },
    "event_report_days": [
     "2026-10-12",
@@ -537,7 +537,7 @@
       6,
       3,
       0,
-      null
+      0
      ],
      "redownloads": [
       0,
@@ -587,7 +587,7 @@
       2,
       0,
       0,
-      null
+      0
      ],
      "updates": [
       0,
@@ -637,7 +637,7 @@
       78,
       9,
       40,
-      null
+      132
      ],
      "launch": "2026-10-11",
      "total_first_time": 289,
@@ -693,7 +693,7 @@
       15,
       10,
       1,
-      null
+      3
      ],
      "redownloads": [
       0,
@@ -743,7 +743,7 @@
       0,
       0,
       1,
-      null
+      2
      ],
      "updates": [
       0,
@@ -793,11 +793,11 @@
       131,
       83,
       37,
-      null
+      9
      ],
      "launch": "2026-10-16",
-     "total_first_time": 395,
-     "total_redownloads": 9
+     "total_first_time": 398,
+     "total_redownloads": 11
     }
    },
    "product_types_counted": [
@@ -810,9 +810,9 @@
     "F1"
    ],
    "product_types_seen": {
-    "1F": 684,
-    "3F": 72,
-    "7F": 954
+    "1F": 687,
+    "3F": 74,
+    "7F": 1095
    },
    "cohorts": [
     {
@@ -2298,7 +2298,7 @@
     "days": 48,
     "requests": 2,
     "cache_hits": 94,
-    "seconds": 1.67,
+    "seconds": 2.39,
     "latest_requested": "2026-11-27"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
@@ -2307,8 +2307,8 @@
    "proceeds_usd": 154.47,
    "currency": "USD",
    "from": "2026-10-11",
-   "to": "2026-11-26",
-   "days": 47,
+   "to": "2026-11-27",
+   "days": 48,
    "apps": {
     "6805914932": {
      "name": "LaneSync",
@@ -2531,10 +2531,7 @@
        "category": "APP_USAGE"
       }
      ],
-     "opt_in_note": "Sessions, active devices, retention, crashes, and deletions include only users who opted in to share analytics with developers. Impressions, page views, and downloads count all devices.",
-     "kind_errors": [
-      "crashes: ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
-     ]
+     "opt_in_note": "Sessions, active devices, retention, crashes, and deletions include only users who opted in to share analytics with developers. Impressions, page views, and downloads count all devices."
     },
     "6819824551": {
      "id": "6819824551",
@@ -2735,7 +2732,7 @@
      "error": null
     }
    },
-   "generated_at": "2026-11-28 08:28 EST",
+   "generated_at": "2026-11-28 09:30 EST",
    "disclaimer": "App Analytics usage, crashes, and retention only count users who opted in to sharing analytics with developers. Low-volume days may be blank because Apple omits rows with fewer than five users."
   }
  },
