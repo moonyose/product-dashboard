@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-28 07:51 EST",
+ "updated_at": "2026-11-28 08:27 EST",
  "errors": [],
  "meta": {
   "account_timezone": "America/Los_Angeles",
@@ -2298,7 +2298,7 @@
     "days": 48,
     "requests": 2,
     "cache_hits": 94,
-    "seconds": 1.6,
+    "seconds": 1.67,
     "latest_requested": "2026-11-27"
    },
    "notes": "Installs = first-time downloads (product types 1F/1/1T/F1/1E*); re-downloads (3F) and updates (7F) separate. 404 for the 2 most recent days = not published yet (retried next run); older 404 = no activity. Expected first charge = trial start + offer duration (estimate; assumes auto-renew on)."
@@ -2531,7 +2531,10 @@
        "category": "APP_USAGE"
       }
      ],
-     "opt_in_note": "Sessions, active devices, retention, crashes, and deletions include only users who opted in to share analytics with developers. Impressions, page views, and downloads count all devices."
+     "opt_in_note": "Sessions, active devices, retention, crashes, and deletions include only users who opted in to share analytics with developers. Impressions, page views, and downloads count all devices.",
+     "kind_errors": [
+      "crashes: ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+     ]
     },
     "6819824551": {
      "id": "6819824551",
@@ -2732,7 +2735,7 @@
      "error": null
     }
    },
-   "generated_at": "2026-11-28 07:51 EST",
+   "generated_at": "2026-11-28 08:28 EST",
    "disclaimer": "App Analytics usage, crashes, and retention only count users who opted in to sharing analytics with developers. Low-volume days may be blank because Apple omits rows with fewer than five users."
   }
  },
